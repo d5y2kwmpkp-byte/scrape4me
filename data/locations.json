@@ -1,0 +1,80 @@
+{
+  "success": true,
+  "query": "Dominos Pizza near New York, NY",
+  "scrapedAt": "2026-06-02T03:45:31.695Z",
+  "count": 18,
+  "locations": [
+    {
+      "name": "Domino's Pizza",
+      "link": "https://www.google.com/maps/place/Domino%27s+Pizza/data=!4m7!3m6!1s0x89c259aca7b5f3eb:0x153b72c37dad717e!8m2!3d40.7552952!4d-73.9888242!16s%2Fg%2F1wn_7062!19sChIJ6_O1p6xZwokRfnGtfcNyOxU?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Domino's Pizza",
+      "link": "https://www.google.com/maps/place/Domino%27s+Pizza/data=!4m7!3m6!1s0x89c2f66b68eba5d3:0x83c9fa9ec45045c7!8m2!3d40.8117444!4d-73.9544178!16s%2Fg%2F1xpwkqdj!19sChIJ06XraGv2wokRx0VQxJ76yYM?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Domino's Pizza",
+      "link": "https://www.google.com/maps/place/Domino%27s+Pizza/data=!4m7!3m6!1s0x89c2590884f76b13:0xb9cc30a21a67efb2!8m2!3d40.7443645!4d-73.9794723!16s%2Fg%2F1tx1v2w1!19sChIJE2v3hAhZwokRsu9nGqIwzLk?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Domino's Pizza",
+      "link": "https://www.google.com/maps/place/Domino%27s+Pizza/data=!4m7!3m6!1s0x89c258e3d5480c2b:0xb74897a11e5a7c9b!8m2!3d40.7551327!4d-73.9655185!16s%2Fg%2F1tfxhlv0!19sChIJKwxI1eNYwokRm3xaHqGXSLc?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Domino's Pizza",
+      "link": "https://www.google.com/maps/place/Domino%27s+Pizza/data=!4m7!3m6!1s0x89c25a25db4b3d4b:0xb664a66ab4cff45d!8m2!3d40.7119451!4d-73.9966267!16s%2Fg%2F11byx8bglh!19sChIJSz1L2yVawokRXfTPtGqmZLY?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Domino's Pizza",
+      "link": "https://www.google.com/maps/place/Domino%27s+Pizza/data=!4m7!3m6!1s0x89c25975d9fa0aa7:0x9698a7e3f6076f11!8m2!3d40.7303792!4d-73.9808358!16s%2Fg%2F11cjh_y2hw!19sChIJpwr62XVZwokREW8H9uOnmJY?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Domino's Pizza",
+      "link": "https://www.google.com/maps/place/Domino%27s+Pizza/data=!4m7!3m6!1s0x89c259bb3054337d:0x3947f4f0f992630f!8m2!3d40.7436744!4d-73.995291!16s%2Fg%2F1thmg9j7!19sChIJfTNUMLtZwokRD2OS-fD0Rzk?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Domino's Pizza",
+      "link": "https://www.google.com/maps/place/Domino%27s+Pizza/data=!4m7!3m6!1s0x89c2f608a81656b5:0x7a1063abbc600c2!8m2!3d40.7986495!4d-73.9411238!16s%2Fg%2F1td2hvfb!19sChIJtVYWqAj2wokRwgDGuzoGoQc?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Domino's Pizza",
+      "link": "https://www.google.com/maps/place/Domino%27s+Pizza/data=!4m7!3m6!1s0x89c258c0c6b51791:0x60e2529f7052cd13!8m2!3d40.7693195!4d-73.9545474!16s%2Fg%2F1tywyvxd!19sChIJkRe1xsBYwokRE81ScJ9S4mA?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Domino's Pizza",
+      "link": "https://www.google.com/maps/place/Domino%27s+Pizza/data=!4m7!3m6!1s0x89c2f603f66cdeb5:0x580e1a606e1b35a2!8m2!3d40.7937539!4d-73.9427868!16s%2Fg%2F1td2hvf9!19sChIJtd5s9gP2wokRojUbbmAaDlg?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Domino's Pizza",
+      "link": "https://www.google.com/maps/place/Domino%27s+Pizza/data=!4m7!3m6!1s0x89c259972b99ddcd:0xefd0616e73e351c7!8m2!3d40.7325363!4d-73.9974515!16s%2Fg%2F1tk6wttf!19sChIJzd2ZK5dZwokRx1Hjc25h0O8?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Domino's Pizza",
+      "link": "https://www.google.com/maps/place/Domino%27s+Pizza/data=!4m7!3m6!1s0x89c259847523b2b5:0xcad116f09b877dcc!8m2!3d40.7199848!4d-73.9830621!16s%2Fg%2F1tgff8ls!19sChIJtbIjdYRZwokRzH2Hm_AW0co?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Domino's Pizza",
+      "link": "https://www.google.com/maps/place/Domino%27s+Pizza/data=!4m7!3m6!1s0x89c2f67f3af8bcff:0x1ed35911f049a434!8m2!3d40.8235759!4d-73.9380415!16s%2Fg%2F1tcylzmt!19sChIJ_7z4On_2wokRNKRJ8BFZ0x4?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Domino's Pizza",
+      "link": "https://www.google.com/maps/place/Domino%27s+Pizza/data=!4m7!3m6!1s0x89c2f3f814a14159:0xebb920f6c8417244!8m2!3d40.8663137!4d-73.9256229!16s%2Fg%2F1tjy2fbv!19sChIJWUGhFPjzwokRRHJByPYgues?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Domino's Pizza",
+      "link": "https://www.google.com/maps/place/Domino%27s+Pizza/data=!4m7!3m6!1s0x89c2f6a0918541d1:0x34a22ebc17bbd640!8m2!3d40.8505075!4d-73.9376825!16s%2Fg%2F1tzlzx8d!19sChIJ0UGFkaD2wokRQNa7F7wuojQ?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Domino's Pizza",
+      "link": "https://www.google.com/maps/place/Domino%27s+Pizza/data=!4m7!3m6!1s0x89c25a51df91cb93:0xa5e1a325ee575e8d!8m2!3d40.6868996!4d-73.9904965!16s%2Fg%2F1tgk1kff!19sChIJk8uR31FawokRjV5X7iWj4aU?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Domino's Pizza",
+      "link": "https://www.google.com/maps/place/Domino%27s+Pizza/data=!4m7!3m6!1s0x89c2f662eca75fbb:0x4e3ee25722c8e1ed!8m2!3d40.8290101!4d-73.9481619!16s%2Fg%2F1tfjggh9!19sChIJu1-n7GL2wokR7eHIIlfiPk4?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Domino's Pizza",
+      "link": "https://www.google.com/maps/place/Domino%27s+Pizza/data=!4m7!3m6!1s0x89c2588a49054bc3:0xb4a113eab0b489d9!8m2!3d40.7779946!4d-73.9806118!16s%2Fg%2F1tf87_j2!19sChIJw0sFSYpYwokR2Ym0sOoTobQ?authuser=0&hl=en&rclk=1"
+    }
+  ]
+}
