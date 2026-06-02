@@ -1,0 +1,314 @@
+{
+  "success": true,
+  "query": "general contractors near Austin , TX",
+  "businessType": "general contractors",
+  "location": "Austin , TX",
+  "scrapedAt": "2026-06-02T06:35:20.405Z",
+  "count": 38,
+  "locations": [
+    {
+      "name": "MELDE Construction Company",
+      "rating": 5,
+      "address": "· 1410 W 6th St",
+      "phone": "· (512) 442-4479",
+      "website": "https://www.meldeconstruction.com/",
+      "mapsLink": "https://www.google.com/maps/place/MELDE+Construction+Company/data=!4m7!3m6!1s0x8644b57335d6606d:0x64aa80778820f6d2!8m2!3d30.274428!4d-97.7609413!16s%2Fg%2F11fxf1mhy5!19sChIJbWDWNXO1RIYR0vYgiHeAqmQ?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "LFM Construction & Remodeling",
+      "rating": 4.9,
+      "address": "· 2307 Thornton Rd Unit 103",
+      "phone": "· (512) 549-2434",
+      "website": "https://www.lfmremodeling.com/",
+      "mapsLink": "https://www.google.com/maps/place/LFM+Construction+%26+Remodeling/data=!4m7!3m6!1s0x80c297d5b1634e95:0x6d576ff28db6b9c8!8m2!3d30.2449723!4d-97.7716036!16s%2Fg%2F11fhlczh1w!19sChIJlU5jsdWXwoARyLm2jfJvV20?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Trimbuilt Construction Inc",
+      "rating": 4.9,
+      "address": "· 12800 N Lamar Blvd",
+      "phone": "· (512) 832-1979",
+      "website": "https://www.trimbuilt.com/",
+      "mapsLink": "https://www.google.com/maps/place/Trimbuilt+Construction+Inc/data=!4m7!3m6!1s0x8644cebf146b88ff:0x5261d799370944e0!8m2!3d30.4125904!4d-97.6783306!16s%2Fg%2F1tm2b1m6!19sChIJ_4hrFL_ORIYR4EQJN5nXYVI?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "ATX Construction & Remodeling General Contractor Austin",
+      "rating": 5,
+      "address": "· 7600 Chevy Chase Dr Bldg. 2, Suite 300",
+      "phone": "· (737) 510-4833",
+      "website": "https://atxconstructions.com/",
+      "mapsLink": "https://www.google.com/maps/place/ATX+Construction+%26+Remodeling+General+Contractor+Austin/data=!4m7!3m6!1s0x8644cb983a33ec0f:0xdad5ee31c39bda9c!8m2!3d30.3409607!4d-97.7045468!16s%2Fg%2F11kb8jr7p7!19sChIJD-wzOpjLRIYRnNqbwzHu1do?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Palm Construction Inc",
+      "rating": 4.8,
+      "address": "· 500 N Capital of Texas Hwy #300",
+      "phone": "· (512) 676-7350",
+      "website": "https://palmconstructiontx.com/",
+      "mapsLink": "https://www.google.com/maps/place/Palm+Construction+Inc/data=!4m7!3m6!1s0x865b35e6dd4c537b:0xd5b8687168cbd5b5!8m2!3d30.30873!4d-97.8277248!16s%2Fg%2F11st9k3dh_!19sChIJe1NM3eY1W4YRtdXLaHFouNU?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "AGC Home Remodeling & Construction",
+      "rating": 4.6,
+      "address": "· 8204 N Lamar Blvd B13",
+      "phone": "· (512) 900-1688",
+      "website": "https://www.agchomeremodeling.com/",
+      "mapsLink": "https://www.google.com/maps/place/AGC+Home+Remodeling+%26+Construction/data=!4m7!3m6!1s0x8644cb04e078d45b:0xe9ad7b57dd90fd89!8m2!3d30.3515425!4d-97.7099171!16s%2Fg%2F11s7tjx9mp!19sChIJW9R44ATLRIYRif2Q3Vd7rek?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Prime Construction and Remodeling",
+      "rating": 5,
+      "address": "· 705 N Bluff Dr",
+      "phone": "· (512) 710-2883",
+      "website": "https://primetxbuilders.com/southwest-austin",
+      "mapsLink": "https://www.google.com/maps/place/Prime+Construction+and+Remodeling/data=!4m7!3m6!1s0x684589c9dc1b06e1:0x4119cf3f080a1efc!8m2!3d30.1940798!4d-97.772678!16s%2Fg%2F11lcl028dz!19sChIJ4QYb3MmJRWgR_B4KCD_PGUE?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "THA Construction & Remodeling",
+      "rating": 4.9,
+      "address": "· 2021 Guadalupe St Suite 260",
+      "phone": "· (512) 736-8585",
+      "website": "https://thaconstruction.com/",
+      "mapsLink": "https://www.google.com/maps/place/THA+Construction+%26+Remodeling/data=!4m7!3m6!1s0x8644c543c7f32765:0x72e9e15b9049921b!8m2!3d30.2833571!4d-97.7414929!16s%2Fg%2F11j7h6mhjl!19sChIJZSfzx0PFRIYRG5JJkFvh6XI?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Bailey and Bear Construction",
+      "rating": 5,
+      "address": "· 4807 Seedling Path",
+      "phone": "· (512) 689-8346",
+      "website": "https://www.baileyandbear.com/",
+      "mapsLink": "https://www.google.com/maps/place/Bailey+and+Bear+Construction/data=!4m7!3m6!1s0x2ed1f6f45c1a4c8f:0xde7d750ff42ad39e!8m2!3d30.2940489!4d-97.6743867!16s%2Fg%2F11khrz17y_!19sChIJj0waXPT20S4RntMq9A91fd4?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Pro Tech Construction Inc",
+      "rating": 4.7,
+      "address": "· 812 Farm to Market 1626",
+      "phone": "· (512) 720-8303",
+      "website": "https://protechconst.net/",
+      "mapsLink": "https://www.google.com/maps/place/Pro+Tech+Construction+Inc/data=!4m7!3m6!1s0x865b521853a4819b:0xe5956c1aca2797e!8m2!3d30.1408585!4d-97.8286195!16s%2Fg%2F11gdrlcgnm!19sChIJm4GkUxhSW4YRfnmirMFWWQ4?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Catalyst Construction & General Contractors",
+      "rating": 5,
+      "address": "· 9901 Brodie Ln STE# 160-822",
+      "phone": "· (512) 535-0544",
+      "website": "https://catalystaustin.com/",
+      "mapsLink": "https://www.google.com/maps/place/Catalyst+Construction+%26+General+Contractors/data=!4m7!3m6!1s0x865b4da847bb50cb:0x70529b87200decad!8m2!3d30.1841023!4d-97.8475736!16s%2Fg%2F1hc27040n!19sChIJy1C7R6hNW4YRrewNIIebUnA?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Skelly Build",
+      "rating": 4.9,
+      "address": "· 4361 S Congress Ave #104",
+      "phone": "· (512) 520-5523",
+      "website": "https://skellybuild.com/",
+      "mapsLink": "https://www.google.com/maps/place/Skelly+Build/data=!4m7!3m6!1s0x8644b4bcd01aaaab:0x2a923215b8eecb3c!8m2!3d30.21785!4d-97.766708!16s%2Fg%2F11hc_3kvkb!19sChIJq6oa0Ly0RIYRPMvuuBUykio?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Teamwork Home Designs - General Contractor Austin",
+      "rating": 5,
+      "address": "· 8101 Cameron Rd Ste 107",
+      "phone": "· (512) 757-3760",
+      "website": "https://teamworkhomedesigns.com/",
+      "mapsLink": "https://www.google.com/maps/place/Teamwork+Home+Designs+-+General+Contractor+Austin/data=!4m7!3m6!1s0xad0516ff01593923:0xd51db7168d82b248!8m2!3d30.3365566!4d-97.682791!16s%2Fg%2F11t5m7r829!19sChIJIzlZAf8WBa0RSLKCjRa3HdU?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Tex Land Construction LLC",
+      "rating": 4.9,
+      "address": "· 3709 Promontory Point Dr",
+      "phone": "· (512) 910-4832",
+      "website": null,
+      "mapsLink": "https://www.google.com/maps/place/Tex+Land+Construction+LLC/data=!4m7!3m6!1s0x81ac142a33bcd41f:0xafb7e6e3e118ccbe!8m2!3d30.2096289!4d-97.7264228!16s%2Fg%2F11w4qzygp_!19sChIJH9S8MyoUrIERvswY4ePmt68?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Consider it Done - GARSC - Greater Austin Residential Service Company",
+      "rating": 5,
+      "address": "· 1704, 1/2 S Congress Ave Suite F",
+      "phone": "· (512) 360-0480",
+      "website": "http://www.garsc.com/",
+      "mapsLink": "https://www.google.com/maps/place/Consider+it+Done+-+GARSC+-+Greater+Austin+Residential+Service+Company/data=!4m7!3m6!1s0x8644b4fc9fc71f21:0x7df3b52da3a46f71!8m2!3d30.248496!4d-97.7505149!16s%2Fg%2F1pzvsx9v8!19sChIJIR_Hn_y0RIYRcW-koy21830?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "ACE Remodeling TX",
+      "rating": 4.9,
+      "address": "· 3515 Greystone Dr",
+      "phone": "· (512) 969-9179",
+      "website": "https://aceremodelingtx.com/",
+      "mapsLink": "https://www.google.com/maps/place/ACE+Remodeling+TX/data=!4m7!3m6!1s0x1816bc1169e3acd:0xc45b5d7dda4f9809!8m2!3d30.3579868!4d-97.7499422!16s%2Fg%2F11vbxkhjl1!19sChIJzTqeFsFrgQERCZhP2n1dW8Q?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Q Construction Solutions",
+      "rating": 4.8,
+      "address": "· 2213 Forbes Dr",
+      "phone": "· (844) 778-4257",
+      "website": "https://www.qconstructionsolutions.com/",
+      "mapsLink": "https://www.google.com/maps/place/Q+Construction+Solutions/data=!4m7!3m6!1s0x8644ca57704de65f:0x5041285c2937920d!8m2!3d30.3343272!4d-97.67349!16s%2Fg%2F11dyx6s55r!19sChIJX-ZNcFfKRIYRDZI3KVwoQVA?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Rockin' Remodeling Design & Build",
+      "rating": 4.8,
+      "address": "· 7784+VQ",
+      "phone": null,
+      "website": "http://www.rockinremodeling.com/",
+      "mapsLink": "https://www.google.com/maps/place/Rockin%27+Remodeling+Design+%26+Build/data=!4m7!3m6!1s0x8644b58a8e865621:0x9d7e8681d50eb151!8m2!3d30.2671817!4d-97.7429485!16s%2Fg%2F11fj8dgzm8!19sChIJIVaGjoq1RIYRUbEO1YGGfp0?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "G.I.S Contracting LLC,",
+      "rating": 4.7,
+      "address": "· 2612 S 3rd St",
+      "phone": "· (512) 801-6132",
+      "website": "https://giscontracting.com/",
+      "mapsLink": "https://www.google.com/maps/place/G.I.S+Contracting+LLC,/data=!4m7!3m6!1s0x8644b4c2a6ac0001:0xa138d5f8b6ff0d95!8m2!3d30.23919!4d-97.7637202!16s%2Fg%2F11pv8l5dqh!19sChIJAQCspsK0RIYRlQ3_tvjVOKE?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Texas Construction Company",
+      "rating": 4.9,
+      "address": "· 5609 S Congress Ave #210",
+      "phone": "· (512) 451-8050",
+      "website": "http://txconstruct.com/",
+      "mapsLink": "https://www.google.com/maps/place/Texas+Construction+Company/data=!4m7!3m6!1s0x8644ca61eaf49f55:0x76701c667493af11!8m2!3d30.2040272!4d-97.7748285!16s%2Fg%2F1thlngg7!19sChIJVZ_06mHKRIYREa-TdGYccHY?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "A.R. Lucas Construction Company",
+      "rating": 5,
+      "address": "· 7019 Burleson Rd Building 1",
+      "phone": "· (512) 801-7221",
+      "website": "http://arlucasconstruction.com/",
+      "mapsLink": "https://www.google.com/maps/place/A.R.+Lucas+Construction+Company/data=!4m7!3m6!1s0x8644b49451397f0b:0xd4daefaea4f6ae17!8m2!3d30.1980021!4d-97.7074311!16s%2Fg%2F11cs1syrqt!19sChIJC385UZS0RIYRF672pK7v2tQ?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Flintrock Commercial",
+      "rating": 5,
+      "address": "· 3007 Longhorn Blvd #103",
+      "phone": "· (512) 813-0700",
+      "website": "https://www.flintrockcommercial.com/",
+      "mapsLink": "https://www.google.com/maps/place/Flintrock+Commercial/data=!4m7!3m6!1s0x8644cbc071900f73:0x68d96553a7b137c2!8m2!3d30.3813224!4d-97.7288766!16s%2Fg%2F11fv4nxlyl!19sChIJcw-QccDLRIYRwjexp1Nl2Wg?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "DiamondPoint Contractors",
+      "rating": 4.9,
+      "address": "Open 24 hours",
+      "phone": "· (512) 945-8877",
+      "website": "https://www.diamondpointcontractors.com/",
+      "mapsLink": "https://www.google.com/maps/place/DiamondPoint+Contractors/data=!4m7!3m6!1s0x8431738dc3284c53:0x3ba8738efdf10810!8m2!3d30.2455482!4d-89.609917!16s%2Fg%2F11qg4x_27g!19sChIJU0wow41zMYQREAjx_Y5zqDs?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "ATX Construction & Remodeling General Contractor Austin",
+      "rating": 5,
+      "address": "· 7600 Chevy Chase Dr Bldg. 2, Suite 300",
+      "phone": "· (737) 510-4833",
+      "website": "https://atxconstructions.com/",
+      "mapsLink": "https://www.google.com/maps/place/ATX+Construction+%26+Remodeling+General+Contractor+Austin/data=!4m7!3m6!1s0x8644cb983a33ec0f:0xdad5ee31c39bda9c!8m2!3d30.3409607!4d-97.7045468!16s%2Fg%2F11kb8jr7p7!19sChIJD-wzOpjLRIYRnNqbwzHu1do?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "ATX Construction Handyman & Remodeling",
+      "rating": 4.8,
+      "address": "· 3922 Woodbury Dr",
+      "phone": "· (512) 842-9391",
+      "website": "https://atx.construction/?utm_campaign=GoogleMyBusiness",
+      "mapsLink": "https://www.google.com/maps/place/ATX+Construction+Handyman+%26+Remodeling/data=!4m7!3m6!1s0x68658656fcbf24e1:0x3b98e909d36367ef!8m2!3d30.223002!4d-97.761442!16s%2Fg%2F11vk4k8z13!19sChIJ4SS__FaGZWgR72dj0wnpmDs?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Together Exterior & Outdoor Remodeling",
+      "rating": 5,
+      "address": "· 1000 E 50th St C",
+      "phone": "(833) 400-3760",
+      "website": "https://together-exterior.com/",
+      "mapsLink": "https://www.google.com/maps/place/Together+Exterior+%26+Outdoor+Remodeling/data=!4m7!3m6!1s0x8644cbaffe714c1d:0xa0c5c813ee7b88fb!8m2!3d30.3097965!4d-97.712104!16s%2Fg%2F11x01_cmvh!19sChIJHUxx_q_LRIYR-4h77hPIxaA?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Together Design & Build",
+      "rating": 5,
+      "address": "· 6000 S Congress Ave #101",
+      "phone": "· (833) 573-3627",
+      "website": "https://togetherdesignbuild.com/",
+      "mapsLink": "https://www.google.com/maps/place/Together+Design+%26+Build/data=!4m7!3m6!1s0x8644b9d1f76bdfaf:0xd17c351cedcfd48d!8m2!3d30.2001268!4d-97.776666!16s%2Fg%2F11ft_055fh!19sChIJr99r99G5RIYRjdTP7Rw1fNE?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Stephen Thomas Construction",
+      "rating": 5,
+      "address": "· 5900 Southwest Pkwy ste 5-520",
+      "phone": "· (512) 702-2267",
+      "website": "http://www.stcatx.com/",
+      "mapsLink": "https://www.google.com/maps/place/Stephen+Thomas+Construction/data=!4m7!3m6!1s0x2ee7395d15ad837d:0x4e001220b304d834!8m2!3d30.2484598!4d-97.8479259!16s%2Fg%2F11rrlw2q_y!19sChIJfYOtFV055y4RNNgEsyASAE4?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "DPR Construction",
+      "rating": 4,
+      "address": "· 310 Comal St Bldg A, Suite #300",
+      "phone": "· (512) 345-7699",
+      "website": "http://www.dpr.com/",
+      "mapsLink": "https://www.google.com/maps/place/DPR+Construction/data=!4m7!3m6!1s0x8644b58e0c50860b:0x84b93186778d1263!8m2!3d30.2611713!4d-97.7275651!16s%2Fg%2F1tfh5135!19sChIJC4ZQDI61RIYRYxKNd4YxuYQ?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "BEC Austin General Contractor",
+      "rating": 4,
+      "address": "· 8320 Bee Caves Rd",
+      "phone": "· (512) 327-3951",
+      "website": "https://becaustin.com/",
+      "mapsLink": "https://www.google.com/maps/place/BEC+Austin+General+Contractor/data=!4m7!3m6!1s0x865b35ea128f6267:0x6625ab6b66b2e13f!8m2!3d30.3147984!4d-97.8542417!16s%2Fg%2F1v44fcwb!19sChIJZ2KPEuo1W4YRP-GyZmurJWY?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Alchemy Builders",
+      "rating": 5,
+      "address": "· 108 Chicon St",
+      "phone": "· (512) 222-9940",
+      "website": "https://www.alchemy.builders/",
+      "mapsLink": "https://www.google.com/maps/place/Alchemy+Builders/data=!4m7!3m6!1s0x8644b5b4692da163:0x1479dc5e3b8dfc27!8m2!3d30.2577798!4d-97.7245367!16s%2Fg%2F11gr4q0389!19sChIJY6EtabS1RIYRJ_yNO17ceRQ?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "City Limit Construction LLC",
+      "rating": 4.9,
+      "address": "· 2009 Ranch Rd 620 N Building 3 suite 310",
+      "phone": "· (512) 729-3300",
+      "website": "https://citylimitconstruction.com/",
+      "mapsLink": "https://www.google.com/maps/place/City+Limit+Construction+LLC/data=!4m7!3m6!1s0x865b31a501902f7d:0x68ea1194417dcc58!8m2!3d30.3829909!4d-97.9411121!16s%2Fg%2F11rcdjh8k9!19sChIJfS-QAaUxW4YRWMx9QZQR6mg?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Sabre Commercial, Inc.",
+      "rating": 4.5,
+      "address": "· 2001 Chicon St",
+      "phone": "· (512) 767-7400",
+      "website": "http://www.sabrecommercial.com/",
+      "mapsLink": "https://www.google.com/maps/place/Sabre+Commercial,+Inc./data=!4m7!3m6!1s0x8644b594c1877969:0xeadc7564ebc17b5f!8m2!3d30.2812265!4d-97.7212099!16s%2Fg%2F11xb2mkjd!19sChIJaXmHwZS1RIYRX3vB62R13Oo?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Alter Construction",
+      "rating": 5,
+      "address": "· 1705 Coral Dr",
+      "phone": "· (737) 278-5828",
+      "website": "http://www.altertx.com/",
+      "mapsLink": "https://www.google.com/maps/place/Alter+Construction/data=!4m7!3m6!1s0x865b2d2b322859c7:0x5825b306ed6f0b95!8m2!3d30.4791885!4d-97.8454908!16s%2Fg%2F11rhf9qcj_!19sChIJx1koMistW4YRlQtv7QazJVg?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "G.I.S Contracting LLC,",
+      "rating": 4.7,
+      "address": "· 2612 S 3rd St",
+      "phone": "· (512) 801-6132",
+      "website": "https://giscontracting.com/",
+      "mapsLink": "https://www.google.com/maps/place/G.I.S+Contracting+LLC,/data=!4m7!3m6!1s0x8644b4c2a6ac0001:0xa138d5f8b6ff0d95!8m2!3d30.23919!4d-97.7637202!16s%2Fg%2F11pv8l5dqh!19sChIJAQCspsK0RIYRlQ3_tvjVOKE?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Inside Out Construction And Design",
+      "rating": 4.8,
+      "address": "Closed · Opens 9 AM",
+      "phone": "· (512) 842-9961",
+      "website": "http://www.iorconstruction.com/",
+      "mapsLink": "https://www.google.com/maps/place/Inside+Out+Construction+And+Design/data=!4m7!3m6!1s0x8644b618ca7999ef:0xbd2ec515fa2aa3e2!8m2!3d30.32585!4d-97.771258!16s%2Fg%2F11gcz3mbyh!19sChIJ75l5yhi2RIYR4qMq-hXFLr0?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Format Construction",
+      "rating": 5,
+      "address": "· 1800 W 6th St",
+      "phone": "· (512) 277-5394",
+      "website": "https://www.formatconstruction.com/",
+      "mapsLink": "https://www.google.com/maps/place/Format+Construction/data=!4m7!3m6!1s0x8644cb8302e95d15:0x452ac896755a6f4a!8m2!3d30.2770894!4d-97.7663365!16s%2Fg%2F11w9ymp_4q!19sChIJFV3pAoPLRIYRSm9adZbIKkU?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "CG&S Design-Build",
+      "rating": 4.8,
+      "address": "· 402 Corral Ln",
+      "phone": "· (512) 444-1580",
+      "website": "http://www.cgsdb.com/",
+      "mapsLink": "https://www.google.com/maps/place/CG%26S+Design-Build/data=!4m7!3m6!1s0x8644b3491ba649cf:0x8a572f1011949a0f!8m2!3d30.186029!4d-97.777209!16s%2Fg%2F1tc_91gm!19sChIJz0mmG0mzRIYRD5qUERAvV4o?authuser=0&hl=en&rclk=1"
+    }
+  ]
+}
