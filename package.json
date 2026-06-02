@@ -1,0 +1,15 @@
+{
+  "name": "dominos-scraper",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "dependencies": {
+    "@sparticuz/chromium": "^123.0.0",
+    "playwright-core": "^1.44.0"
+  },
+  "devDependencies": {
+    "vercel": "^34.0.0"
+  }
+}
