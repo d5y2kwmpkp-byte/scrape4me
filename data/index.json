@@ -12,5 +12,12 @@
     "location": "San Antonio, TX",
     "count": 38,
     "scrapedAt": "2026-06-02T05:49:48.640Z"
+  },
+  {
+    "filename": "general-contractors-new-braunfels-tx.json",
+    "businessType": "general contractors",
+    "location": "New Braunfels, TX",
+    "count": 38,
+    "scrapedAt": "2026-06-02T05:50:52.363Z"
   }
 ]
