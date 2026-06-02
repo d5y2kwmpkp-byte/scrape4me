@@ -12,6 +12,10 @@ on:
         required: true
         default: 'general contractors'
 
+concurrency:
+  group: scrape
+  cancel-in-progress: false
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
