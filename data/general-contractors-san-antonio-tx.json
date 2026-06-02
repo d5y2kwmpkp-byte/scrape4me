@@ -1,0 +1,314 @@
+{
+  "success": true,
+  "query": "general contractors near San Antonio, TX",
+  "businessType": "general contractors",
+  "location": "San Antonio, TX",
+  "scrapedAt": "2026-06-02T05:49:48.641Z",
+  "count": 38,
+  "locations": [
+    {
+      "name": "Herbert H. Construction",
+      "rating": 4.9,
+      "address": "· 5301 Bandera Rd",
+      "phone": "· (210) 338-1824",
+      "website": "https://www.herberthconstructionsa.com/",
+      "mapsLink": "https://www.google.com/maps/place/Herbert+H.+Construction/data=!4m7!3m6!1s0x865c5dc3ff9f2e89:0x3603217734f4e85!8m2!3d29.4794403!4d-98.590479!16s%2Fg%2F1tf6mmp7!19sChIJiS6f_8NdXIYRhU5PcxcyYAM?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "GMG Construction of South Texas",
+      "rating": 4.8,
+      "address": "· 5835 Callaghan Road",
+      "phone": "· (210) 260-7951",
+      "website": "http://www.gmgconstructionofsouthtx.com/",
+      "mapsLink": "https://www.google.com/maps/place/GMG+Construction+of+South+Texas/data=!4m7!3m6!1s0x865c581a23d0b425:0xba86461e0f7c1f96!8m2!3d29.518651!4d-98.4866143!16s%2Fg%2F11c58nplgh!19sChIJJbTQIxpYXIYRlh98Dx5Ghro?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Premium Construction San Antonio",
+      "rating": 4.4,
+      "address": "· 711 Broadway Suite 350",
+      "phone": "· (210) 610-5003",
+      "website": null,
+      "mapsLink": "https://www.google.com/maps/place/Premium+Construction+San+Antonio/data=!4m7!3m6!1s0x865cf5006ce785bd:0xc953a6002be2a503!8m2!3d29.4327371!4d-98.4831341!16s%2Fg%2F11vy5x6wmp!19sChIJvYXnbAD1XIYRA6XiKwCmU8k?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Bexar County Construction",
+      "rating": 4.9,
+      "address": "· 12834 Dovetail Dr",
+      "phone": "· (210) 289-1345",
+      "website": "https://www.bexarcountyconstruction.com/",
+      "mapsLink": "https://www.google.com/maps/place/Bexar+County+Construction/data=!4m7!3m6!1s0x845af1c9333068d5:0xbf9668e664f40fd!8m2!3d29.4450659!4d-98.7470015!16s%2Fg%2F11vlb08cf9!19sChIJ1WgwM8nxWoQR_UBPZo5m-Qs?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Joeris General Contractors",
+      "rating": 4.2,
+      "address": "· 823 Arion Pkwy",
+      "phone": "· (210) 494-1638",
+      "website": "https://www.joeris.com/",
+      "mapsLink": "https://www.google.com/maps/place/Joeris+General+Contractors/data=!4m7!3m6!1s0x865c8a9c8d1e1a3f:0x3fcc8c49a2534372!8m2!3d29.5509287!4d-98.4816586!16s%2Fg%2F11b6qbpjm6!19sChIJPxoejZyKXIYRckNTokmMzD8?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "ALO General Contractor",
+      "rating": 4.7,
+      "address": "· 6100 Bandera Rd #301",
+      "phone": "· (210) 548-3906",
+      "website": "https://alogc.com/",
+      "mapsLink": "https://www.google.com/maps/place/ALO+General+Contractor/data=!4m7!3m6!1s0x865cf7f8d377cfa1:0x47fb4e37f36ac7e8!8m2!3d29.4842248!4d-98.6058945!16s%2Fg%2F11mpd3xg5d!19sChIJoc930_j3XIYR6Mdq8zdO-0c?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "M Construction & Remodeling Group, LLC",
+      "rating": 4.9,
+      "address": "· 141 Danube Dr Suite 202",
+      "phone": "· (210) 389-4562",
+      "website": "https://www.mcr-groupllc.com/",
+      "mapsLink": "https://www.google.com/maps/place/M+Construction+%26+Remodeling+Group,+LLC/data=!4m7!3m6!1s0x865cf3ef6b112fcd:0xf92b1b4d47cb381e!8m2!3d29.5041609!4d-98.5084553!16s%2Fg%2F11h7s1s7nf!19sChIJzS8Ra-_zXIYRHjjLR00bK_k?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "South Texas Contractors & Roofing",
+      "rating": 4.9,
+      "address": "· 323 Oak Gln",
+      "phone": "· (726) 244-3552",
+      "website": "https://southtxcontractors.com/",
+      "mapsLink": "https://www.google.com/maps/place/South+Texas+Contractors+%26+Roofing/data=!4m7!3m6!1s0x6f2940e1dad9fa4d:0x11653b3e05531370!8m2!3d29.5114266!4d-98.441118!16s%2Fg%2F11s55h2r5n!19sChIJTfrZ2uFAKW8RcBNTBT47ZRE?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Guy Chipman Construction, L.P.",
+      "rating": 4.9,
+      "address": "· 215 Elizabeth Rd",
+      "phone": "· (210) 822-2447",
+      "website": "http://guychipmanconstruction.com/",
+      "mapsLink": "https://www.google.com/maps/place/Guy+Chipman+Construction,+L.P./data=!4m7!3m6!1s0x865cf5a0a20ae617:0x4c35900944f67001!8m2!3d29.4729576!4d-98.4582105!16s%2Fg%2F1tcwx4bg!19sChIJF-YKoqD1XIYRAXD2RAmQNUw?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "One Touch construction llc",
+      "rating": 4.9,
+      "address": "· 3923 Knollcross",
+      "phone": "· (210) 391-0661",
+      "website": "https://www.1touchcontractors.com/",
+      "mapsLink": "https://www.google.com/maps/place/One+Touch+construction+llc/data=!4m7!3m6!1s0x6d21b1c30e58944b:0x9bbd3205031fcc43!8m2!3d29.5842729!4d-98.4159784!16s%2Fg%2F11vsbpzzlf!19sChIJS5RYDsOxIW0RQ8wfAwUyvZs?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Vidal Construction",
+      "rating": 4.8,
+      "address": "· 10926 Braun Rd",
+      "phone": "· (210) 707-0007",
+      "website": "http://www.vidalconstruction.com/",
+      "mapsLink": "https://www.google.com/maps/place/Vidal+Construction/data=!4m7!3m6!1s0x8640e3cd707017e3:0xbb33bc849ea74ad1!8m2!3d29.5420198!4d-98.7076299!16s%2Fg%2F113h8yb0b!19sChIJ4xdwcM3jQIYR0UqnnoS8M7s?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "All Around Construction Services LLC",
+      "rating": 4.9,
+      "address": "Closed · Opens 8 AM",
+      "phone": "· (210) 305-0899",
+      "website": "https://www.allaroundconstructionservices.com/",
+      "mapsLink": "https://www.google.com/maps/place/All+Around+Construction+Services+LLC/data=!4m7!3m6!1s0x865c45a9a3dd3791:0xb8567effef06b1ef!8m2!3d29.4699015!4d-98.5384585!16s%2Fg%2F11fwdblw33!19sChIJkTfdo6lFXIYR77EG7_9-Vrg?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "United Homes Contracting",
+      "rating": 5,
+      "address": "· 435 W Nakoma Dr",
+      "phone": "· (210) 267-5192",
+      "website": "https://www.unitedhomessatx.com/",
+      "mapsLink": "https://www.google.com/maps/place/United+Homes+Contracting/data=!4m7!3m6!1s0x865c6030d9119f1f:0xcf427f3568b36b56!8m2!3d29.5540251!4d-98.4998013!16s%2Fg%2F11y2cl4p9g!19sChIJH58R2TBgXIYRVmuzaDV_Qs8?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Rhino Design Build, LLC",
+      "rating": 4.8,
+      "address": "· 4335 Vance Jackson Rd suite 101-b",
+      "phone": "· (210) 413-8789",
+      "website": "https://rhinodesignbuild.com/",
+      "mapsLink": "https://www.google.com/maps/place/Rhino+Design+Build,+LLC/data=!4m7!3m6!1s0x865c5e1a12e38f63:0xaecaa918c23e393f!8m2!3d29.5141988!4d-98.5362798!16s%2Fg%2F11b88pp4p6!19sChIJY4_jEhpeXIYRPzk-whipyq4?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Precision Contracting",
+      "rating": 4.4,
+      "address": "· 15420 Capital Prt Dr",
+      "phone": "· (210) 961-8488",
+      "website": "https://www.precisioncontracting.com/",
+      "mapsLink": "https://www.google.com/maps/place/Precision+Contracting/data=!4m7!3m6!1s0x865c8b561a52f6d3:0x909f53a8c602f3eb!8m2!3d29.5887402!4d-98.5835319!16s%2Fg%2F11hbqbd6wx!19sChIJ0_ZSGlaLXIYR6_MCxqhTn5A?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Blue Horizon Service Pro Remodeling & construction",
+      "rating": 5,
+      "address": "Open 24 hours",
+      "phone": "· (210) 987-7076",
+      "website": "http://www.bluehorizonremodeling.com/",
+      "mapsLink": "https://www.google.com/maps/place/Blue+Horizon+Service+Pro+Remodeling+%26+construction/data=!4m7!3m6!1s0x865c619f419d44df:0xa30137ec603430bb!8m2!3d29.5188455!4d-98.4633315!16s%2Fg%2F11h1vbs26n!19sChIJ30SdQZ9hXIYRuzA0YOw3AaM?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "GTex General Contracting",
+      "rating": 5,
+      "address": "· 10903 Gabriel's Pl",
+      "phone": "· (210) 902-1027",
+      "website": "https://www.gtexgc.com/",
+      "mapsLink": "https://www.google.com/maps/place/GTex+General+Contracting/data=!4m7!3m6!1s0x865c8b064231459b:0x3eac40386d6e79b7!8m2!3d29.539696!4d-98.442396!16s%2Fg%2F11h5mfmkh4!19sChIJm0UxQgaLXIYRt3lubThArD4?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "AR: Construct - Roof - Restore",
+      "rating": 4.9,
+      "address": "· 11830 Radium St",
+      "phone": "· (210) 504-5670",
+      "website": "https://argctexas.com/",
+      "mapsLink": "https://www.google.com/maps/place/AR:+Construct+-+Roof+-+Restore/data=!4m7!3m6!1s0x865c8a71b6be6547:0xa5feb0bd1d582191!8m2!3d29.5497187!4d-98.4965171!16s%2Fg%2F11f00qgzly!19sChIJR2W-tnGKXIYRkSFYHb2w_qU?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "H & I Construction & Remodeling Inc.",
+      "rating": 4.9,
+      "address": "· 26962 Blanco Rd",
+      "phone": "· (210) 402-6590",
+      "website": "http://handiconstruction.com/",
+      "mapsLink": "https://www.google.com/maps/place/H+%26+I+Construction+%26+Remodeling+Inc./data=!4m7!3m6!1s0x865c7d2d2aab2035:0xef72274cb71d248d!8m2!3d29.6997013!4d-98.5202042!16s%2Fg%2F1pp2wyq4b!19sChIJNSCrKi19XIYRjSQdt0wncu8?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Alamo City General Contractors",
+      "rating": 5,
+      "address": "· 3522 Paesanos Pkwy #302",
+      "phone": "· (210) 920-6234",
+      "website": "http://acgcroofing.com/",
+      "mapsLink": "https://www.google.com/maps/place/Alamo+City+General+Contractors/data=!4m7!3m6!1s0x865c611582704b23:0x9b078ca672a00e51!8m2!3d29.6007763!4d-98.5512222!16s%2Fg%2F11vysvjxt_!19sChIJI0twghVhXIYRUQ6gcqaMB5s?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "E-Z Bel Construction",
+      "rating": 4.1,
+      "address": "· 203 Recoleta Rd",
+      "phone": "· (210) 736-6595",
+      "website": "http://www.ezbelconstruction.com/",
+      "mapsLink": "https://www.google.com/maps/place/E-Z+Bel+Construction/data=!4m7!3m6!1s0x865c5fed473ba477:0xb4c2e6251c7d5644!8m2!3d29.4949475!4d-98.4961046!16s%2Fg%2F1tsykm01!19sChIJd6Q7R-1fXIYRRFZ9HCXmwrQ?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "All Around Construction Services LLC",
+      "rating": 4.9,
+      "address": "Closed · Opens 8 AM",
+      "phone": "· (210) 305-0899",
+      "website": "https://www.allaroundconstructionservices.com/",
+      "mapsLink": "https://www.google.com/maps/place/All+Around+Construction+Services+LLC/data=!4m7!3m6!1s0x865c45a9a3dd3791:0xb8567effef06b1ef!8m2!3d29.4699015!4d-98.5384585!16s%2Fg%2F11fwdblw33!19sChIJkTfdo6lFXIYR77EG7_9-Vrg?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Precision Contracting",
+      "rating": 4.4,
+      "address": "· 15420 Capital Prt Dr",
+      "phone": "· (210) 961-8488",
+      "website": "https://www.precisioncontracting.com/",
+      "mapsLink": "https://www.google.com/maps/place/Precision+Contracting/data=!4m7!3m6!1s0x865c8b561a52f6d3:0x909f53a8c602f3eb!8m2!3d29.5887402!4d-98.5835319!16s%2Fg%2F11hbqbd6wx!19sChIJ0_ZSGlaLXIYR6_MCxqhTn5A?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Diverse Construction Group",
+      "rating": 4.7,
+      "address": "· 8000 I-10 6th Floor",
+      "phone": "· (210) 876-3841",
+      "website": "http://www.diverseconstructiongroup.com/",
+      "mapsLink": "https://www.google.com/maps/place/Diverse+Construction+Group/data=!4m7!3m6!1s0x677d43fae1acd497:0x75746d4890125733!8m2!3d29.5131975!4d-98.5558581!16s%2Fg%2F11lcyvmwm4!19sChIJl9Ss4fpDfWcRM1cSkEhtdHU?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Alamo City Construction & Supply LLC",
+      "rating": 4.5,
+      "address": "· 3902 S Presa St",
+      "phone": "· (210) 534-2851",
+      "website": "https://www.alamocityconstruction.com/",
+      "mapsLink": "https://www.google.com/maps/place/Alamo+City+Construction+%26+Supply+LLC/data=!4m7!3m6!1s0x865cf62c0ee2814f:0x1652e6f619b317a4!8m2!3d29.3849168!4d-98.4783506!16s%2Fg%2F1trsyfd1!19sChIJT4HiDiz2XIYRpBezGfbmUhY?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "GTex General Contracting",
+      "rating": 5,
+      "address": "· 10903 Gabriel's Pl",
+      "phone": "· (210) 902-1027",
+      "website": "https://www.gtexgc.com/",
+      "mapsLink": "https://www.google.com/maps/place/GTex+General+Contracting/data=!4m7!3m6!1s0x865c8b064231459b:0x3eac40386d6e79b7!8m2!3d29.539696!4d-98.442396!16s%2Fg%2F11h5mfmkh4!19sChIJm0UxQgaLXIYRt3lubThArD4?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Pearl Construction",
+      "rating": 5,
+      "address": "· 18911 Hardy Oak Blvd Suite 206",
+      "phone": "· (210) 371-0971",
+      "website": null,
+      "mapsLink": "https://www.google.com/maps/place/Pearl+Construction/data=!4m7!3m6!1s0x865c89d835f4ef5f:0x27a3f720cf1f1681!8m2!3d29.6181843!4d-98.4767441!16s%2Fg%2F11lq1cxgx1!19sChIJX-_0NdiJXIYRgRYfzyD3oyc?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "SATX Remodeling",
+      "rating": 4.6,
+      "address": "· 703 Westfall Ave",
+      "phone": "· (830) 428-5239",
+      "website": "https://www.satxremodeling.com/",
+      "mapsLink": "https://www.google.com/maps/place/SATX+Remodeling/data=!4m7!3m6!1s0x865cf73d6166778b:0x1346d0000064696!8m2!3d29.4030749!4d-98.4649657!16s%2Fg%2F11r2jt7rjv!19sChIJi3dmYT33XIYRlkYGAABtNAE?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Bexar General Contractors",
+      "rating": 5,
+      "address": "· 543 Morningview Dr",
+      "phone": "· (210) 823-2350",
+      "website": "http://www.bexargc.com/",
+      "mapsLink": "https://www.google.com/maps/place/Bexar+General+Contractors/data=!4m7!3m6!1s0x865cf70cfa4e8407:0x5ccd1df0faff22e8!8m2!3d29.410671!4d-98.42722!16s%2Fg%2F11fl0qlrz0!19sChIJB4RO-gz3XIYR6CL_-vAdzVw?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Turner Construction Co",
+      "rating": 4.2,
+      "address": "· 2002 N St Mary's St",
+      "phone": "· (210) 787-3120",
+      "website": "http://www.turnerconstruction.com/",
+      "mapsLink": "https://www.google.com/maps/place/Turner+Construction+Co/data=!4m7!3m6!1s0x865c67260ab9cf0f:0xad87e0ee9b83d9ce!8m2!3d29.4441381!4d-98.4855665!16s%2Fg%2F1ptxltl4h!19sChIJD8-5CiZnXIYRztmDm-7gh60?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Sam Construction Sites LLC",
+      "rating": 5,
+      "address": "· 10127 Morocco St #195",
+      "phone": "· (210) 723-5892",
+      "website": "http://samconstructionsites.com/",
+      "mapsLink": "https://www.google.com/maps/place/Sam+Construction+Sites+LLC/data=!4m7!3m6!1s0x865c61d5b0d225e7:0x885bd767f20d174b!8m2!3d29.5351997!4d-98.4929138!16s%2Fg%2F11kk7v_7wd!19sChIJ5yXSsNVhXIYRSxcN8mfXW4g?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Queta Construction Group, LLC",
+      "rating": 4.3,
+      "address": "· 1811 S Laredo St",
+      "phone": "(210) 810-8959",
+      "website": "https://qcgtx.com/",
+      "mapsLink": "https://www.google.com/maps/place/Queta+Construction+Group,+LLC/data=!4m7!3m6!1s0x865c59d2453993f1:0xa571051c6b206635!8m2!3d29.4121799!4d-98.5119233!16s%2Fg%2F11gy6n53rq!19sChIJ8ZM5RdJZXIYRNWYgaxwFcaU?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Marksmen General Contractors, LLC",
+      "rating": 5,
+      "address": "· 11550 I-10 Suite 375",
+      "phone": "· (210) 858-3125",
+      "website": "https://www.marksmengc.com/",
+      "mapsLink": "https://www.google.com/maps/place/Marksmen+General+Contractors,+LLC/data=!4m7!3m6!1s0x865c66b01c88a907:0xc6928194bbf77f77!8m2!3d29.5494371!4d-98.5872979!16s%2Fg%2F11c1n1ffmr!19sChIJB6mIHLBmXIYRd3_3u5SBksY?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Alpha Roofing & Construction Co",
+      "rating": 4.9,
+      "address": "· 7550 I-10 Frontage Rd Suite 800",
+      "phone": "· (210) 216-1111",
+      "website": "http://www.alphaconstructionfirm.com/",
+      "mapsLink": "https://www.google.com/maps/place/Alpha+Roofing+%26+Construction+Co/data=!4m7!3m6!1s0x865c5b3c1bfbac91:0x5023ad20b13182cc!8m2!3d29.5042202!4d-98.5513807!16s%2Fg%2F11j8mfsbqr!19sChIJkaz7GzxbXIYRzIIxsSCtI1A?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Apex Roofing & General Contractors",
+      "rating": 4.9,
+      "address": "· 8131 W Hausman Rd Ste 103",
+      "phone": "· (726) 727-7663",
+      "website": "https://apexroofing.biz/",
+      "mapsLink": "https://www.google.com/maps/place/Apex+Roofing+%26+General+Contractors/data=!4m7!3m6!1s0x43b795a2ebf8210d:0x5efd6f1162d16ff!8m2!3d29.5709647!4d-98.6482432!16s%2Fg%2F11tnbx55x6!19sChIJDSH466KVt0MR_xYtFvHW7wU?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Murphy Construction TX",
+      "rating": 5,
+      "address": "· 13423 Blanco Rd PMB 8049",
+      "phone": "· (210) 844-3516",
+      "website": "https://www.murphyconstructiontx.com/",
+      "mapsLink": "https://www.google.com/maps/place/Murphy+Construction+TX/data=!4m7!3m6!1s0x864529b63240ad2b:0x39ba95f36821d654!8m2!3d29.5709073!4d-98.5181744!16s%2Fg%2F11vf44fkl9!19sChIJK61AMrYpRYYRVNYhaPOVujk?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "JMI Contractors, LLC",
+      "rating": 4.4,
+      "address": "· 15586 Capital Prt Dr",
+      "phone": "· (210) 492-8181",
+      "website": "http://www.jmicontractors.com/",
+      "mapsLink": "https://www.google.com/maps/place/JMI+Contractors,+LLC/data=!4m7!3m6!1s0x865c66baf0a727eb:0xc6d71a38950ea7c9!8m2!3d29.5898115!4d-98.5853936!16s%2Fg%2F1tf71bwt!19sChIJ6yen8LpmXIYRyacOlTga18Y?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Statewide Remodeling - San Antonio",
+      "rating": 4.6,
+      "address": "· 1111 Arion Pkwy #120",
+      "phone": "· (210) 985-2562",
+      "website": "https://www.statewideremodeling.com/texas/san-antonio/?utm_source=gmb&utm_medium=Yext&y_source=1_NjY1MDE5MjUtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+      "mapsLink": "https://www.google.com/maps/place/Statewide+Remodeling+-+San+Antonio/data=!4m7!3m6!1s0x865c8bb8c2008281:0x1112cd08b8b9caee!8m2!3d29.5494423!4d-98.4772007!16s%2Fg%2F11fhvmn0v8!19sChIJgYIAwriLXIYR7sq5uAjNEhE?authuser=0&hl=en&rclk=1"
+    }
+  ]
+}

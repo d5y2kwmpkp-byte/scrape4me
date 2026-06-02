@@ -5,5 +5,12 @@
     "location": "Kyle, TX",
     "count": 38,
     "scrapedAt": "2026-06-02T05:41:04.924Z"
+  },
+  {
+    "filename": "general-contractors-san-antonio-tx.json",
+    "businessType": "general contractors",
+    "location": "San Antonio, TX",
+    "count": 38,
+    "scrapedAt": "2026-06-02T05:49:48.640Z"
   }
 ]
