@@ -2,8 +2,11 @@ const { chromium } = require("playwright");
 const fs = require("fs");
 const path = require("path");
 
-const location = process.argv[2] || "New York, NY";
+const location = process.argv[2] || "San Antonio, TX";
 const businessType = process.argv[3] || "general contractors";
+
+// Create a clean filename from business type
+const filename = businessType.toLowerCase().replace(/\s+/g, "-").replace(/[^a-z0-9\-]/g, "") + ".json";
 
 (async () => {
   console.log("Searching for: " + businessType + " near " + location);
@@ -79,18 +82,43 @@ const businessType = process.argv[3] || "general contractors";
   await browser.close();
   console.log("Found " + locations.length + " results");
 
+  // Also update an index file so the app knows what categories exist
+  const indexPath = path.join(process.cwd(), "data/index.json");
+  let index = [];
+  try {
+    index = JSON.parse(fs.readFileSync(indexPath, "utf8"));
+  } catch (e) {}
+
+  const existing = index.find((i) => i.filename === filename);
+  if (existing) {
+    existing.count = locations.length;
+    existing.scrapedAt = new Date().toISOString();
+    existing.location = location;
+  } else {
+    index.push({
+      filename,
+      businessType,
+      location,
+      count: locations.length,
+      scrapedAt: new Date().toISOString(),
+    });
+  }
+  fs.writeFileSync(indexPath, JSON.stringify(index, null, 2));
+
   const output = {
     success: true,
     query: searchQuery,
+    businessType,
+    location,
     scrapedAt: new Date().toISOString(),
     count: locations.length,
     locations,
   };
 
   fs.writeFileSync(
-    path.join(process.cwd(), "data/locations.json"),
+    path.join(process.cwd(), "data", filename),
     JSON.stringify(output, null, 2)
   );
 
-  console.log("Done");
+  console.log("Saved to data/" + filename);
 })();
