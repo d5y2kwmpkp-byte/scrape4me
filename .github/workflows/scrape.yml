@@ -8,9 +8,13 @@ on:
         required: true
         default: 'New York, NY'
 
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
 
     steps:
       - name: Checkout repo
