@@ -3,9 +3,10 @@ const fs = require("fs");
 const path = require("path");
 
 const location = process.argv[2] || "New York, NY";
+const businessType = process.argv[3] || "general contractors";
 
 (async () => {
-  console.log("Scraping Dominos near: " + location);
+  console.log("Searching for: " + businessType + " near " + location);
 
   const browser = await chromium.launch({ headless: true });
   const context = await browser.newContext({
@@ -17,18 +18,18 @@ const location = process.argv[2] || "New York, NY";
 
   await page.route("**/*.{png,jpg,jpeg,gif,svg,woff,woff2,ttf}", (route) => route.abort());
 
-  const searchQuery = "Dominos Pizza near " + location;
+  const searchQuery = businessType + " near " + location;
   const mapsUrl = "https://www.google.com/maps/search/" + encodeURIComponent(searchQuery);
 
   console.log("Navigating to: " + mapsUrl);
-  await page.goto(mapsUrl, { waitUntil: "networkidle", timeout: 30000 });
-
+  await page.goto(mapsUrl, { waitUntil: "domcontentloaded", timeout: 30000 });
+  await page.waitForTimeout(3000);
   await page.waitForSelector('[role="feed"]', { timeout: 15000 });
   console.log("Results loaded, scrolling...");
 
   const feed = await page.$('[role="feed"]');
   if (feed) {
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 8; i++) {
       await feed.evaluate((el) => el.scrollBy(0, 800));
       await page.waitForTimeout(1200);
     }
@@ -36,27 +37,47 @@ const location = process.argv[2] || "New York, NY";
 
   fs.mkdirSync(path.join(process.cwd(), "data"), { recursive: true });
   await page.screenshot({ path: "data/debug.png" });
-  console.log("Screenshot saved");
 
   const locations = await page.evaluate(() => {
     const results = [];
     const items = document.querySelectorAll('[role="feed"] > div');
+
     items.forEach((item) => {
       const nameEl = item.querySelector(".fontHeadlineSmall");
       if (!nameEl) return;
       const name = nameEl.textContent.trim();
-      if (!name.toLowerCase().includes("domino")) return;
+      if (!name) return;
+
+      const ratingEl = item.querySelector('[role="img"][aria-label*="star"]');
+      const rating = ratingEl
+        ? ratingEl.getAttribute("aria-label")?.match(/[\d.]+/)?.[0]
+        : null;
+
+      const spans = Array.from(item.querySelectorAll(".W4Efsd span"))
+        .map((el) => el.textContent.trim())
+        .filter((t) => t && t !== "·" && t.length > 1);
+
+      const address = spans.find((s) => /\d/.test(s) && s.includes(" ")) || null;
+      const phone = spans.find((s) => /\(?\d{3}\)?[\s\-]\d{3}[\s\-]\d{4}/.test(s)) || null;
+
       const linkEl = item.querySelector("a[href*='/maps/place/']");
+      const websiteEl = item.querySelector("a[href*='http']:not([href*='google'])");
+
       results.push({
         name,
-        link: linkEl ? linkEl.href : null,
+        rating: rating ? parseFloat(rating) : null,
+        address,
+        phone,
+        website: websiteEl ? websiteEl.href : null,
+        mapsLink: linkEl ? linkEl.href : null,
       });
     });
+
     return results;
   });
 
   await browser.close();
-  console.log("Found " + locations.length + " locations");
+  console.log("Found " + locations.length + " results");
 
   const output = {
     success: true,
