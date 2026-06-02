@@ -21,7 +21,7 @@ export default async function handler(req, res) {
     browser = await playwrightChromium.launch({
       args: chromium.args,
       executablePath: await chromium.executablePath(),
-      headless: chromium.headless,
+      headless: true,
     });
 
     const context = await browser.newContext({
