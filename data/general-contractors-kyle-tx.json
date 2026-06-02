@@ -1,0 +1,314 @@
+{
+  "success": true,
+  "query": "general contractors near Kyle, TX",
+  "businessType": "general contractors",
+  "location": "Kyle, TX",
+  "scrapedAt": "2026-06-02T06:34:00.481Z",
+  "count": 38,
+  "locations": [
+    {
+      "name": "NL Constructors LLC",
+      "rating": 5,
+      "address": "· 1384 Sweet Gum Dr",
+      "phone": "· (512) 781-1495",
+      "website": "https://nlconstructors.com/",
+      "mapsLink": "https://www.google.com/maps/place/NL+Constructors+LLC/data=!4m7!3m6!1s0x236058e52d1c3295:0x26535b4c0698c0bc!8m2!3d30.0062957!4d-97.8919661!16s%2Fg%2F11y51_8vxm!19sChIJlTIcLeVYYCMRvMCYBkxbUyY?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "frayre construction LLC",
+      "rating": 5,
+      "address": "· 112 Storm Ct",
+      "phone": "· (512) 761-1540",
+      "website": "http://www.frayreconstruction.com/",
+      "mapsLink": "https://www.google.com/maps/place/frayre+construction+LLC/data=!4m7!3m6!1s0x865b554e3de7052d:0x95a6ae40a627df8f!8m2!3d29.9979275!4d-97.8006747!16s%2Fg%2F11rhq8vyfg!19sChIJLQXnPU5VW4YRj98npkCuppU?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "CAPITOL CURATED CONSTRUCTION",
+      "rating": 4.9,
+      "address": "Closed · Opens 7 AM",
+      "phone": null,
+      "website": null,
+      "mapsLink": "https://www.google.com/maps/place/CAPITOL+CURATED+CONSTRUCTION/data=!4m7!3m6!1s0xa548d38f88a95f8b:0x22eb212a6039307f!8m2!3d30.0288658!4d-97.84469!16s%2Fg%2F11pdxjp7fk!19sChIJi1-piI_TSKURfzA5YCoh6yI?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Hays General Contractors",
+      "rating": 5,
+      "address": "· 1361 Sweet Gum Dr",
+      "phone": "· (512) 902-8790",
+      "website": "https://www.haysgctx.com/",
+      "mapsLink": "https://www.google.com/maps/place/Hays+General+Contractors/data=!4m7!3m6!1s0x865b56b654022e7d:0xaff6ecc90e2b09b6!8m2!3d30.0060624!4d-97.8915025!16s%2Fg%2F11p0vxtw9k!19sChIJfS4CVLZWW4YRtgkrDsns9q8?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "1626 Construction",
+      "rating": 5,
+      "address": "· 940 Farm to Market 1626",
+      "phone": "· (512) 663-5020",
+      "website": "http://www.1626construction.com/",
+      "mapsLink": "https://www.google.com/maps/place/1626+Construction/data=!4m7!3m6!1s0x4b7e7f07c8bbeb0f:0xdfca1104ed20f111!8m2!3d30.0873193!4d-97.8746566!16s%2Fg%2F11rwlwkkcn!19sChIJD-u7yAd_fksREfEg7QQRyt8?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Kellett Norris Custom Contracting",
+      "rating": 4.9,
+      "address": "· 3300 Dacy Ln Suite 607",
+      "phone": "· (512) 777-6468",
+      "website": "https://www.kncustomcontracting.com/",
+      "mapsLink": "https://www.google.com/maps/place/Kellett+Norris+Custom+Contracting/data=!4m7!3m6!1s0x21b434f21b0821fb:0x4e9c36a006ff6aaf!8m2!3d30.017906!4d-97.833789!16s%2Fg%2F11v08m2zmh!19sChIJ-yEIG_I0tCERr2r_BqA2nE4?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "SkyDeck Roofing & Construction LLC",
+      "rating": 5,
+      "address": "· 144 Ruidoso Rd",
+      "phone": "· (512) 354-9254",
+      "website": "http://skydeckroofingpros.com/",
+      "mapsLink": "https://www.google.com/maps/place/SkyDeck+Roofing+%26+Construction+LLC/data=!4m7!3m6!1s0xa6ef97ff5715d5b1:0x13a240fb7280e8e6!8m2!3d30.0021267!4d-97.8632776!16s%2Fg%2F11vb4vfj4f!19sChIJsdUVV_-X76YR5uiAcvtAohM?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Elevated Construction LLC",
+      "rating": 5,
+      "address": "· 200 Lehman Rd Suite 200",
+      "phone": null,
+      "website": "http://www.elevatedconstruction.com/",
+      "mapsLink": "https://www.google.com/maps/place/Elevated+Construction+LLC/data=!4m7!3m6!1s0x865b53d5afd67343:0x8bdda76b456c5a1e!8m2!3d29.9822437!4d-97.8671858!16s%2Fg%2F11fwbjg4v7!19sChIJQ3PWr9VTW4YRHlpsRWun3Ys?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Texas Twins Contractors",
+      "rating": 4.9,
+      "address": "Closed · Opens 8 AM",
+      "phone": "· (512) 574-2312",
+      "website": "https://www.twincontractors.com/",
+      "mapsLink": "https://www.google.com/maps/place/Texas+Twins+Contractors/data=!4m7!3m6!1s0xad62fd0e387248c5:0xc2a072d96fb9b1f0!8m2!3d30.1852565!4d-97.688058!16s%2Fg%2F11t9lbq3rw!19sChIJxUhyOA79Yq0R8LG5b9lyoMI?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Hays General Contractors",
+      "rating": 4.7,
+      "address": "Closed · Opens 7 AM",
+      "phone": "· (512) 902-8790",
+      "website": "https://www.haysgctx.com/",
+      "mapsLink": "https://www.google.com/maps/place/Hays+General+Contractors/data=!4m7!3m6!1s0x865b577690428437:0x3653f730497e0817!8m2!3d29.9967895!4d-97.9810335!16s%2Fg%2F11hf4qxht4!19sChIJN4RCkHZXW4YRFwh-STD3UzY?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Unicus Construction",
+      "rating": 5,
+      "address": "Closed · Opens 8 AM",
+      "phone": "· (512) 262-0025",
+      "website": null,
+      "mapsLink": "https://www.google.com/maps/place/Unicus+Construction/data=!4m7!3m6!1s0xd202823b075d71d:0x2c7d770a6e20f17b!8m2!3d30.1627574!4d-97.7810955!16s%2Fg%2F11y5_ml8vd!19sChIJHdd1sCMoIA0Re_Egbgp3fSw?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "A. Varela's family construction",
+      "rating": 5,
+      "address": "· 116 Alexis Way",
+      "phone": "· (312) 966-1063",
+      "website": "https://vamonosaustin.com/",
+      "mapsLink": "https://www.google.com/maps/place/A.+Varela%27s+family+construction/data=!4m7!3m6!1s0x865b57642a64b795:0x863376b460e38377!8m2!3d30.0072636!4d-97.8755165!16s%2Fg%2F11y724gsgr!19sChIJlbdkKmRXW4YRd4PjYLR2M4Y?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Construction Metal Products",
+      "rating": 4.9,
+      "address": "· 23971 I-35",
+      "phone": null,
+      "website": null,
+      "mapsLink": "https://www.google.com/maps/place/Construction+Metal+Products/data=!4m7!3m6!1s0x865b569e0bb2357b:0xe807d9ba3a3190ca!8m2!3d29.9646985!4d-97.8745058!16s%2Fg%2F1tk682y5!19sChIJezWyC55WW4YRypAxOrrZB-g?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Sons of Texas Construction & Remodeling",
+      "rating": 5,
+      "address": "Closed · Opens 9 AM",
+      "phone": "· (512) 348-2605",
+      "website": "http://www.sotconstruction.com/",
+      "mapsLink": "https://www.google.com/maps/place/Sons+of+Texas+Construction+%26+Remodeling/data=!4m7!3m6!1s0xa19566dc42d6e15b:0xf24d056d401c0413!8m2!3d31.3187944!4d-97.747545!16s%2Fg%2F11xtzgz9v3!19sChIJW-HWQtxmlaEREwQcQG0FTfI?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Ortiz Construction Group",
+      "rating": 5,
+      "address": "· 23703 Interstate 35 Frontage Rd",
+      "phone": "· (512) 262-7131",
+      "website": "https://ocgconstructiontx.com/",
+      "mapsLink": "https://www.google.com/maps/place/Ortiz+Construction+Group/data=!4m7!3m6!1s0x865b5505785eb347:0x1c304bfd7599bb4f!8m2!3d29.9668936!4d-97.8721194!16s%2Fg%2F11ms9pt04s!19sChIJR7NeeAVVW4YRT7uZdf1LMBw?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "CDG Restoration & Construction",
+      "rating": 4.4,
+      "address": "· 701 Philomena Dr.",
+      "phone": "· (512) 522-0552",
+      "website": "http://www.cdgaustin.com/",
+      "mapsLink": "https://www.google.com/maps/place/CDG+Restoration+%26+Construction/data=!4m7!3m6!1s0x865b521d009baa97:0x63875c773efab955!8m2!3d29.9985685!4d-97.8654795!16s%2Fg%2F11h9xl9km_!19sChIJl6qbAB1SW4YRVbn6Pndch2M?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "MDS Construction Inc",
+      "rating": 5,
+      "address": "· 6611 E Post Rd",
+      "phone": "· (512) 297-4407",
+      "website": "https://www.mdsconstruction.net/",
+      "mapsLink": "https://www.google.com/maps/place/MDS+Construction+Inc/data=!4m7!3m6!1s0x865b5394c0d37ffb:0x43aa9ea185d74f02!8m2!3d29.9627054!4d-97.872026!16s%2Fg%2F11ghr0rst2!19sChIJ-3_TwJRTW4YRAk_XhaGeqkM?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "TrueTex Roofing",
+      "rating": 5,
+      "address": "· 1050 Wittenburg",
+      "phone": "· (737) 210-5077",
+      "website": "https://truetexroofing.com/",
+      "mapsLink": "https://www.google.com/maps/place/TrueTex+Roofing/data=!4m7!3m6!1s0xe0e824b80d37559:0xa4da6943c71b0b64!8m2!3d30.0229585!4d-97.8740621!16s%2Fg%2F11mkvtcdlg!19sChIJWXXTgEuCDg4RZAsbx0Np2qQ?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Advantage Contracting, LLC",
+      "rating": 4.8,
+      "address": "Closed · Opens 9 AM",
+      "phone": "· (512) 987-1738",
+      "website": null,
+      "mapsLink": "https://www.google.com/maps/place/Advantage+Contracting,+LLC/data=!4m7!3m6!1s0x865b5300800bd343:0x2d7229261432d8d0!8m2!3d30.1852565!4d-97.8497811!16s%2Fg%2F11fr0vvvsp!19sChIJQ9MLgABTW4YR0NgyFCYpci0?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Top Notch Construction, LLC",
+      "rating": 3,
+      "address": "· 1083 Dorn",
+      "phone": "· (737) 770-1303",
+      "website": null,
+      "mapsLink": "https://www.google.com/maps/place/Top+Notch+Construction,+LLC/data=!4m7!3m6!1s0x865b51292826da1b:0x4178aa3ddae232dc!8m2!3d30.0274951!4d-97.8858303!16s%2Fg%2F11p3g6zflh!19sChIJG9omKClRW4YR3DLi2j2qeEE?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Talavera by D.R. Horton",
+      "rating": 4.9,
+      "address": "· 116 Caddo Bnd",
+      "phone": "· (512) 842-6645",
+      "website": null,
+      "mapsLink": "https://www.google.com/maps/place/Talavera+by+D.R.+Horton/data=!4m7!3m6!1s0x865b5599c02d1051:0xccc930a807357087!8m2!3d29.9943318!4d-97.8416079!16s%2Fg%2F11sycy_x6c!19sChIJURAtwJlVW4YRh3A1B6gwycw?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Dean Contracting",
+      "rating": 3.8,
+      "address": "· 340 Co Rd 158",
+      "phone": "· (512) 268-1233",
+      "website": "http://www.deancoroof.com/",
+      "mapsLink": "https://www.google.com/maps/place/Dean+Contracting/data=!4m7!3m6!1s0x865b55d57469380b:0x2d4238df757777a!8m2!3d29.96841!4d-97.8705841!16s%2Fg%2F1w4560gg!19sChIJCzhpdNVVW4YRendX940j1AI?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Unicus Construction",
+      "rating": 5,
+      "address": "Closed · Opens 8 AM",
+      "phone": "· (512) 262-0025",
+      "website": null,
+      "mapsLink": "https://www.google.com/maps/place/Unicus+Construction/data=!4m7!3m6!1s0xd202823b075d71d:0x2c7d770a6e20f17b!8m2!3d30.1627574!4d-97.7810955!16s%2Fg%2F11y5_ml8vd!19sChIJHdd1sCMoIA0Re_Egbgp3fSw?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "GP RemodelingServices",
+      "rating": 5,
+      "address": "· 181 Maroon Ln",
+      "phone": "· (512) 756-3469",
+      "website": null,
+      "mapsLink": "https://www.google.com/maps/place/GP+RemodelingServices/data=!4m7!3m6!1s0x865b53e26b9d3deb:0x8ca129fa7e3da7c7!8m2!3d30.0212159!4d-97.8415762!16s%2Fg%2F11j_1w8gdm!19sChIJ6z2da-JTW4YRx6c9fvopoYw?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Ortiz Construction Group",
+      "rating": 5,
+      "address": "· 23703 Interstate 35 Frontage Rd",
+      "phone": "· (512) 262-7131",
+      "website": "https://ocgconstructiontx.com/",
+      "mapsLink": "https://www.google.com/maps/place/Ortiz+Construction+Group/data=!4m7!3m6!1s0x865b5505785eb347:0x1c304bfd7599bb4f!8m2!3d29.9668936!4d-97.8721194!16s%2Fg%2F11ms9pt04s!19sChIJR7NeeAVVW4YRT7uZdf1LMBw?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "S&K Handyman Services LLC",
+      "rating": 4.8,
+      "address": "Closed · Opens 9 AM",
+      "phone": "· (737) 877-2973",
+      "website": "https://skconstruction137.wixsite.com/website",
+      "mapsLink": "https://www.google.com/maps/place/S%26K+Handyman+Services+LLC/data=!4m7!3m6!1s0x865b56a4907aba53:0xcec3c41aa8d2599c!8m2!3d29.9988529!4d-97.8809364!16s%2Fg%2F11hcdvln6d!19sChIJU7p6kKRWW4YRnFnSqBrEw84?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Murray Buildings & Cabins",
+      "rating": 4.5,
+      "address": "· 24501 I-35",
+      "phone": "· (512) 268-8201",
+      "website": "http://www.murraybuildings-derksen.com/",
+      "mapsLink": "https://www.google.com/maps/place/Murray+Buildings+%26+Cabins/data=!4m7!3m6!1s0x865b567741c3969d:0xd12fe493a58b6f71!8m2!3d29.9568565!4d-97.876655!16s%2Fg%2F11d_wmfkp8!19sChIJnZbDQXdWW4YRcW-LpZPkL9E?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Highland Homes 6 Creeks at Waterridge",
+      "rating": 4.9,
+      "address": "· Creeks at Waterridge, 112 High Rock Pass #6",
+      "phone": "· (512) 605-6666",
+      "website": "https://www.highlandhomes.com/austin/kyle/6-creeks-at-waterridge",
+      "mapsLink": "https://www.google.com/maps/place/Highland+Homes+6+Creeks+at+Waterridge/data=!4m7!3m6!1s0x865b5117c9832997:0xdf3d61f8102be126!8m2!3d30.0055731!4d-97.9047673!16s%2Fg%2F11j8zfpyc9!19sChIJlymDyRdRW4YRJuErEPhhPd8?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Advantage Contracting, LLC",
+      "rating": 4.8,
+      "address": "Closed · Opens 9 AM",
+      "phone": "· (512) 987-1738",
+      "website": null,
+      "mapsLink": "https://www.google.com/maps/place/Advantage+Contracting,+LLC/data=!4m7!3m6!1s0x865b5300800bd343:0x2d7229261432d8d0!8m2!3d30.1852565!4d-97.8497811!16s%2Fg%2F11fr0vvvsp!19sChIJQ9MLgABTW4YR0NgyFCYpci0?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Briggs Construction Co",
+      "rating": 5,
+      "address": "· 2210 Hunter Rd",
+      "phone": "· (512) 353-1251",
+      "website": "http://www.briggsconstructionsanmarcos.com/",
+      "mapsLink": "https://www.google.com/maps/place/Briggs+Construction+Co/data=!4m7!3m6!1s0x865ca62f33da25ef:0xd721431c3ba0fa1b!8m2!3d29.8624787!4d-97.964903!16s%2Fg%2F1ts1snfb!19sChIJ7yXaMy-mXIYRG_qgOxxDIdc?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Like New Building Solutions",
+      "rating": 5,
+      "address": "Closed · Opens 7 AM",
+      "phone": "· (512) 595-6136",
+      "website": "https://likenewbs.com/",
+      "mapsLink": "https://www.google.com/maps/place/Like+New+Building+Solutions/data=!4m7!3m6!1s0x865b570e55292635:0x36c69a7e0a7bf600!8m2!3d29.850971!4d-98.1705181!16s%2Fg%2F11f5_hyc3p!19sChIJNSYpVQ5XW4YRAPZ7Cn6axjY?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Restoration Builders of Texas",
+      "rating": 3.9,
+      "address": "· 3875 Science Hall Lp",
+      "phone": "· (512) 246-8600",
+      "website": "https://restorbuilders.com/locations/kyle-texas/",
+      "mapsLink": "https://www.google.com/maps/place/Restoration+Builders+of+Texas/data=!4m7!3m6!1s0x865b538055e5df67:0x2abce866d7183b3b!8m2!3d30.0261779!4d-97.8297255!16s%2Fg%2F1q629d69f!19sChIJZ9_lVYBTW4YROzsY12bovCo?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Gonzalez Drywall LLC",
+      "rating": 5,
+      "address": "· 291 Roland Ln",
+      "phone": "· (512) 789-0171",
+      "website": "https://drywallcontractorkyletx.com/",
+      "mapsLink": "https://www.google.com/maps/place/Gonzalez+Drywall+LLC/data=!4m7!3m6!1s0x865b566e2d3fdaf7:0xc6bd0d1c4bcf2b!8m2!3d29.954657!4d-97.883651!16s%2Fg%2F11l5tm6778!19sChIJ99o_LW5WW4YRK89LHA29xgA?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Garner Heating & Air Conditioning Inc",
+      "rating": 4.9,
+      "address": "· 731 Roland Ln",
+      "phone": "· (512) 392-2000",
+      "website": "https://garnerac.com/?utm_source=gmb&utm_medium=organic",
+      "mapsLink": "https://www.google.com/maps/place/Garner+Heating+%26+Air+Conditioning+Inc/data=!4m7!3m6!1s0x865b566f8c305c8d:0xcb92b28dc81babf0!8m2!3d29.9648802!4d-97.8837785!16s%2Fg%2F1tcwrkg8!19sChIJjVwwjG9WW4YR8KsbyI2ykss?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "JustINTime Handyman Service LLC",
+      "rating": 4.9,
+      "address": "Closed · Opens 7 AM",
+      "phone": "· (512) 831-1491",
+      "website": "https://justintimehandymantx.com/",
+      "mapsLink": "https://www.google.com/maps/place/JustINTime+Handyman+Service+LLC/data=!4m7!3m6!1s0x865b51f93b0392d5:0x5aa35551d3107d00!8m2!3d31.3922934!4d-97.667009!16s%2Fg%2F11p_34ck2n!19sChIJ1ZIDO_lRW4YRAH0Q01FVo1o?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "MDS Construction Inc",
+      "rating": 5,
+      "address": "· 6611 E Post Rd",
+      "phone": "· (512) 297-4407",
+      "website": "https://www.mdsconstruction.net/",
+      "mapsLink": "https://www.google.com/maps/place/MDS+Construction+Inc/data=!4m7!3m6!1s0x865b5394c0d37ffb:0x43aa9ea185d74f02!8m2!3d29.9627054!4d-97.872026!16s%2Fg%2F11ghr0rst2!19sChIJ-3_TwJRTW4YRAk_XhaGeqkM?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "NDM General Construction",
+      "rating": 5,
+      "address": "Closed · Opens 8 AM",
+      "phone": "· (737) 404-8577",
+      "website": "http://www.ndmconstruction.com/",
+      "mapsLink": "https://www.google.com/maps/place/NDM+General+Construction/data=!4m7!3m6!1s0x865b534abfe3f4cd:0x364a49d766cbc835!8m2!3d30.1352555!4d-97.9565229!16s%2Fg%2F11jg5mmxhq!19sChIJzfTjv0pTW4YRNcjLZtdJSjY?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Acero Construction Services, Inc.",
+      "rating": 2.8,
+      "address": "· 400 Bunton Creek Rd",
+      "phone": "· (512) 268-2831",
+      "website": "http://acerocs.com/",
+      "mapsLink": "https://www.google.com/maps/place/Acero+Construction+Services,+Inc./data=!4m7!3m6!1s0x865b540fcd8a2829:0xc298934054ffaa19!8m2!3d30.005141!4d-97.8578324!16s%2Fg%2F11bvcvkc7k!19sChIJKSiKzQ9UW4YRGar_VECTmMI?authuser=0&hl=en&rclk=1"
+    }
+  ]
+}
