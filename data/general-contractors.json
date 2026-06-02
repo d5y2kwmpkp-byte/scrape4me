@@ -1,314 +1,314 @@
 {
   "success": true,
-  "query": "general contractors near New Braunfels, TX",
+  "query": "general contractors near Kyle, TX",
   "businessType": "general contractors",
-  "location": "New Braunfels, TX",
-  "scrapedAt": "2026-06-02T05:39:02.920Z",
+  "location": "Kyle, TX",
+  "scrapedAt": "2026-06-02T05:41:04.924Z",
   "count": 38,
   "locations": [
     {
-      "name": "AAA Construction Company",
-      "rating": 4.6,
-      "address": "· 2728 Big Oak",
-      "phone": "· (830) 799-8939",
-      "website": null,
-      "mapsLink": "https://www.google.com/maps/place/AAA+Construction+Company/data=!4m7!3m6!1s0x865c970052d43ea3:0xc49f420ba325706!8m2!3d29.719059!4d-98.1644741!16s%2Fg%2F11vk2z_scf!19sChIJoz7UUgCXXIYRBlcyuiD0SQw?authuser=0&hl=en&rclk=1"
-    },
-    {
-      "name": "SmithCo General Contractor",
-      "rating": 4.8,
-      "address": "· 825 Manhattan",
-      "phone": "· (830) 312-2485",
-      "website": "http://www.smithco.biz/",
-      "mapsLink": "https://www.google.com/maps/place/SmithCo+General+Contractor/data=!4m7!3m6!1s0x865b6215a81286c7:0xb5d229813372d07b!8m2!3d29.7065937!4d-98.1024488!16s%2Fg%2F11bw1z8qx5!19sChIJx4YSqBViW4YRe9ByM4Ep0rU?authuser=0&hl=en&rclk=1"
-    },
-    {
-      "name": "GrayBrook Construction",
+      "name": "NL Constructors LLC",
       "rating": 5,
-      "address": "· 923 Kroesche Ln",
-      "phone": "· (830) 214-6349",
-      "website": "http://www.graybrook.org/",
-      "mapsLink": "https://www.google.com/maps/place/GrayBrook+Construction/data=!4m7!3m6!1s0x2e7881517d2e9141:0x72d1debd1d7794e5!8m2!3d29.7326392!4d-98.0443814!16s%2Fg%2F11pyqs5w7_!19sChIJQZEufVGBeC4R5ZR3Hb3e0XI?authuser=0&hl=en&rclk=1"
+      "address": "· 1384 Sweet Gum Dr",
+      "phone": "· (512) 781-1495",
+      "website": "https://nlconstructors.com/",
+      "mapsLink": "https://www.google.com/maps/place/NL+Constructors+LLC/data=!4m7!3m6!1s0x236058e52d1c3295:0x26535b4c0698c0bc!8m2!3d30.0062957!4d-97.8919661!16s%2Fg%2F11y51_8vxm!19sChIJlTIcLeVYYCMRvMCYBkxbUyY?authuser=0&hl=en&rclk=1"
     },
     {
-      "name": "Patriot Construction and Remodeling",
-      "rating": 4.8,
-      "address": "· 1393 Wald Rd",
-      "phone": "· (830) 620-0200",
-      "website": "http://patriot-remodeling.com/",
-      "mapsLink": "https://www.google.com/maps/place/Patriot+Construction+and+Remodeling/data=!4m7!3m6!1s0x865c97ba8b014375:0x15d0427ce5e206a6!8m2!3d29.6890784!4d-98.1638062!16s%2Fg%2F11bwfm825h!19sChIJdUMBi7qXXIYRpgbi5XxC0BU?authuser=0&hl=en&rclk=1"
-    },
-    {
-      "name": "Nexgen Construction",
-      "rating": 4.9,
-      "address": "· 2961 I 35 N Frontage Rd",
-      "phone": "· (830) 837-2062",
-      "website": "https://www.nexgenconstructionnb.com/",
-      "mapsLink": "https://www.google.com/maps/place/Nexgen+Construction/data=!4m7!3m6!1s0x865c979a4448a63f:0x1ab0a18a0bd4ed0f!8m2!3d29.678193!4d-98.1479396!16s%2Fg%2F11x0hwf63v!19sChIJP6ZIRJqXXIYRD-3UC4qhsBo?authuser=0&hl=en&rclk=1"
-    },
-    {
-      "name": "Long View Construction Services",
+      "name": "Hays General Contractors",
       "rating": 5,
-      "address": "· 35 Nafta Cir STE 325",
-      "phone": "· (866) 381-6186",
-      "website": "http://www.longviewbuilt.com/",
-      "mapsLink": "https://www.google.com/maps/place/Long+View+Construction+Services/data=!4m7!3m6!1s0x865c9791ce3759b1:0x6bb9a796119b46a2!8m2!3d29.6504712!4d-98.1853117!16s%2Fg%2F11yhfzmnhf!19sChIJsVk3zpGXXIYRokabEZanuWs?authuser=0&hl=en&rclk=1"
+      "address": "· 1361 Sweet Gum Dr",
+      "phone": "· (512) 902-8790",
+      "website": "https://www.haysgctx.com/",
+      "mapsLink": "https://www.google.com/maps/place/Hays+General+Contractors/data=!4m7!3m6!1s0x865b56b654022e7d:0xaff6ecc90e2b09b6!8m2!3d30.0060624!4d-97.8915025!16s%2Fg%2F11p0vxtw9k!19sChIJfS4CVLZWW4YRtgkrDsns9q8?authuser=0&hl=en&rclk=1"
     },
     {
-      "name": "Awesome Contracting",
+      "name": "CAPITOL CURATED CONSTRUCTION",
       "rating": 4.9,
-      "address": "· 3824 Wegner Rd",
+      "address": "Closed · Opens 7 AM",
       "phone": null,
-      "website": "https://acs-tx.com/",
-      "mapsLink": "https://www.google.com/maps/place/Awesome+Contracting/data=!4m7!3m6!1s0x7939ac58b8170c3:0xadf5dcaeba205173!8m2!3d29.8537856!4d-98.0766755!16s%2Fg%2F11vyp9zp5g!19sChIJw3CBi8WakwcRc1Eguq7c9a0?authuser=0&hl=en&rclk=1"
+      "website": null,
+      "mapsLink": "https://www.google.com/maps/place/CAPITOL+CURATED+CONSTRUCTION/data=!4m7!3m6!1s0xa548d38f88a95f8b:0x22eb212a6039307f!8m2!3d30.0288658!4d-97.84469!16s%2Fg%2F11pdxjp7fk!19sChIJi1-piI_TSKURfzA5YCoh6yI?authuser=0&hl=en&rclk=1"
     },
     {
-      "name": "Texas Hill Country Remodeling LLC",
-      "rating": 4.9,
-      "address": "· 2320 Cedar Grove St",
-      "phone": "· (830) 387-0912",
-      "website": "https://txhillcountryremodeling.com/",
-      "mapsLink": "https://www.google.com/maps/place/Texas+Hill+Country+Remodeling+LLC/data=!4m7!3m6!1s0x865cbd601b01b65b:0xa2a6b89f191cb254!8m2!3d29.7179948!4d-98.1949862!16s%2Fg%2F11fcs_05xy!19sChIJW7YBG2C9XIYRVLIcGZ-4pqI?authuser=0&hl=en&rclk=1"
-    },
-    {
-      "name": "Texas Hill Country Construction",
-      "rating": 4.1,
-      "address": "· 10703 Steubing Cir",
-      "phone": "· (830) 632-5411",
-      "website": "https://texashillcountryconstruction.com/",
-      "mapsLink": "https://www.google.com/maps/place/Texas+Hill+Country+Construction/data=!4m7!3m6!1s0x865c97c21afeaaab:0x17dc66428b356576!8m2!3d29.7045514!4d-98.2723681!16s%2Fg%2F11ggc14fms!19sChIJq6r-GsKXXIYRdmU1i0Jm3Bc?authuser=0&hl=en&rclk=1"
-    },
-    {
-      "name": "South Texas Construction and Consulting LLC",
+      "name": "frayre construction LLC",
       "rating": 5,
+      "address": "· 112 Storm Ct",
+      "phone": "· (512) 761-1540",
+      "website": "http://www.frayreconstruction.com/",
+      "mapsLink": "https://www.google.com/maps/place/frayre+construction+LLC/data=!4m7!3m6!1s0x865b554e3de7052d:0x95a6ae40a627df8f!8m2!3d29.9979275!4d-97.8006747!16s%2Fg%2F11rhq8vyfg!19sChIJLQXnPU5VW4YRj98npkCuppU?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "1626 Construction",
+      "rating": 5,
+      "address": "· 940 Farm to Market 1626",
+      "phone": "· (512) 663-5020",
+      "website": "http://www.1626construction.com/",
+      "mapsLink": "https://www.google.com/maps/place/1626+Construction/data=!4m7!3m6!1s0x4b7e7f07c8bbeb0f:0xdfca1104ed20f111!8m2!3d30.0873193!4d-97.8746566!16s%2Fg%2F11rwlwkkcn!19sChIJD-u7yAd_fksREfEg7QQRyt8?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Elevated Construction LLC",
+      "rating": 5,
+      "address": "· 200 Lehman Rd Suite 200",
+      "phone": null,
+      "website": "http://www.elevatedconstruction.com/",
+      "mapsLink": "https://www.google.com/maps/place/Elevated+Construction+LLC/data=!4m7!3m6!1s0x865b53d5afd67343:0x8bdda76b456c5a1e!8m2!3d29.9822437!4d-97.8671858!16s%2Fg%2F11fwbjg4v7!19sChIJQ3PWr9VTW4YRHlpsRWun3Ys?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Kellett Norris Custom Contracting",
+      "rating": 4.9,
+      "address": "· 3300 Dacy Ln Suite 607",
+      "phone": "· (512) 777-6468",
+      "website": "https://www.kncustomcontracting.com/",
+      "mapsLink": "https://www.google.com/maps/place/Kellett+Norris+Custom+Contracting/data=!4m7!3m6!1s0x21b434f21b0821fb:0x4e9c36a006ff6aaf!8m2!3d30.017906!4d-97.833789!16s%2Fg%2F11v08m2zmh!19sChIJ-yEIG_I0tCERr2r_BqA2nE4?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "SkyDeck Roofing & Construction LLC",
+      "rating": 5,
+      "address": "· 144 Ruidoso Rd",
+      "phone": "· (512) 354-9254",
+      "website": "http://skydeckroofingpros.com/",
+      "mapsLink": "https://www.google.com/maps/place/SkyDeck+Roofing+%26+Construction+LLC/data=!4m7!3m6!1s0xa6ef97ff5715d5b1:0x13a240fb7280e8e6!8m2!3d30.0021267!4d-97.8632776!16s%2Fg%2F11vb4vfj4f!19sChIJsdUVV_-X76YR5uiAcvtAohM?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Hays General Contractors",
+      "rating": 4.7,
       "address": "Closed · Opens 7 AM",
-      "phone": "· (210) 409-4743",
-      "website": "https://stxcc.com/",
-      "mapsLink": "https://www.google.com/maps/place/South+Texas+Construction+and+Consulting+LLC/data=!4m7!3m6!1s0xa8e5347d6f0e16d9:0xce6edd9b754edf89!8m2!3d29.850971!4d-98.1705181!16s%2Fg%2F11sdw_990l!19sChIJ2RYOb3005agRid9OdZvdbs4?authuser=0&hl=en&rclk=1"
+      "phone": "· (512) 902-8790",
+      "website": "https://www.haysgctx.com/",
+      "mapsLink": "https://www.google.com/maps/place/Hays+General+Contractors/data=!4m7!3m6!1s0x865b577690428437:0x3653f730497e0817!8m2!3d29.9967895!4d-97.9810335!16s%2Fg%2F11hf4qxht4!19sChIJN4RCkHZXW4YRFwh-STD3UzY?authuser=0&hl=en&rclk=1"
     },
     {
-      "name": "BR Texas",
-      "rating": 3.4,
-      "address": "· 7740 N IH 35 Frontage Road",
-      "phone": "· (210) 504-4630",
-      "website": "http://brtexas.com/contact/",
-      "mapsLink": "https://www.google.com/maps/place/BR+Texas/data=!4m7!3m6!1s0x865ca4631d3aaaab:0xdd18f96c03e6efcf!8m2!3d29.7791807!4d-98.0336715!16s%2Fg%2F11g0k1_s67!19sChIJq6o6HWOkXIYRz-_mA2z5GN0?authuser=0&hl=en&rclk=1"
+      "name": "Texas Twins Contractors",
+      "rating": 4.9,
+      "address": "Closed · Opens 8 AM",
+      "phone": "· (512) 574-2312",
+      "website": "https://www.twincontractors.com/",
+      "mapsLink": "https://www.google.com/maps/place/Texas+Twins+Contractors/data=!4m7!3m6!1s0xad62fd0e387248c5:0xc2a072d96fb9b1f0!8m2!3d30.1852565!4d-97.688058!16s%2Fg%2F11t9lbq3rw!19sChIJxUhyOA79Yq0R8LG5b9lyoMI?authuser=0&hl=en&rclk=1"
     },
     {
-      "name": "RHR Construction Company",
+      "name": "A. Varela's family construction",
+      "rating": 5,
+      "address": "· 116 Alexis Way",
+      "phone": "· (312) 966-1063",
+      "website": "https://vamonosaustin.com/",
+      "mapsLink": "https://www.google.com/maps/place/A.+Varela%27s+family+construction/data=!4m7!3m6!1s0x865b57642a64b795:0x863376b460e38377!8m2!3d30.0072636!4d-97.8755165!16s%2Fg%2F11y724gsgr!19sChIJlbdkKmRXW4YRd4PjYLR2M4Y?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Unicus Construction",
+      "rating": 5,
+      "address": "Closed · Opens 8 AM",
+      "phone": "· (512) 262-0025",
+      "website": null,
+      "mapsLink": "https://www.google.com/maps/place/Unicus+Construction/data=!4m7!3m6!1s0xd202823b075d71d:0x2c7d770a6e20f17b!8m2!3d30.1627574!4d-97.7810955!16s%2Fg%2F11y5_ml8vd!19sChIJHdd1sCMoIA0Re_Egbgp3fSw?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Construction Metal Products",
+      "rating": 4.9,
+      "address": "· 23971 I-35",
+      "phone": null,
+      "website": null,
+      "mapsLink": "https://www.google.com/maps/place/Construction+Metal+Products/data=!4m7!3m6!1s0x865b569e0bb2357b:0xe807d9ba3a3190ca!8m2!3d29.9646985!4d-97.8745058!16s%2Fg%2F1tk682y5!19sChIJezWyC55WW4YRypAxOrrZB-g?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Sons of Texas Construction & Remodeling",
+      "rating": 5,
+      "address": "Closed · Opens 9 AM",
+      "phone": "· (512) 348-2605",
+      "website": "http://www.sotconstruction.com/",
+      "mapsLink": "https://www.google.com/maps/place/Sons+of+Texas+Construction+%26+Remodeling/data=!4m7!3m6!1s0xa19566dc42d6e15b:0xf24d056d401c0413!8m2!3d31.3187944!4d-97.747545!16s%2Fg%2F11xtzgz9v3!19sChIJW-HWQtxmlaEREwQcQG0FTfI?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Ortiz Construction Group",
+      "rating": 5,
+      "address": "· 23703 Interstate 35 Frontage Rd",
+      "phone": "· (512) 262-7131",
+      "website": "https://ocgconstructiontx.com/",
+      "mapsLink": "https://www.google.com/maps/place/Ortiz+Construction+Group/data=!4m7!3m6!1s0x865b5505785eb347:0x1c304bfd7599bb4f!8m2!3d29.9668936!4d-97.8721194!16s%2Fg%2F11ms9pt04s!19sChIJR7NeeAVVW4YRT7uZdf1LMBw?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "CDG Restoration & Construction",
+      "rating": 4.4,
+      "address": "· 701 Philomena Dr.",
+      "phone": "· (512) 522-0552",
+      "website": "http://www.cdgaustin.com/",
+      "mapsLink": "https://www.google.com/maps/place/CDG+Restoration+%26+Construction/data=!4m7!3m6!1s0x865b521d009baa97:0x63875c773efab955!8m2!3d29.9985685!4d-97.8654795!16s%2Fg%2F11h9xl9km_!19sChIJl6qbAB1SW4YRVbn6Pndch2M?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Ram Concrete & General Construction",
+      "rating": 5,
+      "address": "· 7424 Newman Blvd",
+      "phone": "(512) 915-9559",
+      "website": "https://ramconcreteusa.com/contact-us",
+      "mapsLink": "https://www.google.com/maps/place/Ram+Concrete+%26+General+Construction/data=!4m7!3m6!1s0x8644aca8b69aaaab:0x99589694d90db283!8m2!3d30.0268289!4d-97.7754165!16s%2Fg%2F11kc8mnpn7!19sChIJq6qatqisRIYRg7IN2ZSWWJk?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "MDS Construction Inc",
+      "rating": 5,
+      "address": "· 6611 E Post Rd",
+      "phone": "· (512) 297-4407",
+      "website": "https://www.mdsconstruction.net/",
+      "mapsLink": "https://www.google.com/maps/place/MDS+Construction+Inc/data=!4m7!3m6!1s0x865b5394c0d37ffb:0x43aa9ea185d74f02!8m2!3d29.9627054!4d-97.872026!16s%2Fg%2F11ghr0rst2!19sChIJ-3_TwJRTW4YRAk_XhaGeqkM?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "ET's Home Renovation",
+      "rating": 5,
+      "address": "· 3601 Kyle Crossing C2",
+      "phone": "· (512) 795-1000",
+      "website": "https://etsrr.com/",
+      "mapsLink": "https://www.google.com/maps/place/ET%27s+Home+Renovation/data=!4m7!3m6!1s0x865b5546f544da9f:0xf101328d212c6f76!8m2!3d30.0366958!4d-97.8516952!16s%2Fg%2F11ft4frqh9!19sChIJn9pE9UZVW4YRdm8sIY0yAfE?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "TrueTex Roofing",
+      "rating": 5,
+      "address": "· 1050 Wittenburg",
+      "phone": "· (737) 210-5077",
+      "website": "https://truetexroofing.com/",
+      "mapsLink": "https://www.google.com/maps/place/TrueTex+Roofing/data=!4m7!3m6!1s0xe0e824b80d37559:0xa4da6943c71b0b64!8m2!3d30.0229585!4d-97.8740621!16s%2Fg%2F11mkvtcdlg!19sChIJWXXTgEuCDg4RZAsbx0Np2qQ?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "KB Home Sunset Hills",
+      "rating": 4.4,
+      "address": "· 126 Azure Cv",
+      "phone": null,
+      "website": null,
+      "mapsLink": "https://www.google.com/maps/place/KB+Home+Sunset+Hills/data=!4m7!3m6!1s0x865b53e0a2bec9c9:0x1cab289f4b427bc1!8m2!3d30.0199367!4d-97.8433684!16s%2Fg%2F11fd4gj_fp!19sChIJycm-ouBTW4YRwXtCS58oqxw?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Talavera by D.R. Horton",
+      "rating": 4.9,
+      "address": "· 116 Caddo Bnd",
+      "phone": "· (512) 842-6645",
+      "website": null,
+      "mapsLink": "https://www.google.com/maps/place/Talavera+by+D.R.+Horton/data=!4m7!3m6!1s0x865b5599c02d1051:0xccc930a807357087!8m2!3d29.9943318!4d-97.8416079!16s%2Fg%2F11sycy_x6c!19sChIJURAtwJlVW4YRh3A1B6gwycw?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Brohn Homes - Casetta Ranch",
+      "rating": 4.7,
+      "address": "· 182 Hortus Dr",
+      "phone": "· (512) 812-9285",
+      "website": "https://brohnhomes.com/communities/casetta-ranch",
+      "mapsLink": "https://www.google.com/maps/place/Brohn+Homes+-+Casetta+Ranch/data=!4m7!3m6!1s0x865b5581a44c8dff:0x374046f9392bd77b!8m2!3d29.9917213!4d-97.8433611!16s%2Fg%2F11p767fm6t!19sChIJ_41MpIFVW4YRe9crOflGQDc?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "ATX Outdoor Construction LLC",
+      "rating": 5,
+      "address": "Closed · Opens 7:30 AM",
+      "phone": "· (512) 213-8021",
+      "website": "http://atxoutdoorconstruction.com/",
+      "mapsLink": "https://www.google.com/maps/place/ATX+Outdoor+Construction+LLC/data=!4m7!3m6!1s0x2272c85eefdbe2b1:0x55f52f028ae50861!8m2!3d30.1322525!4d-98.099175!16s%2Fg%2F11vwlyq0h6!19sChIJseLb717IciIRYQjligIv9VU?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Ortiz Construction Group",
+      "rating": 5,
+      "address": "· 23703 Interstate 35 Frontage Rd",
+      "phone": "· (512) 262-7131",
+      "website": "https://ocgconstructiontx.com/",
+      "mapsLink": "https://www.google.com/maps/place/Ortiz+Construction+Group/data=!4m7!3m6!1s0x865b5505785eb347:0x1c304bfd7599bb4f!8m2!3d29.9668936!4d-97.8721194!16s%2Fg%2F11ms9pt04s!19sChIJR7NeeAVVW4YRT7uZdf1LMBw?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "GP RemodelingServices",
+      "rating": 5,
+      "address": "· 181 Maroon Ln",
+      "phone": "· (512) 756-3469",
+      "website": null,
+      "mapsLink": "https://www.google.com/maps/place/GP+RemodelingServices/data=!4m7!3m6!1s0x865b53e26b9d3deb:0x8ca129fa7e3da7c7!8m2!3d30.0212159!4d-97.8415762!16s%2Fg%2F11j_1w8gdm!19sChIJ6z2da-JTW4YRx6c9fvopoYw?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "JenPro",
+      "rating": 4.9,
+      "address": "Closed · Opens 7 AM",
+      "phone": "· (512) 573-0055",
+      "website": "https://jenproroofing.com/",
+      "mapsLink": "https://www.google.com/maps/place/JenPro/data=!4m7!3m6!1s0x865b55329d6ed541:0x75414c34ba56d23e!8m2!3d29.945365!4d-97.8218206!16s%2Fg%2F1tglhr27!19sChIJQdVunTJVW4YRPtJWujRMQXU?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Unicus Construction",
+      "rating": 5,
+      "address": "Closed · Opens 8 AM",
+      "phone": "· (512) 262-0025",
+      "website": null,
+      "mapsLink": "https://www.google.com/maps/place/Unicus+Construction/data=!4m7!3m6!1s0xd202823b075d71d:0x2c7d770a6e20f17b!8m2!3d30.1627574!4d-97.7810955!16s%2Fg%2F11y5_ml8vd!19sChIJHdd1sCMoIA0Re_Egbgp3fSw?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Highland Homes 6 Creeks at Waterridge",
+      "rating": 4.9,
+      "address": "· Creeks at Waterridge, 112 High Rock Pass #6",
+      "phone": "· (512) 605-6666",
+      "website": "https://www.highlandhomes.com/austin/kyle/6-creeks-at-waterridge",
+      "mapsLink": "https://www.google.com/maps/place/Highland+Homes+6+Creeks+at+Waterridge/data=!4m7!3m6!1s0x865b5117c9832997:0xdf3d61f8102be126!8m2!3d30.0055731!4d-97.9047673!16s%2Fg%2F11j8zfpyc9!19sChIJlymDyRdRW4YRJuErEPhhPd8?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Restoration Builders of Texas",
+      "rating": 3.9,
+      "address": "· 3875 Science Hall Lp",
+      "phone": "· (512) 246-8600",
+      "website": "https://restorbuilders.com/locations/kyle-texas/",
+      "mapsLink": "https://www.google.com/maps/place/Restoration+Builders+of+Texas/data=!4m7!3m6!1s0x865b538055e5df67:0x2abce866d7183b3b!8m2!3d30.0261779!4d-97.8297255!16s%2Fg%2F1q629d69f!19sChIJZ9_lVYBTW4YROzsY12bovCo?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Murray Buildings & Cabins",
       "rating": 4.5,
-      "address": "· 1429 Hillview Ave",
-      "phone": "· (210) 347-3077",
-      "website": "https://rhrtx.com/",
-      "mapsLink": "https://www.google.com/maps/place/RHR+Construction+Company/data=!4m7!3m6!1s0x865cbd06fae25e3d:0x41b33912a748683a!8m2!3d29.6859163!4d-98.1313093!16s%2Fg%2F11fjtymvbx!19sChIJPV7i-ga9XIYROmhIpxI5s0E?authuser=0&hl=en&rclk=1"
+      "address": "· 24501 I-35",
+      "phone": "· (512) 268-8201",
+      "website": "http://www.murraybuildings-derksen.com/",
+      "mapsLink": "https://www.google.com/maps/place/Murray+Buildings+%26+Cabins/data=!4m7!3m6!1s0x865b567741c3969d:0xd12fe493a58b6f71!8m2!3d29.9568565!4d-97.876655!16s%2Fg%2F11d_wmfkp8!19sChIJnZbDQXdWW4YRcW-LpZPkL9E?authuser=0&hl=en&rclk=1"
     },
     {
-      "name": "Woolsey Design Build",
+      "name": "MDS Construction Inc",
       "rating": 5,
-      "address": "· 2111 S I-35 South Frontage Rd Suite 2110",
-      "phone": "· (830) 317-1717",
-      "website": "http://www.woolseydesignbuild.com/",
-      "mapsLink": "https://www.google.com/maps/place/Woolsey+Design+Build/data=!4m7!3m6!1s0x865cbd5f410477a7:0xcccd1ee1631ac282!8m2!3d29.6827699!4d-98.1390679!16s%2Fg%2F1tfzxxq2!19sChIJp3cEQV-9XIYRgsIaY-Eezcw?authuser=0&hl=en&rclk=1"
+      "address": "· 6611 E Post Rd",
+      "phone": "· (512) 297-4407",
+      "website": "https://www.mdsconstruction.net/",
+      "mapsLink": "https://www.google.com/maps/place/MDS+Construction+Inc/data=!4m7!3m6!1s0x865b5394c0d37ffb:0x43aa9ea185d74f02!8m2!3d29.9627054!4d-97.872026!16s%2Fg%2F11ghr0rst2!19sChIJ-3_TwJRTW4YRAk_XhaGeqkM?authuser=0&hl=en&rclk=1"
     },
     {
-      "name": "Alfred Riedel Construction",
+      "name": "Briggs Construction Co",
       "rating": 5,
-      "address": "· 5350 I 35 N Frontage Rd",
-      "phone": "(830) 625-8256",
-      "website": null,
-      "mapsLink": "https://www.google.com/maps/place/Alfred+Riedel+Construction/data=!4m7!3m6!1s0x865ca36241840c03:0xb14643df2c90ea41!8m2!3d29.7504019!4d-98.0545343!16s%2Fg%2F1tk1ndrf!19sChIJAwyEQWKjXIYRQeqQLN9DRrE?authuser=0&hl=en&rclk=1"
+      "address": "· 2210 Hunter Rd",
+      "phone": "· (512) 353-1251",
+      "website": "http://www.briggsconstructionsanmarcos.com/",
+      "mapsLink": "https://www.google.com/maps/place/Briggs+Construction+Co/data=!4m7!3m6!1s0x865ca62f33da25ef:0xd721431c3ba0fa1b!8m2!3d29.8624787!4d-97.964903!16s%2Fg%2F1ts1snfb!19sChIJ7yXaMy-mXIYRG_qgOxxDIdc?authuser=0&hl=en&rclk=1"
     },
     {
-      "name": "Bill Buck & Son Construction",
-      "rating": 5,
-      "address": "· 242 S Business IH 35",
-      "phone": "(830) 606-0289",
-      "website": "https://www.buckandson.com/",
-      "mapsLink": "https://www.google.com/maps/place/Bill+Buck+%26+Son+Construction/data=!4m7!3m6!1s0x865cbd6c52ee4243:0xaa3dcbe4a7a75ebf!8m2!3d29.6936249!4d-98.1152647!16s%2Fg%2F1tt1t2_z!19sChIJQ0LuUmy9XIYRv16np-TLPao?authuser=0&hl=en&rclk=1"
-    },
-    {
-      "name": "LZ Construction",
-      "rating": 4.9,
-      "address": "Closed · Opens 8 AM",
-      "phone": "· (830) 428-6266",
-      "website": "http://www.lzconstructionservices.com/",
-      "mapsLink": "https://www.google.com/maps/place/LZ+Construction/data=!4m7!3m6!1s0x865c77695e464277:0x9e546d86718e9405!8m2!3d30.128592!4d-98.642343!16s%2Fg%2F11rpdgscx4!19sChIJd0JGXml3XIYRBZSOcYZtVJ4?authuser=0&hl=en&rclk=1"
-    },
-    {
-      "name": "Lambda Construction Co",
-      "rating": 5,
-      "address": "· 211 Jesses Cir",
-      "phone": "(830) 629-5808",
-      "website": null,
-      "mapsLink": "https://www.google.com/maps/place/Lambda+Construction+Co/data=!4m7!3m6!1s0x865c91435f4bfae7:0x4a268bd038328f86!8m2!3d29.6370299!4d-98.2368367!16s%2Fg%2F1tdgkp8r!19sChIJ5_pLX0ORXIYRho8yONCLJko?authuser=0&hl=en&rclk=1"
-    },
-    {
-      "name": "T.A. French Custom Builder",
-      "rating": 5,
-      "address": "· 4571 FM 1102",
-      "phone": "· (830) 620-9953",
-      "website": "http://www.tafrench.com/",
-      "mapsLink": "https://www.google.com/maps/place/T.A.+French+Custom+Builder/data=!4m7!3m6!1s0x865cbcd39ee4f46d:0xc65070088fa58008!8m2!3d29.7699761!4d-98.0739668!16s%2Fg%2F11hbnv4sh2!19sChIJbfTkntO8XIYRCICljwhwUMY?authuser=0&hl=en&rclk=1"
-    },
-    {
-      "name": "Ridgepoint Roofing",
-      "rating": 5,
-      "address": "· 1430 Unicorn Ave Suite 101",
-      "phone": "· (830) 632-0073",
-      "website": "https://www.ridgepointcontractors.com/new-braunfels",
-      "mapsLink": "https://www.google.com/maps/place/Ridgepoint+Roofing/data=!4m7!3m6!1s0x865c978c2b3f44b7:0x1083c9a1c9d5f519!8m2!3d29.6885695!4d-98.1198989!16s%2Fg%2F11gjhbd9g_!19sChIJt0Q_K4yXXIYRGfXVyaHJgxA?authuser=0&hl=en&rclk=1"
-    },
-    {
-      "name": "Kluevers Quality Construction LLC",
-      "rating": 5,
-      "address": "Closed · Opens 8 AM",
-      "phone": "· (775) 720-1176",
-      "website": null,
-      "mapsLink": "https://www.google.com/maps/place/Kluevers+Quality+Construction+LLC/data=!4m7!3m6!1s0xef6106279f36475:0xf65c0c17d7bb6ee9!8m2!3d30.8183996!4d-92.8922451!16s%2Fg%2F11tgcbcbty!19sChIJdWTzeWIQ9g4R6W671xcMXPY?authuser=0&hl=en&rclk=1"
-    },
-    {
-      "name": "LZ Construction",
-      "rating": 4.9,
-      "address": "Closed · Opens 8 AM",
-      "phone": "· (830) 428-6266",
-      "website": "http://www.lzconstructionservices.com/",
-      "mapsLink": "https://www.google.com/maps/place/LZ+Construction/data=!4m7!3m6!1s0x865c77695e464277:0x9e546d86718e9405!8m2!3d30.128592!4d-98.642343!16s%2Fg%2F11rpdgscx4!19sChIJd0JGXml3XIYRBZSOcYZtVJ4?authuser=0&hl=en&rclk=1"
-    },
-    {
-      "name": "T & F Construction Co Inc",
-      "rating": 4,
-      "address": "· 220 Friesenhahn Ln",
-      "phone": "· (830) 660-7923",
-      "website": "https://tandfco.com/",
-      "mapsLink": "https://www.google.com/maps/place/T+%26+F+Construction+Co+Inc/data=!4m7!3m6!1s0x865c91529c7d3e95:0x740e720b7d9efad5!8m2!3d29.6382884!4d-98.224544!16s%2Fg%2F1vh_8t6k!19sChIJlT59nFKRXIYR1fqefQtyDnQ?authuser=0&hl=en&rclk=1"
-    },
-    {
-      "name": "Hathaway Remodeling",
+      "name": "Like New Building Solutions",
       "rating": 5,
       "address": "Closed · Opens 7 AM",
-      "phone": "· (210) 325-0502",
-      "website": "http://hathawayremodeling.com/",
-      "mapsLink": "https://www.google.com/maps/place/Hathaway+Remodeling/data=!4m7!3m6!1s0x865cbd40433bb4a9:0xf64513ca1cd10ae!8m2!3d29.4811531!4d-98.4205746!16s%2Fg%2F11fjzmvx4z!19sChIJqbQ7Q0C9XIYRrhDNoTxRZA8?authuser=0&hl=en&rclk=1"
+      "phone": "· (512) 595-6136",
+      "website": "https://likenewbs.com/",
+      "mapsLink": "https://www.google.com/maps/place/Like+New+Building+Solutions/data=!4m7!3m6!1s0x865b570e55292635:0x36c69a7e0a7bf600!8m2!3d29.850971!4d-98.1705181!16s%2Fg%2F11f5_hyc3p!19sChIJNSYpVQ5XW4YRAPZ7Cn6axjY?authuser=0&hl=en&rclk=1"
     },
     {
-      "name": "M C Ethridge Co",
+      "name": "FineLine Custom Homes, Inc.",
       "rating": 5,
-      "address": "· 1520 FM306",
-      "phone": "(830) 625-6287",
-      "website": "https://www.mcethridge.com/",
-      "mapsLink": "https://www.google.com/maps/place/M+C+Ethridge+Co/data=!4m7!3m6!1s0x865ca2b94b1aeee5:0x982bce141075c2e3!8m2!3d29.7478996!4d-98.100784!16s%2Fg%2F1xn_ntcp!19sChIJ5e4aS7miXIYR48J1EBTOK5g?authuser=0&hl=en&rclk=1"
+      "address": "· 2410 Ranch to Market Rd 150",
+      "phone": "(512) 738-1662",
+      "website": "http://www.finelinecustomhomes.com/",
+      "mapsLink": "https://www.google.com/maps/place/FineLine+Custom+Homes,+Inc./data=!4m7!3m6!1s0x865b513184e159b1:0xcbb2fe75403f9ebc!8m2!3d30.0223082!4d-97.9014991!16s%2Fg%2F1tfrh5gr!19sChIJsVnhhDFRW4YRvJ4_QHX-sss?authuser=0&hl=en&rclk=1"
     },
     {
-      "name": "Keith Wing Custom Builders",
-      "rating": 5,
-      "address": "· 2027 State Hwy 46 W #106",
-      "phone": "· (830) 266-9464",
-      "website": "http://www.keithwing.com/",
-      "mapsLink": "https://www.google.com/maps/place/Keith+Wing+Custom+Builders/data=!4m7!3m6!1s0x865c9787408f54df:0xce1fe9a3a0da382c!8m2!3d29.7205775!4d-98.1714723!16s%2Fg%2F11h4cgdblk!19sChIJ31SPQIeXXIYRLDjaoKPpH84?authuser=0&hl=en&rclk=1"
-    },
-    {
-      "name": "Seidel Construction",
-      "rating": null,
-      "address": "· 1285 Industrial St #101",
-      "phone": "· (830) 643-1778",
-      "website": "https://www.seidelgc.com/",
-      "mapsLink": "https://www.google.com/maps/place/Seidel+Construction/data=!4m7!3m6!1s0x865cbd257d4de05d:0x4676752444bd6086!8m2!3d29.7145607!4d-98.099024!16s%2Fg%2F11lzfj8l2r!19sChIJXeBNfSW9XIYRhmC9RCR1dkY?authuser=0&hl=en&rclk=1"
-    },
-    {
-      "name": "Kluevers Quality Construction LLC",
-      "rating": 5,
-      "address": "Closed · Opens 8 AM",
-      "phone": "· (775) 720-1176",
-      "website": null,
-      "mapsLink": "https://www.google.com/maps/place/Kluevers+Quality+Construction+LLC/data=!4m7!3m6!1s0xef6106279f36475:0xf65c0c17d7bb6ee9!8m2!3d30.8183996!4d-92.8922451!16s%2Fg%2F11tgcbcbty!19sChIJdWTzeWIQ9g4R6W671xcMXPY?authuser=0&hl=en&rclk=1"
-    },
-    {
-      "name": "Concrete Contractor Experts",
-      "rating": 5,
-      "address": "· 544 S Business IH 35",
-      "phone": "· (830) 358-4420",
-      "website": null,
-      "mapsLink": "https://www.google.com/maps/place/Concrete+Contractor+Experts/data=!4m7!3m6!1s0x865cbddbef5b87ab:0x2567d016b842ef67!8m2!3d29.6929269!4d-98.1200947!16s%2Fg%2F11j5rx2jgv!19sChIJq4db79u9XIYRZ-9CuBbQZyU?authuser=0&hl=en&rclk=1"
-    },
-    {
-      "name": "2 S-D Inc. Construction",
-      "rating": 3.4,
-      "address": "· 1360 Cedar Elm St",
-      "phone": "· (830) 627-2734",
-      "website": "https://2sdinc.com/",
-      "mapsLink": "https://www.google.com/maps/place/2+S-D+Inc.+Construction/data=!4m7!3m6!1s0x865c97baf63c92d9:0x6548c41b71fba019!8m2!3d29.6933287!4d-98.1628806!16s%2Fg%2F1tx15ssj!19sChIJ2ZI89rqXXIYRGaD7cRvESGU?authuser=0&hl=en&rclk=1"
-    },
-    {
-      "name": "Rob Hudson Homes",
-      "rating": 4.4,
-      "address": "· 1429 Hillview Ave",
-      "phone": "· (210) 559-1723",
-      "website": "http://www.robhudsonhomes.com/",
-      "mapsLink": "https://www.google.com/maps/place/Rob+Hudson+Homes/data=!4m7!3m6!1s0x865c8dfeea72a201:0x69cd55cd37df46fc!8m2!3d29.6859137!4d-98.1313519!16s%2Fg%2F11cm0vws7w!19sChIJAaJy6v6NXIYR_EbfN81VzWk?authuser=0&hl=en&rclk=1"
-    },
-    {
-      "name": "ABEL Custom Build & Design, LLC.",
-      "rating": 5,
-      "address": "Closed · Opens 8 AM",
-      "phone": "· (830) 312-3893",
-      "website": "https://abelcustombuild.com/",
-      "mapsLink": "https://www.google.com/maps/place/ABEL+Custom+Build+%26+Design,+LLC./data=!4m7!3m6!1s0x865ca33741b2a3f7:0x4085a6afb4efd8c5!8m2!3d29.845841!4d-98.191811!16s%2Fg%2F11vs81rp7q!19sChIJ96OyQTejXIYRxdjvtK-mhUA?authuser=0&hl=en&rclk=1"
-    },
-    {
-      "name": "Keeley Construction",
-      "rating": 4.4,
-      "address": "· 1993 Wald Rd",
-      "phone": "· (830) 360-2067",
-      "website": "https://www.keeleyconstruction.com/",
-      "mapsLink": "https://www.google.com/maps/place/Keeley+Construction/data=!4m7!3m6!1s0x865c97464722bcc9:0x5f103460d1e0e249!8m2!3d29.6775401!4d-98.1708394!16s%2Fg%2F11t6z3_pnp!19sChIJybwiR0aXXIYRSeLg0WA0EF8?authuser=0&hl=en&rclk=1"
-    },
-    {
-      "name": "New Braunfels Deck Company",
-      "rating": 5,
-      "address": "· 3911 Trail de Paris",
-      "phone": "· (830) 202-5440",
-      "website": "https://newbraunfelsdeckcompany.com/",
-      "mapsLink": "https://www.google.com/maps/place/New+Braunfels+Deck+Company/data=!4m7!3m6!1s0x865c97eb8de142e9:0x61ac8cfe9375fafe!8m2!3d29.6542166!4d-98.161437!16s%2Fg%2F11txdnr4zd!19sChIJ6ULhjeuXXIYR_vp1k_6MrGE?authuser=0&hl=en&rclk=1"
-    },
-    {
-      "name": "AMC TXCI LLC",
-      "rating": 5,
-      "address": "· 7170 Wegner Rd",
-      "phone": "· (830) 964-4420",
-      "website": "https://amctxci.com/",
-      "mapsLink": "https://www.google.com/maps/place/AMC+TXCI+LLC/data=!4m7!3m6!1s0x865ca16d68cde109:0xc33c3254d82bcbef!8m2!3d29.8404079!4d-98.0784405!16s%2Fg%2F11h15dqjb!19sChIJCeHNaG2hXIYR78sr2FQyPMM?authuser=0&hl=en&rclk=1"
-    },
-    {
-      "name": "Cornerstone Construction of New Braunfels, Texas",
+      "name": "JustINTime Handyman Service LLC",
       "rating": 4.9,
-      "address": "Open 24 hours",
-      "phone": "· (830) 241-5682",
-      "website": "https://www.cornerstonectx.com/",
-      "mapsLink": "https://www.google.com/maps/place/Cornerstone+Construction+of+New+Braunfels,+Texas/data=!4m7!3m6!1s0x865cdbe18985ec73:0xb3e6b6747d70d755!8m2!3d29.703299!4d-98.1379065!16s%2Fg%2F11rbfq1h2r!19sChIJc-yFieHbXIYRVddwfXS25rM?authuser=0&hl=en&rclk=1"
+      "address": "Closed · Opens 7 AM",
+      "phone": "· (512) 831-1491",
+      "website": "https://justintimehandymantx.com/",
+      "mapsLink": "https://www.google.com/maps/place/JustINTime+Handyman+Service+LLC/data=!4m7!3m6!1s0x865b51f93b0392d5:0x5aa35551d3107d00!8m2!3d31.3922934!4d-97.667009!16s%2Fg%2F11p_34ck2n!19sChIJ1ZIDO_lRW4YRAH0Q01FVo1o?authuser=0&hl=en&rclk=1"
     },
     {
-      "name": "Roof Improvement & Services, Inc.",
+      "name": "Gonzalez Drywall LLC",
       "rating": 5,
-      "address": "· 238 Landing Ln",
-      "phone": "· (830) 358-9670",
-      "website": "https://roofimprovementandservices.com/",
-      "mapsLink": "https://www.google.com/maps/place/Roof+Improvement+%26+Services,+Inc./data=!4m7!3m6!1s0xfea54736d20cb17:0x57e977206a534fd4!8m2!3d29.6446332!4d-98.1174934!16s%2Fg%2F11sy76v4xf!19sChIJF8sgbXNU6g8R1E9TaiB36Vc?authuser=0&hl=en&rclk=1"
+      "address": "· 291 Roland Ln",
+      "phone": "· (512) 789-0171",
+      "website": "https://drywallcontractorkyletx.com/",
+      "mapsLink": "https://www.google.com/maps/place/Gonzalez+Drywall+LLC/data=!4m7!3m6!1s0x865b566e2d3fdaf7:0xc6bd0d1c4bcf2b!8m2!3d29.954657!4d-97.883651!16s%2Fg%2F11l5tm6778!19sChIJ99o_LW5WW4YRK89LHA29xgA?authuser=0&hl=en&rclk=1"
     },
     {
-      "name": "Provider Construction",
-      "rating": null,
-      "address": "· 725 Landa St",
-      "phone": "· (830) 606-5005",
-      "website": "http://www.providerconstruction.com/",
-      "mapsLink": "https://www.google.com/maps/place/Provider+Construction/data=!4m7!3m6!1s0x865c97e7ef6f1aef:0x797ee002cc948fc3!8m2!3d29.7001896!4d-98.1448873!16s%2Fg%2F1tdcxhzt!19sChIJ7xpv7-eXXIYRw4-UzALgfnk?authuser=0&hl=en&rclk=1"
-    },
-    {
-      "name": "New Braunfels Demolition",
-      "rating": 5,
-      "address": "· 223 W San Antonio St",
-      "phone": "· (210) 702-3121",
-      "website": "https://www.satxdemo.com/new-braunfels.html",
-      "mapsLink": "https://www.google.com/maps/place/New+Braunfels+Demolition/data=!4m7!3m6!1s0x8640ce8ebf47cd9b:0xe5894d1d3f8cd12a!8m2!3d29.7015183!4d-98.1256208!16s%2Fg%2F11b6ghlhx1!19sChIJm81Hv47OQIYRKtGMPx1NieU?authuser=0&hl=en&rclk=1"
+      "name": "Garner Heating & Air Conditioning Inc",
+      "rating": 4.9,
+      "address": "· 731 Roland Ln",
+      "phone": "· (512) 392-2000",
+      "website": "https://garnerac.com/?utm_source=gmb&utm_medium=organic",
+      "mapsLink": "https://www.google.com/maps/place/Garner+Heating+%26+Air+Conditioning+Inc/data=!4m7!3m6!1s0x865b566f8c305c8d:0xcb92b28dc81babf0!8m2!3d29.9648802!4d-97.8837785!16s%2Fg%2F1tcwrkg8!19sChIJjVwwjG9WW4YR8KsbyI2ykss?authuser=0&hl=en&rclk=1"
     }
   ]
 }
