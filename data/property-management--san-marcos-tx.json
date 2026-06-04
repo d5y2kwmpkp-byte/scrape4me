@@ -1,0 +1,314 @@
+{
+  "success": true,
+  "query": "Property management  near San Marcos, TX",
+  "businessType": "Property management ",
+  "location": "San Marcos, TX",
+  "scrapedAt": "2026-06-04T04:05:33.239Z",
+  "count": 38,
+  "locations": [
+    {
+      "name": "SMTX Property Management",
+      "rating": 4.1,
+      "address": "· 1920 Corporate Dr #201B",
+      "phone": "· (512) 667-6485",
+      "website": "http://smtxpropertymanagement.com/",
+      "mapsLink": "https://www.google.com/maps/place/SMTX+Property+Management/data=!4m7!3m6!1s0x865ca88262862a99:0x5d7b25d80dad4c63!8m2!3d29.8644943!4d-97.9593921!16s%2Fg%2F11g8v5dksw!19sChIJmSqGYoKoXIYRY0ytDdgle10?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "3Z Property Management",
+      "rating": 4,
+      "address": "· 2706 Hunter Rd",
+      "phone": "· (512) 566-4200",
+      "website": "http://www.3zmanagement.com/",
+      "mapsLink": "https://www.google.com/maps/place/3Z+Property+Management/data=!4m7!3m6!1s0x865ca63c39f6638f:0x3e76e155945b7995!8m2!3d29.852227!4d-97.9744563!16s%2Fg%2F11cllnxtbl!19sChIJj2P2OTymXIYRlXlblFXhdj4?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "TX Real Estate Management",
+      "rating": 5,
+      "address": "· 2804 Hunter Rd",
+      "phone": "· (512) 787-0333",
+      "website": "http://txrealestatemanagement.com/",
+      "mapsLink": "https://www.google.com/maps/place/TX+Real+Estate+Management/data=!4m7!3m6!1s0x865ca8679dabe7fb:0xab4e9de78adade86!8m2!3d29.8508696!4d-97.9759994!16s%2Fg%2F1jkxzy5dr!19sChIJ--ernWeoXIYRht7aiuedTqs?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Pinnacle Properties-BMS",
+      "rating": 4.8,
+      "address": "· Office Hours by Appointment Only, 1409 N Bishop St Suite A-1",
+      "phone": "· (512) 754-1227",
+      "website": "http://www.pp-bms.com/",
+      "mapsLink": "https://www.google.com/maps/place/Pinnacle+Properties-BMS/data=!4m7!3m6!1s0x865ca86342b4a323:0xcebd303c2c861573!8m2!3d29.8834587!4d-97.9663104!16s%2Fg%2F12lk4pl34!19sChIJI6O0QmOoXIYRcxWGLDwwvc4?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Williamson Management",
+      "rating": 3.4,
+      "address": "· 100 N Edward Gary St Suite B #115",
+      "phone": "· (512) 392-3600",
+      "website": null,
+      "mapsLink": "https://www.google.com/maps/place/Williamson+Management/data=!4m7!3m6!1s0x865ca865c1ae4dfb:0x436d002d9d31eb29!8m2!3d29.8825921!4d-97.9382608!16s%2Fg%2F1tnjj_fh!19sChIJ-02uwWWoXIYRKesxnS0AbUM?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "3Z Realty",
+      "rating": 4.6,
+      "address": "· 2706 Hunter Rd",
+      "phone": "· (866) 999-3349",
+      "website": "https://www.3zrealty.com/",
+      "mapsLink": "https://www.google.com/maps/place/3Z+Realty/data=!4m7!3m6!1s0x865ca9a15e30d8ff:0xa3fa538c040b133a!8m2!3d29.8522065!4d-97.9743427!16s%2Fg%2F113fl9hf8!19sChIJ_9gwXqGpXIYROhMLBIxT-qM?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Planet San Marcos",
+      "rating": 4.1,
+      "address": "· 1624 Aquarena Springs Dr",
+      "phone": "· (512) 392-7400",
+      "website": "https://psm1.managebuilding.com/Resident/PublicPages/apartmentsearch.aspx",
+      "mapsLink": "https://www.google.com/maps/place/Planet+San+Marcos/data=!4m7!3m6!1s0x865ca84c9c8f1acf:0xe3d1afeec27e6991!8m2!3d29.8921055!4d-97.9176279!16s%2Fg%2F1263jc226!19sChIJzxqPnEyoXIYRkWl-wu6v0eM?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Great Locations Realty",
+      "rating": 3.1,
+      "address": "· 1503 Aquarena Springs Dr",
+      "phone": "· (512) 878-2233",
+      "website": "http://www.mygreatlocations.com/",
+      "mapsLink": "https://www.google.com/maps/place/Great+Locations+Realty/data=!4m7!3m6!1s0x865ca84b9ab1bac9:0xdd01d07c95eacad4!8m2!3d29.8929658!4d-97.920643!16s%2Fg%2F1tnpfw1f!19sChIJybqxmkuoXIYR1MrqlXzQAd0?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Hunter Property Management",
+      "rating": null,
+      "address": "· 1702 Hunter Rd",
+      "phone": "· (830) 832-7935",
+      "website": "http://www.hunterpm.com/",
+      "mapsLink": "https://www.google.com/maps/place/Hunter+Property+Management/data=!4m7!3m6!1s0xab96edde5de57e6b:0x5de9cfb29aef2af3!8m2!3d29.8696893!4d-97.9611777!16s%2Fg%2F11xvqh3rfk!19sChIJa37lXd7tlqsR8yrvmrLP6V0?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Monica & Company Real Estate (Formally McNabb & Co. Real Estate Services)",
+      "rating": 4.5,
+      "address": "· 1920 Corporate Dr B201",
+      "phone": "· (512) 667-9129",
+      "website": "https://www.mcnabbandco.com/",
+      "mapsLink": "https://www.google.com/maps/place/Monica+%26+Company+Real+Estate+%28Formally+McNabb+%26+Co.+Real+Estate+Services%29/data=!4m7!3m6!1s0x865ca882794ddff7:0x8415d1c8002aca00!8m2!3d29.8644788!4d-97.9588947!16s%2Fg%2F1hhhqtb8n!19sChIJ999NeYKoXIYRAMoqAMjRFYQ?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Barnard Realty Group",
+      "rating": 4.2,
+      "address": "· 2209 Old, Old Ranch Rd 12",
+      "phone": "· (512) 396-4580",
+      "website": "https://www.barnardrealtygroup.org/",
+      "mapsLink": "https://www.google.com/maps/place/Barnard+Realty+Group/data=!4m7!3m6!1s0x865ca882794ddff7:0xea88f64e19a48650!8m2!3d29.8987428!4d-97.975883!16s%2Fg%2F1263yynbl!19sChIJ999NeYKoXIYRUIakGU72iOo?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Vance J. Elliott Realty Group",
+      "rating": 3.4,
+      "address": "· 1504 Aquarena Springs Dr #204",
+      "phone": "· (512) 353-3002",
+      "website": "http://www.vancejelliottrealty.com/",
+      "mapsLink": "https://www.google.com/maps/place/Vance+J.+Elliott+Realty+Group/data=!4m7!3m6!1s0x865ca84b89c1217f:0xdbb285e7542e6df2!8m2!3d29.8918055!4d-97.9193849!16s%2Fg%2F1tf589nf!19sChIJfyHBiUuoXIYR8m0uVOeFsts?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Apartment Pros Apartment Locator - San Marcos | Kyle | Buda",
+      "rating": 4.9,
+      "address": "· 302 University Dr B",
+      "phone": "· (512) 917-7833",
+      "website": "http://apartmentprossanmarcos.com/",
+      "mapsLink": "https://www.google.com/maps/place/Apartment+Pros+Apartment+Locator+-+San+Marcos+%7C+Kyle+%7C+Buda/data=!4m7!3m6!1s0x865ca86bcc6d7a8f:0xafae310aa0aad651!8m2!3d29.8855488!4d-97.9390151!16s%2Fg%2F1hg4_vjnp!19sChIJj3ptzGuoXIYRUdaqoAoxrq8?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Investors Property Management - San Marcos",
+      "rating": 2.8,
+      "address": "· 330 Wonder World Dr STE 101",
+      "phone": "· (512) 353-3159",
+      "website": "http://investorspropertymanagement.com/",
+      "mapsLink": "https://www.google.com/maps/place/Investors+Property+Management+-+San+Marcos/data=!4m7!3m6!1s0x865ca85e33fbffff:0x9ac71c08abd6bd69!8m2!3d29.8611078!4d-97.9588265!16s%2Fg%2F11gh04r_ll!19sChIJ___7M16oXIYRab3Wqwgcx5o?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Hart Properties",
+      "rating": 3.6,
+      "address": "· 325 E Hopkins St",
+      "phone": "· (512) 392-2100",
+      "website": "http://www.hart-properties.com/",
+      "mapsLink": "https://www.google.com/maps/place/Hart+Properties/data=!4m7!3m6!1s0x865ca8678cdd89a9:0xe8e584bc23efc2ea!8m2!3d29.8838824!4d-97.9379678!16s%2Fg%2F1tdc11jg!19sChIJqYndjGeoXIYR6sLvI7yE5eg?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Skiles & Associates Real Estate Inc",
+      "rating": 3.2,
+      "address": "· 100 N Edward Gary St A",
+      "phone": "· (512) 353-3232",
+      "website": "http://www.txams.com/",
+      "mapsLink": "https://www.google.com/maps/place/Skiles+%26+Associates+Real+Estate+Inc/data=!4m7!3m6!1s0x865ca8679dabe7fb:0xe0b2105ee03e290e!8m2!3d29.882771!4d-97.9385073!16s%2Fg%2F1tfgptrx!19sChIJ--ernWeoXIYRDik-4F4QsuA?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Clark Real Estate Agency and Hot Spots Apartment Locating",
+      "rating": 4.8,
+      "address": "· 326 N LBJ Dr Suite 199",
+      "phone": "· (512) 805-7768",
+      "website": "http://www.hotspotslocating.com/%20and%20http://www.clarkrealestateagency.com",
+      "mapsLink": "https://www.google.com/maps/place/Clark+Real+Estate+Agency+and+Hot+Spots+Apartment+Locating/data=!4m7!3m6!1s0x865ca84b89c1217f:0x8d175864bc1df014!8m2!3d29.8850411!4d-97.9400907!16s%2Fg%2F1hc1428ks!19sChIJfyHBiUuoXIYRFPAdvGRYF40?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Apartments and More - Free Rental Locating Service",
+      "rating": 4.2,
+      "address": "· 325 E Hopkins St",
+      "phone": "· (512) 522-6722",
+      "website": "https://www.apartmentsandmore.com/",
+      "mapsLink": "https://www.google.com/maps/place/Apartments+and+More+-+Free+Rental+Locating+Service/data=!4m7!3m6!1s0x865ca8678cfd4d23:0xc4e46ba1449e309!8m2!3d29.8838004!4d-97.9380266!16s%2Fg%2F1tgns29w!19sChIJI039jGeoXIYRCeNJFLpGTgw?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "San Marcos Property Management Company",
+      "rating": 1,
+      "address": "· 415 N Guadalupe St Suite 410",
+      "phone": "· (512) 270-9027",
+      "website": null,
+      "mapsLink": "https://www.google.com/maps/place/San+Marcos+Property+Management+Company/data=!4m7!3m6!1s0x865ca868ae2f3fef:0x672a7b2899c78fd5!8m2!3d29.885814!4d-97.942492!16s%2Fg%2F1ptxn7nt1!19sChIJ7z8vrmioXIYR1Y_HmSh7Kmc?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Southwest Leasing Solutions",
+      "rating": 2.6,
+      "address": "· 1205 TX-123 #303",
+      "phone": "· (979) 595-4876",
+      "website": "http://southwestleasingsolutions.com/",
+      "mapsLink": "https://www.google.com/maps/place/Southwest+Leasing+Solutions/data=!4m7!3m6!1s0x865ca85e438985a9:0xec951b50a24492a4!8m2!3d29.8628395!4d-97.9381586!16s%2Fg%2F12ll3m4lj!19sChIJqYWJQ16oXIYRpJJEolAblew?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Windmill Townhomes & Duplexes",
+      "rating": 4.7,
+      "address": "· 109 Windmill Dr A1",
+      "phone": "· (512) 396-4181",
+      "website": "https://www.windmilltownhomes.com/",
+      "mapsLink": "https://www.google.com/maps/place/Windmill+Townhomes+%26+Duplexes/data=!4m7!3m6!1s0x865ca86d1e09730b:0x13fe41932c03a5d8!8m2!3d29.8947153!4d-97.9457905!16s%2Fg%2F1trcgvp6!19sChIJC3MJHm2oXIYR2KUDLJNB_hM?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Asset Management Specialist, Inc.",
+      "rating": 4,
+      "address": "· 100 N Edward Gary St A",
+      "phone": "· (512) 353-3232",
+      "website": "http://www.txams.com/",
+      "mapsLink": "https://www.google.com/maps/place/Asset+Management+Specialist,+Inc./data=!4m7!3m6!1s0x865ca95fe84644b5:0xe80b3f51536ac1b6!8m2!3d29.8825921!4d-97.9382608!16s%2Fg%2F11ghpv0bjx!19sChIJtURG6F-pXIYRtsFqU1E_C-g?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Park Hill Apartment Homes",
+      "rating": 4,
+      "address": "· 1001 Leah Ave",
+      "phone": "· (512) 396-7000",
+      "website": "https://www.parkhillapts.com/?botLoad=ScheduleTour&utm_medium=search",
+      "mapsLink": "https://www.google.com/maps/place/Park+Hill+Apartment+Homes/data=!4m7!3m6!1s0x865ca89737a76f93:0x92aa7f59e7016721!8m2!3d29.8560194!4d-97.948086!16s%2Fg%2F1tk_k3xm!19sChIJk2-nN5eoXIYRIWcB51l_qpI?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Cottages at San Marcos",
+      "rating": 4,
+      "address": "· 1415 Craddock Ave",
+      "phone": "· (512) 612-4217",
+      "website": null,
+      "mapsLink": "https://www.google.com/maps/place/Cottages+at+San+Marcos/data=!4m7!3m6!1s0x865ca867d4dd7b15:0xc4af5081381b3405!8m2!3d29.8833593!4d-97.970319!16s%2Fg%2F1pzttm1gs!19sChIJFXvd1GeoXIYRBTQbOIFQr8Q?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Treehouse",
+      "rating": 3.3,
+      "address": "· 800 N LBJ Dr",
+      "phone": "· (737) 242-2193",
+      "website": "https://www.treehousesanmarcos.com/?switch_cls[id]=67805&utm_source=gmb&utm_medium=organic",
+      "mapsLink": "https://www.google.com/maps/place/Treehouse/data=!4m7!3m6!1s0x865ca86bc3a4efb3:0x40b4c06c3aafef67!8m2!3d29.8928016!4d-97.9405801!16s%2Fg%2F1tj5ll3f!19sChIJs--kw2uoXIYRZ--vOmzAtEA?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Kat's Apartment Locating Services",
+      "rating": 5,
+      "address": "· 130 S L B J Dr",
+      "phone": "(512) 504-6073",
+      "website": null,
+      "mapsLink": "https://www.google.com/maps/place/Kat%27s+Apartment+Locating+Services/data=!4m7!3m6!1s0x865b63fa33c3c6eb:0x142b9f7f9b90eed6!8m2!3d29.881623!4d-97.9400624!16s%2Fg%2F11v077glnw!19sChIJ68bDM_pjW4YR1u6Qm3-fKxQ?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "The View on the Square",
+      "rating": 4.4,
+      "address": "· 228 S Guadalupe St",
+      "phone": "· (512) 738-8525",
+      "website": "https://theviewonthesquare.com/?utm_source=GBP&utm_medium=organic",
+      "mapsLink": "https://www.google.com/maps/place/The+View+on+the+Square/data=!4m7!3m6!1s0x865ca943ca3759dd:0x680f2141e63d3b0b!8m2!3d29.8786651!4d-97.9416428!16s%2Fg%2F11fmzc2byh!19sChIJ3Vk3ykOpXIYRCzs95kEhD2g?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Southwest Leasing Solutions",
+      "rating": 2.6,
+      "address": "· 1205 TX-123 #303",
+      "phone": "· (979) 595-4876",
+      "website": "http://southwestleasingsolutions.com/",
+      "mapsLink": "https://www.google.com/maps/place/Southwest+Leasing+Solutions/data=!4m7!3m6!1s0x865ca85e438985a9:0xec951b50a24492a4!8m2!3d29.8628395!4d-97.9381586!16s%2Fg%2F12ll3m4lj!19sChIJqYWJQ16oXIYRpJJEolAblew?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Oaks 35",
+      "rating": 3.1,
+      "address": "· 1635 Aquarena Springs Dr",
+      "phone": "· (833) 394-6886",
+      "website": null,
+      "mapsLink": "https://www.google.com/maps/place/Oaks+35/data=!4m7!3m6!1s0x865ca9bf1ff030c5:0x27ecf02f085f8231!8m2!3d29.8942105!4d-97.9141128!16s%2Fg%2F11swtxt9hh!19sChIJxTDwH7-pXIYRMYJfCC_w7Cc?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Aspire San Marcos",
+      "rating": 4.6,
+      "address": "· 101 Concho St",
+      "phone": "· (855) 348-1004",
+      "website": null,
+      "mapsLink": "https://www.google.com/maps/place/Aspire+San+Marcos/data=!4m7!3m6!1s0x865ca9861bfef4cb:0xad396b79452c2891!8m2!3d29.8864009!4d-97.9411389!16s%2Fg%2F11h5nrvttc!19sChIJy_T-G4apXIYRkSgsRXlrOa0?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "DMJ Real Estate Investments",
+      "rating": 4.6,
+      "address": "· 100 E San Antonio St #201",
+      "phone": "· (737) 335-5154",
+      "website": "http://dmjrealestateinvestments.com/",
+      "mapsLink": "https://www.google.com/maps/place/DMJ+Real+Estate+Investments/data=!4m7!3m6!1s0x865ca9650555266d:0xbfd50ffb7ad1a9f3!8m2!3d29.8819192!4d-97.9410485!16s%2Fg%2F11tt0lr09k!19sChIJbSZVBWWpXIYR86nRevsP1b8?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Clear River Real Estate Sales and Management",
+      "rating": 3.3,
+      "address": "· 2632 Rolling Oaks",
+      "phone": "· (512) 558-2651",
+      "website": "http://www.realtyjams.com/",
+      "mapsLink": "https://www.google.com/maps/place/Clear+River+Real+Estate+Sales+and+Management/data=!4m7!3m6!1s0x82fbe350a39d6ad7:0xc8672f2b972c7be3!8m2!3d29.8630235!4d-97.9801264!16s%2Fg%2F11s5d_2myk!19sChIJ12qdo1Dj-4IR43sslysvZ8g?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "The Ranch",
+      "rating": 4.4,
+      "address": "· 1818 Old Ranch Rd 12",
+      "phone": "· (512) 682-9622",
+      "website": "https://www.dakotaranchapartments.com/?utm_source=gmb&utm_medium=organic&utm_campaign=gmb_listing&hyly_channel=pr&hyly_method=w",
+      "mapsLink": "https://www.google.com/maps/place/The+Ranch/data=!4m7!3m6!1s0x865ca7e7d1dbc149:0xcc987b28ffcf64f!8m2!3d29.89773!4d-97.9689679!16s%2Fg%2F1tcwx49c!19sChIJScHb0eenXIYRT_b8j7KHyQw?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Hillside Ranch",
+      "rating": 3.5,
+      "address": "· 1350 N LBJ Dr",
+      "phone": "· (737) 242-2189",
+      "website": "https://www.hillsideranchsm.com/?switch_cls[id]=67805&utm_source=gmb&utm_medium=organic",
+      "mapsLink": "https://www.google.com/maps/place/Hillside+Ranch/data=!4m7!3m6!1s0x865ca813115ff0d9:0xdc97f4903cfd7b3f!8m2!3d29.8991107!4d-97.9450275!16s%2Fg%2F113jlf6nd!19sChIJ2fBfEROoXIYRP3v9PJD0l9w?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "The Hammer Real Estate Company",
+      "rating": 4.4,
+      "address": "· 1702 Hunter Rd",
+      "phone": "· (830) 832-7935",
+      "website": "http://hammerrealestateco.com/",
+      "mapsLink": "https://www.google.com/maps/place/The+Hammer+Real+Estate+Company/data=!4m7!3m6!1s0x865ca943389a54b1:0x376454eba1eeb428!8m2!3d29.8696893!4d-97.9611777!16s%2Fg%2F11s38kwbln!19sChIJsVSaOEOpXIYRKLTuoetUZDc?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Muzzy Property Group",
+      "rating": 5,
+      "address": "· 2550 Hunter Rd #1108",
+      "phone": "· (512) 738-2053",
+      "website": "http://www.muzzypropertygroup.com/",
+      "mapsLink": "https://www.google.com/maps/place/Muzzy+Property+Group/data=!4m7!3m6!1s0x865ca91a79e0e25d:0x2fbaa6cf0117c871!8m2!3d29.8565328!4d-97.9720075!16s%2Fg%2F11rd001gt_!19sChIJXeLgeRqpXIYRccgXAc-mui8?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "AustinSA Real Estate Services",
+      "rating": 4,
+      "address": "· 314 E Hutchison St",
+      "phone": "· (512) 805-8226",
+      "website": null,
+      "mapsLink": "https://www.google.com/maps/place/AustinSA+Real+Estate+Services/data=!4m7!3m6!1s0x865ca867efd2d5c5:0xe1879c744d56ee50!8m2!3d29.884478!4d-97.9381989!16s%2Fg%2F1hd_xxvr7!19sChIJxdXS72eoXIYRUO5WTXSch-E?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "College Town San Marcos",
+      "rating": 4.4,
+      "address": "· 1351 Thorpe Ln",
+      "phone": "· (512) 601-6178",
+      "website": "https://www.offcampushousingsanmarcos.com/?utm_source=GMB&utm_medium=utm",
+      "mapsLink": "https://www.google.com/maps/place/College+Town+San+Marcos/data=!4m7!3m6!1s0x865ca84c1843f493:0x5825fdad2d4bbde0!8m2!3d29.8910066!4d-97.9204743!16s%2Fg%2F11dxs445fl!19sChIJk_RDGEyoXIYR4L1LLa39JVg?authuser=0&hl=en&rclk=1"
+    }
+  ]
+}
