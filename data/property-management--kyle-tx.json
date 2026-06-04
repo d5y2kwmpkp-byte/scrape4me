@@ -1,0 +1,314 @@
+{
+  "success": true,
+  "query": "Property management  near Kyle, TX",
+  "businessType": "Property management ",
+  "location": "Kyle, TX",
+  "scrapedAt": "2026-06-04T04:07:37.834Z",
+  "count": 38,
+  "locations": [
+    {
+      "name": "Texcen Realty (formerly Centex Realty) - Property Management and Sales",
+      "rating": 4.6,
+      "address": "· 602 W Center St",
+      "phone": "· (512) 292-0800",
+      "website": "http://www.texcenrealty.com/",
+      "mapsLink": "https://www.google.com/maps/place/Texcen+Realty+%28formerly+Centex+Realty%29+-+Property+Management+and+Sales/data=!4m7!3m6!1s0x865b4da764fee94d:0xfb62b9e1cb60ef31!8m2!3d29.989517!4d-97.8805119!16s%2Fg%2F1tdrxqw3!19sChIJTen-ZKdNW4YRMe9gy-G5Yvs?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Platinum Peak Property Management",
+      "rating": 4.8,
+      "address": "Closed · Opens 9 AM Thu",
+      "phone": "· (512) 522-9818",
+      "website": "http://platinumpeakpropertymanagement.com/",
+      "mapsLink": "https://www.google.com/maps/place/Platinum+Peak+Property+Management/data=!4m7!3m6!1s0x865b539b97f56d05:0x48823f34d8323fa9!8m2!3d30.111361!4d-98.0078916!16s%2Fg%2F11b7c7x5d_!19sChIJBW31l5tTW4YRqT8y2DQ_gkg?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Tower Property Management Kyle/Buda",
+      "rating": null,
+      "address": "· 412 Birch Dr",
+      "phone": null,
+      "website": "https://towerprops.com/",
+      "mapsLink": "https://www.google.com/maps/place/Tower+Property+Management+Kyle%2FBuda/data=!4m7!3m6!1s0x865b57798793ec3f:0x7e0ed8209a2b8ad7!8m2!3d29.9996432!4d-97.8868296!16s%2Fg%2F11jh71p3rn!19sChIJP-yTh3lXW4YR14ormiDYDn4?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Havenpoint Property Management",
+      "rating": 4.3,
+      "address": "· 142 Cimarron Park Loop Suite A",
+      "phone": "· (512) 618-5870",
+      "website": null,
+      "mapsLink": "https://www.google.com/maps/place/Havenpoint+Property+Management/data=!4m7!3m6!1s0x865b528ca5f0c8bd:0xe550e1153f3270d6!8m2!3d30.102045!4d-97.854518!16s%2Fg%2F11byty_bf5!19sChIJvcjwpYxSW4YR1nAyPxXhUOU?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "The Chloe",
+      "rating": 4.7,
+      "address": "· 3400 Kyle Crossing",
+      "phone": "· (737) 387-4841",
+      "website": "https://thechloekyle.com/?utm_source=gmb&utm_medium=organic",
+      "mapsLink": "https://www.google.com/maps/place/The+Chloe/data=!4m7!3m6!1s0x865b5384cbdd2d73:0x42ff24d3358448e8!8m2!3d30.0326014!4d-97.852811!16s%2Fg%2F11rmnhm_9y!19sChIJcy3dy4RTW4YR6EiENdMk_0I?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Estates at Plum Creek",
+      "rating": 4.3,
+      "address": "· 151 Rikardson",
+      "phone": "· (512) 768-8164",
+      "website": "http://www.estatesplumcreek.com/?utm_knock=gmb",
+      "mapsLink": "https://www.google.com/maps/place/Estates+at+Plum+Creek/data=!4m7!3m6!1s0x865b51276428d651:0x428396a7ee19f56!8m2!3d30.0409205!4d-97.8747213!16s%2Fg%2F11hhq8r3sm!19sChIJUdYoZCdRW4YRVp_hfmo5KAQ?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Leuven Group, Llc",
+      "rating": 2,
+      "address": "· 115 Kohlers Crossing Suite 210",
+      "phone": "(512) 504-3123",
+      "website": "http://www.leuvengroup.com/",
+      "mapsLink": "https://www.google.com/maps/place/Leuven+Group,+Llc/data=!4m7!3m6!1s0x865b5155552aa383:0x2ec1c4e1e193bf5!8m2!3d30.0280018!4d-97.8891695!16s%2Fg%2F11jn53qj4h!19sChIJg6MqVVVRW4YR9TsZHk4c7AI?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "The Brick and Mortar District Apartments",
+      "rating": 4.2,
+      "address": "· 3875 Burnham",
+      "phone": "· (737) 213-1189",
+      "website": null,
+      "mapsLink": "https://www.google.com/maps/place/The+Brick+and+Mortar+District+Apartments/data=!4m7!3m6!1s0x865b5122328d7847:0xbed8f1c1063e8ea7!8m2!3d30.0309933!4d-97.878179!16s%2Fg%2F11smgx5c3m!19sChIJR3iNMiJRW4YRp44-BsHx2L4?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "1880 at Plum Creek",
+      "rating": null,
+      "address": "· 106b Pinnacle Ln",
+      "phone": "· (737) 530-2261",
+      "website": "https://www.1880atplumcreek.com/?utm_knock=g&utm_perq=gbp",
+      "mapsLink": "https://www.google.com/maps/place/1880+at+Plum+Creek/data=!4m7!3m6!1s0x865b51ca458033e9:0x6b4bd2350981eeb7!8m2!3d30.0425604!4d-97.8750986!16s%2Fg%2F11n558zwr9!19sChIJ6TOARcpRW4YRt-6BCTXSS2s?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Beacon at Bunton Creek Rental Homes",
+      "rating": 4.6,
+      "address": "· 521 Bunton Reserve Blvd",
+      "phone": "· (737) 363-1866",
+      "website": "https://livebh.com/apartments/bunton-creek-rental-homes/?utm_source=gbp&utm_medium=organic&utm_campaign=gbp",
+      "mapsLink": "https://www.google.com/maps/place/Beacon+at+Bunton+Creek+Rental+Homes/data=!4m7!3m6!1s0x865b55a107d7bc7d:0xf1cfcc07cc76f409!8m2!3d29.980014!4d-97.83571!16s%2Fg%2F11sjwq0fgc!19sChIJfbzXB6FVW4YRCfR2zAfMz_E?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Ariza Plum Creek Apartments",
+      "rating": 4.7,
+      "address": "· 4700 Cromwell Dr",
+      "phone": "· (512) 268-9087",
+      "website": "https://www.arizaplumcreekapthome.com/",
+      "mapsLink": "https://www.google.com/maps/place/Ariza+Plum+Creek+Apartments/data=!4m7!3m6!1s0x865b517e6da8b025:0xb37f8408e4e30dd9!8m2!3d30.0193836!4d-97.8746587!16s%2Fg%2F11f5mmcstz!19sChIJJbCobX5RW4YR2Q3j5AiEf7M?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Rustic Cabin Getaway with Pool & Venue in Kyle",
+      "rating": 5,
+      "address": "· 757 Bunton Ln",
+      "phone": "(512) 710-8972",
+      "website": null,
+      "mapsLink": "https://www.google.com/maps/place/Rustic+Cabin+Getaway+with+Pool+%26+Venue+in+Kyle/data=!4m7!3m6!1s0x865b55dd1d52d851:0xc82ca5cc9eebc8fb!8m2!3d29.9807738!4d-97.8275108!16s%2Fg%2F11xggb7qsw!19sChIJUdhSHd1VW4YR-8jrnsylLMg?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Greater BnB",
+      "rating": 5,
+      "address": "Open 24 hours",
+      "phone": "· (210) 800-6288",
+      "website": "http://www.greaterbnb.com/",
+      "mapsLink": "https://www.google.com/maps/place/Greater+BnB/data=!4m7!3m6!1s0xacc2f46689b0c1bf:0xa7797d6050292950!8m2!3d29.8896115!4d-98.1705181!16s%2Fg%2F11ywrc18ym!19sChIJv8GwiWb0wqwRUCkpUGB9eac?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Sage Plum Creek",
+      "rating": 4.8,
+      "address": "· 1075 Vaughn",
+      "phone": "· (737) 250-8671",
+      "website": null,
+      "mapsLink": "https://www.google.com/maps/place/Sage+Plum+Creek/data=!4m7!3m6!1s0x865b518daf2de4a5:0x5d973a1b84f193c4!8m2!3d30.0251878!4d-97.8746963!16s%2Fg%2F11ppg0w5lq!19sChIJpeQtr41RW4YRxJPxhBs6l10?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Saddle Creek",
+      "rating": 3.6,
+      "address": "· 21393 I-35",
+      "phone": "· (855) 770-5876",
+      "website": "http://www.saddlecreekkyle.com/",
+      "mapsLink": "https://www.google.com/maps/place/Saddle+Creek/data=!4m7!3m6!1s0x865b5404e4a9b745:0x36aa69a2ad002f2a!8m2!3d30.001459!4d-97.8662125!16s%2Fg%2F1xpwk640!19sChIJRbep5ARUW4YRKi8AraJpqjY?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Olive Fox Properties Group",
+      "rating": 5,
+      "address": "· 104 Gallatin Dr",
+      "phone": "· (512) 364-7245",
+      "website": "https://olivefoxproperties.com/?utm_source=gbp&utm_medium=organic",
+      "mapsLink": "https://www.google.com/maps/place/Olive+Fox+Properties+Group/data=!4m7!3m6!1s0x865b57a7334910af:0x56a07e981fecbef!8m2!3d29.9930875!4d-97.8961462!16s%2Fg%2F11sqm32yqz!19sChIJrxBJM6dXW4YR78v-gekHagU?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Empire Rental Living at Plum Creek",
+      "rating": null,
+      "address": "· 5711 FM2770",
+      "phone": null,
+      "website": null,
+      "mapsLink": "https://www.google.com/maps/place/Empire+Rental+Living+at+Plum+Creek/data=!4m7!3m6!1s0x865b510fed5754b5:0xdb52f63adc6cf4f2!8m2!3d30.019893!4d-97.8887562!16s%2Fg%2F11kbkfql98!19sChIJtVRX7Q9RW4YR8vRs3Dr2Uts?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Aidan",
+      "rating": 4.3,
+      "address": "· 210 Amberwood S",
+      "phone": "· (888) 504-2254",
+      "website": "https://www.aidanapartments.com/?rcstdid=MQ%3D%3D-WOzw8Oa5P2c%3D%C2%A0",
+      "mapsLink": "https://www.google.com/maps/place/Aidan/data=!4m7!3m6!1s0x865b53a57aca40b7:0xca60682f04690e37!8m2!3d30.0256206!4d-97.8473369!16s%2Fg%2F11ph8tjql2!19sChIJt0DKeqVTW4YRNw5pBC9oYMo?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "The Green at Plum Creek",
+      "rating": 4.5,
+      "address": "· 4300 Cromwell Dr",
+      "phone": "· (512) 394-3441",
+      "website": null,
+      "mapsLink": "https://www.google.com/maps/place/The+Green+at+Plum+Creek/data=!4m7!3m6!1s0x865b515713e0b211:0xd1f452c77b98709!8m2!3d30.0247012!4d-97.8759441!16s%2Fg%2F11btrqq4zw!19sChIJEbLgE1dRW4YRCYe5dyxFHw0?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Cromwell at Plum Creek",
+      "rating": 4.6,
+      "address": "· 1050 Wittenburg",
+      "phone": "· (512) 504-1050",
+      "website": "https://www.cromwellatplumcreek.com/?rcstdid=Mg%3D%3D-YRjTEizZPgM%3D&utm_source=gmb&utm_medium=organic",
+      "mapsLink": "https://www.google.com/maps/place/Cromwell+at+Plum+Creek/data=!4m7!3m6!1s0x865b5317fa9792d7:0xb2bc7fde2b32b01d!8m2!3d30.0217307!4d-97.8738607!16s%2Fg%2F11jvlf7ktw!19sChIJ15KX-hdTW4YRHbAyK95_vLI?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Leuven Group, Llc",
+      "rating": 2,
+      "address": "· 115 Kohlers Crossing Suite 210",
+      "phone": "(512) 504-3123",
+      "website": "http://www.leuvengroup.com/",
+      "mapsLink": "https://www.google.com/maps/place/Leuven+Group,+Llc/data=!4m7!3m6!1s0x865b5155552aa383:0x2ec1c4e1e193bf5!8m2!3d30.0280018!4d-97.8891695!16s%2Fg%2F11jn53qj4h!19sChIJg6MqVVVRW4YR9TsZHk4c7AI?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Ventana at Plum Creek",
+      "rating": 4.3,
+      "address": "· 4624 Cromwell Dr",
+      "phone": "· (888) 612-3765",
+      "website": "https://www.liveventanaplumcreektx.com/",
+      "mapsLink": "https://www.google.com/maps/place/Ventana+at+Plum+Creek/data=!4m7!3m6!1s0x865b5155da7ce39d:0xa1b04cb629444019!8m2!3d30.0218292!4d-97.8755142!16s%2Fg%2F11gggrz4nz!19sChIJneN82lVRW4YRGUBEKbZMsKE?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Rustic Cabin Getaway with Pool & Venue in Kyle",
+      "rating": 5,
+      "address": "· 757 Bunton Ln",
+      "phone": "(512) 710-8972",
+      "website": null,
+      "mapsLink": "https://www.google.com/maps/place/Rustic+Cabin+Getaway+with+Pool+%26+Venue+in+Kyle/data=!4m7!3m6!1s0x865b55dd1d52d851:0xc82ca5cc9eebc8fb!8m2!3d29.9807738!4d-97.8275108!16s%2Fg%2F11xggb7qsw!19sChIJUdhSHd1VW4YR-8jrnsylLMg?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "The Outpost",
+      "rating": 4.3,
+      "address": "· 104 Creekside Trail",
+      "phone": "(512) 769-7437",
+      "website": "https://theoutpostkyle.com/",
+      "mapsLink": "https://www.google.com/maps/place/The+Outpost/data=!4m7!3m6!1s0x865b55f8624fd271:0xba268710be9cbe7c!8m2!3d29.973263!4d-97.8580451!16s%2Fg%2F11l73vq1qr!19sChIJcdJPYvhVW4YRfL6cvhCHJro?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Saddle Creek",
+      "rating": 3.6,
+      "address": "· 21393 I-35",
+      "phone": "· (855) 770-5876",
+      "website": "http://www.saddlecreekkyle.com/",
+      "mapsLink": "https://www.google.com/maps/place/Saddle+Creek/data=!4m7!3m6!1s0x865b5404e4a9b745:0x36aa69a2ad002f2a!8m2!3d30.001459!4d-97.8662125!16s%2Fg%2F1xpwk640!19sChIJRbep5ARUW4YRKi8AraJpqjY?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Hays County Landscaping , Best Affordable Mowers in Kyle Tx !",
+      "rating": 5,
+      "address": "· 414 High Rd",
+      "phone": null,
+      "website": "https://hayscountylandscaping.com/",
+      "mapsLink": "https://www.google.com/maps/place/Hays+County+Landscaping+,+Best+Affordable+Mowers+in+Kyle+Tx+!/data=!4m7!3m6!1s0x8bd0b1a70209c111:0xe9e3b091a9b6d8fd!8m2!3d29.9959063!4d-97.816868!16s%2Fg%2F11xrgkq09r!19sChIJEcEJAqex0IsR_di2qZGw4-k?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Oaks of Kyle Apartments",
+      "rating": 4.1,
+      "address": "· 200 Philomena Dr. Apt. 3307",
+      "phone": "· (512) 540-3643",
+      "website": "https://home.securityproperties.com/oaksofkyle/?utm_source=GBP",
+      "mapsLink": "https://www.google.com/maps/place/Oaks+of+Kyle+Apartments/data=!4m7!3m6!1s0x865b54202975ffe1:0x483597713940002f!8m2!3d29.9927807!4d-97.8695666!16s%2Fg%2F11crzwsg_q!19sChIJ4f91KSBUW4YRLwBAOXGXNUg?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "1880 at Plum Creek",
+      "rating": null,
+      "address": "· 106b Pinnacle Ln",
+      "phone": "· (737) 530-2261",
+      "website": "https://www.1880atplumcreek.com/?utm_knock=g&utm_perq=gbp",
+      "mapsLink": "https://www.google.com/maps/place/1880+at+Plum+Creek/data=!4m7!3m6!1s0x865b51ca458033e9:0x6b4bd2350981eeb7!8m2!3d30.0425604!4d-97.8750986!16s%2Fg%2F11n558zwr9!19sChIJ6TOARcpRW4YRt-6BCTXSS2s?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "1836 Property Management",
+      "rating": 4.7,
+      "address": "· 2209 S 1st St #104",
+      "phone": "· (512) 994-4323",
+      "website": "http://www.1836propertymanagement.com/",
+      "mapsLink": "https://www.google.com/maps/place/1836+Property+Management/data=!4m7!3m6!1s0x8644b55bcb115d63:0xcbcf164ae99f7ba3!8m2!3d30.2442615!4d-97.7575709!16s%2Fg%2F1td1dt7h!19sChIJY10Ry1u1RIYRo3uf6UoWz8s?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Olive Fox Properties Group",
+      "rating": 5,
+      "address": "· 104 Gallatin Dr",
+      "phone": "· (512) 364-7245",
+      "website": "https://olivefoxproperties.com/?utm_source=gbp&utm_medium=organic",
+      "mapsLink": "https://www.google.com/maps/place/Olive+Fox+Properties+Group/data=!4m7!3m6!1s0x865b57a7334910af:0x56a07e981fecbef!8m2!3d29.9930875!4d-97.8961462!16s%2Fg%2F11sqm32yqz!19sChIJrxBJM6dXW4YR78v-gekHagU?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Opal Point at Kyle Apartments",
+      "rating": 4.1,
+      "address": "· 141 Opal Ln",
+      "phone": "· (737) 279-4282",
+      "website": "http://www.opalpointatkyle.com/",
+      "mapsLink": "https://www.google.com/maps/place/Opal+Point+at+Kyle+Apartments/data=!4m7!3m6!1s0x865b57e1c5590511:0xbee337a412fba2a!8m2!3d29.9678385!4d-97.8785563!16s%2Fg%2F11vkk4b8ld!19sChIJEQVZxeFXW4YRKrovQXoz7gs?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "The Overlook at Plum Creek Senior Apartments",
+      "rating": 4.5,
+      "address": "· 4850 Cromwell Dr",
+      "phone": "· (512) 428-8558",
+      "website": "http://overlookatplumcreek.com/",
+      "mapsLink": "https://www.google.com/maps/place/The+Overlook+at+Plum+Creek+Senior+Apartments/data=!4m7!3m6!1s0x865b51555dec2ed9:0x90552a8113acb2d2!8m2!3d30.0169787!4d-97.873604!16s%2Fg%2F12hktg0x2!19sChIJ2S7sXVVRW4YR0rKsE4EqVZA?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Arden at Kohlers Crossing",
+      "rating": 4.5,
+      "address": "· 19500 I-35",
+      "phone": "· (512) 256-4823",
+      "website": "https://ardenatkohlerscrossing.com/",
+      "mapsLink": "https://www.google.com/maps/place/Arden+at+Kohlers+Crossing/data=!4m7!3m6!1s0x865b53d8bf87063b:0x74f5007ce1a93b2f!8m2!3d30.0264247!4d-97.8535331!16s%2Fg%2F11vql5fc4f!19sChIJOwaHv9hTW4YRLzup4XwA9XQ?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Oasis at Plum Creek Apartments",
+      "rating": 4.1,
+      "address": "· 4925 Cromwell Dr",
+      "phone": "· (512) 729-6862",
+      "website": null,
+      "mapsLink": "https://www.google.com/maps/place/Oasis+at+Plum+Creek+Apartments/data=!4m7!3m6!1s0x865b53ca91509c95:0xa79a453500b398ec!8m2!3d30.0171939!4d-97.8720628!16s%2Fg%2F11l6llmmgr!19sChIJlZxQkcpTW4YR7JizADVFmqc?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Afford-A-Party Rentals - Mechanical Bulls & Supplies “Best deals in Kyle Tx”",
+      "rating": 4.8,
+      "address": "· 410 High Rd",
+      "phone": "· (737) 274-6140",
+      "website": "http://www.affordapartyrentals.com/",
+      "mapsLink": "https://www.google.com/maps/place/Afford-A-Party+Rentals+-+Mechanical+Bulls+%26+Supplies+%E2%80%9CBest+deals+in+Kyle+Tx%E2%80%9D/data=!4m7!3m6!1s0x37e6e5dd8e92c6f:0x7673ed49e2158582!8m2!3d29.993918!4d-97.819692!16s%2Fg%2F11ptl8hqz_!19sChIJbyzp2F1ufgMRgoUV4kntc3Y?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Elite Realty Advisors",
+      "rating": 5,
+      "address": "· 401 W Center St UNIT B",
+      "phone": "· (512) 787-5968",
+      "website": "http://www.eliterealtyadvisor.com/",
+      "mapsLink": "https://www.google.com/maps/place/Elite+Realty+Advisors/data=!4m7!3m6!1s0x865b56993ca9cdab:0x779543391c0610ec!8m2!3d29.9887361!4d-97.8786653!16s%2Fg%2F11cmbq3q44!19sChIJq82pPJlWW4YR7BAGHDlDlXc?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Stetson Property Management",
+      "rating": 4.5,
+      "address": "· 211 Round Rock Ave",
+      "phone": "· (512) 670-8269",
+      "website": "http://stetson.management/",
+      "mapsLink": "https://www.google.com/maps/place/Stetson+Property+Management/data=!4m7!3m6!1s0x8644cb05af65f057:0x5df99e5e983d1991!8m2!3d30.5086896!4d-97.6808829!16s%2Fg%2F11bxfwxshc!19sChIJV_BlrwXLRIYRkRk9mF6e-V0?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Empire Rental Living at Plum Creek",
+      "rating": null,
+      "address": "· 5711 FM2770",
+      "phone": null,
+      "website": null,
+      "mapsLink": "https://www.google.com/maps/place/Empire+Rental+Living+at+Plum+Creek/data=!4m7!3m6!1s0x865b510fed5754b5:0xdb52f63adc6cf4f2!8m2!3d30.019893!4d-97.8887562!16s%2Fg%2F11kbkfql98!19sChIJtVRX7Q9RW4YR8vRs3Dr2Uts?authuser=0&hl=en&rclk=1"
+    }
+  ]
+}
