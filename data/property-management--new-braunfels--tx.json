@@ -1,0 +1,242 @@
+{
+  "success": true,
+  "query": "Property management  near New Braunfels , TX",
+  "businessType": "Property management ",
+  "location": "New Braunfels , TX",
+  "scrapedAt": "2026-06-04T04:03:22.320Z",
+  "count": 29,
+  "locations": [
+    {
+      "name": "Property Professionals, Inc.",
+      "rating": 3.8,
+      "address": "· 373 S Seguin Ave",
+      "phone": "· (830) 625-8065",
+      "website": "http://www.propertynb.com/",
+      "mapsLink": "https://www.google.com/maps/place/Property+Professionals,+Inc./data=!4m7!3m6!1s0x865cbd69b5978a0f:0xcd3d20a77915a235!8m2!3d29.7007996!4d-98.120855!16s%2Fg%2F1vzv4280!19sChIJD4qXtWm9XIYRNaIVeacgPc0?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Grand Welcome New Braunfels",
+      "rating": 5,
+      "address": "· 457 Landa St STE A-30",
+      "phone": "· (830) 626-9422",
+      "website": "https://www.newbraunfelshost.com/",
+      "mapsLink": "https://www.google.com/maps/place/Grand+Welcome+New+Braunfels/data=!4m7!3m6!1s0x865c97a0d8d47e85:0xa8a95d98a2b38fac!8m2!3d29.7032178!4d-98.1395575!16s%2Fg%2F11txq9_f9y!19sChIJhX7U2KCXXIYRrI-zophdqag?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Red Mansions Realty",
+      "rating": 4.8,
+      "address": "· 2324 Gruene Lake Dr c",
+      "phone": "· (830) 643-0536",
+      "website": "http://www.rmrteam.com/",
+      "mapsLink": "https://www.google.com/maps/place/Red+Mansions+Realty/data=!4m7!3m6!1s0x865cbd3624dec74f:0x959f217686c50416!8m2!3d29.7311445!4d-98.1029185!16s%2Fg%2F1tglzdmb!19sChIJT8feJDa9XIYRFgTFhnYhn5U?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Barclé Group New Braunfels Vacation Rental Management",
+      "rating": 5,
+      "address": "· 371 W Lincoln St",
+      "phone": "· (512) 649-0177",
+      "website": "https://barclegroup.com/",
+      "mapsLink": "https://www.google.com/maps/place/Barcl%C3%A9+Group+New+Braunfels+Vacation+Rental+Management/data=!4m7!3m6!1s0x865cbd9ea0c1d083:0x119e3754895539c!8m2!3d29.7032277!4d-98.1172504!16s%2Fg%2F11w3gm3md7!19sChIJg9DBoJ69XIYRnFOVSHXjGQE?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Limestone Country Properties, LLC",
+      "rating": 3.4,
+      "address": "· 378 Hampshire St",
+      "phone": "· (830) 253-0018",
+      "website": "https://www.limestone-country.com/",
+      "mapsLink": "https://www.google.com/maps/place/Limestone+Country+Properties,+LLC/data=!4m7!3m6!1s0x865ca2cde09c761b:0xdb74be10f6bdb9e!8m2!3d29.6788286!4d-98.1470626!16s%2Fg%2F11b6lg1wgg!19sChIJG3ac4M2iXIYRnttrD-FLtw0?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Brunner Property Management",
+      "rating": 5,
+      "address": "Open 24 hours",
+      "phone": "· (830) 308-8817",
+      "website": "https://brunnerpm.com/",
+      "mapsLink": "https://www.google.com/maps/place/Brunner+Property+Management/data=!4m7!3m6!1s0x99b6bbe34f58499:0xbbce995b313cb81e!8m2!3d29.7434101!4d-98.1052954!16s%2Fg%2F11sw6swqcq!19sChIJmYT1NL5rmwkRHrg8MVuZzrs?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Edwards Property Management",
+      "rating": 3,
+      "address": "· 1111 N Walnut Ave",
+      "phone": "· (830) 515-5101",
+      "website": "https://www.edwardspropertymgmt.com/",
+      "mapsLink": "https://www.google.com/maps/place/Edwards+Property+Management/data=!4m7!3m6!1s0x865c97e5e9ce6e07:0xcd3fb0a6043eb2cf!8m2!3d29.7070526!4d-98.1434641!16s%2Fg%2F11g6bl2pg3!19sChIJB27O6eWXXIYRz7I-BKawP80?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "MIDCITI Property Management",
+      "rating": 4.8,
+      "address": "· 1067 FM306 # 501",
+      "phone": "(830) 312-0313",
+      "website": "https://midcitipm.com/",
+      "mapsLink": "https://www.google.com/maps/place/MIDCITI+Property+Management/data=!4m7!3m6!1s0x865cbd5d0d5710f9:0xf3dde6988e3580a6!8m2!3d29.7419724!4d-98.0961872!16s%2Fg%2F11bwwys62c!19sChIJ-RBXDV29XIYRpoA1jpjm3fM?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Reliance PMPros",
+      "rating": 3.7,
+      "address": "· 111 W San Antonio St #150",
+      "phone": "· (830) 627-7368",
+      "website": "http://www.reliancepmpros.com/",
+      "mapsLink": "https://www.google.com/maps/place/Reliance+PMPros/data=!4m7!3m6!1s0x865cbd386f19c791:0x979aab9e069b58a6!8m2!3d29.7018906!4d-98.1248147!16s%2Fg%2F11r4m0cncn!19sChIJkccZbzi9XIYRplibBp6rmpc?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Amz Realty PM",
+      "rating": 4.4,
+      "address": "· 244 FM306 Suite 120 Unit 631",
+      "phone": "· (210) 500-8885",
+      "website": "https://amzrealtypm.com/",
+      "mapsLink": "https://www.google.com/maps/place/Amz+Realty+PM/data=!4m7!3m6!1s0x865c9f02c9edbf19:0x60cf4af667eefd7a!8m2!3d29.7318461!4d-98.0795561!16s%2Fg%2F1pt_6w2js!19sChIJGb_tyQKfXIYRev3uZ_ZKz2A?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Real Property Management Alamo - New Braunfels",
+      "rating": 4,
+      "address": "· 352 Landa St",
+      "phone": "· (512) 298-4911",
+      "website": "https://www.rpmalamo.com/?cid=LSTL_RPM000203&utm_source=gmb&utm_campaign=local&utm_medium=organic",
+      "mapsLink": "https://www.google.com/maps/place/Real+Property+Management+Alamo+-+New+Braunfels/data=!4m7!3m6!1s0x865ca866c130cb17:0xb09f37d618ba9e3a!8m2!3d29.7049981!4d-98.1364538!16s%2Fg%2F11c7sr9c4c!19sChIJF8swwWaoXIYROp66GNY3n7A?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Lokal Property Management",
+      "rating": null,
+      "address": "· 453 W San Antonio St",
+      "phone": "· (830) 308-8845",
+      "website": null,
+      "mapsLink": "https://www.google.com/maps/place/Lokal+Property+Management/data=!4m7!3m6!1s0x865cbd210dd1b5b1:0x1a2599acfc39a827!8m2!3d29.6995495!4d-98.1273062!16s%2Fg%2F11vlb0h3sl!19sChIJsbXRDSG9XIYRJ6g5_KyZJRo?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Emerald Haus Group",
+      "rating": 4.9,
+      "address": "· 453 W San Antonio St",
+      "phone": "· (512) 995-5555",
+      "website": "https://emeraldhausgroup.com/?utm_source=gbp&utm_medium=organic",
+      "mapsLink": "https://www.google.com/maps/place/Emerald+Haus+Group/data=!4m7!3m6!1s0x865cbd932b6e5579:0xf9f43ab2e21fa78b!8m2!3d29.6995379!4d-98.1272879!16s%2Fg%2F11g0dh10gh!19sChIJeVVuK5O9XIYRi6cf4rI69Pk?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "River Tree Property Management",
+      "rating": 4.7,
+      "address": "· 19315 FM 2252 #309",
+      "phone": "· (210) 517-2617",
+      "website": "http://www.rivertreepm.com/",
+      "mapsLink": "https://www.google.com/maps/place/River+Tree+Property+Management/data=!4m7!3m6!1s0x865c9315a8076ebd:0xf31d4fcf3a9c6906!8m2!3d29.6215319!4d-98.2975958!16s%2Fg%2F11q210nl36!19sChIJvW4HqBWTXIYRBmmcOs9PHfM?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Tyler Green Property Group",
+      "rating": 4.4,
+      "address": "· 373 S Seguin Ave",
+      "phone": "· (210) 885-7189",
+      "website": "http://www.tylergreenpropertygroup.com/",
+      "mapsLink": "https://www.google.com/maps/place/Tyler+Green+Property+Group/data=!4m7!3m6!1s0x865cbdb9f22900d3:0x37a2720940a99ccb!8m2!3d29.7007996!4d-98.120855!16s%2Fg%2F11pf7nn68r!19sChIJ0wAp8rm9XIYRy5ypQAlyojc?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Marshall Reddick Real Estate",
+      "rating": 3.7,
+      "address": "· 660 S Walnut Ave",
+      "phone": "· (830) 219-2826",
+      "website": "http://www.marshallreddick.com/",
+      "mapsLink": "https://www.google.com/maps/place/Marshall+Reddick+Real+Estate/data=!4m7!3m6!1s0x865c97f57f8bb621:0x8413ed84008e8a25!8m2!3d29.6866197!4d-98.127965!16s%2Fg%2F11td12c7v9!19sChIJIbaLf_WXXIYRJYqOAITtE4Q?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Cummins House To Home",
+      "rating": 5,
+      "address": "· 773 TX-337 Loop",
+      "phone": "· (830) 626-3206",
+      "website": null,
+      "mapsLink": "https://www.google.com/maps/place/Cummins+House+To+Home/data=!4m7!3m6!1s0x865cbd3a9a579573:0xec220a703155eb5d!8m2!3d29.7137679!4d-98.103433!16s%2Fg%2F11g8yjk1h_!19sChIJc5VXmjq9XIYRXetVMXAKIuw?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Lazy H Retreats",
+      "rating": 4.9,
+      "address": "· 123 N Seguin Ave Suite 206",
+      "phone": "· (830) 308-7202",
+      "website": null,
+      "mapsLink": "https://www.google.com/maps/place/Lazy+H+Retreats/data=!4m7!3m6!1s0x2672664300ec4771:0x58ba91d334c9c842!8m2!3d29.7031429!4d-98.1252461!16s%2Fg%2F11tpbrk7hm!19sChIJcUfsAENmciYRQsjJNNORulg?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Zip Management Group",
+      "rating": 4.3,
+      "address": "· 7940 FM306 Suite 2",
+      "phone": "· (210) 564-7368",
+      "website": "https://zipmgroup.com/",
+      "mapsLink": "https://www.google.com/maps/place/Zip+Management+Group/data=!4m7!3m6!1s0x865ca10e978a0507:0x20bc5c92e5cf37dd!8m2!3d29.8331966!4d-98.1162796!16s%2Fg%2F11vrt5tx48!19sChIJBwWKlw6hXIYR3TfP5ZJcvCA?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Keller Williams Heritage",
+      "rating": 4.9,
+      "address": "· 453 W San Antonio St",
+      "phone": "· (830) 624-2400",
+      "website": "https://www.kwnewbraunfels.com/",
+      "mapsLink": "https://www.google.com/maps/place/Keller+Williams+Heritage/data=!4m7!3m6!1s0x865cbd673c16288f:0xd632301a370afeed!8m2!3d29.6995145!4d-98.1272856!16s%2Fg%2F1q6j8wmh0!19sChIJjygWPGe9XIYR7f4KNxowMtY?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "KB Home Legend Heights",
+      "rating": 3.4,
+      "address": "· 1308 London Avenue",
+      "phone": "· (830) 837-5066",
+      "website": null,
+      "mapsLink": "https://www.google.com/maps/place/KB+Home+Legend+Heights/data=!4m7!3m6!1s0x865cbd413d2891d5:0xf7ffd4608057c27c!8m2!3d29.638673!4d-98.112088!16s%2Fg%2F11s5bzf4wp!19sChIJ1ZEoPUG9XIYRfMJXgGDU__c?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "CloverLeaf Property Management",
+      "rating": 4.9,
+      "address": "· 8620 N New Braunfels Ave #620",
+      "phone": "· (210) 827-7777",
+      "website": "http://www.cloverleafpropertymanagement.com/",
+      "mapsLink": "https://www.google.com/maps/place/CloverLeaf+Property+Management/data=!4m7!3m6!1s0x865c9352403642c9:0xde00471a3c8d144c!8m2!3d29.5186257!4d-98.4577617!16s%2Fg%2F11d_7x2fwd!19sChIJyUI2QFKTXIYRTBSNPBpHAN4?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Lazy H Retreats",
+      "rating": 4.9,
+      "address": "· 123 N Seguin Ave Suite 206",
+      "phone": "· (830) 308-7202",
+      "website": null,
+      "mapsLink": "https://www.google.com/maps/place/Lazy+H+Retreats/data=!4m7!3m6!1s0x2672664300ec4771:0x58ba91d334c9c842!8m2!3d29.7031429!4d-98.1252461!16s%2Fg%2F11tpbrk7hm!19sChIJcUfsAENmciYRQsjJNNORulg?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "River City Resorts, Inc",
+      "rating": 4.6,
+      "address": "· 1229 Industrial St J2",
+      "phone": "· (830) 626-2196",
+      "website": "https://rivercityresorts.com/",
+      "mapsLink": "https://www.google.com/maps/place/River+City+Resorts,+Inc/data=!4m7!3m6!1s0x865cbd5d4393114f:0xb4797612a2026d4d!8m2!3d29.7135719!4d-98.10034!16s%2Fg%2F1tgmwqb1!19sChIJTxGTQ129XIYRTW0CohJ2ebQ?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Zip Management Group",
+      "rating": 4.3,
+      "address": "· 7940 FM306 Suite 2",
+      "phone": "· (210) 564-7368",
+      "website": "https://zipmgroup.com/",
+      "mapsLink": "https://www.google.com/maps/place/Zip+Management+Group/data=!4m7!3m6!1s0x865ca10e978a0507:0x20bc5c92e5cf37dd!8m2!3d29.8331966!4d-98.1162796!16s%2Fg%2F11vrt5tx48!19sChIJBwWKlw6hXIYR3TfP5ZJcvCA?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "The Smartt Team - Keller Williams Heritage Realty",
+      "rating": 5,
+      "address": "· 888 Landa St",
+      "phone": "· (830) 358-6655",
+      "website": "http://www.thesmarttteam.com/",
+      "mapsLink": "https://www.google.com/maps/place/The+Smartt+Team+-+Keller+Williams+Heritage+Realty/data=!4m7!3m6!1s0x865cbd673dd01565:0xa784b96364297113!8m2!3d29.6996665!4d-98.1494318!16s%2Fg%2F12ht22t94!19sChIJZRXQPWe9XIYRE3EpZGO5hKc?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Tyler Green Property Group",
+      "rating": 4.4,
+      "address": "· 373 S Seguin Ave",
+      "phone": "· (210) 885-7189",
+      "website": "http://www.tylergreenpropertygroup.com/",
+      "mapsLink": "https://www.google.com/maps/place/Tyler+Green+Property+Group/data=!4m7!3m6!1s0x865cbdb9f22900d3:0x37a2720940a99ccb!8m2!3d29.7007996!4d-98.120855!16s%2Fg%2F11pf7nn68r!19sChIJ0wAp8rm9XIYRy5ypQAlyojc?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Steps Realty,LLC",
+      "rating": 5,
+      "address": "· 1607 Spur St",
+      "phone": "· (210) 632-1661",
+      "website": "http://www.stepsrealtyteam.com/",
+      "mapsLink": "https://www.google.com/maps/place/Steps+Realty,LLC/data=!4m7!3m6!1s0x865c97d9d923ffff:0x802f4abde5b43d7f!8m2!3d29.689436!4d-98.1375484!16s%2Fg%2F11g0k1tcxs!19sChIJ__8j2dmXXIYRfz205b1KL4A?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "My New Braunfels Vacation",
+      "rating": 4.8,
+      "address": "· 1345 Industrial St Suite A",
+      "phone": "· (830) 515-4142",
+      "website": "http://www.mynewbraunfelsvacation.com/",
+      "mapsLink": "https://www.google.com/maps/place/My+New+Braunfels+Vacation/data=!4m7!3m6!1s0x865cbd5f410477a7:0xb067095cb90e8ba0!8m2!3d29.7161475!4d-98.0981491!16s%2Fg%2F1tfrxxq0!19sChIJp3cEQV-9XIYRoIsOuVwJZ7A?authuser=0&hl=en&rclk=1"
+    }
+  ]
+}
