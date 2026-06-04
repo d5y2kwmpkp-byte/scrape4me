@@ -1,0 +1,314 @@
+{
+  "success": true,
+  "query": "Property management  near San Antonio, TX",
+  "businessType": "Property management ",
+  "location": "San Antonio, TX",
+  "scrapedAt": "2026-06-04T03:06:13.625Z",
+  "count": 38,
+  "locations": [
+    {
+      "name": "Real Property Management Alamo - San Antonio",
+      "rating": 4.7,
+      "address": "· 7272 Wurzbach Rd Ste 204",
+      "phone": "· (210) 787-3876",
+      "website": "https://www.rpmalamo.com/?cid=LSTL_RPM000203&utm_source=gmb&utm_campaign=local&utm_medium=organic",
+      "mapsLink": "https://www.google.com/maps/place/Real+Property+Management+Alamo+-+San+Antonio/data=!4m7!3m6!1s0x865c6202f3dce985:0xa792d4a7de84ff81!8m2!3d29.5034534!4d-98.5840959!16s%2Fg%2F12qg04v1t!19sChIJhenc8wJiXIYRgf-E3qfUkqc?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Liberty Management, Inc.",
+      "rating": 4.6,
+      "address": "· 4801 Northwest Loop 410 #111",
+      "phone": "· (210) 681-8080",
+      "website": "https://www.libertymgt.net/",
+      "mapsLink": "https://www.google.com/maps/place/Liberty+Management,+Inc./data=!4m7!3m6!1s0x865c5d632bb5da29:0x230b98bb54edf6ef!8m2!3d29.4903065!4d-98.5813103!16s%2Fg%2F1v0ll5wm!19sChIJKdq1K2NdXIYR7_btVLuYCyM?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Hendricks Property Management",
+      "rating": 4.5,
+      "address": "· 2227 Lockhill Selma Rd",
+      "phone": "· (210) 344-3463",
+      "website": "http://www.sarents.com/",
+      "mapsLink": "https://www.google.com/maps/place/Hendricks+Property+Management/data=!4m7!3m6!1s0x865c60f5946a8e7d:0xd87e0a763c8ecb6c!8m2!3d29.5421506!4d-98.5291489!16s%2Fg%2F1tfzsbhj!19sChIJfY5qlPVgXIYRbMuOPHYKftg?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "CloverLeaf Property Management",
+      "rating": 4.9,
+      "address": "· 8620 N New Braunfels Ave #620",
+      "phone": "· (210) 827-7777",
+      "website": "http://www.cloverleafpropertymanagement.com/",
+      "mapsLink": "https://www.google.com/maps/place/CloverLeaf+Property+Management/data=!4m7!3m6!1s0x865c9352403642c9:0xde00471a3c8d144c!8m2!3d29.5186257!4d-98.4577617!16s%2Fg%2F11d_7x2fwd!19sChIJyUI2QFKTXIYRTBSNPBpHAN4?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "RentWerx Property Management",
+      "rating": 4.7,
+      "address": "· 3002 Napier Pk Suite 101",
+      "phone": "· (210) 497-8686",
+      "website": "https://www.rentwerx.com/",
+      "mapsLink": "https://www.google.com/maps/place/RentWerx+Property+Management/data=!4m7!3m6!1s0x865c618b175ad149:0x70f1e87f63f22570!8m2!3d29.5993116!4d-98.5407313!16s%2Fg%2F11xblc2x3!19sChIJSdFaF4thXIYRcCXyY3_o8XA?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Peace of Mind Property Management",
+      "rating": 4.7,
+      "address": "· 1102 E Sonterra Blvd Ste. 101",
+      "phone": "· (888) 211-6743",
+      "website": "http://www.peaceofmind.co/",
+      "mapsLink": "https://www.google.com/maps/place/Peace+of+Mind+Property+Management/data=!4m7!3m6!1s0x865c89f9010cfbe7:0x44036a5466179e04!8m2!3d29.6137431!4d-98.4766155!16s%2Fg%2F1q5grvqmh!19sChIJ5_sMAfmJXIYRBJ4XZlRqA0Q?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "MHN Property Management",
+      "rating": 4.4,
+      "address": "· 7300 Blanco Rd STE 202",
+      "phone": "· (210) 402-9696",
+      "website": "https://www.mhnproperties.com/",
+      "mapsLink": "https://www.google.com/maps/place/MHN+Property+Management/data=!4m7!3m6!1s0x865c624ff9c5f56f:0xad1bdacb1a1f60ca!8m2!3d29.5254055!4d-98.5042984!16s%2Fg%2F1v1vdm66!19sChIJb_XF-U9iXIYRymAfGsvaG60?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Bay Property Management Group San Antonio",
+      "rating": 5,
+      "address": "· 7400 Blanco Rd Suite 262",
+      "phone": "· (726) 888-6950",
+      "website": "https://texasbmg.com/areas-we-serve/property-management-in-san-antonio-texas/",
+      "mapsLink": "https://www.google.com/maps/place/Bay+Property+Management+Group+San+Antonio/data=!4m7!3m6!1s0x865c61bee4fe6f19:0x1d0211fc260c9a33!8m2!3d29.5274912!4d-98.5045268!16s%2Fg%2F11x600_hcq!19sChIJGW_-5L5hXIYRM5oMJvwRAh0?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "PMI Birdy Properties, CRMC",
+      "rating": 4.6,
+      "address": "· 18830 Stone Oak Pkwy",
+      "phone": "· (210) 524-9400",
+      "website": "https://www.birdy.com/",
+      "mapsLink": "https://www.google.com/maps/place/PMI+Birdy+Properties,+CRMC/data=!4m7!3m6!1s0x865c600bfc032fa7:0xed5e4c0a55502c7b!8m2!3d29.613991!4d-98.492622!16s%2Fg%2F1tj91zjh!19sChIJpy8D_AtgXIYReyxQVQpMXu0?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Bexar Management",
+      "rating": 4.5,
+      "address": "· 7311 Broadway",
+      "phone": "· (210) 421-9237",
+      "website": "http://www.bexarmanagement.com/",
+      "mapsLink": "https://www.google.com/maps/place/Bexar+Management/data=!4m7!3m6!1s0x865cf56a148fed91:0x70a96209ffb6cfa1!8m2!3d29.4952116!4d-98.4667273!16s%2Fg%2F1q2w1qm5w!19sChIJke2PFGr1XIYRoc-2_wliqXA?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "HomeRiver Group San Antonio",
+      "rating": 4.1,
+      "address": "· 2141 NW Military Hwy",
+      "phone": "· (210) 340-1717",
+      "website": "https://www.homeriver.com/texas/san-antonio-property-management?utm_source=Google&utm_medium=GBP&utm_campaign=san+antonio",
+      "mapsLink": "https://www.google.com/maps/place/HomeRiver+Group+San+Antonio/data=!4m7!3m6!1s0x865c60643f7c45c5:0xfa2a38d3b32ea723!8m2!3d29.53135!4d-98.52111!16s%2Fg%2F1tt1hn05!19sChIJxUV8P2RgXIYRI6cus9M4Kvo?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Casa Cantera Property Management",
+      "rating": 5,
+      "address": "· 4204 Gardendale Rd Suite 308",
+      "phone": "· (210) 890-1989",
+      "website": "http://www.casacanteratx.com/",
+      "mapsLink": "https://www.google.com/maps/place/Casa+Cantera+Property+Management/data=!4m7!3m6!1s0x865c61a7f73e1e91:0x85d4d862f02a3ee8!8m2!3d29.5240265!4d-98.5665648!16s%2Fg%2F11wjknxbyx!19sChIJkR4-96dhXIYR6D4q8GLY1IU?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "ForeFront Property Management",
+      "rating": 4.4,
+      "address": "· 4606 Centerview Dr Unit 109",
+      "phone": null,
+      "website": null,
+      "mapsLink": "https://www.google.com/maps/place/ForeFront+Property+Management/data=!4m7!3m6!1s0x865c62014c92897f:0xa75d3aa88085f5b1!8m2!3d29.4876606!4d-98.5735674!16s%2Fg%2F11gfhh7j_w!19sChIJf4mSTAFiXIYRsfWFgKg6Xac?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Real Property Management LoneStar",
+      "rating": 4,
+      "address": "· 12702 Toepperwein Rd Suite 204",
+      "phone": "· (210) 314-1039",
+      "website": "https://www.rpmlonestar.com/?cid=LSTL_RPM000203&utm_source=gmb&utm_campaign=local&utm_medium=organic",
+      "mapsLink": "https://www.google.com/maps/place/Real+Property+Management+LoneStar/data=!4m7!3m6!1s0x865c8d1946c0fff7:0x5a32d15f3a1ccdb8!8m2!3d29.554326!4d-98.3460397!16s%2Fg%2F11b6gcp3kg!19sChIJ9__ARhmNXIYRuM0cOl_RMlo?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Cornertstone Property Management",
+      "rating": 4.8,
+      "address": "· 4615 Walzem Rd Ste 203",
+      "phone": "· (210) 440-1223",
+      "website": "https://www.cornerstonepmtx.com/",
+      "mapsLink": "https://www.google.com/maps/place/Cornertstone+Property+Management/data=!4m7!3m6!1s0xa90bb2c394b30331:0xca990cfe81cfd90!8m2!3d29.5111801!4d-98.4007297!16s%2Fg%2F11w2xmwnbp!19sChIJMQOzlMOyC6kRkP0c6M-QqQw?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Pyramis Company Property Management",
+      "rating": 4.4,
+      "address": "· 9901 IH 10 West Suite 800",
+      "phone": "· (210) 593-9807",
+      "website": "https://pyramiscompany.com/",
+      "mapsLink": "https://www.google.com/maps/place/Pyramis+Company+Property+Management/data=!4m7!3m6!1s0x865c60ad38ee1421:0x99e8ce14f66e699d!8m2!3d29.5343865!4d-98.5608839!16s%2Fg%2F1tdpb0s7!19sChIJIRTuOK1gXIYRnWlu9hTO6Jk?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Red Wagon Properties",
+      "rating": 4.2,
+      "address": "· 16719 Huebner Rd # 1",
+      "phone": "· (210) 695-1100",
+      "website": "https://redwagonproperties.com/?utm_source=gmb&utm_medium=link",
+      "mapsLink": "https://www.google.com/maps/place/Red+Wagon+Properties/data=!4m7!3m6!1s0x865c618400c2f691:0x154e1aa03bcf9ae!8m2!3d29.6009903!4d-98.5229923!16s%2Fg%2F1tg2l2cj!19sChIJkfbCAIRhXIYRrvm8A6rhVAE?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Helotes Property Management",
+      "rating": 4.4,
+      "address": "· 12415 Bandera Rd Suite 108",
+      "phone": "· (210) 853-2533",
+      "website": "http://helotespm.com/",
+      "mapsLink": "https://www.google.com/maps/place/Helotes+Property+Management/data=!4m7!3m6!1s0x865c69c34c8167c1:0x55c176e3510dcab7!8m2!3d29.5588025!4d-98.6767193!16s%2Fg%2F11lky9kk4l!19sChIJwWeBTMNpXIYRt8oNUeN2wVU?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Keyrenter Property Management San Antonio",
+      "rating": 4.4,
+      "address": "· 3740 Colony Dr Ste LL104",
+      "phone": "· (210) 503-8000",
+      "website": "https://keyrentersanantonio.com/",
+      "mapsLink": "https://www.google.com/maps/place/Keyrenter+Property+Management+San+Antonio/data=!4m7!3m6!1s0x865c60b989e16a05:0x15288f3b84541c66!8m2!3d29.5302713!4d-98.5593075!16s%2Fg%2F11b75h1qtw!19sChIJBWrhiblgXIYRZhxUhDuPKBU?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Freedom Property Management TX LLC",
+      "rating": 4.3,
+      "address": "· 40 NE Interstate 410 Loop # 400",
+      "phone": "· (210) 787-2860",
+      "website": "https://www.freedompropertymanagementtx.com/",
+      "mapsLink": "https://www.google.com/maps/place/Freedom+Property+Management+TX+LLC/data=!4m7!3m6!1s0x865c614066ee34e5:0x19c0ac066eb86683!8m2!3d29.5193057!4d-98.490718!16s%2Fg%2F11tck71z1w!19sChIJ5TTuZkBhXIYRg2a4bgaswBk?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Hance Realty Real Estate & Property Management",
+      "rating": 4.3,
+      "address": "· 1001 Donaldson Ave",
+      "phone": "· (210) 632-2408",
+      "website": "http://www.hancerealty.com/",
+      "mapsLink": "https://www.google.com/maps/place/Hance+Realty+Real+Estate+%26+Property+Management/data=!4m7!3m6!1s0x865c5e46f460fe19:0xa9a41e1bd5e4422f!8m2!3d29.464681!4d-98.5430662!16s%2Fg%2F11c52kbm40!19sChIJGf5g9EZeXIYRL0Lk1RsepKk?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "ForeFront Property Management",
+      "rating": 4.4,
+      "address": "· 4606 Centerview Dr Unit 109",
+      "phone": null,
+      "website": null,
+      "mapsLink": "https://www.google.com/maps/place/ForeFront+Property+Management/data=!4m7!3m6!1s0x865c62014c92897f:0xa75d3aa88085f5b1!8m2!3d29.4876606!4d-98.5735674!16s%2Fg%2F11gfhh7j_w!19sChIJf4mSTAFiXIYRsfWFgKg6Xac?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Freedom Property Management TX LLC",
+      "rating": 4.3,
+      "address": "· 40 NE Interstate 410 Loop # 400",
+      "phone": "· (210) 787-2860",
+      "website": "https://www.freedompropertymanagementtx.com/",
+      "mapsLink": "https://www.google.com/maps/place/Freedom+Property+Management+TX+LLC/data=!4m7!3m6!1s0x865c614066ee34e5:0x19c0ac066eb86683!8m2!3d29.5193057!4d-98.490718!16s%2Fg%2F11tck71z1w!19sChIJ5TTuZkBhXIYRg2a4bgaswBk?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Strategic Property Management, Inc.",
+      "rating": 4.2,
+      "address": "· Colonnade Building, 9901 I-10 Ste 800",
+      "phone": "· (210) 672-4000",
+      "website": "http://www.spm-roi.com/",
+      "mapsLink": "https://www.google.com/maps/place/Strategic+Property+Management,+Inc./data=!4m7!3m6!1s0x865c66f9108342bb:0x29ab89f9623971f9!8m2!3d29.5339594!4d-98.5620586!16s%2Fg%2F11c543tcqh!19sChIJu0KDEPlmXIYR-XE5YvmJqyk?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Specialized Property Management San Antonio",
+      "rating": 4.3,
+      "address": "· 227 N Loop 1604 E Suite, 150",
+      "phone": "· (726) 223-4405",
+      "website": "https://specializedpropertymanagementsanantonio.com/",
+      "mapsLink": "https://www.google.com/maps/place/Specialized+Property+Management+San+Antonio/data=!4m7!3m6!1s0x865c89ffe1d79b7d:0x194413c02b1dcf23!8m2!3d29.6111458!4d-98.4842372!16s%2Fg%2F11gdsf_2fm!19sChIJfZvX4f-JXIYRI88dK8ATRBk?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Davidson Properties",
+      "rating": 4.4,
+      "address": "· 8151 Broadway # 100",
+      "phone": "· (210) 826-1616",
+      "website": "https://www.davidsonproperties.com/",
+      "mapsLink": "https://www.google.com/maps/place/Davidson+Properties/data=!4m7!3m6!1s0x865cf5739d561c89:0x2e2daa0578b510cf!8m2!3d29.511041!4d-98.466613!16s%2Fg%2F1thw2krd!19sChIJiRxWnXP1XIYRzxC1eAWqLS4?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Windrose Realty, LLC",
+      "rating": 4.7,
+      "address": "· 18911 Hardy Oak Blvd #157",
+      "phone": "· (210) 560-4576",
+      "website": "http://www.windroserealty.com/",
+      "mapsLink": "https://www.google.com/maps/place/Windrose+Realty,+LLC/data=!4m7!3m6!1s0x865c601d4ace7d17:0xfde85cc7951f230c!8m2!3d29.6181843!4d-98.4767441!16s%2Fg%2F11c3yr6lcl!19sChIJF33OSh1gXIYRDCMflcdc6P0?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "3D Realty and Property Management",
+      "rating": 4.5,
+      "address": "· 8200 I-10 Suite #505",
+      "phone": "· (210) 276-0140",
+      "website": "http://3drealtypm.com/",
+      "mapsLink": "https://www.google.com/maps/place/3D+Realty+and+Property+Management/data=!4m7!3m6!1s0x865c5d70c9ec27e5:0x69bfeffe9d0b782f!8m2!3d29.5157221!4d-98.5551919!16s%2Fg%2F11b8zdgj8g!19sChIJ5SfsyXBdXIYRL3gLnf7vv2k?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Full Spectrum Property Management",
+      "rating": 4.1,
+      "address": "· 11120 Wurzbach Rd Ste 301",
+      "phone": "· (210) 281-4083",
+      "website": "http://fsppmtx.com/",
+      "mapsLink": "https://www.google.com/maps/place/Full+Spectrum+Property+Management/data=!4m7!3m6!1s0x865c60e9f71aaaa7:0xfb06fb9dff1cd7d5!8m2!3d29.5428665!4d-98.5496436!16s%2Fg%2F11f50zcjc7!19sChIJp6oa9-lgXIYR1dcc_537Bvs?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Heritage Property Management",
+      "rating": 4.1,
+      "address": "· 1717 N Loop 1604 E",
+      "phone": "· (210) 477-4862",
+      "website": "https://www.heritagepropertymanagementsa.com/contact",
+      "mapsLink": "https://www.google.com/maps/place/Heritage+Property+Management/data=!4m7!3m6!1s0x865c8a1e1e59c4fd:0xeda0807c7a174c35!8m2!3d29.6094964!4d-98.4668052!16s%2Fg%2F11q2y_zkgx!19sChIJ_cRZHh6KXIYRNUwXenyAoO0?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Spectrum Association Management",
+      "rating": 4.3,
+      "address": "· 17319 San Pedro Ave #318",
+      "phone": "· (210) 494-0659",
+      "website": "https://spectrumam.com/texas/san-antonio-hoa-management/",
+      "mapsLink": "https://www.google.com/maps/place/Spectrum+Association+Management/data=!4m7!3m6!1s0x865c8a1abd13626f:0x51c4948829b64700!8m2!3d29.6005341!4d-98.4734128!16s%2Fg%2F1tflsfl2!19sChIJb2ITvRqKXIYRAEe2KYiUxFE?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "All County Alamo Property Management",
+      "rating": 4.2,
+      "address": "· 1777 Northeast Interstate 410 Loop #600",
+      "phone": "· (210) 718-0992",
+      "website": "https://allcountyalamo.com/",
+      "mapsLink": "https://www.google.com/maps/place/All+County+Alamo+Property+Management/data=!4m7!3m6!1s0x865c92a0167b4d73:0x6bc9e0f12d9e2816!8m2!3d29.5511531!4d-98.3076553!16s%2Fg%2F11bc7rljw_!19sChIJc017FqCSXIYRFiieLfHgyWs?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Wright Property Management Group",
+      "rating": 4.7,
+      "address": "· 5460 Babcock Rd suite 120-104",
+      "phone": "· (210) 298-3948",
+      "website": "http://www.wrightpg.com/",
+      "mapsLink": "https://www.google.com/maps/place/Wright+Property+Management+Group/data=!4m7!3m6!1s0x865c5d629a9c31dd:0xfb671b9f0e56da30!8m2!3d29.516746!4d-98.594898!16s%2Fg%2F1tcvv8gl!19sChIJ3TGcmmJdXIYRMNpWDp8bZ_s?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "RealManage San Antonio",
+      "rating": 4.4,
+      "address": "· 613 Northwest Loop 410 # 530",
+      "phone": "· (866) 473-2573",
+      "website": null,
+      "mapsLink": "https://www.google.com/maps/place/RealManage+San+Antonio/data=!4m7!3m6!1s0x865c601dcbb49381:0xdb7eb6f72f3d86c5!8m2!3d29.5224459!4d-98.5019291!16s%2Fg%2F1tgqjvgc!19sChIJgZO0yx1gXIYRxYY9L_e2fts?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Property Management Services of Texas",
+      "rating": 2.3,
+      "address": "· 1747 Citadell Plaza Ste 102",
+      "phone": "· (210) 662-6000",
+      "website": "https://pmstx.com/?y_source=1_MTE4NDk5NDMtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+      "mapsLink": "https://www.google.com/maps/place/Property+Management+Services+of+Texas/data=!4m7!3m6!1s0x865cf5f55ef18ce1:0xd4ec5e781b0ab04b!8m2!3d29.5148978!4d-98.4672276!16s%2Fg%2F11h3bjfxjb!19sChIJ4YzxXvX1XIYRS7AKG3he7NQ?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "GSG Property Management",
+      "rating": 3.3,
+      "address": "· 11961 Starcrest Dr",
+      "phone": "· (210) 930-4440",
+      "website": "http://thegsgteam.com/",
+      "mapsLink": "https://www.google.com/maps/place/GSG+Property+Management/data=!4m7!3m6!1s0x865c8bbd507b8393:0xff57224fda1c3a4f!8m2!3d29.548163!4d-98.4629785!16s%2Fg%2F11r3tjvtwb!19sChIJk4N7UL2LXIYRTzoc2k8iV_8?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "PMI Profit Realty",
+      "rating": 4.1,
+      "address": "· 8103 Broadway Suite 201",
+      "phone": "· (210) 504-4410",
+      "website": "https://www.sanantoniotxpropertymanagementinc.com/",
+      "mapsLink": "https://www.google.com/maps/place/PMI+Profit+Realty/data=!4m7!3m6!1s0x865c8b41b637095b:0x5b897fc46ed17a2b!8m2!3d29.5099365!4d-98.4666264!16s%2Fg%2F11cnbg9kpn!19sChIJWwk3tkGLXIYRK3rRbsR_iVs?authuser=0&hl=en&rclk=1"
+    },
+    {
+      "name": "Wildwood Management Group",
+      "rating": 3.6,
+      "address": "· 14800 San Pedro Ave #216",
+      "phone": "· (210) 732-0000",
+      "website": "https://www.wildwood-tx.com/",
+      "mapsLink": "https://www.google.com/maps/place/Wildwood+Management+Group/data=!4m7!3m6!1s0x865c5f65fcb00001:0xe7e4f945bd3a689!8m2!3d29.576341!4d-98.4773455!16s%2Fg%2F11qgyl_b9w!19sChIJAQCw_GVfXIYRiabTW5RPfg4?authuser=0&hl=en&rclk=1"
+    }
+  ]
+}
