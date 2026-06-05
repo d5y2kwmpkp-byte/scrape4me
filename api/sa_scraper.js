@@ -87,7 +87,7 @@ function parseDetail(fullText) {
   try {
     // PASS 1: Collect all permit numbers quickly
     console.log("\nPass 1: Collecting permit numbers...");
-    await page.goto(SEARCH_URL, { waitUntil: "networkidle", timeout: 30000 });
+    await page.goto(SEARCH_URL, { waitUntil: "domcontentloaded", timeout: 60000 });
     await page.waitForTimeout(3000);
 
     try {
@@ -145,7 +145,7 @@ function parseDetail(fullText) {
 
       const detailPage = await context.newPage();
       try {
-        await detailPage.goto(detailUrl, { waitUntil: "networkidle", timeout: 15000 });
+        await detailPage.goto(detailUrl, { waitUntil: "domcontentloaded", timeout: 30000 });
         const text = await detailPage.innerText("body").catch(() => "");
 
         // Check if we got a valid detail page
