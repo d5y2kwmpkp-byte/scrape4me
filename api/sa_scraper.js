@@ -26,7 +26,7 @@ async function upsertToSupabase(records) {
     return;
   }
   try {
-    const res = await fetch(`${SUPABASE_URL}/rest/v1/permits`, {
+    const res = await fetch(`${SUPABASE_URL}/rest/v1/sa_permits`, {
       method: "POST",
       headers: {
         apikey:          SUPABASE_KEY,
