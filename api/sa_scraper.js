@@ -1,7 +1,8 @@
 /**
- * FlowState — San Antonio Permit Scraper v10
- * Fix: establishes session via homepage before hitting detail pages
- * Uses single shared context with session, clears only local storage between requests
+ * FlowState — San Antonio Permit Scraper v11
+ * Single pass: navigate results → click each link → read detail → go back
+ * Never hits detail URLs directly — all navigation flows through search session
+ * Bypasses Cloudflare by behaving like a real browser
  */
 
 const { chromium } = require("playwright");
@@ -11,8 +12,6 @@ const path = require("path");
 const SUPABASE_URL = "https://ewmtownoxnaghhlobeci.supabase.co";
 const SUPABASE_KEY = process.env.SUPABASE_SECRET_KEY || "";
 const SEARCH_URL   = "https://aca-prod.accela.com/COSA/Cap/GlobalSearchResults.aspx?isNewQuery=yes&QueryText=Plumbing";
-const HOME_URL     = "https://aca-prod.accela.com/COSA/Default.aspx";
-const BASE_URL     = "https://aca-prod.accela.com/COSA";
 
 async function upsertToSupabase(records) {
   if (!SUPABASE_KEY) { console.log("  [supabase] No key — CSV only"); return; }
@@ -36,20 +35,11 @@ async function upsertToSupabase(records) {
 function parseDetail(fullText) {
   const lines = fullText.split("\n").map(l => l.trim()).filter(Boolean);
   const data = {
-    applicantName:    "",
-    phone:            "",
-    email:            "",
-    location:         "",
-    mailingAddress:   "",
-    licensedProName:  "",
-    licensedProPhone: "",
-    licensedProLic:   "",
-    ownerName:        "",
-    ownerAddress:     "",
-    projectDesc:      "",
+    applicantName: "", phone: "", email: "", location: "",
+    mailingAddress: "", licensedProName: "", licensedProPhone: "",
+    licensedProLic: "", ownerName: "", ownerAddress: "", projectDesc: "",
   };
 
-  // Location
   const locIdx = lines.findIndex(l => l === "Location");
   if (locIdx !== -1) {
     for (let i = locIdx + 1; i < Math.min(locIdx + 5, lines.length); i++) {
@@ -61,19 +51,14 @@ function parseDetail(fullText) {
 
   const skip = new Set(["Individual", "Business", "Organization", "Corporation", "Trust", "United States"]);
   let section = "";
-
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
-
     if (line === "Applicant:")             { section = "applicant"; continue; }
     if (line === "Licensed Professional:") { section = "licensed";  continue; }
-    if (line === "Project Description:")  { section = "project";   continue; }
-    if (line === "Owner:")                { section = "owner";     continue; }
-    if (["Contacts:", "Payments", "Inspections", "Conditions"].includes(line)) { section = "done"; break; }
-
-    if (skip.has(line)) continue;
-    if (line.startsWith("Do not receive")) continue;
-    if (line === "Mailing" || line === "Physical") continue;
+    if (line === "Project Description:")   { section = "project";   continue; }
+    if (line === "Owner:")                 { section = "owner";     continue; }
+    if (["Contacts:", "Payments", "Inspections", "Conditions"].includes(line)) break;
+    if (skip.has(line) || line.startsWith("Do not receive") || line === "Mailing" || line === "Physical") continue;
 
     if (section === "applicant") {
       if (!data.applicantName)                          { data.applicantName  = line; }
@@ -82,158 +67,190 @@ function parseDetail(fullText) {
       else if (!data.mailingAddress && line.match(/\d{5}/)) { data.mailingAddress = line; }
     }
     if (section === "licensed") {
-      if (!data.licensedProName)                                { data.licensedProName  = line; }
-      else if (line === "Primary Phone:" && lines[i+1])         { data.licensedProPhone = lines[i+1]; i++; }
-      else if (line.match(/RMP|LIC|TICL|State /))               { data.licensedProLic   = line; }
+      if (!data.licensedProName)                        { data.licensedProName  = line; }
+      else if (line === "Primary Phone:" && lines[i+1]) { data.licensedProPhone = lines[i+1]; i++; }
+      else if (line.match(/RMP|LIC|TICL|State /))       { data.licensedProLic   = line; }
     }
-    if (section === "project" && !data.projectDesc) { data.projectDesc = line; }
+    if (section === "project" && !data.projectDesc)     { data.projectDesc = line; }
     if (section === "owner") {
-      if (!data.ownerName)                                      { data.ownerName    = line; }
-      else if (!data.ownerAddress && line.match(/\d{5}|\d+ /)) { data.ownerAddress = line; }
+      if (!data.ownerName)                                       { data.ownerName    = line; }
+      else if (!data.ownerAddress && line.match(/\d{5}|\d+ /))  { data.ownerAddress = line; }
     }
   }
   return data;
 }
 
+async function scrapePagePermits(page, pageNum) {
+  const results = [];
+  let cards = await page.$$(".ACA_TabRow_Odd, .ACA_TabRow_Even, tr.ACA_TabRow_Odd, tr.ACA_TabRow_Even");
+  if (!cards.length) cards = await page.$$("tr, div.recordRow");
+
+  for (let idx = 0; idx < cards.length; idx++) {
+    const card = cards[idx];
+    const cardText = await card.innerText().catch(() => "");
+    if (!cardText.trim()) continue;
+    const lines = cardText.split("\n").map(l => l.trim()).filter(Boolean);
+    if (lines.length < 3) continue;
+
+    const permitNum  = lines[1] || "";
+    const permitType = lines[2] || "";
+    const isPlumbing = permitNum.includes("MEP-") || permitNum.includes("LSR-") ||
+      permitNum.includes("INV-PLB") || permitNum.includes("26TMP") ||
+      permitType.toLowerCase().includes("plumb") || permitType.toLowerCase().includes("mep");
+
+    if (!isPlumbing) continue;
+
+    results.push({
+      idx,
+      permitNum,
+      permitDate:  lines[0] || "",
+      permitType,
+      description: lines[4] || "",
+      status:      lines[5] || "",
+    });
+  }
+  return results;
+}
+
 (async () => {
-  console.log("FlowState SA Permit Scraper v10");
+  console.log("FlowState SA Permit Scraper v11");
   console.log("─".repeat(50));
 
   const browser = await chromium.launch({
     headless: true,
-    args: ["--no-sandbox", "--disable-setuid-sandbox", "--disable-dev-shm-usage", "--disable-gpu"],
+    args: [
+      "--no-sandbox", "--disable-setuid-sandbox",
+      "--disable-dev-shm-usage", "--disable-gpu",
+      "--disable-blink-features=AutomationControlled", // hide automation flag
+    ],
   });
 
-  // Single shared context — session persists across all requests
   const context = await browser.newContext({
-    userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36",
+    userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    viewport: { width: 1280, height: 800 },
+    locale: "en-US",
+    timezoneId: "America/Chicago",
   });
 
+  // Hide webdriver flag from Cloudflare detection
+  await context.addInitScript(() => {
+    Object.defineProperty(navigator, "webdriver", { get: () => false });
+  });
+
+  const page = await context.newPage();
   const permits = [];
-  const permitQueue = [];
+  let totalProcessed = 0;
 
   try {
-    // Establish session via homepage first
-    console.log("\nEstablishing session...");
-    const sessionPage = await context.newPage();
-    await sessionPage.goto(HOME_URL, { waitUntil: "domcontentloaded", timeout: 60000 });
-    await sessionPage.waitForTimeout(3000);
-    console.log("Session established");
-
-    // PASS 1: Collect permit numbers
-    console.log("\nPass 1: Collecting permit numbers...");
-    await sessionPage.goto(SEARCH_URL, { waitUntil: "domcontentloaded", timeout: 60000 });
-    await sessionPage.waitForTimeout(4000);
+    console.log("\nLoading search results...");
+    await page.goto(SEARCH_URL, { waitUntil: "domcontentloaded", timeout: 60000 });
+    await page.waitForTimeout(4000);
 
     try {
-      const tab = await sessionPage.$("a:has-text('Records'), span:has-text('Records')");
-      if (tab) { await tab.click(); await sessionPage.waitForLoadState("domcontentloaded"); await sessionPage.waitForTimeout(2000); console.log("Records tab clicked"); }
+      const tab = await page.$("a:has-text('Records'), span:has-text('Records')");
+      if (tab) { await tab.click(); await page.waitForLoadState("domcontentloaded"); await page.waitForTimeout(2000); console.log("Records tab clicked"); }
     } catch {}
 
     let pageNum = 1;
-    while (true) {
-      let cards = await sessionPage.$$(".ACA_TabRow_Odd, .ACA_TabRow_Even, tr.ACA_TabRow_Odd, tr.ACA_TabRow_Even");
-      if (!cards.length) cards = await sessionPage.$$("tr, div.recordRow");
+    let hasMore = true;
 
-      let matched = 0;
-      for (const card of cards) {
-        const cardText = await card.innerText().catch(() => "");
-        if (!cardText.trim()) continue;
-        const lines = cardText.split("\n").map(l => l.trim()).filter(Boolean);
-        if (lines.length < 3) continue;
+    while (hasMore) {
+      console.log(`\n  Page ${pageNum}...`);
 
-        const permitNum  = lines[1] || "";
-        const permitType = lines[2] || "";
-        const isPlumbing = permitNum.includes("MEP-") || permitNum.includes("LSR-") ||
-          permitNum.includes("INV-PLB") || permitNum.includes("26TMP") ||
-          permitType.toLowerCase().includes("plumb") || permitType.toLowerCase().includes("mep");
+      // Collect permit info from current page
+      const pagePermits = await scrapePagePermits(page, pageNum);
+      console.log(`  Found ${pagePermits.length} permits — fetching details...`);
 
-        if (!isPlumbing) continue;
-        matched++;
-        permitQueue.push({
-          permitNum,
-          permitDate:  lines[0] || "",
-          permitType,
-          description: lines[4] || "",
-          status:      lines[5] || "",
-        });
-      }
-
-      console.log(`  Page ${pageNum}: ${matched} permits`);
-      const nextBtn = await sessionPage.$("a[id*='lbtnNext'], a:has-text('Next >')");
-      if (!nextBtn || !(await nextBtn.isVisible())) break;
-      await nextBtn.click();
-      await sessionPage.waitForLoadState("domcontentloaded");
-      pageNum++;
-      await sessionPage.waitForTimeout(2000);
-    }
-
-    await sessionPage.close();
-    console.log(`\nTotal: ${permitQueue.length} permits`);
-    console.log("Pass 2: Fetching detail pages within established session...\n");
-
-    // PASS 2: Open detail pages in new tabs within the SAME context (shares session cookies)
-    for (const permit of permitQueue) {
-      const detailUrl = `${BASE_URL}/Cap/CapDetail.aspx?altId=${encodeURIComponent(permit.permitNum)}&module=Building`;
-      let detail = {};
-
-      const detailPage = await context.newPage();
-      try {
-        await detailPage.goto(detailUrl, { waitUntil: "domcontentloaded", timeout: 30000 });
-        await detailPage.waitForTimeout(2000);
-
-        // Wait for Record Details section to appear
+      // For each permit, click through to detail and come back
+      for (const permit of pagePermits) {
         try {
-          await detailPage.waitForSelector("text=Record Details", { timeout: 5000 });
-        } catch {}
+          // Re-query cards fresh each time (DOM changes after navigation)
+          let cards = await page.$$(".ACA_TabRow_Odd, .ACA_TabRow_Even, tr.ACA_TabRow_Odd, tr.ACA_TabRow_Even");
+          if (!cards.length) cards = await page.$$("tr, div.recordRow");
 
-        const text = await detailPage.innerText("body").catch(() => "");
+          const card = cards[permit.idx];
+          if (!card) { console.log(`    [skip] ${permit.permitNum} — card not found`); continue; }
 
-        if (text.includes("Applicant:") || text.includes("Record Details")) {
-          detail = parseDetail(text);
-          console.log(`    + ${permit.permitNum} | ${detail.applicantName || "N/A"} | ${detail.phone || "N/A"} | owner: ${detail.ownerName || "N/A"}`);
-        } else {
-          console.log(`    ~ ${permit.permitNum} | no detail (page: ${text.slice(0, 80).trim().replace(/\n/g, " ")})`);
+          // Find the clickable link in this card
+          const link = await card.$("a");
+          if (!link) { console.log(`    [skip] ${permit.permitNum} — no link`); continue; }
+
+          // Click and wait for navigation
+          await Promise.all([
+            page.waitForNavigation({ waitUntil: "domcontentloaded", timeout: 20000 }),
+            link.click(),
+          ]);
+          await page.waitForTimeout(2000);
+
+          // Parse detail
+          const text = await page.innerText("body").catch(() => "");
+          const detail = parseDetail(text);
+
+          console.log(`    + ${permit.permitNum} | ${detail.applicantName || "N/A"} | ${detail.phone || "N/A"} | ${detail.ownerName || "N/A"}`);
+
+          permits.push({
+            id:                 `sa_${permit.permitNum}`,
+            city:               "San Antonio",
+            address:            detail.location ? `${detail.location}, San Antonio, TX` : "",
+            work_desc:          permit.description,
+            permit_num:         permit.permitNum,
+            applied_date:       permit.permitDate,
+            estimated_value:    null,
+            status:             permit.status,
+            source:             "SA_Accela",
+            fetched_at:         new Date().toISOString(),
+            applicant_name:     detail.applicantName    || "",
+            phone:              detail.phone            || "",
+            email:              detail.email            || "",
+            mailing_address:    detail.mailingAddress   || "",
+            licensed_pro_name:  detail.licensedProName  || "",
+            licensed_pro_phone: detail.licensedProPhone || "",
+            licensed_pro_lic:   detail.licensedProLic   || "",
+            owner_name:         detail.ownerName        || "",
+            owner_address:      detail.ownerAddress     || "",
+            project_desc:       detail.projectDesc      || "",
+          });
+          totalProcessed++;
+
+          // Go back to results
+          await page.goBack({ waitUntil: "domcontentloaded", timeout: 20000 });
+          await page.waitForTimeout(1500);
+
+          // Checkpoint
+          if (permits.length % 10 === 0) {
+            await upsertToSupabase(permits.slice(-10));
+            fs.mkdirSync(path.join(process.cwd(), "data"), { recursive: true });
+            fs.writeFileSync(path.join(process.cwd(), "data/sa_permits_checkpoint.json"), JSON.stringify(permits, null, 2));
+            console.log(`  [checkpoint] ${permits.length} records`);
+          }
+
+        } catch (e) {
+          console.log(`    [error] ${permit.permitNum}: ${e.message.slice(0, 80)}`);
+          // Try to get back to results page if we errored mid-navigation
+          try {
+            await page.goto(SEARCH_URL, { waitUntil: "domcontentloaded", timeout: 30000 });
+            await page.waitForTimeout(3000);
+            // Re-navigate to current page
+            for (let p = 1; p < pageNum; p++) {
+              const nb = await page.$("a[id*='lbtnNext'], a:has-text('Next >')");
+              if (nb) { await nb.click(); await page.waitForLoadState("domcontentloaded"); await page.waitForTimeout(1500); }
+            }
+          } catch {}
+          break; // skip remaining permits on this page, move to next
         }
-      } catch (e) {
-        console.log(`    [error] ${permit.permitNum}: ${e.message.slice(0, 60)}`);
-      } finally {
-        await detailPage.close();
       }
 
-      const record = {
-        id:                 `sa_${permit.permitNum}`,
-        city:               "San Antonio",
-        address:            detail.location ? `${detail.location}, San Antonio, TX` : "",
-        work_desc:          permit.description,
-        permit_num:         permit.permitNum,
-        applied_date:       permit.permitDate,
-        estimated_value:    null,
-        status:             permit.status,
-        source:             "SA_Accela",
-        fetched_at:         new Date().toISOString(),
-        applicant_name:     detail.applicantName    || "",
-        phone:              detail.phone            || "",
-        email:              detail.email            || "",
-        mailing_address:    detail.mailingAddress   || "",
-        licensed_pro_name:  detail.licensedProName  || "",
-        licensed_pro_phone: detail.licensedProPhone || "",
-        licensed_pro_lic:   detail.licensedProLic   || "",
-        owner_name:         detail.ownerName        || "",
-        owner_address:      detail.ownerAddress     || "",
-        project_desc:       detail.projectDesc      || "",
-      };
-
-      permits.push(record);
-
-      if (permits.length % 10 === 0) {
-        await upsertToSupabase(permits.slice(-10));
-        fs.mkdirSync(path.join(process.cwd(), "data"), { recursive: true });
-        fs.writeFileSync(path.join(process.cwd(), "data/sa_permits_checkpoint.json"), JSON.stringify(permits, null, 2));
-        console.log(`  [checkpoint] ${permits.length} records`);
+      // Move to next page
+      const nextBtn = await page.$("a[id*='lbtnNext'], a:has-text('Next >')");
+      if (!nextBtn || !(await nextBtn.isVisible())) {
+        console.log("\n  No more pages.");
+        hasMore = false;
+      } else {
+        await nextBtn.click();
+        await page.waitForLoadState("domcontentloaded");
+        pageNum++;
+        await page.waitForTimeout(2000);
       }
-
-      await new Promise(r => setTimeout(r, 500));
     }
 
   } catch (e) {
