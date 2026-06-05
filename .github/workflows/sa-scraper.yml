@@ -1,0 +1,37 @@
+name: SA Permit Scraper
+
+on:
+  schedule:
+    - cron: '0 6 * * *'  # Daily at 6:00 AM UTC (midnight CST)
+  workflow_dispatch:       # Also allows manual trigger from GitHub UI
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Install Playwright Chromium
+        run: npx playwright install chromium --with-deps
+
+      - name: Run SA permit scraper
+        env:
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+        run: node api/sa_scraper.js
+
+      - name: Upload results as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: sa-permits-${{ github.run_number }}
+          path: data/sa_permits.json
+          retention-days: 30
