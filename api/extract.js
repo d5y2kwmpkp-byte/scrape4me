@@ -161,9 +161,13 @@ console.log(`  Saved: data/sa_permits.json + data/sa_permits.csv`);
 if (SUPABASE_KEY && records.length > 0) {
   console.log(`\nUpserting to Supabase...`);
   const batchSize = 20;
-  for (let i = 0; i < records.length; i += batchSize) {
-    await upsertToSupabase(records.slice(i, i + batchSize));
-  }
+  (async () => {
+    for (let i = 0; i < records.length; i += batchSize) {
+      await upsertToSupabase(records.slice(i, i + batchSize));
+    }
+    console.log("\n✓ Done!");
+  })();
+} else {
+  console.log("\n✓ Done!");
 }
 
-console.log("\n✓ Done!");
