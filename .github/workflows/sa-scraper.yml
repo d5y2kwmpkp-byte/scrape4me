@@ -30,7 +30,8 @@ jobs:
       - name: Run SA permit scraper
         env:
           SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
-        run: node api/sa_scraper.js
+        run: node --input-type=commonjs < api/extract.js
+
 
       - name: Run data extractor
         env:
