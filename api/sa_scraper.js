@@ -1,8 +1,8 @@
 /**
- * FlowState — San Antonio Permit Scraper v6
- * Fix: uses page.click() on the results page link directly
- * then reads detail from same page, then navigates back
- * No eval, no postback manipulation needed
+ * FlowState — San Antonio Permit Scraper v7
+ * Fix: constructs detail URL directly from permit number
+ * Standard Accela pattern: /Cap/CapDetail.aspx?altId=PERMIT_NUM&module=Building
+ * No clicking, no postbacks, no eval — just direct navigation
  */
 
 const { chromium } = require("playwright");
@@ -12,6 +12,7 @@ const path = require("path");
 const SUPABASE_URL = "https://ewmtownoxnaghhlobeci.supabase.co";
 const SUPABASE_KEY = process.env.SUPABASE_SECRET_KEY || "";
 const SEARCH_URL   = "https://aca-prod.accela.com/COSA/Cap/GlobalSearchResults.aspx?isNewQuery=yes&QueryText=Plumbing";
+const BASE_URL     = "https://aca-prod.accela.com/COSA";
 
 async function upsertToSupabase(records) {
   if (!SUPABASE_KEY) { console.log("  [supabase] No key — CSV only"); return; }
@@ -32,7 +33,7 @@ async function upsertToSupabase(records) {
   }
 }
 
-function parseApplicantBlock(fullText) {
+function parseDetail(fullText) {
   const lines = fullText.split("\n").map(l => l.trim()).filter(Boolean);
   const data = { applicantName: "", phone: "", email: "", location: "", mailingAddress: "" };
 
@@ -40,7 +41,7 @@ function parseApplicantBlock(fullText) {
   const locIdx = lines.findIndex(l => l === "Location");
   if (locIdx !== -1) {
     for (let i = locIdx + 1; i < Math.min(locIdx + 5, lines.length); i++) {
-      if (lines[i].length > 5 && !lines[i].includes("Record")) {
+      if (lines[i].length > 5 && !lines[i].includes("Record") && !lines[i].includes("Detail")) {
         data.location = lines[i]; break;
       }
     }
@@ -48,7 +49,7 @@ function parseApplicantBlock(fullText) {
 
   // Applicant block
   const skip = new Set(["Individual", "Business", "Organization", "Corporation", "Trust"]);
-  const stop = new Set(["Contacts:", "Payments", "Record Info", "Inspections", "Conditions", "Attached Files"]);
+  const stop = new Set(["Contacts:", "Payments", "Record Info", "Inspections", "Conditions", "Attached Files", "Record Details"]);
   let inApplicant = false;
 
   for (let i = 0; i < lines.length; i++) {
@@ -67,7 +68,7 @@ function parseApplicantBlock(fullText) {
 }
 
 (async () => {
-  console.log("FlowState SA Permit Scraper v6");
+  console.log("FlowState SA Permit Scraper v7");
   console.log("─".repeat(50));
 
   const browser = await chromium.launch({
@@ -81,69 +82,50 @@ function parseApplicantBlock(fullText) {
 
   const page = await context.newPage();
   const permits = [];
-  // Store all permit basic info first, then fetch details
   const permitQueue = [];
 
   try {
-    console.log("\nLoading search results...");
+    // PASS 1: Collect all permit numbers quickly
+    console.log("\nPass 1: Collecting permit numbers...");
     await page.goto(SEARCH_URL, { waitUntil: "networkidle", timeout: 30000 });
     await page.waitForTimeout(3000);
 
-    // Click Records tab
     try {
       const tab = await page.$("a:has-text('Records'), span:has-text('Records')");
-      if (tab) {
-        await tab.click();
-        await page.waitForLoadState("networkidle");
-        await page.waitForTimeout(2000);
-        console.log("Records tab clicked");
-      }
-    } catch { console.log("[warn] Records tab not found"); }
+      if (tab) { await tab.click(); await page.waitForLoadState("networkidle"); await page.waitForTimeout(2000); console.log("Records tab clicked"); }
+    } catch {}
 
-    // PASS 1: Collect all permit basic info + row index for clicking
     let pageNum = 1;
     while (true) {
-      console.log(`\n  Collecting page ${pageNum}...`);
-
       let cards = await page.$$(".ACA_TabRow_Odd, .ACA_TabRow_Even, tr.ACA_TabRow_Odd, tr.ACA_TabRow_Even");
       if (!cards.length) cards = await page.$$("tr, div.recordRow");
 
       let matched = 0;
-      for (let idx = 0; idx < cards.length; idx++) {
-        const card = cards[idx];
+      for (const card of cards) {
         const cardText = await card.innerText().catch(() => "");
         if (!cardText.trim()) continue;
-
         const lines = cardText.split("\n").map(l => l.trim()).filter(Boolean);
         if (lines.length < 3) continue;
 
         const permitNum  = lines[1] || "";
         const permitType = lines[2] || "";
-
-        const isPlumbing =
-          permitNum.includes("MEP-") ||
-          permitNum.includes("LSR-") ||
-          permitNum.includes("INV-PLB") ||
-          permitNum.includes("26TMP") ||
-          permitType.toLowerCase().includes("plumb") ||
-          permitType.toLowerCase().includes("gas") ||
-          permitType.toLowerCase().includes("mep");
+        const isPlumbing = permitNum.includes("MEP-") || permitNum.includes("LSR-") ||
+          permitNum.includes("INV-PLB") || permitNum.includes("26TMP") ||
+          permitType.toLowerCase().includes("plumb") || permitType.toLowerCase().includes("mep");
 
         if (!isPlumbing) continue;
         matched++;
 
         permitQueue.push({
-          pageNum,
-          cardIdx: idx,
-          permitDate:  lines[0] || "",
           permitNum,
+          permitDate:  lines[0] || "",
           permitType,
           description: lines[4] || "",
           status:      lines[5] || "",
         });
       }
 
-      console.log(`  Found ${matched} permits on page ${pageNum}`);
+      console.log(`  Page ${pageNum}: ${matched} permits`);
 
       const nextBtn = await page.$("a[id*='lbtnNext'], a:has-text('Next >')");
       if (!nextBtn || !(await nextBtn.isVisible())) break;
@@ -153,69 +135,30 @@ function parseApplicantBlock(fullText) {
       await page.waitForTimeout(2000);
     }
 
-    console.log(`\nTotal permits found: ${permitQueue.length}`);
-    console.log("Now fetching detail pages...\n");
+    console.log(`\nTotal: ${permitQueue.length} permits`);
+    console.log("Pass 2: Fetching detail pages via direct URL...\n");
 
-    // PASS 2: For each permit, navigate to detail via clicking link
-    // Reload search results page and paginate to each record
-    let currentPage = 1;
-    await page.goto(SEARCH_URL, { waitUntil: "networkidle", timeout: 30000 });
-    await page.waitForTimeout(3000);
-    try {
-      const tab = await page.$("a:has-text('Records'), span:has-text('Records')");
-      if (tab) { await tab.click(); await page.waitForLoadState("networkidle"); await page.waitForTimeout(2000); }
-    } catch {}
-
+    // PASS 2: Navigate directly to each detail page using altId URL pattern
     for (const permit of permitQueue) {
-      // Navigate to the right page
-      while (currentPage < permit.pageNum) {
-        const nextBtn = await page.$("a[id*='lbtnNext'], a:has-text('Next >')");
-        if (!nextBtn || !(await nextBtn.isVisible())) break;
-        await nextBtn.click();
-        await page.waitForLoadState("networkidle");
-        await page.waitForTimeout(2000);
-        currentPage++;
-      }
-
-      // Find and click the permit link — opens detail in same page
+      const detailUrl = `${BASE_URL}/Cap/CapDetail.aspx?altId=${encodeURIComponent(permit.permitNum)}&module=Building`;
       let detail = {};
+
+      const detailPage = await context.newPage();
       try {
-        let cards = await page.$$(".ACA_TabRow_Odd, .ACA_TabRow_Even, tr.ACA_TabRow_Odd, tr.ACA_TabRow_Even");
-        if (!cards.length) cards = await page.$$("tr, div.recordRow");
+        await detailPage.goto(detailUrl, { waitUntil: "networkidle", timeout: 15000 });
+        const text = await detailPage.innerText("body").catch(() => "");
 
-        const card = cards[permit.cardIdx];
-        if (card) {
-          const link = await card.$("a");
-          if (link) {
-            // Open in new tab to preserve results page
-            const [detailPage] = await Promise.all([
-              context.waitForEvent("page"),
-              link.click({ modifiers: ["Meta"] }) // Cmd+click opens new tab
-            ]).catch(async () => {
-              // Fallback: middle click
-              return [null];
-            });
-
-            if (detailPage) {
-              await detailPage.waitForLoadState("networkidle").catch(() => {});
-              const text = await detailPage.innerText("body").catch(() => "");
-              detail = parseApplicantBlock(text);
-              await detailPage.close();
-            } else {
-              // Last resort: just click and go back
-              await link.click();
-              await page.waitForLoadState("networkidle");
-              await page.waitForTimeout(1500);
-              const text = await page.innerText("body").catch(() => "");
-              detail = parseApplicantBlock(text);
-              await page.goBack();
-              await page.waitForLoadState("networkidle");
-              await page.waitForTimeout(1500);
-            }
-          }
+        // Check if we got a valid detail page
+        if (text.includes("Applicant:") || text.includes("Location")) {
+          detail = parseDetail(text);
+          console.log(`    + ${permit.permitNum} | ${detail.applicantName || "N/A"} | ${detail.phone || "N/A"}`);
+        } else {
+          console.log(`    ~ ${permit.permitNum} | no detail page (${text.slice(0, 50).trim()})`);
         }
       } catch (e) {
-        console.log(`    [detail error] ${permit.permitNum}: ${e.message}`);
+        console.log(`    [detail error] ${permit.permitNum}: ${e.message.slice(0, 60)}`);
+      } finally {
+        await detailPage.close();
       }
 
       const record = {
@@ -236,19 +179,15 @@ function parseApplicantBlock(fullText) {
       };
 
       permits.push(record);
-      console.log(`    + ${permit.permitNum} | ${detail.applicantName || "N/A"} | ${detail.phone || "N/A"}`);
 
       if (permits.length % 10 === 0) {
         await upsertToSupabase(permits.slice(-10));
         fs.mkdirSync(path.join(process.cwd(), "data"), { recursive: true });
-        fs.writeFileSync(
-          path.join(process.cwd(), "data/sa_permits_checkpoint.json"),
-          JSON.stringify(permits, null, 2)
-        );
+        fs.writeFileSync(path.join(process.cwd(), "data/sa_permits_checkpoint.json"), JSON.stringify(permits, null, 2));
         console.log(`  [checkpoint] ${permits.length} records`);
       }
 
-      await page.waitForTimeout(500);
+      await page.waitForTimeout(300); // light delay
     }
 
   } catch (e) {
