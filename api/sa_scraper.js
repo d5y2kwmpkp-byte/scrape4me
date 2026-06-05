@@ -1,119 +1,24 @@
 /**
- * FlowState — San Antonio Permit Scraper v11
- * Single pass: navigate results → click each link → read detail → go back
- * Never hits detail URLs directly — all navigation flows through search session
- * Bypasses Cloudflare by behaving like a real browser
+ * FlowState — SA Permit Scraper v12
+ * Step 1: Saves raw HTML of each detail page to data/permits/
+ * Step 2: Run extract.js to pull fields from saved HTML files
+ * 
+ * No Supabase writes here — just raw HTML collection
  */
 
 const { chromium } = require("playwright");
 const fs = require("fs");
 const path = require("path");
 
-const SUPABASE_URL = "https://ewmtownoxnaghhlobeci.supabase.co";
-const SUPABASE_KEY = process.env.SUPABASE_SECRET_KEY || "";
-const SEARCH_URL   = "https://aca-prod.accela.com/COSA/Cap/GlobalSearchResults.aspx?isNewQuery=yes&QueryText=Plumbing";
+const SEARCH_URL = "https://aca-prod.accela.com/COSA/Cap/GlobalSearchResults.aspx?isNewQuery=yes&QueryText=Plumbing";
+const OUTPUT_DIR = path.join(process.cwd(), "data", "permits");
 
-async function upsertToSupabase(records) {
-  if (!SUPABASE_KEY) { console.log("  [supabase] No key — CSV only"); return; }
-  try {
-    const res = await fetch(`${SUPABASE_URL}/rest/v1/sa_permits`, {
-      method: "POST",
-      headers: {
-        apikey:         SUPABASE_KEY,
-        Authorization:  `Bearer ${SUPABASE_KEY}`,
-        "Content-Type": "application/json",
-        Prefer:         "resolution=merge-duplicates",
-      },
-      body: JSON.stringify(records),
-    });
-    console.log(`  [supabase] ${res.status} — ${records.length} records upserted`);
-  } catch (e) {
-    console.error(`  [supabase] Error: ${e.message}`);
-  }
-}
-
-function parseDetail(fullText) {
-  const lines = fullText.split("\n").map(l => l.trim()).filter(Boolean);
-  const data = {
-    applicantName: "", phone: "", email: "", location: "",
-    mailingAddress: "", licensedProName: "", licensedProPhone: "",
-    licensedProLic: "", ownerName: "", ownerAddress: "", projectDesc: "",
-  };
-
-  const locIdx = lines.findIndex(l => l === "Location");
-  if (locIdx !== -1) {
-    for (let i = locIdx + 1; i < Math.min(locIdx + 5, lines.length); i++) {
-      if (lines[i].length > 5 && !lines[i].includes("Record") && !lines[i].includes("Detail")) {
-        data.location = lines[i]; break;
-      }
-    }
-  }
-
-  const skip = new Set(["Individual", "Business", "Organization", "Corporation", "Trust", "United States"]);
-  let section = "";
-  for (let i = 0; i < lines.length; i++) {
-    const line = lines[i];
-    if (line === "Applicant:")             { section = "applicant"; continue; }
-    if (line === "Licensed Professional:") { section = "licensed";  continue; }
-    if (line === "Project Description:")   { section = "project";   continue; }
-    if (line === "Owner:")                 { section = "owner";     continue; }
-    if (["Contacts:", "Payments", "Inspections", "Conditions"].includes(line)) break;
-    if (skip.has(line) || line.startsWith("Do not receive") || line === "Mailing" || line === "Physical") continue;
-
-    if (section === "applicant") {
-      if (!data.applicantName)                          { data.applicantName  = line; }
-      else if (line === "Primary Phone:" && lines[i+1]) { data.phone          = lines[i+1]; i++; }
-      else if (line.includes("@") && !data.email)       { data.email          = line; }
-      else if (!data.mailingAddress && line.match(/\d{5}/)) { data.mailingAddress = line; }
-    }
-    if (section === "licensed") {
-      if (!data.licensedProName)                        { data.licensedProName  = line; }
-      else if (line === "Primary Phone:" && lines[i+1]) { data.licensedProPhone = lines[i+1]; i++; }
-      else if (line.match(/RMP|LIC|TICL|State /))       { data.licensedProLic   = line; }
-    }
-    if (section === "project" && !data.projectDesc)     { data.projectDesc = line; }
-    if (section === "owner") {
-      if (!data.ownerName)                                       { data.ownerName    = line; }
-      else if (!data.ownerAddress && line.match(/\d{5}|\d+ /))  { data.ownerAddress = line; }
-    }
-  }
-  return data;
-}
-
-async function scrapePagePermits(page, pageNum) {
-  const results = [];
-  let cards = await page.$$(".ACA_TabRow_Odd, .ACA_TabRow_Even, tr.ACA_TabRow_Odd, tr.ACA_TabRow_Even");
-  if (!cards.length) cards = await page.$$("tr, div.recordRow");
-
-  for (let idx = 0; idx < cards.length; idx++) {
-    const card = cards[idx];
-    const cardText = await card.innerText().catch(() => "");
-    if (!cardText.trim()) continue;
-    const lines = cardText.split("\n").map(l => l.trim()).filter(Boolean);
-    if (lines.length < 3) continue;
-
-    const permitNum  = lines[1] || "";
-    const permitType = lines[2] || "";
-    const isPlumbing = permitNum.includes("MEP-") || permitNum.includes("LSR-") ||
-      permitNum.includes("INV-PLB") || permitNum.includes("26TMP") ||
-      permitType.toLowerCase().includes("plumb") || permitType.toLowerCase().includes("mep");
-
-    if (!isPlumbing) continue;
-
-    results.push({
-      idx,
-      permitNum,
-      permitDate:  lines[0] || "",
-      permitType,
-      description: lines[4] || "",
-      status:      lines[5] || "",
-    });
-  }
-  return results;
-}
+// Ensure output directory exists
+fs.mkdirSync(OUTPUT_DIR, { recursive: true });
 
 (async () => {
-  console.log("FlowState SA Permit Scraper v11");
+  console.log("FlowState SA Permit Scraper v12 — HTML Collector");
+  console.log(`Saving HTML to: ${OUTPUT_DIR}`);
   console.log("─".repeat(50));
 
   const browser = await chromium.launch({
@@ -121,7 +26,7 @@ async function scrapePagePermits(page, pageNum) {
     args: [
       "--no-sandbox", "--disable-setuid-sandbox",
       "--disable-dev-shm-usage", "--disable-gpu",
-      "--disable-blink-features=AutomationControlled", // hide automation flag
+      "--disable-blink-features=AutomationControlled",
     ],
   });
 
@@ -132,124 +37,175 @@ async function scrapePagePermits(page, pageNum) {
     timezoneId: "America/Chicago",
   });
 
-  // Hide webdriver flag from Cloudflare detection
   await context.addInitScript(() => {
     Object.defineProperty(navigator, "webdriver", { get: () => false });
   });
 
   const page = await context.newPage();
-  const permits = [];
-  let totalProcessed = 0;
+  const permitList = [];
+  let savedCount = 0;
+  let skippedCount = 0;
 
   try {
-    console.log("\nLoading search results...");
+    // ── PASS 1: Collect all permit numbers ──────────────────────────────────
+    console.log("\nPass 1: Collecting permit numbers...");
     await page.goto(SEARCH_URL, { waitUntil: "domcontentloaded", timeout: 60000 });
     await page.waitForTimeout(4000);
 
     try {
       const tab = await page.$("a:has-text('Records'), span:has-text('Records')");
-      if (tab) { await tab.click(); await page.waitForLoadState("domcontentloaded"); await page.waitForTimeout(2000); console.log("Records tab clicked"); }
+      if (tab) {
+        await tab.click();
+        await page.waitForLoadState("domcontentloaded");
+        await page.waitForTimeout(2000);
+        console.log("Records tab clicked");
+      }
     } catch {}
 
     let pageNum = 1;
-    let hasMore = true;
+    while (true) {
+      let cards = await page.$$(".ACA_TabRow_Odd, .ACA_TabRow_Even, tr.ACA_TabRow_Odd, tr.ACA_TabRow_Even");
+      if (!cards.length) cards = await page.$$("tr, div.recordRow");
 
-    while (hasMore) {
-      console.log(`\n  Page ${pageNum}...`);
+      let matched = 0;
+      for (const card of cards) {
+        const cardText = await card.innerText().catch(() => "");
+        if (!cardText.trim()) continue;
+        const lines = cardText.split("\n").map(l => l.trim()).filter(Boolean);
+        if (lines.length < 3) continue;
 
-      // Collect permit info from current page
-      const pagePermits = await scrapePagePermits(page, pageNum);
-      console.log(`  Found ${pagePermits.length} permits — fetching details...`);
+        const permitNum  = lines[1] || "";
+        const permitType = lines[2] || "";
+        const isPlumbing = permitNum.includes("MEP-") || permitNum.includes("LSR-") ||
+          permitNum.includes("INV-PLB") || permitNum.includes("26TMP") ||
+          permitType.toLowerCase().includes("plumb") || permitType.toLowerCase().includes("mep");
 
-      // For each permit, click through to detail and come back
-      for (const permit of pagePermits) {
-        try {
-          // Re-query cards fresh each time (DOM changes after navigation)
-          let cards = await page.$$(".ACA_TabRow_Odd, .ACA_TabRow_Even, tr.ACA_TabRow_Odd, tr.ACA_TabRow_Even");
-          if (!cards.length) cards = await page.$$("tr, div.recordRow");
+        if (!isPlumbing) continue;
+        matched++;
 
-          const card = cards[permit.idx];
-          if (!card) { console.log(`    [skip] ${permit.permitNum} — card not found`); continue; }
-
-          // Find the clickable link in this card
-          const link = await card.$("a");
-          if (!link) { console.log(`    [skip] ${permit.permitNum} — no link`); continue; }
-
-          // Click and wait for navigation
-          await Promise.all([
-            page.waitForNavigation({ waitUntil: "domcontentloaded", timeout: 20000 }),
-            link.click(),
-          ]);
-          await page.waitForTimeout(2000);
-
-          // Parse detail
-          const text = await page.innerText("body").catch(() => "");
-          const detail = parseDetail(text);
-
-          console.log(`    + ${permit.permitNum} | ${detail.applicantName || "N/A"} | ${detail.phone || "N/A"} | ${detail.ownerName || "N/A"}`);
-
-          permits.push({
-            id:                 `sa_${permit.permitNum}`,
-            city:               "San Antonio",
-            address:            detail.location ? `${detail.location}, San Antonio, TX` : "",
-            work_desc:          permit.description,
-            permit_num:         permit.permitNum,
-            applied_date:       permit.permitDate,
-            estimated_value:    null,
-            status:             permit.status,
-            source:             "SA_Accela",
-            fetched_at:         new Date().toISOString(),
-            applicant_name:     detail.applicantName    || "",
-            phone:              detail.phone            || "",
-            email:              detail.email            || "",
-            mailing_address:    detail.mailingAddress   || "",
-            licensed_pro_name:  detail.licensedProName  || "",
-            licensed_pro_phone: detail.licensedProPhone || "",
-            licensed_pro_lic:   detail.licensedProLic   || "",
-            owner_name:         detail.ownerName        || "",
-            owner_address:      detail.ownerAddress     || "",
-            project_desc:       detail.projectDesc      || "",
-          });
-          totalProcessed++;
-
-          // Go back to results
-          await page.goBack({ waitUntil: "domcontentloaded", timeout: 20000 });
-          await page.waitForTimeout(1500);
-
-          // Checkpoint
-          if (permits.length % 10 === 0) {
-            await upsertToSupabase(permits.slice(-10));
-            fs.mkdirSync(path.join(process.cwd(), "data"), { recursive: true });
-            fs.writeFileSync(path.join(process.cwd(), "data/sa_permits_checkpoint.json"), JSON.stringify(permits, null, 2));
-            console.log(`  [checkpoint] ${permits.length} records`);
-          }
-
-        } catch (e) {
-          console.log(`    [error] ${permit.permitNum}: ${e.message.slice(0, 80)}`);
-          // Try to get back to results page if we errored mid-navigation
-          try {
-            await page.goto(SEARCH_URL, { waitUntil: "domcontentloaded", timeout: 30000 });
-            await page.waitForTimeout(3000);
-            // Re-navigate to current page
-            for (let p = 1; p < pageNum; p++) {
-              const nb = await page.$("a[id*='lbtnNext'], a:has-text('Next >')");
-              if (nb) { await nb.click(); await page.waitForLoadState("domcontentloaded"); await page.waitForTimeout(1500); }
-            }
-          } catch {}
-          break; // skip remaining permits on this page, move to next
-        }
+        permitList.push({
+          permitNum,
+          permitDate:  lines[0] || "",
+          permitType,
+          description: lines[4] || "",
+          status:      lines[5] || "",
+        });
       }
 
-      // Move to next page
+      console.log(`  Page ${pageNum}: ${matched} permits`);
       const nextBtn = await page.$("a[id*='lbtnNext'], a:has-text('Next >')");
-      if (!nextBtn || !(await nextBtn.isVisible())) {
-        console.log("\n  No more pages.");
-        hasMore = false;
-      } else {
-        await nextBtn.click();
-        await page.waitForLoadState("domcontentloaded");
-        pageNum++;
+      if (!nextBtn || !(await nextBtn.isVisible())) break;
+      await nextBtn.click();
+      await page.waitForLoadState("domcontentloaded");
+      pageNum++;
+      await page.waitForTimeout(2000);
+    }
+
+    // Deduplicate by permit number
+    const seen = new Set();
+    const uniquePermits = permitList.filter(p => {
+      if (seen.has(p.permitNum)) return false;
+      seen.add(p.permitNum);
+      return true;
+    });
+
+    console.log(`\nTotal unique permits: ${uniquePermits.length}`);
+
+    // Save permit list as index
+    fs.writeFileSync(
+      path.join(process.cwd(), "data", "permit_index.json"),
+      JSON.stringify(uniquePermits, null, 2)
+    );
+    console.log("Saved permit_index.json");
+
+    // ── PASS 2: Visit each permit via search result click ────────────────────
+    console.log("\nPass 2: Saving detail page HTML...\n");
+
+    for (const permit of uniquePermits) {
+      const outputFile = path.join(OUTPUT_DIR, `${permit.permitNum}.html`);
+
+      // Skip if already saved
+      if (fs.existsSync(outputFile)) {
+        console.log(`  [skip] ${permit.permitNum} — already saved`);
+        skippedCount++;
+        continue;
+      }
+
+      try {
+        // Navigate to search results fresh
+        await page.goto(SEARCH_URL, { waitUntil: "domcontentloaded", timeout: 60000 });
         await page.waitForTimeout(2000);
+
+        // Click Records tab
+        try {
+          const tab = await page.$("a:has-text('Records'), span:has-text('Records')");
+          if (tab) {
+            await tab.click();
+            await page.waitForLoadState("domcontentloaded");
+            await page.waitForTimeout(1500);
+          }
+        } catch {}
+
+        // Find the link for this specific permit number
+        const permitLink = await page.$(`a:has-text("${permit.permitNum}")`);
+
+        if (!permitLink) {
+          console.log(`  [miss] ${permit.permitNum} — not on first page, searching...`);
+
+          // Paginate to find it
+          let found = false;
+          let pNum = 1;
+          while (!found && pNum <= 10) {
+            const link = await page.$(`a:has-text("${permit.permitNum}")`);
+            if (link) {
+              found = true;
+              await Promise.all([
+                page.waitForNavigation({ waitUntil: "domcontentloaded", timeout: 20000 }),
+                link.click(),
+              ]);
+              break;
+            }
+            const nb = await page.$("a[id*='lbtnNext'], a:has-text('Next >')");
+            if (!nb || !(await nb.isVisible())) break;
+            await nb.click();
+            await page.waitForLoadState("domcontentloaded");
+            await page.waitForTimeout(1500);
+            pNum++;
+          }
+
+          if (!found) {
+            console.log(`  [skip] ${permit.permitNum} — could not find link`);
+            continue;
+          }
+        } else {
+          // Click the link on first page
+          await Promise.all([
+            page.waitForNavigation({ waitUntil: "domcontentloaded", timeout: 20000 }),
+            permitLink.click(),
+          ]);
+        }
+
+        await page.waitForTimeout(2000);
+
+        // Save full HTML
+        const html = await page.content();
+        const pageText = await page.innerText("body").catch(() => "");
+
+        // Check if we got real detail page content
+        if (pageText.includes("Applicant:") || pageText.includes("Record Details") || pageText.includes("Licensed Professional")) {
+          fs.writeFileSync(outputFile, html);
+          savedCount++;
+          console.log(`  [saved] ${permit.permitNum} (${pageText.length} chars)`);
+        } else {
+          // Save anyway for debugging, but flag it
+          fs.writeFileSync(outputFile + ".debug.txt", pageText.slice(0, 500));
+          console.log(`  [warn] ${permit.permitNum} — unexpected content: ${pageText.slice(0, 100).trim()}`);
+        }
+
+        await new Promise(r => setTimeout(r, 800));
+
+      } catch (e) {
+        console.log(`  [error] ${permit.permitNum}: ${e.message.slice(0, 80)}`);
       }
     }
 
@@ -259,15 +215,9 @@ async function scrapePagePermits(page, pageNum) {
     await browser.close();
   }
 
-  const remainder = permits.length % 10;
-  if (remainder) await upsertToSupabase(permits.slice(-remainder));
-
-  fs.mkdirSync(path.join(process.cwd(), "data"), { recursive: true });
-  fs.writeFileSync(
-    path.join(process.cwd(), "data/sa_permits.json"),
-    JSON.stringify({ success: true, source: "SA_Accela", scrapedAt: new Date().toISOString(), count: permits.length, permits }, null, 2)
-  );
-
-  console.log(`\n✓ Done. ${permits.length} permits saved.`);
-  if (SUPABASE_KEY) console.log("✓ Records upserted to Supabase sa_permits table");
+  console.log(`\n✓ Done.`);
+  console.log(`  Saved:   ${savedCount} HTML files`);
+  console.log(`  Skipped: ${skippedCount} already existed`);
+  console.log(`  Total:   ${savedCount + skippedCount} permits processed`);
+  console.log(`\nNext: run 'node api/extract.js' to pull fields from HTML`);
 })();
