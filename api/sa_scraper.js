@@ -1,38 +1,31 @@
 /**
- * FlowState — San Antonio Permit Scraper
- * Matches scrape4me repo architecture (Node.js + Playwright)
- *
- * Usage:
- *   node scripts/sa_scraper.js
- *
- * Setup (one time):
- *   npm install
- *   npx playwright install chromium
+ * FlowState — San Antonio Permit Scraper v3
+ * Uses global search URL directly — no form interaction needed
+ * Target: aca-prod.accela.com/COSA
  */
 
 const { chromium } = require("playwright");
 const fs = require("fs");
 const path = require("path");
 
-const SUPABASE_URL = "https://ewmtownoxnaghhlobeci.supabase.co";
-const SUPABASE_KEY = process.env.SUPABASE_SECRET_KEY || "";
-const TARGET_TYPES = ["MEP-GAS-PMT", "MEP-TRD-APP"];
-const BASE_URL     = "https://aca-prod.accela.com/COSA";
+const SUPABASE_URL  = "https://ewmtownoxnaghhlobeci.supabase.co";
+const SUPABASE_KEY  = process.env.SUPABASE_SECRET_KEY || "";
+const TARGET_TYPES  = ["MEP-GAS-PMT", "MEP-TRD-APP"];
+const SEARCH_URL    = "https://aca-prod.accela.com/COSA/Cap/GlobalSearchResults.aspx?isNewQuery=yes&QueryText=Plumbing";
 
-// ── Supabase upsert ───────────────────────────────────────────────────────────
 async function upsertToSupabase(records) {
   if (!SUPABASE_KEY) {
-    console.log("  [supabase] No key set — skipping upsert, CSV only");
+    console.log("  [supabase] No key — CSV only");
     return;
   }
   try {
     const res = await fetch(`${SUPABASE_URL}/rest/v1/sa_permits`, {
       method: "POST",
       headers: {
-        apikey:          SUPABASE_KEY,
-        Authorization:   `Bearer ${SUPABASE_KEY}`,
-        "Content-Type":  "application/json",
-        Prefer:          "resolution=merge-duplicates",
+        apikey:         SUPABASE_KEY,
+        Authorization:  `Bearer ${SUPABASE_KEY}`,
+        "Content-Type": "application/json",
+        Prefer:         "resolution=merge-duplicates",
       },
       body: JSON.stringify(records),
     });
@@ -42,16 +35,8 @@ async function upsertToSupabase(records) {
   }
 }
 
-// ── Detail page — open in second tab ─────────────────────────────────────────
 async function getDetail(context, detailUrl) {
-  const data = {
-    applicantName:  "",
-    phone:          "",
-    email:          "",
-    location:       "",
-    mailingAddress: "",
-  };
-
+  const data = { applicantName: "", phone: "", email: "", location: "", mailingAddress: "" };
   const detailPage = await context.newPage();
   try {
     await detailPage.goto(detailUrl, { timeout: 20000 });
@@ -60,11 +45,9 @@ async function getDetail(context, detailUrl) {
     const fullText = await detailPage.innerText("body");
     const lines = fullText.split("\n").map(l => l.trim()).filter(Boolean);
 
-    // Location — grab first line after "Location" header
+    // Location
     const locIdx = lines.indexOf("Location");
-    if (locIdx !== -1 && lines[locIdx + 1]) {
-      data.location = lines[locIdx + 1];
-    }
+    if (locIdx !== -1 && lines[locIdx + 1]) data.location = lines[locIdx + 1];
 
     // Applicant block
     const skip = new Set(["Individual", "Business", "Organization", "Corporation"]);
@@ -73,30 +56,26 @@ async function getDetail(context, detailUrl) {
 
     for (let i = 0; i < lines.length; i++) {
       const line = lines[i];
-
-      if (line === "Applicant:") { inApplicant = true; continue; }
-      if (!inApplicant) continue;
-      if (stop.has(line)) break;
-      if (skip.has(line)) continue;
-
-      if (!data.applicantName)                          { data.applicantName  = line; }
-      else if (line === "Primary Phone:" && lines[i+1]) { data.phone          = lines[i+1]; }
-      else if (line.includes("@") && !data.email)       { data.email          = line; }
-      else if (line === "Mailing" && lines[i+1])        { data.mailingAddress = lines[i+1]; break; }
+      if (line === "Applicant:")                          { inApplicant = true; continue; }
+      if (!inApplicant)                                   continue;
+      if (stop.has(line))                                 break;
+      if (skip.has(line))                                 continue;
+      if (!data.applicantName)                            { data.applicantName  = line; }
+      else if (line === "Primary Phone:" && lines[i+1])   { data.phone          = lines[i+1]; }
+      else if (line.includes("@") && !data.email)         { data.email          = line; }
+      else if (line === "Mailing" && lines[i+1])          { data.mailingAddress = lines[i+1]; break; }
     }
-
   } catch (e) {
     console.log(`    [detail error] ${e.message}`);
   } finally {
-    await detailPage.close(); // always close — never let tabs pile up
+    await detailPage.close();
   }
   return data;
 }
 
-// ── Main scraper ──────────────────────────────────────────────────────────────
 (async () => {
-  console.log("FlowState SA Permit Scraper");
-  console.log("Target:", BASE_URL);
+  console.log("FlowState SA Permit Scraper v3");
+  console.log("Search URL:", SEARCH_URL);
   console.log("─".repeat(50));
 
   const browser = await chromium.launch({
@@ -112,59 +91,57 @@ async function getDetail(context, detailUrl) {
   const permits = [];
 
   try {
-    // Navigate to Building search
-    console.log("\nLoading Building search...");
-    await page.goto(`${BASE_URL}/Cap/CapSearch.aspx?module=Building`, { waitUntil: "networkidle" });
+    // Go directly to search results — no form needed
+    console.log("\nLoading search results...");
+    await page.goto(SEARCH_URL, { waitUntil: "networkidle", timeout: 30000 });
     await page.waitForTimeout(3000);
 
-    // Set date range
+    // Click "Records" tab to filter to permit records only
     try {
-      await page.fill("input[id*='txtSearchFromDate']", "03/06/2026");
-      await page.fill("input[id*='txtSearchToDate']",   "06/04/2026");
-      console.log("Date range set: 03/06/2026 → 06/04/2026");
-    } catch {
-      console.log("[warn] Date fields not found");
+      const recordsTab = await page.$("a:has-text('Records'), span:has-text('Records')");
+      if (recordsTab) {
+        await recordsTab.click();
+        await page.waitForLoadState("networkidle");
+        await page.waitForTimeout(2000);
+        console.log("Clicked Records tab");
+      }
+    } catch (e) {
+      console.log("[warn] Records tab not found — continuing");
     }
-
-    // Submit search
-    const searchBtn = await page.$("a[id*='btnSearch'], input[value='Search']");
-    if (!searchBtn) { console.log("[error] Search button not found"); return; }
-    await searchBtn.click();
-    await page.waitForLoadState("networkidle");
-    await page.waitForTimeout(3000);
 
     let pageNum = 1;
 
     while (true) {
       console.log(`\n  Page ${pageNum}...`);
 
-      // Get result rows
+      // Grab all result cards
       let cards = await page.$$(".ACA_TabRow_Odd, .ACA_TabRow_Even, tr.ACA_TabRow_Odd, tr.ACA_TabRow_Even");
       if (!cards.length) {
-        console.log("  [warn] No standard rows — trying fallback");
-        cards = await page.$$("tr, div.recordRow");
+        cards = await page.$$("div.records-result, li.record-item, div[class*='record'], tr");
+        console.log(`  [fallback] Found ${cards.length} elements`);
       }
 
       let matched = 0;
       for (const card of cards) {
-        const cardText = await card.innerText();
+        const cardText = await card.innerText().catch(() => "");
+        if (!cardText.trim()) continue;
 
-        // Filter to target permit types only
+        // Filter to plumbing permit types
         if (!TARGET_TYPES.some(t => cardText.includes(t))) continue;
         matched++;
 
         const lines = cardText.split("\n").map(l => l.trim()).filter(Boolean);
-        const permitDate = lines[0] || "";
-        const permitNum  = lines[1] || "";
-        const permitType = lines[2] || "";
-        const description= lines[4] || "";
-        const status     = lines[5] || "";
+        const permitDate  = lines[0] || "";
+        const permitNum   = lines[1] || "";
+        const permitType  = lines[2] || "";
+        const description = lines[4] || "";
+        const status      = lines[5] || "";
 
-        // Get detail page link
+        // Get detail link
         let detail = {};
-        const linkEl = await card.$("a[href*='CapDetail'], a[href*='Cap/CapDetail']");
+        const linkEl = await card.$("a[href*='CapDetail'], a[href*='Cap/CapDetail'], a[href*='CapID']");
         if (linkEl) {
-          let href = await linkEl.getAttribute("href");
+          const href = await linkEl.getAttribute("href");
           if (href) {
             const detailUrl = href.startsWith("http") ? href : `https://aca-prod.accela.com${href}`;
             detail = await getDetail(context, detailUrl);
@@ -188,25 +165,29 @@ async function getDetail(context, detailUrl) {
         permits.push(record);
         console.log(`    + ${permitNum} | ${detail.applicantName || "N/A"} | ${detail.phone || "N/A"}`);
 
-        // Flush to Supabase every 10 records
         if (permits.length % 10 === 0) {
           await upsertToSupabase(permits.slice(-10));
-          // Save checkpoint CSV
           fs.mkdirSync(path.join(process.cwd(), "data"), { recursive: true });
           fs.writeFileSync(
             path.join(process.cwd(), "data/sa_permits_checkpoint.json"),
             JSON.stringify(permits, null, 2)
           );
-          console.log(`  [checkpoint] ${permits.length} records saved`);
+          console.log(`  [checkpoint] ${permits.length} records`);
         }
       }
 
       console.log(`  Matched ${matched} target permits on page ${pageNum}`);
 
+      // If 0 matched, log page text for debugging
+      if (matched === 0 && pageNum === 1) {
+        const bodyText = await page.innerText("body").catch(() => "");
+        console.log("  [debug] Page preview:", bodyText.slice(0, 500));
+      }
+
       // Pagination
-      const nextBtn = await page.$("a[id*='lbtnNext']");
+      const nextBtn = await page.$("a[id*='lbtnNext'], a:has-text('Next >')");
       if (!nextBtn || !(await nextBtn.isVisible())) {
-        console.log("\n  No more pages — done.");
+        console.log("\n  No more pages.");
         break;
       }
       await nextBtn.click();
@@ -221,26 +202,15 @@ async function getDetail(context, detailUrl) {
     await browser.close();
   }
 
-  // Final Supabase flush
+  // Final flush
   const remainder = permits.length % 10;
   if (remainder) await upsertToSupabase(permits.slice(-remainder));
 
-  // Save final JSON + CSV
   fs.mkdirSync(path.join(process.cwd(), "data"), { recursive: true });
-
-  const output = {
-    success:    true,
-    source:     "SA_Accela",
-    scrapedAt:  new Date().toISOString(),
-    count:      permits.length,
-    permits,
-  };
-
   fs.writeFileSync(
     path.join(process.cwd(), "data/sa_permits.json"),
-    JSON.stringify(output, null, 2)
+    JSON.stringify({ success: true, source: "SA_Accela", scrapedAt: new Date().toISOString(), count: permits.length, permits }, null, 2)
   );
 
-  console.log(`\n✓ Done. ${permits.length} permits saved to data/sa_permits.json`);
-  if (SUPABASE_KEY) console.log("✓ Records upserted to Supabase");
+  console.log(`\n✓ Done. ${permits.length} permits saved.`);
 })();
