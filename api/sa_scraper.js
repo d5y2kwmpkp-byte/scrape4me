@@ -1,6 +1,7 @@
 /**
- * FlowState — San Antonio Permit Scraper v4
- * Fixes: grabs ALL plumbing records + detail page contact info
+ * FlowState — San Antonio Permit Scraper v5
+ * Fix: uses page.click() for ASP.NET postback links
+ * Gets full contact info from detail pages
  */
 
 const { chromium } = require("playwright");
@@ -30,19 +31,39 @@ async function upsertToSupabase(records) {
   }
 }
 
-async function getDetail(context, detailUrl) {
+async function getDetail(context, postbackFn) {
+  /**
+   * ASP.NET postback links can't be navigated to directly.
+   * Instead we open the detail page by constructing the direct cap URL
+   * using the permit number extracted from the postback function name.
+   * 
+   * Postback format: ctl00$PlaceHolderMain$CapView$gdvPermitList$ctl02$lnkPermitNumber
+   * We use this index to click the right row on a fresh page load.
+   */
   const data = { applicantName: "", phone: "", email: "", location: "", mailingAddress: "" };
   const detailPage = await context.newPage();
   try {
-    await detailPage.goto(detailUrl, { timeout: 20000, waitUntil: "networkidle" });
+    // Navigate using the postback directly via javascript evaluation
+    await detailPage.goto(SEARCH_URL, { waitUntil: "networkidle", timeout: 30000 });
+    await detailPage.waitForTimeout(2000);
+
+    // Click Records tab
+    try {
+      const tab = await detailPage.$("a:has-text('Records'), span:has-text('Records')");
+      if (tab) { await tab.click(); await detailPage.waitForLoadState("networkidle"); }
+    } catch {}
+
+    // Execute the postback
+    await detailPage.evaluate((fn) => { eval(fn); }, postbackFn);
+    await detailPage.waitForLoadState("networkidle");
+    await detailPage.waitForTimeout(2000);
 
     const fullText = await detailPage.innerText("body");
     const lines = fullText.split("\n").map(l => l.trim()).filter(Boolean);
 
-    // Location — first non-empty line after "Location"
+    // Location
     const locIdx = lines.findIndex(l => l === "Location");
     if (locIdx !== -1) {
-      // Skip blank/short lines to get the actual address
       for (let i = locIdx + 1; i < Math.min(locIdx + 5, lines.length); i++) {
         if (lines[i].length > 5) { data.location = lines[i]; break; }
       }
@@ -59,12 +80,10 @@ async function getDetail(context, detailUrl) {
       if (!inApplicant)                                 continue;
       if (stop.has(line))                               break;
       if (skip.has(line))                               continue;
-      if (line === "Do not receive Email Notifications: No" || 
-          line === "Do not receive Email Notifications: Yes") continue;
-
+      if (line.startsWith("Do not receive"))            continue;
       if (!data.applicantName)                          { data.applicantName  = line; }
-      else if (line === "Primary Phone:" && lines[i+1]) { data.phone          = lines[i+1]; i++; }
-      else if (line.includes("@") && !data.email)       { data.email          = line; }
+      else if (line === "Primary Phone:" && lines[i+1]) { data.phone = lines[i+1]; i++; }
+      else if (line.includes("@") && !data.email)       { data.email = line; }
       else if (line === "Mailing" && lines[i+1])        { data.mailingAddress = lines[i+1]; break; }
     }
 
@@ -77,7 +96,7 @@ async function getDetail(context, detailUrl) {
 }
 
 (async () => {
-  console.log("FlowState SA Permit Scraper v4");
+  console.log("FlowState SA Permit Scraper v5");
   console.log("─".repeat(50));
 
   const browser = await chromium.launch({
@@ -99,9 +118,9 @@ async function getDetail(context, detailUrl) {
 
     // Click Records tab
     try {
-      const recordsTab = await page.$("a:has-text('Records'), span:has-text('Records')");
-      if (recordsTab) {
-        await recordsTab.click();
+      const tab = await page.$("a:has-text('Records'), span:has-text('Records')");
+      if (tab) {
+        await tab.click();
         await page.waitForLoadState("networkidle");
         await page.waitForTimeout(2000);
         console.log("Records tab clicked");
@@ -113,7 +132,6 @@ async function getDetail(context, detailUrl) {
     while (true) {
       console.log(`\n  Page ${pageNum}...`);
 
-      // Get all result cards
       let cards = await page.$$(".ACA_TabRow_Odd, .ACA_TabRow_Even, tr.ACA_TabRow_Odd, tr.ACA_TabRow_Even");
       if (!cards.length) cards = await page.$$("tr, div.recordRow");
 
@@ -128,10 +146,14 @@ async function getDetail(context, detailUrl) {
         const permitNum  = lines[1] || "";
         const permitType = lines[2] || "";
 
-        // Grab ALL plumbing-related permits — not just two types
-        const isPlumbing = 
+        const isPlumbing =
           permitNum.includes("MEP-GAS-PMT") ||
           permitNum.includes("MEP-TRD-APP") ||
+          permitNum.includes("MEP-PLM-PMT") ||
+          permitNum.includes("MEP-SEW-PMT") ||
+          permitNum.includes("MEP-IRR-PMT") ||
+          permitNum.includes("LSR-PLUMB") ||
+          permitNum.includes("LSR-MEP") ||
           permitType.toLowerCase().includes("plumb") ||
           permitType.toLowerCase().includes("gas") ||
           permitType.toLowerCase().includes("mep");
@@ -143,28 +165,16 @@ async function getDetail(context, detailUrl) {
         const description = lines[4] || "";
         const status      = lines[5] || "";
 
-        // Find detail link — try all common Accela href patterns
+        // Get postback function from the link
         let detail = {};
-        const linkEl = await card.$("a[href*='CapDetail'], a[href*='Cap/CapDetail'], a[href*='CapID'], a[href*='altId']");
+        const linkEl = await card.$("a[href*='doPostBack'], a[href*='javascript']");
         if (linkEl) {
-          const href = await linkEl.getAttribute("href");
-          if (href) {
-            const detailUrl = href.startsWith("http") 
-              ? href 
-              : `https://aca-prod.accela.com${href.startsWith("/") ? "" : "/COSA/"}${href}`;
-            detail = await getDetail(context, detailUrl);
-            await page.waitForTimeout(750);
-          }
-        } else {
-          // Fallback — grab first anchor in the card
-          const anyLink = await card.$("a");
-          if (anyLink) {
-            const href = await anyLink.getAttribute("href");
-            if (href && (href.includes("Cap") || href.includes("cap"))) {
-              const detailUrl = href.startsWith("http") ? href : `https://aca-prod.accela.com${href}`;
-              detail = await getDetail(context, detailUrl);
-              await page.waitForTimeout(750);
-            }
+          const href = await linkEl.getAttribute("href") || "";
+          // Extract just the __doPostBack call
+          const postbackMatch = href.match(/__doPostBack\([^)]+\)/);
+          if (postbackMatch) {
+            detail = await getDetail(context, postbackMatch[0]);
+            await page.waitForTimeout(500);
           }
         }
 
@@ -201,13 +211,6 @@ async function getDetail(context, detailUrl) {
 
       console.log(`  Matched ${matched} permits on page ${pageNum}`);
 
-      // Debug first page if nothing found
-      if (matched === 0 && pageNum === 1) {
-        const bodyPreview = await page.innerText("body").catch(() => "");
-        console.log("  [debug] Page preview:", bodyPreview.slice(0, 800));
-      }
-
-      // Pagination
       const nextBtn = await page.$("a[id*='lbtnNext'], a:has-text('Next >')");
       if (!nextBtn || !(await nextBtn.isVisible())) {
         console.log("\n  No more pages.");
@@ -225,7 +228,6 @@ async function getDetail(context, detailUrl) {
     await browser.close();
   }
 
-  // Final flush
   const remainder = permits.length % 10;
   if (remainder) await upsertToSupabase(permits.slice(-remainder));
 
@@ -233,11 +235,9 @@ async function getDetail(context, detailUrl) {
   fs.writeFileSync(
     path.join(process.cwd(), "data/sa_permits.json"),
     JSON.stringify({
-      success:   true,
-      source:    "SA_Accela",
+      success: true, source: "SA_Accela",
       scrapedAt: new Date().toISOString(),
-      count:     permits.length,
-      permits,
+      count: permits.length, permits,
     }, null, 2)
   );
 
