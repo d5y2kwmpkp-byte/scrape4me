@@ -16,7 +16,8 @@
       - name: Run TABS scraper
         env:
           SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
-        run: node api/tabs_scraper.js
+        run: node api/tabs_scraper_v2.js
+
 
       - name: Commit data back to repo
         run: |
