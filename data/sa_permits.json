@@ -1,6 +1,6 @@
 {
   "success": true,
-  "count": 74,
+  "count": 76,
   "records": [
     {
       "id": "sa_LSR-MEP-APP26-39401425",
@@ -22,7 +22,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.302Z"
+      "fetched_at": "2026-06-07T12:16:39.638Z"
     },
     {
       "id": "sa_LSR-MEP-APP26-39401431",
@@ -44,7 +44,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.305Z"
+      "fetched_at": "2026-06-07T12:16:39.641Z"
     },
     {
       "id": "sa_LSR-PLUMB-26-39701426",
@@ -66,7 +66,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.307Z"
+      "fetched_at": "2026-06-07T12:16:39.643Z"
     },
     {
       "id": "sa_LSR-PLUMB-26-39701432",
@@ -88,7 +88,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.309Z"
+      "fetched_at": "2026-06-07T12:16:39.645Z"
     },
     {
       "id": "sa_MEP-GAS-PMT26-34215403",
@@ -110,7 +110,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.312Z"
+      "fetched_at": "2026-06-07T12:16:39.648Z"
     },
     {
       "id": "sa_MEP-GAS-PMT26-34215450",
@@ -132,7 +132,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.314Z"
+      "fetched_at": "2026-06-07T12:16:39.650Z"
     },
     {
       "id": "sa_MEP-GAS-PMT26-34215453",
@@ -154,7 +154,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.317Z"
+      "fetched_at": "2026-06-07T12:16:39.652Z"
     },
     {
       "id": "sa_MEP-GAS-PMT26-34215471",
@@ -176,7 +176,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.319Z"
+      "fetched_at": "2026-06-07T12:16:39.655Z"
     },
     {
       "id": "sa_MEP-GAS-PMT26-34215477",
@@ -198,7 +198,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.322Z"
+      "fetched_at": "2026-06-07T12:16:39.657Z"
     },
     {
       "id": "sa_MEP-GAS-PMT26-34215482",
@@ -220,7 +220,29 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.324Z"
+      "fetched_at": "2026-06-07T12:16:39.660Z"
+    },
+    {
+      "id": "sa_MEP-GAS-PMT26-34215530",
+      "permit_num": "MEP-GAS-PMT26-34215530",
+      "applied_date": "06/07/2026",
+      "permit_type": "Plumbing Gas Permit",
+      "description": "2811 w gerald ave",
+      "status": "Active",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-07T12:16:39.662Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415396",
@@ -242,7 +264,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.326Z"
+      "fetched_at": "2026-06-07T12:16:39.665Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415410",
@@ -264,7 +286,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.330Z"
+      "fetched_at": "2026-06-07T12:16:39.668Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415412",
@@ -286,7 +308,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.333Z"
+      "fetched_at": "2026-06-07T12:16:39.671Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415413",
@@ -308,7 +330,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.336Z"
+      "fetched_at": "2026-06-07T12:16:39.674Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415417",
@@ -330,7 +352,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.339Z"
+      "fetched_at": "2026-06-07T12:16:39.677Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415419",
@@ -352,7 +374,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.342Z"
+      "fetched_at": "2026-06-07T12:16:39.680Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415421",
@@ -374,7 +396,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.345Z"
+      "fetched_at": "2026-06-07T12:16:39.683Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415423",
@@ -396,7 +418,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.347Z"
+      "fetched_at": "2026-06-07T12:16:39.685Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415429",
@@ -418,7 +440,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.350Z"
+      "fetched_at": "2026-06-07T12:16:39.689Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415432",
@@ -440,7 +462,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.353Z"
+      "fetched_at": "2026-06-07T12:16:39.691Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415436",
@@ -462,7 +484,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.356Z"
+      "fetched_at": "2026-06-07T12:16:39.695Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415456",
@@ -484,7 +506,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.358Z"
+      "fetched_at": "2026-06-07T12:16:39.697Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415457",
@@ -506,7 +528,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.361Z"
+      "fetched_at": "2026-06-07T12:16:39.699Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415460",
@@ -528,7 +550,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.363Z"
+      "fetched_at": "2026-06-07T12:16:39.702Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415461",
@@ -550,15 +572,15 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.365Z"
+      "fetched_at": "2026-06-07T12:16:39.704Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415463",
       "permit_num": "MEP-IRR-PMT26-34415463",
-      "applied_date": "06/05/2026",
-      "permit_type": "Plumbing Irrigation Permit",
-      "description": "8640 Merlin Cove",
-      "status": "Active",
+      "applied_date": "",
+      "permit_type": "",
+      "description": "",
+      "status": "",
       "city": "San Antonio",
       "address": "",
       "applicant_name": "",
@@ -572,7 +594,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.369Z"
+      "fetched_at": "2026-06-07T12:16:39.707Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415478",
@@ -594,7 +616,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.371Z"
+      "fetched_at": "2026-06-07T12:16:39.709Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415479",
@@ -616,7 +638,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.373Z"
+      "fetched_at": "2026-06-07T12:16:39.711Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415490",
@@ -638,7 +660,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.376Z"
+      "fetched_at": "2026-06-07T12:16:39.714Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415517",
@@ -660,7 +682,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.378Z"
+      "fetched_at": "2026-06-07T12:16:39.717Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415523",
@@ -682,7 +704,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.381Z"
+      "fetched_at": "2026-06-07T12:16:39.719Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415524",
@@ -704,7 +726,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.383Z"
+      "fetched_at": "2026-06-07T12:16:39.721Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415526",
@@ -726,7 +748,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.385Z"
+      "fetched_at": "2026-06-07T12:16:39.725Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415529",
@@ -748,7 +770,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.388Z"
+      "fetched_at": "2026-06-07T12:16:39.727Z"
     },
     {
       "id": "sa_MEP-MEC-PMT26-33915512",
@@ -770,7 +792,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.391Z"
+      "fetched_at": "2026-06-07T12:16:39.729Z"
     },
     {
       "id": "sa_MEP-MEC-PMT26-33915520",
@@ -792,7 +814,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.394Z"
+      "fetched_at": "2026-06-07T12:16:39.731Z"
     },
     {
       "id": "sa_MEP-PCP-PMT26-34115411",
@@ -814,7 +836,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.396Z"
+      "fetched_at": "2026-06-07T12:16:39.734Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34315397",
@@ -836,7 +858,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.398Z"
+      "fetched_at": "2026-06-07T12:16:39.737Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34315399",
@@ -858,7 +880,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.401Z"
+      "fetched_at": "2026-06-07T12:16:39.740Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34315400",
@@ -880,7 +902,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.404Z"
+      "fetched_at": "2026-06-07T12:16:39.743Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34315418",
@@ -902,15 +924,15 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.406Z"
+      "fetched_at": "2026-06-07T12:16:39.747Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34315422",
       "permit_num": "MEP-PLM-PMT26-34315422",
-      "applied_date": "06/05/2026",
-      "permit_type": "Plumbing General Permit",
-      "description": "Barrera SW140665",
-      "status": "Active",
+      "applied_date": "",
+      "permit_type": "",
+      "description": "",
+      "status": "",
       "city": "San Antonio",
       "address": "",
       "applicant_name": "",
@@ -924,7 +946,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.409Z"
+      "fetched_at": "2026-06-07T12:16:39.749Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34315481",
@@ -946,7 +968,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.413Z"
+      "fetched_at": "2026-06-07T12:16:39.752Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34315485",
@@ -968,7 +990,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.415Z"
+      "fetched_at": "2026-06-07T12:16:39.754Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34315506",
@@ -990,7 +1012,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.418Z"
+      "fetched_at": "2026-06-07T12:16:39.757Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34315510",
@@ -1012,7 +1034,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.420Z"
+      "fetched_at": "2026-06-07T12:16:39.759Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34315511",
@@ -1034,7 +1056,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.422Z"
+      "fetched_at": "2026-06-07T12:16:39.762Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34315513",
@@ -1056,7 +1078,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.425Z"
+      "fetched_at": "2026-06-07T12:16:39.765Z"
     },
     {
       "id": "sa_MEP-SEW-PMT26-34815416",
@@ -1078,7 +1100,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.427Z"
+      "fetched_at": "2026-06-07T12:16:39.768Z"
     },
     {
       "id": "sa_MEP-SEW-PMT26-34815428",
@@ -1100,7 +1122,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.429Z"
+      "fetched_at": "2026-06-07T12:16:39.770Z"
     },
     {
       "id": "sa_MEP-SEW-PMT26-34815433",
@@ -1122,7 +1144,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.432Z"
+      "fetched_at": "2026-06-07T12:16:39.772Z"
     },
     {
       "id": "sa_MEP-SEW-PMT26-34815480",
@@ -1144,7 +1166,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.434Z"
+      "fetched_at": "2026-06-07T12:16:39.774Z"
     },
     {
       "id": "sa_MEP-SEW-PMT26-34815522",
@@ -1166,7 +1188,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.436Z"
+      "fetched_at": "2026-06-07T12:16:39.777Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115400",
@@ -1188,7 +1210,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.439Z"
+      "fetched_at": "2026-06-07T12:16:39.779Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115411",
@@ -1210,7 +1232,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.441Z"
+      "fetched_at": "2026-06-07T12:16:39.781Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115416",
@@ -1232,7 +1254,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.442Z"
+      "fetched_at": "2026-06-07T12:16:39.783Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115418",
@@ -1254,7 +1276,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.445Z"
+      "fetched_at": "2026-06-07T12:16:39.785Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115428",
@@ -1276,7 +1298,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.447Z"
+      "fetched_at": "2026-06-07T12:16:39.787Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115435",
@@ -1298,7 +1320,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.449Z"
+      "fetched_at": "2026-06-07T12:16:39.794Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115453",
@@ -1320,7 +1342,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.451Z"
+      "fetched_at": "2026-06-07T12:16:39.797Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115471",
@@ -1342,7 +1364,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.455Z"
+      "fetched_at": "2026-06-07T12:16:39.798Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115477",
@@ -1364,7 +1386,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.456Z"
+      "fetched_at": "2026-06-07T12:16:39.800Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115480",
@@ -1386,7 +1408,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.458Z"
+      "fetched_at": "2026-06-07T12:16:39.801Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115481",
@@ -1408,7 +1430,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.460Z"
+      "fetched_at": "2026-06-07T12:16:39.803Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115485",
@@ -1430,7 +1452,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.463Z"
+      "fetched_at": "2026-06-07T12:16:39.805Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115498",
@@ -1452,7 +1474,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.464Z"
+      "fetched_at": "2026-06-07T12:16:39.806Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115506",
@@ -1474,7 +1496,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.466Z"
+      "fetched_at": "2026-06-07T12:16:39.808Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115510",
@@ -1496,7 +1518,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.468Z"
+      "fetched_at": "2026-06-07T12:16:39.810Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115511",
@@ -1518,7 +1540,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.471Z"
+      "fetched_at": "2026-06-07T12:16:39.812Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115512",
@@ -1540,7 +1562,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.473Z"
+      "fetched_at": "2026-06-07T12:16:39.815Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115513",
@@ -1562,7 +1584,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.479Z"
+      "fetched_at": "2026-06-07T12:16:39.816Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115515",
@@ -1584,7 +1606,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.482Z"
+      "fetched_at": "2026-06-07T12:16:39.818Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115520",
@@ -1606,7 +1628,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.483Z"
+      "fetched_at": "2026-06-07T12:16:39.820Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115522",
@@ -1628,7 +1650,29 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-07T05:51:02.485Z"
+      "fetched_at": "2026-06-07T12:16:39.821Z"
+    },
+    {
+      "id": "sa_MEP-TRD-APP26-33115530",
+      "permit_num": "MEP-TRD-APP26-33115530",
+      "applied_date": "06/07/2026",
+      "permit_type": "MEP Trade Permits Application",
+      "description": "gas permit",
+      "status": "2811 w gerald ave",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-07T12:16:39.823Z"
     }
   ]
 }

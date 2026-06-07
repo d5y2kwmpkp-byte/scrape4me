@@ -1,5 +1,26 @@
 [
   {
+    "permitNum": "26TMP-094561",
+    "permitDate": "06/07/2026",
+    "permitType": "MEP Trade Permits Application",
+    "description": "gas permit",
+    "status": "2811 w gerald ave"
+  },
+  {
+    "permitNum": "MEP-GAS-PMT26-34215530",
+    "permitDate": "06/07/2026",
+    "permitType": "Plumbing Gas Permit",
+    "description": "2811 w gerald ave",
+    "status": "Active"
+  },
+  {
+    "permitNum": "MEP-TRD-APP26-33115530",
+    "permitDate": "06/07/2026",
+    "permitType": "MEP Trade Permits Application",
+    "description": "gas permit",
+    "status": "2811 w gerald ave"
+  },
+  {
     "permitNum": "MEP-TRD-APP26-33115515",
     "permitDate": "06/06/2026",
     "permitType": "MEP Trade Permits Application",
@@ -620,20 +641,6 @@
     "permitDate": "06/05/2026",
     "permitType": "Plumbing Irrigation Permit",
     "description": "11730 ANSELMO",
-    "status": "Active"
-  },
-  {
-    "permitNum": "MEP-PLM-PMT26-34315422",
-    "permitDate": "06/05/2026",
-    "permitType": "Plumbing General Permit",
-    "description": "Barrera SW140665",
-    "status": "Active"
-  },
-  {
-    "permitNum": "MEP-IRR-PMT26-34415463",
-    "permitDate": "06/05/2026",
-    "permitType": "Plumbing Irrigation Permit",
-    "description": "8640 Merlin Cove",
     "status": "Active"
   }
 ]
