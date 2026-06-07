@@ -1,16 +1,5 @@
-name: SA Permit Scraper
-
-on:
-  schedule:
-    - cron: '0 6 * * *'
-  workflow_dispatch:
-
-jobs:
-  scrape:
+  tabs:
     runs-on: ubuntu-latest
-
-    permissions:
-      contents: write
 
     steps:
       - name: Checkout repo
@@ -24,21 +13,15 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Install Playwright Chromium
-        run: npx playwright install chromium --with-deps
-
-      - name: Run SA permit scraper
+      - name: Run TABS scraper
         env:
           SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
-        run: node --input-type=commonjs < api/extract.js
-
-
-      - 
+        run: node api/tabs_scraper.js
 
       - name: Commit data back to repo
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/
-          git commit -m "Update permit data $(date -u '+%Y-%m-%d %H:%M UTC') [skip ci]" || echo "Nothing to commit"
+          git commit -m "Update TABS data $(date -u '+%Y-%m-%d %H:%M UTC') [skip ci]" || echo "Nothing to commit"
           git push
