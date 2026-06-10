@@ -1,0 +1,84 @@
+
+ 
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<script>
+		window.applicationStartTime = Date.now();
+	</script>
+
+	<!--[if !IE]><!-->
+	
+			<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://www.txsmartbuy.gov/app/extensions/shopping_2.css?t=1744143740649">
+	
+	<!--<![endif]-->
+	<!--[if lte IE 9]>
+
+	<![endif]-->
+	<!--[if lt IE 9]>
+		<script src="/app/javascript/html5shiv.min.js"></script>
+	  	<script src="/app/javascript/respond.min.js"></script>
+	<![endif]-->
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="shortcut icon" href="https://www.txsmartbuy.gov/app/extensions/TXCPA/TXSmartbuy_Theme/19.2.0/img/favicon.ico" />
+	<title></title>
+
+</head>
+
+<body>
+
+<noscript>
+	<div class="shopping-layout-no-javascript-msg">
+		<strong>Javascript is disabled on your browser.</strong><br>
+		To view this site, you must enable JavaScript or upgrade to a JavaScript-capable browser.
+	</div>
+</noscript>
+
+<div id="main" class="main">...</div>
+
+
+
+<script>
+function Deferred(){this.status='started';this.data=undefined;this.doneCb=[]}Deferred.prototype.done=function(fn){if(this.status==='resolved'){fn(this.data)}else{this.doneCb.push(fn)}};Deferred.prototype.resolve=function(data){this.data=data;this.status='resolved';for(var i=0;i<this.doneCb.length;i++){this.doneCb[i](this.data)}return this};Deferred.all=function(deferreds){var keys=Object.keys(deferreds);var numberOfResolvedDeferreds=0;var toReturn=new Deferred;for(var i=0;i<keys.length;i++){deferreds[keys[i]].done(function(){numberOfResolvedDeferreds++;if(numberOfResolvedDeferreds===keys.length){toReturn.resolve()}})}return toReturn};function loadJSON(url,resourceName){window.loadedResourcesPromises=window.loadedResourcesPromises||{};var promise=new Deferred;window.loadedResourcesPromises[resourceName]=promise;var http=new XMLHttpRequest;http.open('GET',url);http.onreadystatechange=function(){if(http.readyState===4&&http.status===200){promise.resolve(JSON.parse(http.responseText))}};http.send(null);return promise}function loadScript(url){window.loadedResourcesPromises=window.loadedResourcesPromises||{};var promise=window.loadedResourcesPromises[url]=new Deferred;var newNode=document.createElement('script');newNode.src=url;function loadDone(){promise.resolve()}newNode.onerror=loadDone;newNode.onload=loadDone;document.head.appendChild(newNode)}function isObject(item){return item&&typeof item==='object'&&!Array.isArray(item)}function merge(target,source){if(isObject(target)&&isObject(source)){var sourceKeys=Object.keys(source);var sourceKey;for(var i=0;i<sourceKeys.length;i++){sourceKey=sourceKeys[i];if(isObject(source[sourceKey])){if(target[sourceKey]===undefined){target[sourceKey]=source[sourceKey]}else{merge(target[sourceKey],source[sourceKey])}}else{target[sourceKey]=source[sourceKey]}}}return target};function _each(values,fn){for(var i=0;i<values.length;i++){fn(values[i],i)}};var SC=window.SC={ENVIRONMENT:{jsEnvironment:typeof nsglobal==='undefined'?'browser':'server'},isCrossOrigin:function(){return'www.txsmartbuy.gov'!==document.location.hostname},isPageGenerator:function(){return typeof nsglobal!=='undefined'},getSessionInfo:function(key){var session=SC.SESSION||SC.DEFAULT_SESSION||{};return key?session[key]:session},getPublishedObject:function(key){return SC.ENVIRONMENT&&SC.ENVIRONMENT.published&&SC.ENVIRONMENT.published[key]?SC.ENVIRONMENT.published[key]:null}};if(!history.pushState&&SC.ENVIRONMENT.jsEnvironment==='browser'&&(location.pathname!=='/'||location.search!=='')&&location.hash===''){if(location.pathname==='/'){var hash=(RegExp('fragment='+'(.+?)(&|$)').exec(location.search)||[,''])[1];location.replace(location.pathname+location.search+'/#'+unescape(hash))}else{location.replace('/#'+location.pathname+location.search)}document.write('')}if(!SC.isCrossOrigin()){if(!navigator.userAgent.match(/googlebot/i)){window.setTimeout(()=>document.getElementById('main').style.display='none')}if(SC.isPageGenerator()){document.body.className=document.body.className+' seo-support'}SC.ENVIRONMENT.seoSupport=!!~document.body.className.indexOf('seo-support');if(SC.isPageGenerator()){SC.ENVIRONMENT.PROFILE={}}if(SC.ENVIRONMENT.jsEnvironment==='browser'&&!SC.isCrossOrigin()){var googletagmanager_cookie='';if(!googletagmanager_cookie){var value='; '+document.cookie;var parts=value.split('; _gid=');if(parts.length===2){googletagmanager_cookie='&_ga='+parts.pop().split(';').shift()}}window.loadedResourcesPromises=window.loadedResourcesPromises||{};var datetime=new Date().getTime();loadJSON('https://www.txsmartbuy.gov/app/services/ShoppingUserEnvironment.Service.ss?lang=en_US&cur=null&X-SC-Touchpoint=shopping'+googletagmanager_cookie+'&t='+datetime+'','shoppingUserEnvironment').done(function(env){merge(SC,env);if(SC.PROFILE_PROMISE){SC.PROFILE_PROMISE.resolve(SC.ENVIRONMENT.PROFILE)}})}}
+</script>
+
+<script src="/app/public/shopping.environment.ssp?lang=en_US&cur=null&X-SC-Touchpoint=shopping&t=1744143740649" ></script>
+<script src="/app/public/shopping.environment.shortcache.ssp?X-SC-Touchpoint=shopping&t=1744143740649" ></script>
+<script src="/app/languages/shopping_en_US.js?t=1744143740649"></script>
+
+
+	<script src="/cms/3/cms.js" defer></script>
+
+
+<script>
+    if(!SC.isPageGenerator()){
+        var NLRUM = NLRUM || {};
+        NLRUM.bSendBeacon = 0;
+        NLRUM.bResourceTimingDataCollection = 1;
+        NLRUM.autorun = false;
+        loadScript('/nlrum/nlRUM.js');
+	}
+</script>
+
+		<script src="/app/extensions/shopping-templates_2.js?t=1744143740649"></script>
+
+		<script src="/app/javascript/shopping.js?t=1744143740649"></script>
+
+		<script src="/app/extensions/shopping_2.js?t=1744143740649"></script>
+
+
+<script>
+try{var startApplication=function(){require(['Loggers','Loggers.Configuration.SCA'],function(Loggers,LoggersConfiguration){Loggers.Loggers.setConfiguration(LoggersConfiguration.configuration)});require(['SC.Shopping.Starter'])};if(!window.loadedResourcesPromises){startApplication()}else{Deferred.all(window.loadedResourcesPromises).done(function(){try{startApplication()}catch(e){document.getElementById('main').style.display='block'}})};}catch(e){if(document.getElementById('main')){document.getElementById('main').style.display='block'}}
+</script>
+</body>
+
+</html>
+
+<!-- SuiteCommerce [ prodbundle_id "295132" ] [ baselabel "SC_2019.2" ] [ version "2019.2.3.a" ] [ datelabel "2020.00.00" ] [ buildno "0" ] -->
+<!-- 243 s: 12% #51 cache: 12% #27 -->
+<!-- Host [ sh.sp.7.prod.phx.na23 ] App Version [ 2026.1.14.30276 ] -->
+<!-- COMPID [ 852252 ] URL [ /s.nl ] Time [ Wed Jun 10 03:34:16 PDT 2026 ] -->
+<!-- All SQL was faster than 100 ms -->
