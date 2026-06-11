@@ -22,9 +22,16 @@ async function getUngeocodedRecords(offset = 0) {
 
 async function geocodeAddress(address, county, state) {
   if (!address || address.trim().length < 5) return null;
-  const fullAddress = `${address}, ${county || ""} County, ${state || "TX"}`.replace(/\s+/g, " ").trim();
-  const encoded     = encodeURIComponent(fullAddress);
-  const url         = `https://api.mapbox.com/geocoding/v5/mapbox.places/${encoded}.json?country=US&limit=1&access_token=${MAPBOX_TOKEN}`;
+
+  // Don't append county/state if address already contains TX
+  const hasState = /,?\s*TX\s+\d{5}/.test(address) || address.includes(", TX");
+  const fullAddress = hasState
+    ? address.trim()
+    : `${address}, ${county || ""} County, TX`.replace(/\s+/g, " ").trim();
+
+  const encoded = encodeURIComponent(fullAddress);
+  const url     = `https://api.mapbox.com/geocoding/v5/mapbox.places/${encoded}.json?country=US&limit=1&access_token=${MAPBOX_TOKEN}`;
+
   try {
     const res  = await fetch(url);
     const data = await res.json();
@@ -60,7 +67,7 @@ async function updateCoords(id, lat, lng) {
 }
 
 (async () => {
-  console.log("FlowState TABS Geocoder");
+  console.log("FlowState TABS Geocoder v2");
   console.log("─".repeat(50));
 
   let totalGeocoded = 0;
