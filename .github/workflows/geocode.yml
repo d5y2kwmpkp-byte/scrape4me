@@ -23,4 +23,5 @@ jobs:
         env:
           SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
           MAPBOX_TOKEN: ${{ secrets.MAPBOX_TOKEN }}
-        run: node api/geocode.js
+        run: node --input-type=commonjs < api/geocode.js
+
