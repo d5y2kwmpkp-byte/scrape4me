@@ -1,6 +1,6 @@
 {
   "success": true,
-  "count": 185,
+  "count": 232,
   "records": [
     {
       "id": "sa_LSR-MEP-APP26-39401425",
@@ -22,7 +22,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.248Z"
+      "fetched_at": "2026-06-12T17:00:24.169Z"
     },
     {
       "id": "sa_LSR-MEP-APP26-39401431",
@@ -44,7 +44,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.251Z"
+      "fetched_at": "2026-06-12T17:00:24.172Z"
     },
     {
       "id": "sa_LSR-MEP-APP26-39401451",
@@ -66,7 +66,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.254Z"
+      "fetched_at": "2026-06-12T17:00:24.175Z"
     },
     {
       "id": "sa_LSR-PLUMB-26-39701426",
@@ -88,7 +88,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.256Z"
+      "fetched_at": "2026-06-12T17:00:24.177Z"
     },
     {
       "id": "sa_LSR-PLUMB-26-39701432",
@@ -110,14 +110,14 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.258Z"
+      "fetched_at": "2026-06-12T17:00:24.179Z"
     },
     {
       "id": "sa_LSR-PLUMB-26-39701476",
       "permit_num": "LSR-PLUMB-26-39701476",
-      "applied_date": "06/11/2026",
-      "permit_type": "LSR Plumbing Permit",
-      "description": "Active",
+      "applied_date": "",
+      "permit_type": "",
+      "description": "",
       "status": "",
       "city": "San Antonio",
       "address": "",
@@ -132,7 +132,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.260Z"
+      "fetched_at": "2026-06-12T17:00:24.181Z"
     },
     {
       "id": "sa_MEP-BCK-PMT26-34015631",
@@ -154,7 +154,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.262Z"
+      "fetched_at": "2026-06-12T17:00:24.184Z"
     },
     {
       "id": "sa_MEP-GAS-PMT26-34215403",
@@ -176,7 +176,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.265Z"
+      "fetched_at": "2026-06-12T17:00:24.186Z"
     },
     {
       "id": "sa_MEP-GAS-PMT26-34215450",
@@ -198,7 +198,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.267Z"
+      "fetched_at": "2026-06-12T17:00:24.189Z"
     },
     {
       "id": "sa_MEP-GAS-PMT26-34215453",
@@ -220,7 +220,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.270Z"
+      "fetched_at": "2026-06-12T17:00:24.191Z"
     },
     {
       "id": "sa_MEP-GAS-PMT26-34215471",
@@ -242,7 +242,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.272Z"
+      "fetched_at": "2026-06-12T17:00:24.194Z"
     },
     {
       "id": "sa_MEP-GAS-PMT26-34215477",
@@ -264,7 +264,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.275Z"
+      "fetched_at": "2026-06-12T17:00:24.196Z"
     },
     {
       "id": "sa_MEP-GAS-PMT26-34215482",
@@ -286,7 +286,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.277Z"
+      "fetched_at": "2026-06-12T17:00:24.199Z"
     },
     {
       "id": "sa_MEP-GAS-PMT26-34215530",
@@ -308,7 +308,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.280Z"
+      "fetched_at": "2026-06-12T17:00:24.201Z"
     },
     {
       "id": "sa_MEP-GAS-PMT26-34215545",
@@ -330,7 +330,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.283Z"
+      "fetched_at": "2026-06-12T17:00:24.204Z"
     },
     {
       "id": "sa_MEP-GAS-PMT26-34215572",
@@ -352,7 +352,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.285Z"
+      "fetched_at": "2026-06-12T17:00:24.207Z"
     },
     {
       "id": "sa_MEP-GAS-PMT26-34215655",
@@ -374,15 +374,15 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.288Z"
+      "fetched_at": "2026-06-12T17:00:24.209Z"
     },
     {
       "id": "sa_MEP-GAS-PMT26-34215993",
       "permit_num": "MEP-GAS-PMT26-34215993",
-      "applied_date": "06/11/2026",
-      "permit_type": "Plumbing Gas Permit",
-      "description": "NEFF MIDDLE SCHOOL",
-      "status": "Active",
+      "applied_date": "",
+      "permit_type": "",
+      "description": "",
+      "status": "",
       "city": "San Antonio",
       "address": "",
       "applicant_name": "",
@@ -396,15 +396,15 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.290Z"
+      "fetched_at": "2026-06-12T17:00:24.212Z"
     },
     {
       "id": "sa_MEP-GAS-PMT26-34216023",
       "permit_num": "MEP-GAS-PMT26-34216023",
-      "applied_date": "06/11/2026",
-      "permit_type": "Plumbing Gas Permit",
-      "description": "Annual Gas Test",
-      "status": "Active",
+      "applied_date": "",
+      "permit_type": "",
+      "description": "",
+      "status": "",
       "city": "San Antonio",
       "address": "",
       "applicant_name": "",
@@ -418,15 +418,15 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.293Z"
+      "fetched_at": "2026-06-12T17:00:24.215Z"
     },
     {
       "id": "sa_MEP-GAS-PMT26-34216040",
       "permit_num": "MEP-GAS-PMT26-34216040",
-      "applied_date": "06/11/2026",
-      "permit_type": "Plumbing Gas Permit",
-      "description": "MORA",
-      "status": "Active",
+      "applied_date": "",
+      "permit_type": "",
+      "description": "",
+      "status": "",
       "city": "San Antonio",
       "address": "",
       "applicant_name": "",
@@ -440,7 +440,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.295Z"
+      "fetched_at": "2026-06-12T17:00:24.217Z"
     },
     {
       "id": "sa_MEP-GAS-PMT26-34216057",
@@ -462,7 +462,29 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.297Z"
+      "fetched_at": "2026-06-12T17:00:24.219Z"
+    },
+    {
+      "id": "sa_MEP-GAS-PMT26-34216181",
+      "permit_num": "MEP-GAS-PMT26-34216181",
+      "applied_date": "06/12/2026",
+      "permit_type": "Plumbing Gas Permit",
+      "description": "Plumbing",
+      "status": "Active",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.221Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415396",
@@ -484,7 +506,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.301Z"
+      "fetched_at": "2026-06-12T17:00:24.224Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415410",
@@ -506,7 +528,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.305Z"
+      "fetched_at": "2026-06-12T17:00:24.228Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415412",
@@ -528,7 +550,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.308Z"
+      "fetched_at": "2026-06-12T17:00:24.230Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415413",
@@ -550,7 +572,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.311Z"
+      "fetched_at": "2026-06-12T17:00:24.234Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415417",
@@ -572,7 +594,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.313Z"
+      "fetched_at": "2026-06-12T17:00:24.237Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415419",
@@ -594,7 +616,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.316Z"
+      "fetched_at": "2026-06-12T17:00:24.240Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415421",
@@ -616,7 +638,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.319Z"
+      "fetched_at": "2026-06-12T17:00:24.243Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415423",
@@ -638,7 +660,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.321Z"
+      "fetched_at": "2026-06-12T17:00:24.245Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415429",
@@ -660,7 +682,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.324Z"
+      "fetched_at": "2026-06-12T17:00:24.249Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415432",
@@ -682,7 +704,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.327Z"
+      "fetched_at": "2026-06-12T17:00:24.252Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415436",
@@ -704,7 +726,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.330Z"
+      "fetched_at": "2026-06-12T17:00:24.256Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415456",
@@ -726,7 +748,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.332Z"
+      "fetched_at": "2026-06-12T17:00:24.258Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415457",
@@ -748,7 +770,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.334Z"
+      "fetched_at": "2026-06-12T17:00:24.261Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415460",
@@ -770,7 +792,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.337Z"
+      "fetched_at": "2026-06-12T17:00:24.263Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415461",
@@ -792,7 +814,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.339Z"
+      "fetched_at": "2026-06-12T17:00:24.265Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415463",
@@ -814,7 +836,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.341Z"
+      "fetched_at": "2026-06-12T17:00:24.268Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415478",
@@ -836,7 +858,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.344Z"
+      "fetched_at": "2026-06-12T17:00:24.270Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415479",
@@ -858,7 +880,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.346Z"
+      "fetched_at": "2026-06-12T17:00:24.273Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415490",
@@ -880,7 +902,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.348Z"
+      "fetched_at": "2026-06-12T17:00:24.275Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415517",
@@ -902,7 +924,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.352Z"
+      "fetched_at": "2026-06-12T17:00:24.279Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415523",
@@ -924,7 +946,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.354Z"
+      "fetched_at": "2026-06-12T17:00:24.281Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415524",
@@ -946,7 +968,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.356Z"
+      "fetched_at": "2026-06-12T17:00:24.283Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415526",
@@ -968,7 +990,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.358Z"
+      "fetched_at": "2026-06-12T17:00:24.286Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415529",
@@ -990,7 +1012,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.361Z"
+      "fetched_at": "2026-06-12T17:00:24.288Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415541",
@@ -1012,7 +1034,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.363Z"
+      "fetched_at": "2026-06-12T17:00:24.290Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415682",
@@ -1034,7 +1056,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.365Z"
+      "fetched_at": "2026-06-12T17:00:24.293Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415697",
@@ -1056,7 +1078,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.368Z"
+      "fetched_at": "2026-06-12T17:00:24.295Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415698",
@@ -1078,7 +1100,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.370Z"
+      "fetched_at": "2026-06-12T17:00:24.298Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415716",
@@ -1100,15 +1122,59 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.373Z"
+      "fetched_at": "2026-06-12T17:00:24.302Z"
+    },
+    {
+      "id": "sa_MEP-IRR-PMT26-34415874",
+      "permit_num": "MEP-IRR-PMT26-34415874",
+      "applied_date": "06/12/2026",
+      "permit_type": "Plumbing Irrigation Permit",
+      "description": "BACKFLOW REPLACEMENT",
+      "status": "Active",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.304Z"
+    },
+    {
+      "id": "sa_MEP-IRR-PMT26-34415878",
+      "permit_num": "MEP-IRR-PMT26-34415878",
+      "applied_date": "06/12/2026",
+      "permit_type": "Plumbing Irrigation Permit",
+      "description": "BACKFLOW REPLACEMENT",
+      "status": "Active",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.306Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415991",
       "permit_num": "MEP-IRR-PMT26-34415991",
-      "applied_date": "06/11/2026",
-      "permit_type": "Plumbing Irrigation Permit",
-      "description": "883 Shatterhand Blvd",
-      "status": "Active",
+      "applied_date": "",
+      "permit_type": "",
+      "description": "",
+      "status": "",
       "city": "San Antonio",
       "address": "",
       "applicant_name": "",
@@ -1122,14 +1188,36 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.375Z"
+      "fetched_at": "2026-06-12T17:00:24.308Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34415992",
       "permit_num": "MEP-IRR-PMT26-34415992",
+      "applied_date": "",
+      "permit_type": "",
+      "description": "",
+      "status": "",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.311Z"
+    },
+    {
+      "id": "sa_MEP-IRR-PMT26-34415995",
+      "permit_num": "MEP-IRR-PMT26-34415995",
       "applied_date": "06/11/2026",
       "permit_type": "Plumbing Irrigation Permit",
-      "description": "4942 Mala Vida",
+      "description": "LAWN IRRIGATION & 1\" BACKFLOW",
       "status": "Active",
       "city": "San Antonio",
       "address": "",
@@ -1144,15 +1232,15 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.378Z"
+      "fetched_at": "2026-06-12T17:00:24.313Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34416001",
       "permit_num": "MEP-IRR-PMT26-34416001",
-      "applied_date": "06/11/2026",
-      "permit_type": "Plumbing Irrigation Permit",
-      "description": "886 Shatterhand Blvd",
-      "status": "Active",
+      "applied_date": "",
+      "permit_type": "",
+      "description": "",
+      "status": "",
       "city": "San Antonio",
       "address": "",
       "applicant_name": "",
@@ -1166,15 +1254,15 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.380Z"
+      "fetched_at": "2026-06-12T17:00:24.315Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34416007",
       "permit_num": "MEP-IRR-PMT26-34416007",
-      "applied_date": "06/11/2026",
-      "permit_type": "Plumbing Irrigation Permit",
-      "description": "1259 HIGH TOWER",
-      "status": "Active",
+      "applied_date": "",
+      "permit_type": "",
+      "description": "",
+      "status": "",
       "city": "San Antonio",
       "address": "",
       "applicant_name": "",
@@ -1188,7 +1276,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.382Z"
+      "fetched_at": "2026-06-12T17:00:24.319Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34416009",
@@ -1210,7 +1298,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.384Z"
+      "fetched_at": "2026-06-12T17:00:24.321Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34416011",
@@ -1232,15 +1320,15 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.386Z"
+      "fetched_at": "2026-06-12T17:00:24.325Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34416016",
       "permit_num": "MEP-IRR-PMT26-34416016",
-      "applied_date": "06/11/2026",
-      "permit_type": "Plumbing Irrigation Permit",
-      "description": "7703 Mountaineer Way",
-      "status": "Active",
+      "applied_date": "",
+      "permit_type": "",
+      "description": "",
+      "status": "",
       "city": "San Antonio",
       "address": "",
       "applicant_name": "",
@@ -1254,15 +1342,15 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.389Z"
+      "fetched_at": "2026-06-12T17:00:24.327Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34416024",
       "permit_num": "MEP-IRR-PMT26-34416024",
-      "applied_date": "06/11/2026",
-      "permit_type": "Plumbing Irrigation Permit",
-      "description": "12523 Sylvanite",
-      "status": "Active",
+      "applied_date": "",
+      "permit_type": "",
+      "description": "",
+      "status": "",
       "city": "San Antonio",
       "address": "",
       "applicant_name": "",
@@ -1276,15 +1364,15 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.392Z"
+      "fetched_at": "2026-06-12T17:00:24.329Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34416027",
       "permit_num": "MEP-IRR-PMT26-34416027",
-      "applied_date": "06/11/2026",
-      "permit_type": "Plumbing Irrigation Permit",
-      "description": "2955 EAGLE RISE",
-      "status": "Active",
+      "applied_date": "",
+      "permit_type": "",
+      "description": "",
+      "status": "",
       "city": "San Antonio",
       "address": "",
       "applicant_name": "",
@@ -1298,15 +1386,15 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.396Z"
+      "fetched_at": "2026-06-12T17:00:24.332Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34416032",
       "permit_num": "MEP-IRR-PMT26-34416032",
-      "applied_date": "06/11/2026",
-      "permit_type": "Plumbing Irrigation Permit",
-      "description": "12103 JASPER STREAM",
-      "status": "Active",
+      "applied_date": "",
+      "permit_type": "",
+      "description": "",
+      "status": "",
       "city": "San Antonio",
       "address": "",
       "applicant_name": "",
@@ -1320,15 +1408,15 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.399Z"
+      "fetched_at": "2026-06-12T17:00:24.334Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34416035",
       "permit_num": "MEP-IRR-PMT26-34416035",
-      "applied_date": "06/11/2026",
-      "permit_type": "Plumbing Irrigation Permit",
-      "description": "13319. BLUE CEDAR",
-      "status": "Active",
+      "applied_date": "",
+      "permit_type": "",
+      "description": "",
+      "status": "",
       "city": "San Antonio",
       "address": "",
       "applicant_name": "",
@@ -1342,15 +1430,15 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.401Z"
+      "fetched_at": "2026-06-12T17:00:24.337Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34416036",
       "permit_num": "MEP-IRR-PMT26-34416036",
-      "applied_date": "06/11/2026",
-      "permit_type": "Plumbing Irrigation Permit",
-      "description": "4715 GYPSUM FALLS",
-      "status": "Active",
+      "applied_date": "",
+      "permit_type": "",
+      "description": "",
+      "status": "",
       "city": "San Antonio",
       "address": "",
       "applicant_name": "",
@@ -1364,15 +1452,15 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.403Z"
+      "fetched_at": "2026-06-12T17:00:24.339Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34416037",
       "permit_num": "MEP-IRR-PMT26-34416037",
-      "applied_date": "06/11/2026",
-      "permit_type": "Plumbing Irrigation Permit",
-      "description": "2911 FLATHEAD RIDGE",
-      "status": "Active",
+      "applied_date": "",
+      "permit_type": "",
+      "description": "",
+      "status": "",
       "city": "San Antonio",
       "address": "",
       "applicant_name": "",
@@ -1386,15 +1474,15 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.405Z"
+      "fetched_at": "2026-06-12T17:00:24.345Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34416038",
       "permit_num": "MEP-IRR-PMT26-34416038",
-      "applied_date": "06/11/2026",
-      "permit_type": "Plumbing Irrigation Permit",
-      "description": "4719 GYPSUM FALLS",
-      "status": "Active",
+      "applied_date": "",
+      "permit_type": "",
+      "description": "",
+      "status": "",
       "city": "San Antonio",
       "address": "",
       "applicant_name": "",
@@ -1408,15 +1496,15 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.408Z"
+      "fetched_at": "2026-06-12T17:00:24.348Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34416039",
       "permit_num": "MEP-IRR-PMT26-34416039",
-      "applied_date": "06/11/2026",
-      "permit_type": "Plumbing Irrigation Permit",
-      "description": "9422 LUKE PATH",
-      "status": "Active",
+      "applied_date": "",
+      "permit_type": "",
+      "description": "",
+      "status": "",
       "city": "San Antonio",
       "address": "",
       "applicant_name": "",
@@ -1430,15 +1518,15 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.415Z"
+      "fetched_at": "2026-06-12T17:00:24.351Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34416044",
       "permit_num": "MEP-IRR-PMT26-34416044",
-      "applied_date": "06/11/2026",
-      "permit_type": "Plumbing Irrigation Permit",
-      "description": "5934 Celestite Bend",
-      "status": "Active",
+      "applied_date": "",
+      "permit_type": "",
+      "description": "",
+      "status": "",
       "city": "San Antonio",
       "address": "",
       "applicant_name": "",
@@ -1452,15 +1540,15 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.417Z"
+      "fetched_at": "2026-06-12T17:00:24.353Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34416046",
       "permit_num": "MEP-IRR-PMT26-34416046",
-      "applied_date": "06/11/2026",
-      "permit_type": "Plumbing Irrigation Permit",
-      "description": "20802 Stonework Spur",
-      "status": "Active",
+      "applied_date": "",
+      "permit_type": "",
+      "description": "",
+      "status": "",
       "city": "San Antonio",
       "address": "",
       "applicant_name": "",
@@ -1474,7 +1562,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.418Z"
+      "fetched_at": "2026-06-12T17:00:24.355Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34416047",
@@ -1496,7 +1584,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.420Z"
+      "fetched_at": "2026-06-12T17:00:24.356Z"
     },
     {
       "id": "sa_MEP-IRR-PMT26-34416050",
@@ -1518,7 +1606,227 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.422Z"
+      "fetched_at": "2026-06-12T17:00:24.358Z"
+    },
+    {
+      "id": "sa_MEP-IRR-PMT26-34416079",
+      "permit_num": "MEP-IRR-PMT26-34416079",
+      "applied_date": "06/11/2026",
+      "permit_type": "Plumbing Irrigation Permit",
+      "description": "6451 Comanche Moon",
+      "status": "Active",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.361Z"
+    },
+    {
+      "id": "sa_MEP-IRR-PMT26-34416083",
+      "permit_num": "MEP-IRR-PMT26-34416083",
+      "applied_date": "06/11/2026",
+      "permit_type": "Plumbing Irrigation Permit",
+      "description": "2623 SEGUNDO",
+      "status": "Active",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.364Z"
+    },
+    {
+      "id": "sa_MEP-IRR-PMT26-34416086",
+      "permit_num": "MEP-IRR-PMT26-34416086",
+      "applied_date": "06/11/2026",
+      "permit_type": "Plumbing Irrigation Permit",
+      "description": "13862 PEASE CROSSING",
+      "status": "Active",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.366Z"
+    },
+    {
+      "id": "sa_MEP-IRR-PMT26-34416089",
+      "permit_num": "MEP-IRR-PMT26-34416089",
+      "applied_date": "06/11/2026",
+      "permit_type": "Plumbing Irrigation Permit",
+      "description": "13866 PEASE CROSSING",
+      "status": "Active",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.369Z"
+    },
+    {
+      "id": "sa_MEP-IRR-PMT26-34416093",
+      "permit_num": "MEP-IRR-PMT26-34416093",
+      "applied_date": "06/11/2026",
+      "permit_type": "Plumbing Irrigation Permit",
+      "description": "14323 WALKER BEND",
+      "status": "Active",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.371Z"
+    },
+    {
+      "id": "sa_MEP-IRR-PMT26-34416144",
+      "permit_num": "MEP-IRR-PMT26-34416144",
+      "applied_date": "06/12/2026",
+      "permit_type": "Plumbing Irrigation Permit",
+      "description": "9122 Campbell Way",
+      "status": "Active",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.374Z"
+    },
+    {
+      "id": "sa_MEP-IRR-PMT26-34416146",
+      "permit_num": "MEP-IRR-PMT26-34416146",
+      "applied_date": "06/12/2026",
+      "permit_type": "Plumbing Irrigation Permit",
+      "description": "8022 Biggio Lane",
+      "status": "Active",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.376Z"
+    },
+    {
+      "id": "sa_MEP-IRR-PMT26-34416148",
+      "permit_num": "MEP-IRR-PMT26-34416148",
+      "applied_date": "06/12/2026",
+      "permit_type": "Plumbing Irrigation Permit",
+      "description": "14304 Huisache Hollow",
+      "status": "Active",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.378Z"
+    },
+    {
+      "id": "sa_MEP-IRR-PMT26-34416159",
+      "permit_num": "MEP-IRR-PMT26-34416159",
+      "applied_date": "06/12/2026",
+      "permit_type": "Plumbing Irrigation Permit",
+      "description": "6455 Comanche Moon",
+      "status": "Active",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.380Z"
+    },
+    {
+      "id": "sa_MEP-IRR-PMT26-34416183",
+      "permit_num": "MEP-IRR-PMT26-34416183",
+      "applied_date": "06/12/2026",
+      "permit_type": "Plumbing Irrigation Permit",
+      "description": "3954 Lone Rdg",
+      "status": "Active",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.381Z"
     },
     {
       "id": "sa_MEP-MEC-PMT26-33915512",
@@ -1540,7 +1848,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.424Z"
+      "fetched_at": "2026-06-12T17:00:24.383Z"
     },
     {
       "id": "sa_MEP-MEC-PMT26-33915515",
@@ -1562,7 +1870,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.426Z"
+      "fetched_at": "2026-06-12T17:00:24.385Z"
     },
     {
       "id": "sa_MEP-MEC-PMT26-33915520",
@@ -1584,7 +1892,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.427Z"
+      "fetched_at": "2026-06-12T17:00:24.387Z"
     },
     {
       "id": "sa_MEP-MEC-PMT26-33915702",
@@ -1606,14 +1914,36 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.430Z"
+      "fetched_at": "2026-06-12T17:00:24.389Z"
     },
     {
       "id": "sa_MEP-MEC-PMT26-33915990",
       "permit_num": "MEP-MEC-PMT26-33915990",
-      "applied_date": "06/11/2026",
+      "applied_date": "",
+      "permit_type": "",
+      "description": "",
+      "status": "",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.392Z"
+    },
+    {
+      "id": "sa_MEP-MEC-PMT26-33916164",
+      "permit_num": "MEP-MEC-PMT26-33916164",
+      "applied_date": "06/12/2026",
       "permit_type": "Mechanical Permit",
-      "description": "Patricia Simmonds",
+      "description": "Janice Holmes",
       "status": "Active",
       "city": "San Antonio",
       "address": "",
@@ -1628,7 +1958,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.432Z"
+      "fetched_at": "2026-06-12T17:00:24.394Z"
     },
     {
       "id": "sa_MEP-PCP-PMT26-34115411",
@@ -1650,7 +1980,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.434Z"
+      "fetched_at": "2026-06-12T17:00:24.396Z"
     },
     {
       "id": "sa_MEP-PCP-PMT26-34116045",
@@ -1672,15 +2002,15 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.436Z"
+      "fetched_at": "2026-06-12T17:00:24.398Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34315264",
       "permit_num": "MEP-PLM-PMT26-34315264",
-      "applied_date": "06/11/2026",
-      "permit_type": "Plumbing General Permit",
-      "description": "Nathan",
-      "status": "Active",
+      "applied_date": "",
+      "permit_type": "",
+      "description": "",
+      "status": "",
       "city": "San Antonio",
       "address": "",
       "applicant_name": "",
@@ -1694,7 +2024,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.438Z"
+      "fetched_at": "2026-06-12T17:00:24.400Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34315397",
@@ -1716,7 +2046,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.440Z"
+      "fetched_at": "2026-06-12T17:00:24.402Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34315399",
@@ -1738,7 +2068,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.442Z"
+      "fetched_at": "2026-06-12T17:00:24.404Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34315400",
@@ -1760,7 +2090,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.444Z"
+      "fetched_at": "2026-06-12T17:00:24.406Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34315418",
@@ -1782,7 +2112,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.447Z"
+      "fetched_at": "2026-06-12T17:00:24.409Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34315422",
@@ -1804,7 +2134,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.449Z"
+      "fetched_at": "2026-06-12T17:00:24.411Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34315481",
@@ -1826,7 +2156,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.451Z"
+      "fetched_at": "2026-06-12T17:00:24.413Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34315485",
@@ -1848,7 +2178,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.453Z"
+      "fetched_at": "2026-06-12T17:00:24.415Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34315506",
@@ -1870,7 +2200,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.455Z"
+      "fetched_at": "2026-06-12T17:00:24.417Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34315510",
@@ -1892,7 +2222,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.457Z"
+      "fetched_at": "2026-06-12T17:00:24.419Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34315511",
@@ -1914,7 +2244,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.459Z"
+      "fetched_at": "2026-06-12T17:00:24.421Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34315513",
@@ -1936,7 +2266,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.461Z"
+      "fetched_at": "2026-06-12T17:00:24.423Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34315592",
@@ -1958,7 +2288,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.465Z"
+      "fetched_at": "2026-06-12T17:00:24.427Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34315593",
@@ -1980,7 +2310,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.467Z"
+      "fetched_at": "2026-06-12T17:00:24.429Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34315595",
@@ -2002,7 +2332,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.469Z"
+      "fetched_at": "2026-06-12T17:00:24.431Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34315633",
@@ -2024,7 +2354,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.471Z"
+      "fetched_at": "2026-06-12T17:00:24.433Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34315662",
@@ -2046,7 +2376,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.473Z"
+      "fetched_at": "2026-06-12T17:00:24.435Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34315663",
@@ -2068,7 +2398,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.475Z"
+      "fetched_at": "2026-06-12T17:00:24.437Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34315664",
@@ -2090,7 +2420,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.478Z"
+      "fetched_at": "2026-06-12T17:00:24.440Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34315683",
@@ -2112,7 +2442,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.479Z"
+      "fetched_at": "2026-06-12T17:00:24.442Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34315688",
@@ -2134,7 +2464,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.481Z"
+      "fetched_at": "2026-06-12T17:00:24.444Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34315690",
@@ -2156,7 +2486,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.483Z"
+      "fetched_at": "2026-06-12T17:00:24.446Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34315706",
@@ -2178,7 +2508,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.486Z"
+      "fetched_at": "2026-06-12T17:00:24.448Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34315718",
@@ -2200,7 +2530,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.488Z"
+      "fetched_at": "2026-06-12T17:00:24.450Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34315719",
@@ -2222,7 +2552,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.490Z"
+      "fetched_at": "2026-06-12T17:00:24.452Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34315721",
@@ -2244,7 +2574,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.492Z"
+      "fetched_at": "2026-06-12T17:00:24.454Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34315723",
@@ -2266,15 +2596,15 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.495Z"
+      "fetched_at": "2026-06-12T17:00:24.457Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34315997",
       "permit_num": "MEP-PLM-PMT26-34315997",
-      "applied_date": "06/11/2026",
-      "permit_type": "Plumbing General Permit",
-      "description": "Seaton Green - Drain Repair",
-      "status": "Active",
+      "applied_date": "",
+      "permit_type": "",
+      "description": "",
+      "status": "",
       "city": "San Antonio",
       "address": "",
       "applicant_name": "",
@@ -2288,15 +2618,15 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.496Z"
+      "fetched_at": "2026-06-12T17:00:24.459Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34316004",
       "permit_num": "MEP-PLM-PMT26-34316004",
-      "applied_date": "06/11/2026",
-      "permit_type": "Plumbing General Permit",
-      "description": "Building 8 - 8910 N Loop 1604",
-      "status": "Active",
+      "applied_date": "",
+      "permit_type": "",
+      "description": "",
+      "status": "",
       "city": "San Antonio",
       "address": "",
       "applicant_name": "",
@@ -2310,7 +2640,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.498Z"
+      "fetched_at": "2026-06-12T17:00:24.460Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34316006",
@@ -2332,7 +2662,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.500Z"
+      "fetched_at": "2026-06-12T17:00:24.462Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34316010",
@@ -2354,15 +2684,15 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.502Z"
+      "fetched_at": "2026-06-12T17:00:24.464Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34316018",
       "permit_num": "MEP-PLM-PMT26-34316018",
-      "applied_date": "06/11/2026",
-      "permit_type": "Plumbing General Permit",
-      "description": "Sylvia Ruiz",
-      "status": "Active",
+      "applied_date": "",
+      "permit_type": "",
+      "description": "",
+      "status": "",
       "city": "San Antonio",
       "address": "",
       "applicant_name": "",
@@ -2376,15 +2706,15 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.504Z"
+      "fetched_at": "2026-06-12T17:00:24.467Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34316020",
       "permit_num": "MEP-PLM-PMT26-34316020",
-      "applied_date": "06/11/2026",
-      "permit_type": "Plumbing General Permit",
-      "description": "RORY HOXIE",
-      "status": "Active",
+      "applied_date": "",
+      "permit_type": "",
+      "description": "",
+      "status": "",
       "city": "San Antonio",
       "address": "",
       "applicant_name": "",
@@ -2398,15 +2728,15 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.506Z"
+      "fetched_at": "2026-06-12T17:00:24.469Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34316022",
       "permit_num": "MEP-PLM-PMT26-34316022",
-      "applied_date": "06/11/2026",
-      "permit_type": "Plumbing General Permit",
-      "description": "JEAN JONES",
-      "status": "Active",
+      "applied_date": "",
+      "permit_type": "",
+      "description": "",
+      "status": "",
       "city": "San Antonio",
       "address": "",
       "applicant_name": "",
@@ -2420,15 +2750,15 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.507Z"
+      "fetched_at": "2026-06-12T17:00:24.471Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34316026",
       "permit_num": "MEP-PLM-PMT26-34316026",
-      "applied_date": "06/11/2026",
-      "permit_type": "Plumbing General Permit",
-      "description": "5919 Camino Altura",
-      "status": "Active",
+      "applied_date": "",
+      "permit_type": "",
+      "description": "",
+      "status": "",
       "city": "San Antonio",
       "address": "",
       "applicant_name": "",
@@ -2442,15 +2772,15 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.510Z"
+      "fetched_at": "2026-06-12T17:00:24.474Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34316029",
       "permit_num": "MEP-PLM-PMT26-34316029",
-      "applied_date": "06/11/2026",
-      "permit_type": "Plumbing General Permit",
-      "description": "Trevino SW140783",
-      "status": "Active",
+      "applied_date": "",
+      "permit_type": "",
+      "description": "",
+      "status": "",
       "city": "San Antonio",
       "address": "",
       "applicant_name": "",
@@ -2464,7 +2794,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.512Z"
+      "fetched_at": "2026-06-12T17:00:24.476Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34316053",
@@ -2486,7 +2816,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.514Z"
+      "fetched_at": "2026-06-12T17:00:24.478Z"
     },
     {
       "id": "sa_MEP-PLM-PMT26-34316054",
@@ -2508,7 +2838,403 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.516Z"
+      "fetched_at": "2026-06-12T17:00:24.480Z"
+    },
+    {
+      "id": "sa_MEP-PLM-PMT26-34316059",
+      "permit_num": "MEP-PLM-PMT26-34316059",
+      "applied_date": "06/11/2026",
+      "permit_type": "Plumbing General Permit",
+      "description": "pool heater permit",
+      "status": "Active",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.482Z"
+    },
+    {
+      "id": "sa_MEP-PLM-PMT26-34316076",
+      "permit_num": "MEP-PLM-PMT26-34316076",
+      "applied_date": "06/11/2026",
+      "permit_type": "Plumbing General Permit",
+      "description": "11623 Pelican Pass",
+      "status": "Active",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.484Z"
+    },
+    {
+      "id": "sa_MEP-PLM-PMT26-34316081",
+      "permit_num": "MEP-PLM-PMT26-34316081",
+      "applied_date": "06/11/2026",
+      "permit_type": "Plumbing General Permit",
+      "description": "287 Carmen PLace",
+      "status": "Active",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.486Z"
+    },
+    {
+      "id": "sa_MEP-PLM-PMT26-34316108",
+      "permit_num": "MEP-PLM-PMT26-34316108",
+      "applied_date": "06/11/2026",
+      "permit_type": "Plumbing General Permit",
+      "description": "ANDREW PLM",
+      "status": "Active",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.488Z"
+    },
+    {
+      "id": "sa_MEP-PLM-PMT26-34316112",
+      "permit_num": "MEP-PLM-PMT26-34316112",
+      "applied_date": "06/11/2026",
+      "permit_type": "Plumbing General Permit",
+      "description": "542 Patricia",
+      "status": "Active",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.492Z"
+    },
+    {
+      "id": "sa_MEP-PLM-PMT26-34316145",
+      "permit_num": "MEP-PLM-PMT26-34316145",
+      "applied_date": "06/12/2026",
+      "permit_type": "Plumbing General Permit",
+      "description": "Riojas J-628122",
+      "status": "Active",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.494Z"
+    },
+    {
+      "id": "sa_MEP-PLM-PMT26-34316150",
+      "permit_num": "MEP-PLM-PMT26-34316150",
+      "applied_date": "06/12/2026",
+      "permit_type": "Plumbing General Permit",
+      "description": "235 Notre Dame",
+      "status": "Active",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.496Z"
+    },
+    {
+      "id": "sa_MEP-PLM-PMT26-34316152",
+      "permit_num": "MEP-PLM-PMT26-34316152",
+      "applied_date": "06/12/2026",
+      "permit_type": "Plumbing General Permit",
+      "description": "JANIE & ROLAND TAMEZ",
+      "status": "Active",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.498Z"
+    },
+    {
+      "id": "sa_MEP-PLM-PMT26-34316153",
+      "permit_num": "MEP-PLM-PMT26-34316153",
+      "applied_date": "06/12/2026",
+      "permit_type": "Plumbing General Permit",
+      "description": "water line replacement",
+      "status": "Active",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.500Z"
+    },
+    {
+      "id": "sa_MEP-PLM-PMT26-34316160",
+      "permit_num": "MEP-PLM-PMT26-34316160",
+      "applied_date": "06/12/2026",
+      "permit_type": "Plumbing General Permit",
+      "description": "SIGG PLM",
+      "status": "Active",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.502Z"
+    },
+    {
+      "id": "sa_MEP-PLM-PMT26-34316162",
+      "permit_num": "MEP-PLM-PMT26-34316162",
+      "applied_date": "06/12/2026",
+      "permit_type": "Plumbing General Permit",
+      "description": "DELIGANIS PLM",
+      "status": "Active",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.504Z"
+    },
+    {
+      "id": "sa_MEP-PLM-PMT26-34316167",
+      "permit_num": "MEP-PLM-PMT26-34316167",
+      "applied_date": "06/12/2026",
+      "permit_type": "Plumbing General Permit",
+      "description": "EliPurcell",
+      "status": "Active",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.506Z"
+    },
+    {
+      "id": "sa_MEP-PLM-PMT26-34316170",
+      "permit_num": "MEP-PLM-PMT26-34316170",
+      "applied_date": "06/12/2026",
+      "permit_type": "Plumbing General Permit",
+      "description": "Cowboy Construction",
+      "status": "Active",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.510Z"
+    },
+    {
+      "id": "sa_MEP-PLM-PMT26-34316173",
+      "permit_num": "MEP-PLM-PMT26-34316173",
+      "applied_date": "06/12/2026",
+      "permit_type": "Plumbing General Permit",
+      "description": "PICKELL- Mechanical",
+      "status": "Active",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.512Z"
+    },
+    {
+      "id": "sa_MEP-PLM-PMT26-34316177",
+      "permit_num": "MEP-PLM-PMT26-34316177",
+      "applied_date": "06/12/2026",
+      "permit_type": "Plumbing General Permit",
+      "description": "Skateland",
+      "status": "Active",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.514Z"
+    },
+    {
+      "id": "sa_MEP-PLM-PMT26-34316182",
+      "permit_num": "MEP-PLM-PMT26-34316182",
+      "applied_date": "06/12/2026",
+      "permit_type": "Plumbing General Permit",
+      "description": "Inv 70159",
+      "status": "Active",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.515Z"
+    },
+    {
+      "id": "sa_MEP-PLM-PMT26-34316188",
+      "permit_num": "MEP-PLM-PMT26-34316188",
+      "applied_date": "06/12/2026",
+      "permit_type": "Plumbing General Permit",
+      "description": "Copeland Water Heater",
+      "status": "Active",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.517Z"
+    },
+    {
+      "id": "sa_MEP-PLM-PMT26-34316189",
+      "permit_num": "MEP-PLM-PMT26-34316189",
+      "applied_date": "06/12/2026",
+      "permit_type": "Plumbing General Permit",
+      "description": "Frank Gomez",
+      "status": "Active",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.519Z"
     },
     {
       "id": "sa_MEP-SEW-PMT26-34814941",
@@ -2530,15 +3256,15 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.517Z"
+      "fetched_at": "2026-06-12T17:00:24.521Z"
     },
     {
       "id": "sa_MEP-SEW-PMT26-34815258",
       "permit_num": "MEP-SEW-PMT26-34815258",
-      "applied_date": "06/11/2026",
-      "permit_type": "Plumbing Sewer Permit",
-      "description": "Nathan",
-      "status": "Active",
+      "applied_date": "",
+      "permit_type": "",
+      "description": "",
+      "status": "",
       "city": "San Antonio",
       "address": "",
       "applicant_name": "",
@@ -2552,7 +3278,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.519Z"
+      "fetched_at": "2026-06-12T17:00:24.523Z"
     },
     {
       "id": "sa_MEP-SEW-PMT26-34815416",
@@ -2574,7 +3300,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.521Z"
+      "fetched_at": "2026-06-12T17:00:24.524Z"
     },
     {
       "id": "sa_MEP-SEW-PMT26-34815428",
@@ -2596,7 +3322,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.522Z"
+      "fetched_at": "2026-06-12T17:00:24.526Z"
     },
     {
       "id": "sa_MEP-SEW-PMT26-34815433",
@@ -2618,7 +3344,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.524Z"
+      "fetched_at": "2026-06-12T17:00:24.528Z"
     },
     {
       "id": "sa_MEP-SEW-PMT26-34815480",
@@ -2640,7 +3366,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.526Z"
+      "fetched_at": "2026-06-12T17:00:24.530Z"
     },
     {
       "id": "sa_MEP-SEW-PMT26-34815522",
@@ -2662,7 +3388,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.530Z"
+      "fetched_at": "2026-06-12T17:00:24.532Z"
     },
     {
       "id": "sa_MEP-SEW-PMT26-34815598",
@@ -2684,7 +3410,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.532Z"
+      "fetched_at": "2026-06-12T17:00:24.534Z"
     },
     {
       "id": "sa_MEP-SEW-PMT26-34815687",
@@ -2706,7 +3432,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.533Z"
+      "fetched_at": "2026-06-12T17:00:24.536Z"
     },
     {
       "id": "sa_MEP-SEW-PMT26-34815701",
@@ -2728,7 +3454,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.535Z"
+      "fetched_at": "2026-06-12T17:00:24.537Z"
     },
     {
       "id": "sa_MEP-SEW-PMT26-34815711",
@@ -2750,7 +3476,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.537Z"
+      "fetched_at": "2026-06-12T17:00:24.539Z"
     },
     {
       "id": "sa_MEP-SEW-PMT26-34815720",
@@ -2772,15 +3498,37 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.538Z"
+      "fetched_at": "2026-06-12T17:00:24.541Z"
+    },
+    {
+      "id": "sa_MEP-SEW-PMT26-34815967",
+      "permit_num": "MEP-SEW-PMT26-34815967",
+      "applied_date": "06/12/2026",
+      "permit_type": "Plumbing Sewer Permit",
+      "description": "sewer tap",
+      "status": "Active",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.546Z"
     },
     {
       "id": "sa_MEP-SEW-PMT26-34815996",
       "permit_num": "MEP-SEW-PMT26-34815996",
-      "applied_date": "06/11/2026",
-      "permit_type": "Plumbing Sewer Permit",
-      "description": "Bressi House",
-      "status": "Active",
+      "applied_date": "",
+      "permit_type": "",
+      "description": "",
+      "status": "",
       "city": "San Antonio",
       "address": "",
       "applicant_name": "",
@@ -2794,14 +3542,36 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.540Z"
+      "fetched_at": "2026-06-12T17:00:24.548Z"
     },
     {
       "id": "sa_MEP-SEW-PMT26-34816043",
       "permit_num": "MEP-SEW-PMT26-34816043",
-      "applied_date": "06/11/2026",
+      "applied_date": "",
+      "permit_type": "",
+      "description": "",
+      "status": "",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.549Z"
+    },
+    {
+      "id": "sa_MEP-SEW-PMT26-34816174",
+      "permit_num": "MEP-SEW-PMT26-34816174",
+      "applied_date": "06/12/2026",
       "permit_type": "Plumbing Sewer Permit",
-      "description": "150 Laurelwood",
+      "description": "Vicky Dominguez",
       "status": "Active",
       "city": "San Antonio",
       "address": "",
@@ -2816,7 +3586,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.542Z"
+      "fetched_at": "2026-06-12T17:00:24.551Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115400",
@@ -2838,7 +3608,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.544Z"
+      "fetched_at": "2026-06-12T17:00:24.553Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115411",
@@ -2860,7 +3630,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.545Z"
+      "fetched_at": "2026-06-12T17:00:24.554Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115416",
@@ -2882,7 +3652,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.547Z"
+      "fetched_at": "2026-06-12T17:00:24.556Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115418",
@@ -2904,7 +3674,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.549Z"
+      "fetched_at": "2026-06-12T17:00:24.558Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115428",
@@ -2926,7 +3696,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.550Z"
+      "fetched_at": "2026-06-12T17:00:24.559Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115435",
@@ -2948,7 +3718,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.552Z"
+      "fetched_at": "2026-06-12T17:00:24.561Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115453",
@@ -2970,7 +3740,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.554Z"
+      "fetched_at": "2026-06-12T17:00:24.563Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115471",
@@ -2992,7 +3762,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.556Z"
+      "fetched_at": "2026-06-12T17:00:24.565Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115477",
@@ -3014,7 +3784,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.558Z"
+      "fetched_at": "2026-06-12T17:00:24.567Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115480",
@@ -3036,7 +3806,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.560Z"
+      "fetched_at": "2026-06-12T17:00:24.568Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115481",
@@ -3058,7 +3828,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.561Z"
+      "fetched_at": "2026-06-12T17:00:24.570Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115485",
@@ -3080,7 +3850,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.563Z"
+      "fetched_at": "2026-06-12T17:00:24.572Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115498",
@@ -3102,7 +3872,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.568Z"
+      "fetched_at": "2026-06-12T17:00:24.574Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115506",
@@ -3124,7 +3894,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.569Z"
+      "fetched_at": "2026-06-12T17:00:24.576Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115510",
@@ -3146,7 +3916,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.571Z"
+      "fetched_at": "2026-06-12T17:00:24.578Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115511",
@@ -3168,7 +3938,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.572Z"
+      "fetched_at": "2026-06-12T17:00:24.579Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115512",
@@ -3190,7 +3960,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.574Z"
+      "fetched_at": "2026-06-12T17:00:24.581Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115513",
@@ -3212,7 +3982,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.576Z"
+      "fetched_at": "2026-06-12T17:00:24.587Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115515",
@@ -3234,7 +4004,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.577Z"
+      "fetched_at": "2026-06-12T17:00:24.589Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115520",
@@ -3256,7 +4026,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.579Z"
+      "fetched_at": "2026-06-12T17:00:24.592Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115522",
@@ -3278,7 +4048,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.580Z"
+      "fetched_at": "2026-06-12T17:00:24.594Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115530",
@@ -3300,7 +4070,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.582Z"
+      "fetched_at": "2026-06-12T17:00:24.596Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115545",
@@ -3322,7 +4092,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.583Z"
+      "fetched_at": "2026-06-12T17:00:24.598Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115592",
@@ -3344,7 +4114,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.586Z"
+      "fetched_at": "2026-06-12T17:00:24.600Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115595",
@@ -3366,7 +4136,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.588Z"
+      "fetched_at": "2026-06-12T17:00:24.602Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115597",
@@ -3388,7 +4158,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.590Z"
+      "fetched_at": "2026-06-12T17:00:24.604Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115598",
@@ -3410,7 +4180,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.592Z"
+      "fetched_at": "2026-06-12T17:00:24.605Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115662",
@@ -3432,7 +4202,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.593Z"
+      "fetched_at": "2026-06-12T17:00:24.607Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115664",
@@ -3454,7 +4224,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.595Z"
+      "fetched_at": "2026-06-12T17:00:24.608Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115666",
@@ -3476,7 +4246,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.597Z"
+      "fetched_at": "2026-06-12T17:00:24.610Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115681",
@@ -3498,7 +4268,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.599Z"
+      "fetched_at": "2026-06-12T17:00:24.612Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115687",
@@ -3520,7 +4290,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.600Z"
+      "fetched_at": "2026-06-12T17:00:24.613Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115688",
@@ -3542,7 +4312,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.606Z"
+      "fetched_at": "2026-06-12T17:00:24.615Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115690",
@@ -3564,7 +4334,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.608Z"
+      "fetched_at": "2026-06-12T17:00:24.617Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115701",
@@ -3586,7 +4356,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.609Z"
+      "fetched_at": "2026-06-12T17:00:24.619Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115702",
@@ -3608,7 +4378,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.611Z"
+      "fetched_at": "2026-06-12T17:00:24.620Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115706",
@@ -3630,7 +4400,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.613Z"
+      "fetched_at": "2026-06-12T17:00:24.626Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115711",
@@ -3652,7 +4422,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.614Z"
+      "fetched_at": "2026-06-12T17:00:24.628Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115718",
@@ -3674,7 +4444,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.616Z"
+      "fetched_at": "2026-06-12T17:00:24.629Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115719",
@@ -3696,7 +4466,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.618Z"
+      "fetched_at": "2026-06-12T17:00:24.631Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115720",
@@ -3718,7 +4488,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.619Z"
+      "fetched_at": "2026-06-12T17:00:24.632Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115723",
@@ -3740,15 +4510,15 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.621Z"
+      "fetched_at": "2026-06-12T17:00:24.634Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115990",
       "permit_num": "MEP-TRD-APP26-33115990",
-      "applied_date": "06/11/2026",
-      "permit_type": "MEP Trade Permits Application",
-      "description": "Mini-Split",
-      "status": "Patricia Simmonds",
+      "applied_date": "",
+      "permit_type": "",
+      "description": "",
+      "status": "",
       "city": "San Antonio",
       "address": "",
       "applicant_name": "",
@@ -3762,15 +4532,15 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.622Z"
+      "fetched_at": "2026-06-12T17:00:24.635Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115993",
       "permit_num": "MEP-TRD-APP26-33115993",
-      "applied_date": "06/11/2026",
-      "permit_type": "MEP Trade Permits Application",
-      "description": "PLUMBING",
-      "status": "NEFF MIDDLE SCHOOL",
+      "applied_date": "",
+      "permit_type": "",
+      "description": "",
+      "status": "",
       "city": "San Antonio",
       "address": "",
       "applicant_name": "",
@@ -3784,7 +4554,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.624Z"
+      "fetched_at": "2026-06-12T17:00:24.637Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33115996",
@@ -3806,15 +4576,15 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.625Z"
+      "fetched_at": "2026-06-12T17:00:24.639Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33116004",
       "permit_num": "MEP-TRD-APP26-33116004",
-      "applied_date": "06/11/2026",
-      "permit_type": "MEP Trade Permits Application",
-      "description": "Plumbing Repairs",
-      "status": "Building 8 - 8910 N Loop 1604",
+      "applied_date": "",
+      "permit_type": "",
+      "description": "",
+      "status": "",
       "city": "San Antonio",
       "address": "",
       "applicant_name": "",
@@ -3828,7 +4598,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.627Z"
+      "fetched_at": "2026-06-12T17:00:24.640Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33116012",
@@ -3850,15 +4620,15 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.629Z"
+      "fetched_at": "2026-06-12T17:00:24.642Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33116014",
       "permit_num": "MEP-TRD-APP26-33116014",
-      "applied_date": "06/11/2026",
-      "permit_type": "MEP Trade Permits Application",
-      "description": "Reroute water",
-      "status": "Animal Defense League reroute",
+      "applied_date": "",
+      "permit_type": "",
+      "description": "",
+      "status": "",
       "city": "San Antonio",
       "address": "",
       "applicant_name": "",
@@ -3872,14 +4642,124 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.630Z"
+      "fetched_at": "2026-06-12T17:00:24.644Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33116018",
       "permit_num": "MEP-TRD-APP26-33116018",
+      "applied_date": "",
+      "permit_type": "",
+      "description": "",
+      "status": "",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.645Z"
+    },
+    {
+      "id": "sa_MEP-TRD-APP26-33116020",
+      "permit_num": "MEP-TRD-APP26-33116020",
+      "applied_date": "",
+      "permit_type": "",
+      "description": "",
+      "status": "",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.647Z"
+    },
+    {
+      "id": "sa_MEP-TRD-APP26-33116022",
+      "permit_num": "MEP-TRD-APP26-33116022",
+      "applied_date": "",
+      "permit_type": "",
+      "description": "",
+      "status": "",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.649Z"
+    },
+    {
+      "id": "sa_MEP-TRD-APP26-33116026",
+      "permit_num": "MEP-TRD-APP26-33116026",
+      "applied_date": "",
+      "permit_type": "",
+      "description": "",
+      "status": "",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.650Z"
+    },
+    {
+      "id": "sa_MEP-TRD-APP26-33116043",
+      "permit_num": "MEP-TRD-APP26-33116043",
+      "applied_date": "",
+      "permit_type": "",
+      "description": "",
+      "status": "",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.652Z"
+    },
+    {
+      "id": "sa_MEP-TRD-APP26-33116048",
+      "permit_num": "MEP-TRD-APP26-33116048",
       "applied_date": "06/11/2026",
       "permit_type": "MEP Trade Permits Application",
-      "description": "Sylvia Ruiz",
+      "description": "Plumbing",
       "status": "Issued",
       "city": "San Antonio",
       "address": "",
@@ -3894,117 +4774,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.632Z"
-    },
-    {
-      "id": "sa_MEP-TRD-APP26-33116020",
-      "permit_num": "MEP-TRD-APP26-33116020",
-      "applied_date": "06/11/2026",
-      "permit_type": "MEP Trade Permits Application",
-      "description": "WATERLINE REPLACEMENT",
-      "status": "RORY HOXIE",
-      "city": "San Antonio",
-      "address": "",
-      "applicant_name": "",
-      "phone": "",
-      "email": "",
-      "mailing_address": "",
-      "licensed_pro_name": "",
-      "licensed_pro_phone": "",
-      "licensed_pro_lic": "",
-      "owner_name": "",
-      "owner_address": "",
-      "project_desc": "",
-      "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.633Z"
-    },
-    {
-      "id": "sa_MEP-TRD-APP26-33116022",
-      "permit_num": "MEP-TRD-APP26-33116022",
-      "applied_date": "06/11/2026",
-      "permit_type": "MEP Trade Permits Application",
-      "description": "TUNNEL UNDER HOME TO REPAIR DRAINAGE",
-      "status": "JEAN JONES",
-      "city": "San Antonio",
-      "address": "",
-      "applicant_name": "",
-      "phone": "",
-      "email": "",
-      "mailing_address": "",
-      "licensed_pro_name": "",
-      "licensed_pro_phone": "",
-      "licensed_pro_lic": "",
-      "owner_name": "",
-      "owner_address": "",
-      "project_desc": "",
-      "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.635Z"
-    },
-    {
-      "id": "sa_MEP-TRD-APP26-33116026",
-      "permit_num": "MEP-TRD-APP26-33116026",
-      "applied_date": "06/11/2026",
-      "permit_type": "MEP Trade Permits Application",
-      "description": "Storage tanks",
-      "status": "5919 Camino Altura",
-      "city": "San Antonio",
-      "address": "",
-      "applicant_name": "",
-      "phone": "",
-      "email": "",
-      "mailing_address": "",
-      "licensed_pro_name": "",
-      "licensed_pro_phone": "",
-      "licensed_pro_lic": "",
-      "owner_name": "",
-      "owner_address": "",
-      "project_desc": "",
-      "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.637Z"
-    },
-    {
-      "id": "sa_MEP-TRD-APP26-33116043",
-      "permit_num": "MEP-TRD-APP26-33116043",
-      "applied_date": "06/11/2026",
-      "permit_type": "MEP Trade Permits Application",
-      "description": "Plumbing Sewer Permit",
-      "status": "150 Laurelwood",
-      "city": "San Antonio",
-      "address": "",
-      "applicant_name": "",
-      "phone": "",
-      "email": "",
-      "mailing_address": "",
-      "licensed_pro_name": "",
-      "licensed_pro_phone": "",
-      "licensed_pro_lic": "",
-      "owner_name": "",
-      "owner_address": "",
-      "project_desc": "",
-      "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.641Z"
-    },
-    {
-      "id": "sa_MEP-TRD-APP26-33116048",
-      "permit_num": "MEP-TRD-APP26-33116048",
-      "applied_date": "06/11/2026",
-      "permit_type": "MEP Trade Permits Application",
-      "description": "Plumbing",
-      "status": "Under Review",
-      "city": "San Antonio",
-      "address": "",
-      "applicant_name": "",
-      "phone": "",
-      "email": "",
-      "mailing_address": "",
-      "licensed_pro_name": "",
-      "licensed_pro_phone": "",
-      "licensed_pro_lic": "",
-      "owner_name": "",
-      "owner_address": "",
-      "project_desc": "",
-      "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.643Z"
+      "fetched_at": "2026-06-12T17:00:24.654Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33116053",
@@ -4026,7 +4796,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.645Z"
+      "fetched_at": "2026-06-12T17:00:24.655Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33116054",
@@ -4048,7 +4818,7 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.646Z"
+      "fetched_at": "2026-06-12T17:00:24.657Z"
     },
     {
       "id": "sa_MEP-TRD-APP26-33116057",
@@ -4070,7 +4840,271 @@
       "owner_address": "",
       "project_desc": "",
       "source": "SA_Accela",
-      "fetched_at": "2026-06-11T18:27:28.648Z"
+      "fetched_at": "2026-06-12T17:00:24.659Z"
+    },
+    {
+      "id": "sa_MEP-TRD-APP26-33116059",
+      "permit_num": "MEP-TRD-APP26-33116059",
+      "applied_date": "06/11/2026",
+      "permit_type": "MEP Trade Permits Application",
+      "description": "pool heater permit",
+      "status": "pool heater permit",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.662Z"
+    },
+    {
+      "id": "sa_MEP-TRD-APP26-33116076",
+      "permit_num": "MEP-TRD-APP26-33116076",
+      "applied_date": "06/11/2026",
+      "permit_type": "MEP Trade Permits Application",
+      "description": "Tunnel Repair",
+      "status": "11623 Pelican Pass",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.664Z"
+    },
+    {
+      "id": "sa_MEP-TRD-APP26-33116081",
+      "permit_num": "MEP-TRD-APP26-33116081",
+      "applied_date": "06/11/2026",
+      "permit_type": "MEP Trade Permits Application",
+      "description": "Tunnel Repair",
+      "status": "287 Carmen PLace",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.666Z"
+    },
+    {
+      "id": "sa_MEP-TRD-APP26-33116150",
+      "permit_num": "MEP-TRD-APP26-33116150",
+      "applied_date": "06/12/2026",
+      "permit_type": "MEP Trade Permits Application",
+      "description": "235 Notre Dame",
+      "status": "Issued",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.668Z"
+    },
+    {
+      "id": "sa_MEP-TRD-APP26-33116152",
+      "permit_num": "MEP-TRD-APP26-33116152",
+      "applied_date": "06/12/2026",
+      "permit_type": "MEP Trade Permits Application",
+      "description": "PLUMBING PERMIT",
+      "status": "JANIE & ROLAND TAMEZ",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.670Z"
+    },
+    {
+      "id": "sa_MEP-TRD-APP26-33116164",
+      "permit_num": "MEP-TRD-APP26-33116164",
+      "applied_date": "06/12/2026",
+      "permit_type": "MEP Trade Permits Application",
+      "description": "1-STAR (x2) 3ton (x2) split upflow (DOWNSTAIRS) split horizontal (UPSTAIRS) Gas Furnaces (x2)",
+      "status": "Janice Holmes",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.671Z"
+    },
+    {
+      "id": "sa_MEP-TRD-APP26-33116170",
+      "permit_num": "MEP-TRD-APP26-33116170",
+      "applied_date": "06/12/2026",
+      "permit_type": "MEP Trade Permits Application",
+      "description": "Miscellaneous Repairs",
+      "status": "Cowboy Construction",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.673Z"
+    },
+    {
+      "id": "sa_MEP-TRD-APP26-33116174",
+      "permit_num": "MEP-TRD-APP26-33116174",
+      "applied_date": "06/12/2026",
+      "permit_type": "MEP Trade Permits Application",
+      "description": "Sewer Line",
+      "status": "Vicky Dominguez",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.675Z"
+    },
+    {
+      "id": "sa_MEP-TRD-APP26-33116177",
+      "permit_num": "MEP-TRD-APP26-33116177",
+      "applied_date": "06/12/2026",
+      "permit_type": "MEP Trade Permits Application",
+      "description": "sewer repairs",
+      "status": "Skateland",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.676Z"
+    },
+    {
+      "id": "sa_MEP-TRD-APP26-33116181",
+      "permit_num": "MEP-TRD-APP26-33116181",
+      "applied_date": "06/12/2026",
+      "permit_type": "MEP Trade Permits Application",
+      "description": "Gas Test",
+      "status": "Plumbing",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.678Z"
+    },
+    {
+      "id": "sa_MEP-TRD-APP26-33116187",
+      "permit_num": "MEP-TRD-APP26-33116187",
+      "applied_date": "06/12/2026",
+      "permit_type": "MEP Trade Permits Application",
+      "description": "SAWS LTP-2547 W MULBERRY",
+      "status": "Under Review",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.679Z"
+    },
+    {
+      "id": "sa_MEP-TRD-APP26-33116189",
+      "permit_num": "MEP-TRD-APP26-33116189",
+      "applied_date": "06/12/2026",
+      "permit_type": "MEP Trade Permits Application",
+      "description": "Tunnel Work",
+      "status": "Frank Gomez",
+      "city": "San Antonio",
+      "address": "",
+      "applicant_name": "",
+      "phone": "",
+      "email": "",
+      "mailing_address": "",
+      "licensed_pro_name": "",
+      "licensed_pro_phone": "",
+      "licensed_pro_lic": "",
+      "owner_name": "",
+      "owner_address": "",
+      "project_desc": "",
+      "source": "SA_Accela",
+      "fetched_at": "2026-06-12T17:00:24.681Z"
     }
   ]
 }
