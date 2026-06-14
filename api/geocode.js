@@ -107,3 +107,4 @@ async function updateCoords(id, lat, lng) {
 
   console.log(`\n✓ Done — Geocoded: ${totalGeocoded} | Failed: ${totalFailed}`);
 })();
+ 
