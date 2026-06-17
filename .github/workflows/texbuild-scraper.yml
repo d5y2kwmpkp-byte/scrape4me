@@ -22,4 +22,5 @@ jobs:
       - name: Run TexBuild scraper
         env:
           TEXBUILD_SUPABASE_KEY: ${{ secrets.TEXBUILD_SUPABASE_KEY }}
-        run: node --input-type=commonjs < api/tabs_scraper_v3.cjs
+        run: node api/tabs_scraper_v3.cjs
+
