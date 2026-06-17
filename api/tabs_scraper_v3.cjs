@@ -28,7 +28,8 @@ const BASE_URL = "https://www.tdlr.texas.gov/TABS/Search/Project";
 async function upsertToSupabase(records) {
   if (!SUPABASE_KEY) { console.log("  [supabase] No key — skipping"); return; }
   try {
-    const res = await fetch(`${SUPABASE_URL}/rest/v1/tabs_projects_v2`, {
+   const res = await fetch(`${SUPABASE_URL}/rest/v1/tabs_projects`, {
+
       method: "POST",
       headers: {
         apikey:         SUPABASE_KEY,
