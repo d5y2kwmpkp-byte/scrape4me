@@ -1,25 +1,14 @@
-/**
- * FlowState / TexasBuild Intel — TABS Scraper v3
- * Writes CLEAN data to tabs_projects_v2
- *
- * Key changes from v2:
- *   - Captures registration_date (the institutional signal field)
- *   - Runs every field through scraper-cleaners.js before insert
- *   - Tighter field extraction to reduce bleed at the source
- *
- * Run: node api/tabs_scraper_v3.js
- */
-
 const fs   = require("fs");
 const path = require("path");
 const { buildCleanRow } = require("./scraper-cleaners.cjs");
 
 const SUPABASE_URL = "https://yoqcvjqojklemhxwvgby.supabase.co";
 const SUPABASE_KEY = process.env.TEXBUILD_SUPABASE_KEY || "";
+const MAPBOX_TOKEN = process.env.MAPBOX_TOKEN || "";
 
 const YEAR       = 2026;
-const START_NUM  = 23042;   // test range
-const END_NUM    = 23033;   // TEST: just 10 records — change to 1 for full backfill
+const START_NUM  = 23042;
+const END_NUM    = 1;       // full backfill
 const DELAY_MS   = 300;
 const BATCH_SIZE = 50;
 
@@ -28,8 +17,7 @@ const BASE_URL = "https://www.tdlr.texas.gov/TABS/Search/Project";
 async function upsertToSupabase(records) {
   if (!SUPABASE_KEY) { console.log("  [supabase] No key — skipping"); return; }
   try {
-   const res = await fetch(`${SUPABASE_URL}/rest/v1/tabs_projects`, {
-
+    const res = await fetch(`${SUPABASE_URL}/rest/v1/tabs_projects`, {
       method: "POST",
       headers: {
         apikey:         SUPABASE_KEY,
@@ -50,10 +38,6 @@ async function upsertToSupabase(records) {
   }
 }
 
-/**
- * Extract a labeled field from the cleaned page text.
- * Tighter than v2 — stops at the next known label to reduce bleed.
- */
 const FIELD_LABELS = [
   "Project Name", "Project Number", "Facility Name", "Location Address",
   "Location County", "Start Date", "Completion Date", "Estimated Cost",
@@ -65,25 +49,32 @@ const FIELD_LABELS = [
   "Design Firm Name", "Design Firm Address", "Design Firm Phone",
   "Registration Date", "Project #",
 ];
-
-function buildLabelPattern() {
-  // Build alternation of all labels for lookahead boundary
-  return FIELD_LABELS.map(l => l.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|");
-}
-const LABEL_ALT = buildLabelPattern();
+const LABEL_ALT = FIELD_LABELS.map(l => l.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|");
 
 function extractField(text, label) {
   const escLabel = label.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  // Grab everything after "Label:" up to the next known label
-  const re = new RegExp(
-    escLabel + "\\s*:?\\s*(.+?)(?=\\s*(?:" + LABEL_ALT + ")\\s*:|$)",
-    "i"
-  );
+  const re = new RegExp(escLabel + "\\s*:?\\s*(.+?)(?=\\s*(?:" + LABEL_ALT + ")\\s*:|$)", "i");
   const m = text.match(re);
   return m ? m[1].trim() : "";
 }
 
-function parseProject(html, tabsNum) {
+async function geocodeInline(address, county) {
+  if (!MAPBOX_TOKEN || !address || address.trim().length < 5) return null;
+  const hasState = /,?\s*TX\s+\d{5}/.test(address) || address.includes(", TX");
+  const full = hasState ? address.trim() : `${address}, ${county || ""} County, TX`.replace(/\s+/g, " ").trim();
+  const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(full)}.json?country=US&limit=1&access_token=${MAPBOX_TOKEN}`;
+  try {
+    const res = await fetch(url);
+    const data = await res.json();
+    if (data.features && data.features.length > 0) {
+      const [lng, lat] = data.features[0].center;
+      return { lat, lng };
+    }
+  } catch (e) {}
+  return null;
+}
+
+async function parseProject(html, tabsNum) {
   const text = html
     .replace(/<script[\s\S]*?<\/script>/gi, "")
     .replace(/<style[\s\S]*?<\/style>/gi, "")
@@ -98,13 +89,9 @@ function parseProject(html, tabsNum) {
   if (text.includes("No project found") || text.includes("not found")) return null;
 
   const tabsId = `TABS${YEAR}${String(tabsNum).padStart(6, "0")}`;
-
-  // Registration Date — the institutional signal field
-  // Appears as: "Project #: TABS2026023042  Registration Date: 6/16/2026"
   const regMatch = text.match(/Registration Date\s*:?\s*(\d{1,2}\/\d{1,2}\/\d{4})/i);
   const registrationDate = regMatch ? regMatch[1] : null;
 
-  // Build the raw object (uncleaned — cleaners handle the scrubbing)
   const raw = {
     id:                  tabsId,
     tabs_number:         tabsId,
@@ -132,39 +119,41 @@ function parseProject(html, tabsNum) {
     design_firm_phone:   extractField(text, "Design Firm Phone"),
     ras_name:            extractField(text, "RAS Name"),
     ras_phone:           extractField(text, "RAS Phone"),
-    project_category:    null,  // classifier runs separately
+    project_category:    null,
     fetched_at:          new Date().toISOString(),
   };
 
-  // Convert reg date M/D/YYYY → YYYY-MM-DD for Postgres DATE
   let regDateISO = null;
   if (registrationDate) {
     const [m, d, y] = registrationDate.split("/");
     regDateISO = `${y}-${m.padStart(2,"0")}-${d.padStart(2,"0")}`;
   }
 
-  // Run through cleaners — returns insert-ready clean row
   const row = buildCleanRow(raw, regDateISO);
 
-  // Add reg_month (first day of registration month) for signal bucketing
   if (regDateISO) {
-    row.reg_month = regDateISO.slice(0, 7) + "-01";  // 2026-06-16 → 2026-06-01
+    row.reg_month = regDateISO.slice(0, 7) + "-01";
+  }
+
+  const coords = await geocodeInline(row.address, row.county);
+  if (coords) {
+    row.latitude    = coords.lat;
+    row.longitude   = coords.lng;
+    row.geocoded_at = new Date().toISOString();
+  } else {
+    row.geocode_failed = true;
   }
 
   return row;
 }
 
 (async () => {
-  console.log("FlowState TABS Scraper v3 — Clean → tabs_projects_v2");
+  console.log("TexBuild TABS Scraper v3 — Clean + Geocode → tabs_projects");
   console.log(`Range: TABS${YEAR}${String(END_NUM).padStart(6,"0")} → TABS${YEAR}${START_NUM}`);
-  console.log("Capturing registration_date | running cleaners");
   console.log("─".repeat(50));
 
-  let checked  = 0;
-  let matched  = 0;
-  let flagged  = 0;
-  let errors   = 0;
-  let pending  = [];
+  let checked = 0, matched = 0, flagged = 0, errors = 0;
+  let pending = [];
 
   for (let num = START_NUM; num >= END_NUM; num--) {
     const tabsId = `TABS${YEAR}${String(num).padStart(6, "0")}`;
@@ -182,7 +171,7 @@ function parseProject(html, tabsNum) {
       if (res.status === 404) continue;
 
       const html = await res.text();
-      const row  = parseProject(html, num);
+      const row  = await parseProject(html, num);
 
       if (row && row.project_name) {
         matched++;
@@ -190,19 +179,19 @@ function parseProject(html, tabsNum) {
         pending.push(row);
 
         const flag = row.cost_flag ? ` [${row.cost_flag}]` : "";
-        console.log(`  ✓ ${tabsId} | ${row.county || "?"} | $${row.estimated_cost || "?"} | reg:${row.registration_date || "—"}${flag}`);
+        const geo  = row.latitude ? "📍" : "—";
+        console.log(`  ✓ ${tabsId} | ${row.county || "?"} | $${row.estimated_cost || "?"} | reg:${row.registration_date || "—"} ${geo}${flag}`);
 
         if (pending.length >= BATCH_SIZE) {
           await upsertToSupabase(pending);
           pending = [];
           fs.mkdirSync(path.join(process.cwd(), "data"), { recursive: true });
           fs.writeFileSync(
-            path.join(process.cwd(), "data", "tabs_v2_checkpoint.json"),
+            path.join(process.cwd(), "data", "tabs_checkpoint.json"),
             JSON.stringify({ lastNum: num, matched, checked, flagged, errors }, null, 2)
           );
         }
       }
-
     } catch (e) {
       errors++;
       if (errors < 20) console.log(`  [error] ${tabsId}: ${e.message.slice(0, 60)}`);
