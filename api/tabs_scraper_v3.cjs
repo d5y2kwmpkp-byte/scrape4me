@@ -12,7 +12,7 @@
 
 const fs   = require("fs");
 const path = require("path");
-const { buildCleanRow } = require("./scraper-cleaners.js");
+const { buildCleanRow } = require("./scraper-cleaners.cjs");
 
 const SUPABASE_URL = "https://yoqcvjqojklemhxwvgby.supabase.co";
 const SUPABASE_KEY = process.env.TEXBUILD_SUPABASE_KEY || "";
