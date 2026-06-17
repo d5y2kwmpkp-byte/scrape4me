@@ -1,0 +1,32 @@
+name: TexBuild Daily Scrape
+
+on:
+  schedule:
+    - cron: '0 11 * * 1-5'   # 6am CDT (11:00 UTC) Mon-Fri
+    - cron: '0 22 * * 1-5'   # 5pm CDT (22:00 UTC) Mon-Fri
+  workflow_dispatch:
+
+jobs:
+  daily-scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - run: npm install
+
+      - name: Run daily scrape
+        env:
+          TEXBUILD_SUPABASE_KEY: ${{ secrets.TEXBUILD_SUPABASE_KEY }}
+          MAPBOX_TOKEN: ${{ secrets.MAPBOX_TOKEN }}
+          DAILY_MODE: '1'
+        run: node api/tabs_scraper_daily.cjs
+
+      - name: Geocode cleanup
+        env:
+          TEXBUILD_SUPABASE_KEY: ${{ secrets.TEXBUILD_SUPABASE_KEY }}
+          MAPBOX_TOKEN: ${{ secrets.MAPBOX_TOKEN }}
+        run: node api/geocode_texbuild.cjs
