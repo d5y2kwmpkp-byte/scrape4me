@@ -1,569 +1,583 @@
 [
   {
-    "permitNum": "26TMP-100492",
-    "permitDate": "06/17/2026",
-    "permitType": "MEP Trade Permits Application",
-    "description": "PLUMBING PERMIT",
-    "status": "MARY ROBINS"
+    "permitNum": "INV-PLB-INV26-23500669",
+    "permitDate": "06/18/2026",
+    "permitType": "Plumbing Investigation",
+    "description": "270 E RUSSELL PLACE",
+    "status": "No Violation"
   },
   {
-    "permitNum": "MEP-TRD-APP26-33116598",
-    "permitDate": "06/17/2026",
+    "permitNum": "26TMP-101693",
+    "permitDate": "06/18/2026",
     "permitType": "MEP Trade Permits Application",
-    "description": "Top out and final",
-    "status": "Burn house"
+    "description": "Tapping onto gas line",
+    "status": "Gas line"
   },
   {
-    "permitNum": "MEP-PLM-PMT26-34316574",
-    "permitDate": "06/17/2026",
+    "permitNum": "MEP-PLM-PMT26-34316708",
+    "permitDate": "06/18/2026",
     "permitType": "Plumbing General Permit",
-    "description": "Armando Quinones",
+    "description": "Cole Job # 941192838",
     "status": "Active"
   },
   {
-    "permitNum": "MEP-PLM-PMT26-34316598",
-    "permitDate": "06/17/2026",
+    "permitNum": "26TMP-101555",
+    "permitDate": "06/18/2026",
+    "permitType": "MEP Trade Permits Application",
+    "description": "REYNA- Plumbing",
+    "status": ""
+  },
+  {
+    "permitNum": "MEP-PLM-PMT26-34316696",
+    "permitDate": "06/18/2026",
     "permitType": "Plumbing General Permit",
-    "description": "Burn house",
+    "description": "Panda Express Tankless Install",
     "status": "Active"
   },
   {
-    "permitNum": "MEP-TRD-APP26-33116575",
-    "permitDate": "06/17/2026",
+    "permitNum": "MEP-TRD-APP26-33116718",
+    "permitDate": "06/18/2026",
     "permitType": "MEP Trade Permits Application",
-    "description": "Providence Gas Permit",
-    "status": "Providence Gas Permit"
+    "description": "1 star 3 ton vertical gas",
+    "status": "Luis Torres"
   },
   {
-    "permitNum": "LSR-PLUMB-26-39701547",
-    "permitDate": "06/17/2026",
-    "permitType": "LSR Plumbing Permit",
+    "permitNum": "MEP-PLM-PMT26-34316717",
+    "permitDate": "06/18/2026",
+    "permitType": "Plumbing General Permit",
+    "description": "Soto- Plumbing",
+    "status": "Active"
+  },
+  {
+    "permitNum": "MEP-TRD-APP26-33116717",
+    "permitDate": "06/18/2026",
+    "permitType": "MEP Trade Permits Application",
+    "description": "Soto- Plumbing",
+    "status": "Issued"
+  },
+  {
+    "permitNum": "26TMP-101567",
+    "permitDate": "06/18/2026",
+    "permitType": "Residential Building Permit Application",
+    "description": "5922 BASALT BAY",
+    "status": ""
+  },
+  {
+    "permitNum": "MEP-TRD-APP26-33116702",
+    "permitDate": "06/18/2026",
+    "permitType": "MEP Trade Permits Application",
+    "description": "Tunnel",
+    "status": "Lupita Gutierrez"
+  },
+  {
+    "permitNum": "MNT-MEP-APP26-18100207",
+    "permitDate": "06/18/2026",
+    "permitType": "Annual Maintenance Permit Application",
+    "description": "MECH/PLUMBING",
+    "status": "Issued"
+  },
+  {
+    "permitNum": "26TMP-101546",
+    "permitDate": "06/18/2026",
+    "permitType": "Residential Building Permit Application",
+    "description": "5926 BASALT BAY",
+    "status": ""
+  },
+  {
+    "permitNum": "MEP-TRD-APP26-33116704",
+    "permitDate": "06/18/2026",
+    "permitType": "MEP Trade Permits Application",
+    "description": "GROSS-Plumbing",
+    "status": "Issued"
+  },
+  {
+    "permitNum": "MEP-PLM-PMT26-34316704",
+    "permitDate": "06/18/2026",
+    "permitType": "Plumbing General Permit",
+    "description": "GROSS-Plumbing",
+    "status": "Active"
+  },
+  {
+    "permitNum": "MEP-TRD-APP26-33116708",
+    "permitDate": "06/18/2026",
+    "permitType": "MEP Trade Permits Application",
+    "description": "Plumbing",
+    "status": "Cole Job # 941192838"
+  },
+  {
+    "permitNum": "26TMP-101676",
+    "permitDate": "06/18/2026",
+    "permitType": "MEP Trade Permits Application",
+    "description": "2 Star Split Vertical Gas (3 Ton)",
+    "status": "Christina Denton"
+  },
+  {
+    "permitNum": "INV-PLB-INV26-23500673",
+    "permitDate": "06/18/2026",
+    "permitType": "Plumbing Investigation",
+    "description": "804 E HARLAN AVE",
+    "status": "No Violation"
+  },
+  {
+    "permitNum": "MEP-PLM-PMT26-34316723",
+    "permitDate": "06/18/2026",
+    "permitType": "Plumbing General Permit",
+    "description": "REYNA- Plumbing",
+    "status": "Active"
+  },
+  {
+    "permitNum": "MEP-TRD-APP26-33116723",
+    "permitDate": "06/18/2026",
+    "permitType": "MEP Trade Permits Application",
+    "description": "REYNA- Plumbing",
+    "status": "Issued"
+  },
+  {
+    "permitNum": "26TMP-101594",
+    "permitDate": "06/18/2026",
+    "permitType": "MEP Trade Permits Application",
+    "description": "1 Star SG 4 Ton",
+    "status": "Mary Koenig"
+  },
+  {
+    "permitNum": "MEP-TRD-APP26-33116758",
+    "permitDate": "06/18/2026",
+    "permitType": "MEP Trade Permits Application",
+    "description": "Issued",
+    "status": ""
+  },
+  {
+    "permitNum": "MEP-IRR-PMT26-34416726",
+    "permitDate": "06/18/2026",
+    "permitType": "Plumbing Irrigation Permit",
+    "description": "710 NIEBLA CREEK",
+    "status": "Active"
+  },
+  {
+    "permitNum": "MEP-PLM-PMT26-34316683",
+    "permitDate": "06/18/2026",
+    "permitType": "Plumbing General Permit",
+    "description": "125",
+    "status": "Active"
+  },
+  {
+    "permitNum": "MEP-GAS-PMT26-34216662",
+    "permitDate": "06/18/2026",
+    "permitType": "Plumbing Gas Permit",
+    "description": "2026 UUMC Annual Gas Test South Campus",
+    "status": "Active"
+  },
+  {
+    "permitNum": "MEP-SEW-PMT26-34816654",
+    "permitDate": "06/18/2026",
+    "permitType": "Plumbing Sewer Permit",
+    "description": "75' Yard Line Trench",
+    "status": "Active"
+  },
+  {
+    "permitNum": "MEP-PLM-PMT26-34316758",
+    "permitDate": "06/18/2026",
+    "permitType": "Plumbing General Permit",
     "description": "Active",
     "status": ""
   },
   {
-    "permitNum": "MEP-GAS-PMT26-34216602",
-    "permitDate": "06/17/2026",
+    "permitNum": "MEP-GAS-PMT26-34216760",
+    "permitDate": "06/18/2026",
     "permitType": "Plumbing Gas Permit",
-    "description": "Burn house",
+    "description": "BH - Lopez gas",
     "status": "Active"
   },
   {
-    "permitNum": "MEP-TRD-APP26-33116602",
-    "permitDate": "06/17/2026",
+    "permitNum": "26TMP-101606",
+    "permitDate": "06/18/2026",
+    "permitType": "Residential Building Permit Application",
+    "description": "5918 BASALT BAY",
+    "status": ""
+  },
+  {
+    "permitNum": "26TMP-101605",
+    "permitDate": "06/18/2026",
     "permitType": "MEP Trade Permits Application",
-    "description": "Burn house",
-    "status": "Burn house"
+    "description": "NAYLOR- Plumbing",
+    "status": ""
   },
   {
-    "permitNum": "MEP-IRR-PMT26-34416601",
-    "permitDate": "06/17/2026",
-    "permitType": "Plumbing Irrigation Permit",
-    "description": "1103 Harmisch Ln - Irrigation Permit - ETJ",
-    "status": "Active"
-  },
-  {
-    "permitNum": "MEP-TRD-APP26-33116603",
-    "permitDate": "06/17/2026",
-    "permitType": "MEP Trade Permits Application",
-    "description": "Mini-Split",
-    "status": "Melissa Finlay"
-  },
-  {
-    "permitNum": "MEP-TRD-APP26-33116578",
-    "permitDate": "06/17/2026",
-    "permitType": "MEP Trade Permits Application",
-    "description": "Shower Conversion",
-    "status": "Lisa Lewis"
-  },
-  {
-    "permitNum": "26TMP-100854",
-    "permitDate": "06/17/2026",
-    "permitType": "MEP Trade Permits Application",
-    "description": "New plumbing",
-    "status": "Main house"
-  },
-  {
-    "permitNum": "INV-PLB-INV26-23500660",
-    "permitDate": "06/17/2026",
+    "permitNum": "INV-PLB-INV26-23500671",
+    "permitDate": "06/18/2026",
     "permitType": "Plumbing Investigation",
-    "description": "507 HOOVER AVE",
+    "description": "415 E WOODLAWN AVE",
     "status": "Pending Resolution"
   },
   {
-    "permitNum": "26TMP-100494",
-    "permitDate": "06/17/2026",
+    "permitNum": "MEP-TRD-APP26-33116763",
+    "permitDate": "06/18/2026",
     "permitType": "MEP Trade Permits Application",
-    "description": "40ft sewer",
-    "status": "plumbing"
+    "description": "Annual Gas Pressure Test",
+    "status": "Las Colinas Westover Hills"
   },
   {
-    "permitNum": "MEP-IRR-PMT26-34416596",
-    "permitDate": "06/17/2026",
-    "permitType": "Plumbing Irrigation Permit",
-    "description": "Irrigation Permit - ETJ",
-    "status": "Active"
-  },
-  {
-    "permitNum": "MEP-TRD-APP26-33116594",
-    "permitDate": "06/17/2026",
-    "permitType": "MEP Trade Permits Application",
-    "description": "PLUMBING PERMIT",
-    "status": "DONNY COOK"
-  },
-  {
-    "permitNum": "26TMP-100729",
-    "permitDate": "06/17/2026",
-    "permitType": "MEP Trade Permits Application",
-    "description": "Spring Hurst tunnel",
-    "status": ""
-  },
-  {
-    "permitNum": "MEP-PLM-PMT26-34316594",
-    "permitDate": "06/17/2026",
-    "permitType": "Plumbing General Permit",
-    "description": "DONNY COOK",
-    "status": "Active"
-  },
-  {
-    "permitNum": "MEP-PLM-PMT26-34316572",
-    "permitDate": "06/17/2026",
-    "permitType": "Plumbing General Permit",
-    "description": "Ben Cadena",
-    "status": "Active"
-  },
-  {
-    "permitNum": "MEP-TRD-APP26-33116574",
-    "permitDate": "06/17/2026",
-    "permitType": "MEP Trade Permits Application",
-    "description": "Replace existing Rinnai tankless water heater",
-    "status": "Armando Quinones"
-  },
-  {
-    "permitNum": "26TMP-100476",
-    "permitDate": "06/17/2026",
-    "permitType": "Withdrawal or Refund Request",
-    "description": "Pressure reducing valve",
-    "status": "plumbing"
-  },
-  {
-    "permitNum": "26TMP-100757",
-    "permitDate": "06/17/2026",
-    "permitType": "MEP Trade Permits Application",
-    "description": "PLUMBING PERMIT",
-    "status": "DONNY COOK"
-  },
-  {
-    "permitNum": "26TMP-100767",
-    "permitDate": "06/17/2026",
-    "permitType": "MEP Trade Permits Application",
-    "description": "Top out and final",
-    "status": "Burn house"
-  },
-  {
-    "permitNum": "MEP-TRD-APP26-33116580",
-    "permitDate": "06/17/2026",
-    "permitType": "MEP Trade Permits Application",
-    "description": "50 FT SEWER",
-    "status": "John Arispe"
-  },
-  {
-    "permitNum": "MEP-SEW-PMT26-34816580",
-    "permitDate": "06/17/2026",
+    "permitNum": "MEP-SEW-PMT26-34816697",
+    "permitDate": "06/18/2026",
     "permitType": "Plumbing Sewer Permit",
-    "description": "John Arispe",
+    "description": "Sewer Main Repairs",
     "status": "Active"
   },
   {
-    "permitNum": "26TMP-100523",
-    "permitDate": "06/17/2026",
-    "permitType": "LSR MEP Permit Application",
-    "description": "",
+    "permitNum": "26TMP-101476",
+    "permitDate": "06/18/2026",
+    "permitType": "MEP Trade Permits Application",
+    "description": "GROSS-Plumbing",
     "status": ""
   },
   {
-    "permitNum": "MEP-IRR-PMT26-34416559",
-    "permitDate": "06/17/2026",
-    "permitType": "Plumbing Irrigation Permit",
-    "description": "LAWN IRRIGATION & 1\" BACKFLOW",
+    "permitNum": "26TMP-101448",
+    "permitDate": "06/18/2026",
+    "permitType": "MEP Trade Permits Application",
+    "description": "Plumbing",
+    "status": "Cole Job # 941192838"
+  },
+  {
+    "permitNum": "MEP-MEC-PMT26-33916718",
+    "permitDate": "06/18/2026",
+    "permitType": "Mechanical Permit",
+    "description": "Luis Torres",
     "status": "Active"
   },
   {
-    "permitNum": "MEP-TRD-APP26-33116604",
-    "permitDate": "06/17/2026",
+    "permitNum": "26TMP-101704",
+    "permitDate": "06/18/2026",
     "permitType": "MEP Trade Permits Application",
-    "description": "PLUMBING PERMIT",
-    "status": "ERNESTO MONTENEGRO"
+    "description": "Tapping onto existing gas line",
+    "status": "Gas line"
   },
   {
-    "permitNum": "LSR-MEP-APP26-39401541",
-    "permitDate": "06/17/2026",
-    "permitType": "LSR MEP Permit Application",
-    "description": "Closed",
-    "status": ""
-  },
-  {
-    "permitNum": "26TMP-100681",
-    "permitDate": "06/17/2026",
-    "permitType": "Simple Excavation Permit",
-    "description": "WATER SERVICE INSTALLATION",
-    "status": "RIGHT CONNECTION PLUMBING 16595 CLASSEN RD"
-  },
-  {
-    "permitNum": "MEP-PLM-PMT26-34316563",
-    "permitDate": "06/17/2026",
+    "permitNum": "MEP-PLM-PMT26-34316721",
+    "permitDate": "06/18/2026",
     "permitType": "Plumbing General Permit",
-    "description": "8003 Midcrown",
+    "description": "REED-Plumbing",
     "status": "Active"
   },
   {
-    "permitNum": "MEP-PLM-PMT26-34316552",
-    "permitDate": "06/17/2026",
+    "permitNum": "MEP-GAS-PMT26-34216754",
+    "permitDate": "06/18/2026",
+    "permitType": "Plumbing Gas Permit",
+    "description": "Gas line",
+    "status": "Active"
+  },
+  {
+    "permitNum": "MEP-TRD-APP26-33116721",
+    "permitDate": "06/18/2026",
+    "permitType": "MEP Trade Permits Application",
+    "description": "REED-Plumbing",
+    "status": "Issued"
+  },
+  {
+    "permitNum": "MEP-PLM-PMT26-34316719",
+    "permitDate": "06/18/2026",
     "permitType": "Plumbing General Permit",
-    "description": "Monticello - Drain Repair",
+    "description": "Tub install",
     "status": "Active"
   },
   {
-    "permitNum": "26TMP-100645",
-    "permitDate": "06/17/2026",
+    "permitNum": "26TMP-101706",
+    "permitDate": "06/18/2026",
     "permitType": "MEP Trade Permits Application",
-    "description": "50 FT SEWER",
-    "status": "John Arispe"
+    "description": "General plumbing repairs",
+    "status": "206 leo"
   },
   {
-    "permitNum": "MEP-TRD-APP26-33116556",
-    "permitDate": "06/17/2026",
-    "permitType": "MEP Trade Permits Application",
-    "description": "40ft sewer",
-    "status": "plumbing"
-  },
-  {
-    "permitNum": "MEP-SEW-PMT26-34816556",
-    "permitDate": "06/17/2026",
-    "permitType": "Plumbing Sewer Permit",
-    "description": "plumbing",
-    "status": "Active"
-  },
-  {
-    "permitNum": "MEP-TRD-APP26-33116555",
-    "permitDate": "06/17/2026",
-    "permitType": "MEP Trade Permits Application",
-    "description": "PLUMBING PERMIT",
-    "status": "MARY ROBINS"
-  },
-  {
-    "permitNum": "MEP-PLM-PMT26-34316555",
-    "permitDate": "06/17/2026",
-    "permitType": "Plumbing General Permit",
-    "description": "MARY ROBINS",
-    "status": "Active"
-  },
-  {
-    "permitNum": "26TMP-100790",
-    "permitDate": "06/17/2026",
-    "permitType": "MEP Trade Permits Application",
-    "description": "Burn house",
-    "status": "Burn house"
-  },
-  {
-    "permitNum": "MEP-PLM-PMT26-34316557",
-    "permitDate": "06/17/2026",
-    "permitType": "Plumbing General Permit",
-    "description": "Platt J-629158",
-    "status": "Active"
-  },
-  {
-    "permitNum": "MEP-PLM-PMT26-34316590",
-    "permitDate": "06/17/2026",
-    "permitType": "Plumbing General Permit",
-    "description": "Fiber Glass Systems - Plumbing",
-    "status": "Active"
-  },
-  {
-    "permitNum": "MEP-TRD-APP26-33116590",
-    "permitDate": "06/17/2026",
-    "permitType": "MEP Trade Permits Application",
-    "description": "Plumbing work",
-    "status": "Fiber Glass Systems - Plumbing"
-  },
-  {
-    "permitNum": "26TMP-100707",
-    "permitDate": "06/17/2026",
-    "permitType": "MEP Trade Permits Application",
-    "description": "David Veliz",
-    "status": ""
-  },
-  {
-    "permitNum": "INV-PLB-INV26-23500661",
-    "permitDate": "06/17/2026",
+    "permitNum": "INV-PLB-INV26-23500670",
+    "permitDate": "06/18/2026",
     "permitType": "Plumbing Investigation",
-    "description": "4154 ALASKAN SUNRISE DR",
+    "description": "346 E WOODLAWN AVE",
+    "status": "No Violation"
+  },
+  {
+    "permitNum": "MEP-PLM-PMT26-34316756",
+    "permitDate": "06/18/2026",
+    "permitType": "Plumbing General Permit",
+    "description": "206 leo",
+    "status": "Active"
+  },
+  {
+    "permitNum": "MEP-TRD-APP26-33116756",
+    "permitDate": "06/18/2026",
+    "permitType": "MEP Trade Permits Application",
+    "description": "General plumbing repairs",
+    "status": "206 leo"
+  },
+  {
+    "permitNum": "MEP-IRR-PMT26-34416736",
+    "permitDate": "06/18/2026",
+    "permitType": "Plumbing Irrigation Permit",
+    "description": "14722 DONLEY RUN",
+    "status": "Active"
+  },
+  {
+    "permitNum": "INV-PLB-INV26-23500672",
+    "permitDate": "06/18/2026",
+    "permitType": "Plumbing Investigation",
+    "description": "2450 TEXAS AVE",
     "status": "Pending Resolution"
   },
   {
-    "permitNum": "26TMP-100585",
-    "permitDate": "06/17/2026",
+    "permitNum": "MEP-IRR-PMT26-34416689",
+    "permitDate": "06/18/2026",
+    "permitType": "Plumbing Irrigation Permit",
+    "description": "20949 Gravel Keep",
+    "status": "Active"
+  },
+  {
+    "permitNum": "MEP-GAS-PMT26-34216688",
+    "permitDate": "06/18/2026",
+    "permitType": "Plumbing Gas Permit",
+    "description": "Whitnee Ramos",
+    "status": "Active"
+  },
+  {
+    "permitNum": "MEP-PLM-PMT26-34316738",
+    "permitDate": "06/18/2026",
+    "permitType": "Plumbing General Permit",
+    "description": "DAVID GILDART",
+    "status": "Active"
+  },
+  {
+    "permitNum": "MEP-IRR-PMT26-34416737",
+    "permitDate": "06/18/2026",
+    "permitType": "Plumbing Irrigation Permit",
+    "description": "5253 FANNIN CRANE",
+    "status": "Active"
+  },
+  {
+    "permitNum": "MEP-TRD-APP26-33116688",
+    "permitDate": "06/18/2026",
     "permitType": "MEP Trade Permits Application",
-    "description": "Replace existing Rinnai tankless water heater",
-    "status": "Armando Quinones"
+    "description": "Stove gas line",
+    "status": "Whitnee Ramos"
   },
   {
-    "permitNum": "26TMP-100823",
-    "permitDate": "06/17/2026",
+    "permitNum": "MEP-TRD-APP26-33116738",
+    "permitDate": "06/18/2026",
     "permitType": "MEP Trade Permits Application",
-    "description": "PLUMBING PERMIT",
-    "status": "ERNESTO MONTENEGRO"
+    "description": "WATERLINE REPLACEMENT",
+    "status": "DAVID GILDART"
   },
   {
-    "permitNum": "MEP-IRR-PMT26-34416606",
-    "permitDate": "06/17/2026",
+    "permitNum": "26TMP-101752",
+    "permitDate": "06/18/2026",
+    "permitType": "LSR MEP Permit Application",
+    "description": "",
+    "status": ""
+  },
+  {
+    "permitNum": "26TMP-101519",
+    "permitDate": "06/18/2026",
+    "permitType": "MEP Trade Permits Application",
+    "description": "1 star 3 ton vertical gas",
+    "status": "Luis Torres"
+  },
+  {
+    "permitNum": "MEP-IRR-PMT26-34416691",
+    "permitDate": "06/18/2026",
     "permitType": "Plumbing Irrigation Permit",
-    "description": "20933 Gravel Keep",
+    "description": "5322 Coulee Cove",
     "status": "Active"
   },
   {
-    "permitNum": "MEP-IRR-PMT26-34416586",
-    "permitDate": "06/17/2026",
+    "permitNum": "MEP-IRR-PMT26-34416741",
+    "permitDate": "06/18/2026",
     "permitType": "Plumbing Irrigation Permit",
-    "description": "14814 FARAWAY MEADOW",
+    "description": "12111 JASPER STREAM",
     "status": "Active"
   },
   {
-    "permitNum": "MEP-IRR-PMT26-34416607",
-    "permitDate": "06/17/2026",
+    "permitNum": "MEP-IRR-PMT26-34416731",
+    "permitDate": "06/18/2026",
     "permitType": "Plumbing Irrigation Permit",
-    "description": "3615 Rock Garden Way",
+    "description": "714 NIEBLA CREEK",
     "status": "Active"
   },
   {
-    "permitNum": "INV-PLB-INV26-23500662",
-    "permitDate": "06/17/2026",
+    "permitNum": "26TMP-101622",
+    "permitDate": "06/18/2026",
+    "permitType": "MEP Trade Permits Application",
+    "description": "General plumbing repairs",
+    "status": "206 leo"
+  },
+  {
+    "permitNum": "MEP-IRR-PMT26-34416732",
+    "permitDate": "06/18/2026",
+    "permitType": "Plumbing Irrigation Permit",
+    "description": "26826 HIGHLAND CREST",
+    "status": "Active"
+  },
+  {
+    "permitNum": "MEP-PLM-PMT26-34316735",
+    "permitDate": "06/18/2026",
+    "permitType": "Plumbing General Permit",
+    "description": "NAYLOR- Plumbing",
+    "status": "Active"
+  },
+  {
+    "permitNum": "MEP-IRR-PMT26-34416765",
+    "permitDate": "06/18/2026",
+    "permitType": "Plumbing Irrigation Permit",
+    "description": "13630 Guajillo Spring",
+    "status": "Active"
+  },
+  {
+    "permitNum": "MEP-MEC-PMT26-33916733",
+    "permitDate": "06/18/2026",
+    "permitType": "Mechanical Permit",
+    "description": "Mary Koenig",
+    "status": "Active"
+  },
+  {
+    "permitNum": "MEP-TRD-APP26-33116733",
+    "permitDate": "06/18/2026",
+    "permitType": "MEP Trade Permits Application",
+    "description": "1 Star SG 4 Ton",
+    "status": "Mary Koenig"
+  },
+  {
+    "permitNum": "LSR-MEP-APP26-39401572",
+    "permitDate": "06/18/2026",
+    "permitType": "LSR MEP Permit Application",
+    "description": "Closed",
+    "status": ""
+  },
+  {
+    "permitNum": "26TMP-101630",
+    "permitDate": "06/18/2026",
+    "permitType": "MEP Trade Permits Application",
+    "description": "WATERLINE REPLACEMENT",
+    "status": "DAVID GILDART"
+  },
+  {
+    "permitNum": "26TMP-101626",
+    "permitDate": "06/18/2026",
+    "permitType": "Residential Building Permit Application",
+    "description": "5226 Marliese Peak",
+    "status": ""
+  },
+  {
+    "permitNum": "26TMP-101625",
+    "permitDate": "06/18/2026",
+    "permitType": "MEP Trade Permits Application",
+    "description": "Tap onto gas line",
+    "status": "Gas line"
+  },
+  {
+    "permitNum": "MEP-TRD-APP26-33116735",
+    "permitDate": "06/18/2026",
+    "permitType": "MEP Trade Permits Application",
+    "description": "NAYLOR- Plumbing",
+    "status": "Issued"
+  },
+  {
+    "permitNum": "INV-PLB-INV26-23500674",
+    "permitDate": "06/18/2026",
     "permitType": "Plumbing Investigation",
-    "description": "1901 MISSION RD",
-    "status": "Pending Inspection"
+    "description": "325 ROBERT E LEE ST",
+    "status": "No Violation"
   },
   {
-    "permitNum": "MEP-PLM-PMT26-34316609",
-    "permitDate": "06/17/2026",
+    "permitNum": "26TMP-101371",
+    "permitDate": "06/18/2026",
+    "permitType": "MEP Trade Permits Application",
+    "description": "Stove gas line",
+    "status": "Whitnee Ramos"
+  },
+  {
+    "permitNum": "MEP-PLM-PMT26-34316695",
+    "permitDate": "06/18/2026",
     "permitType": "Plumbing General Permit",
-    "description": "Main house",
+    "description": "Olenick J-629629",
     "status": "Active"
   },
   {
-    "permitNum": "MEP-TRD-APP26-33116587",
-    "permitDate": "06/17/2026",
-    "permitType": "MEP Trade Permits Application",
-    "description": "GAS REPAIR ON GAS LINE AT THE STOVE",
-    "status": "LINDA PAPAYANOPOLUS"
-  },
-  {
-    "permitNum": "MEP-GAS-PMT26-34216587",
-    "permitDate": "06/17/2026",
-    "permitType": "Plumbing Gas Permit",
-    "description": "LINDA PAPAYANOPOLUS",
-    "status": "Active"
-  },
-  {
-    "permitNum": "MEP-TRD-APP26-33116609",
-    "permitDate": "06/17/2026",
-    "permitType": "MEP Trade Permits Application",
-    "description": "New plumbing",
-    "status": "Main house"
-  },
-  {
-    "permitNum": "26TMP-100700",
-    "permitDate": "06/17/2026",
-    "permitType": "MEP Trade Permits Application",
-    "description": "GAS REPAIR ON GAS LINE AT THE STOVE",
-    "status": "LINDA PAPAYANOPOLUS"
-  },
-  {
-    "permitNum": "MEP-IRR-PMT26-34416608",
-    "permitDate": "06/17/2026",
+    "permitNum": "MEP-IRR-PMT26-34416742",
+    "permitDate": "06/18/2026",
     "permitType": "Plumbing Irrigation Permit",
-    "description": "3619 Rock Garden Way",
+    "description": "10520 EDDLEMAN COVE",
     "status": "Active"
   },
   {
-    "permitNum": "MEP-GAS-PMT26-34216588",
-    "permitDate": "06/17/2026",
-    "permitType": "Plumbing Gas Permit",
-    "description": "David Veliz",
-    "status": "Active"
-  },
-  {
-    "permitNum": "26TMP-100696",
-    "permitDate": "06/17/2026",
+    "permitNum": "MEP-TRD-APP26-33116754",
+    "permitDate": "06/18/2026",
     "permitType": "MEP Trade Permits Application",
-    "description": "Plumbing work",
-    "status": "Fiber Glass Systems - Plumbing"
+    "description": "Tapping onto gas line",
+    "status": "Gas line"
   },
   {
-    "permitNum": "MEP-TRD-APP26-33116588",
-    "permitDate": "06/17/2026",
-    "permitType": "MEP Trade Permits Application",
-    "description": "David Veliz",
-    "status": "Issued"
-  },
-  {
-    "permitNum": "MEP-SEW-PMT26-34816483",
-    "permitDate": "06/16/2026",
-    "permitType": "Plumbing Sewer Permit",
-    "description": "1209 Schley",
-    "status": "Active"
-  },
-  {
-    "permitNum": "26TMP-099810",
-    "permitDate": "06/16/2026",
-    "permitType": "MEP Trade Permits Application",
-    "description": "15 FT Tunnel & 2” Pipe Repair",
-    "status": "Decker Job"
-  },
-  {
-    "permitNum": "MEP-PLM-PMT26-34316482",
-    "permitDate": "06/16/2026",
+    "permitNum": "MEP-PLM-PMT26-34316753",
+    "permitDate": "06/18/2026",
     "permitType": "Plumbing General Permit",
-    "description": "1209 Schley",
+    "description": "10' Liner, 1 Fixture",
     "status": "Active"
   },
   {
-    "permitNum": "26TMP-099678",
-    "permitDate": "06/16/2026",
-    "permitType": "MEP Trade Permits Application",
-    "description": "CPS Gas Lockout Permit",
-    "status": "Gas lockout"
-  },
-  {
-    "permitNum": "MEP-GAS-PMT26-34216508",
-    "permitDate": "06/16/2026",
-    "permitType": "Plumbing Gas Permit",
-    "description": "GAS- EAST BANDON",
-    "status": "Active"
-  },
-  {
-    "permitNum": "26TMP-100011",
-    "permitDate": "06/16/2026",
-    "permitType": "LSR MEP Permit Application",
-    "description": "",
-    "status": ""
-  },
-  {
-    "permitNum": "26TMP-099806",
-    "permitDate": "06/16/2026",
-    "permitType": "State License Registration Application",
-    "description": "",
-    "status": ""
-  },
-  {
-    "permitNum": "MEP-TRD-APP26-33116508",
-    "permitDate": "06/16/2026",
-    "permitType": "MEP Trade Permits Application",
-    "description": "GAS- EAST BANDON",
-    "status": "Issued"
-  },
-  {
-    "permitNum": "LSR-MEP-APP26-39401533",
-    "permitDate": "06/16/2026",
-    "permitType": "LSR MEP Permit Application",
-    "description": "Closed",
-    "status": ""
-  },
-  {
-    "permitNum": "MEP-TRD-APP26-33116510",
-    "permitDate": "06/16/2026",
-    "permitType": "MEP Trade Permits Application",
-    "description": "30ft sewer",
-    "status": "plumbing"
-  },
-  {
-    "permitNum": "MEP-TRD-APP26-33116405",
-    "permitDate": "06/16/2026",
-    "permitType": "MEP Trade Permits Application",
-    "description": "washeteria",
-    "status": "Gas test"
-  },
-  {
-    "permitNum": "MEP-PLM-PMT26-34316534",
-    "permitDate": "06/16/2026",
+    "permitNum": "MEP-PLM-PMT26-34316694",
+    "permitDate": "06/18/2026",
     "permitType": "Plumbing General Permit",
-    "description": "A&M Plumbing",
+    "description": "47 HAVERHILL WAY",
     "status": "Active"
   },
   {
-    "permitNum": "MEP-GAS-PMT26-34216405",
-    "permitDate": "06/16/2026",
-    "permitType": "Plumbing Gas Permit",
-    "description": "Gas test",
-    "status": "LOC Issued"
-  },
-  {
-    "permitNum": "MEP-IRR-PMT26-34410996",
-    "permitDate": "06/16/2026",
+    "permitNum": "MEP-IRR-PMT26-34416744",
+    "permitDate": "06/18/2026",
     "permitType": "Plumbing Irrigation Permit",
-    "description": "18327 Rhone River Dr",
-    "status": "LOC Issued"
-  },
-  {
-    "permitNum": "MEP-TRD-APP26-33116534",
-    "permitDate": "06/16/2026",
-    "permitType": "MEP Trade Permits Application",
-    "description": "General Plumbing",
-    "status": "A&M Plumbing"
-  },
-  {
-    "permitNum": "MEP-TRD-APP26-33116509",
-    "permitDate": "06/16/2026",
-    "permitType": "MEP Trade Permits Application",
-    "description": "Pipe replace",
-    "status": "Issued"
-  },
-  {
-    "permitNum": "MEP-SEW-PMT26-34816509",
-    "permitDate": "06/16/2026",
-    "permitType": "Plumbing Sewer Permit",
-    "description": "Pipe replace",
+    "description": "1807 GARNET SPRING",
     "status": "Active"
   },
   {
-    "permitNum": "MEP-SEW-PMT26-34809075",
-    "permitDate": "06/16/2026",
-    "permitType": "Plumbing Sewer Permit",
-    "description": "Moraima 130 sewer",
+    "permitNum": "MEP-IRR-PMT26-34416671",
+    "permitDate": "06/18/2026",
+    "permitType": "Plumbing Irrigation Permit",
+    "description": "14402 SEARCHERS PASS",
     "status": "Active"
   },
   {
-    "permitNum": "26TMP-100371",
-    "permitDate": "06/16/2026",
+    "permitNum": "MEP-IRR-PMT26-34416747",
+    "permitDate": "06/18/2026",
+    "permitType": "Plumbing Irrigation Permit",
+    "description": "12427 AURORA BASIN",
+    "status": "Active"
+  },
+  {
+    "permitNum": "26TMP-101527",
+    "permitDate": "06/18/2026",
     "permitType": "MEP Trade Permits Application",
-    "description": "General Plumbing",
-    "status": "A&M Plumbing"
-  },
-  {
-    "permitNum": "LSR-MEP-APP26-39401534",
-    "permitDate": "06/16/2026",
-    "permitType": "LSR MEP Permit Application",
-    "description": "Closed",
+    "description": "Soto- Plumbing",
     "status": ""
   },
   {
-    "permitNum": "LSR-PLUMB-26-39701534",
-    "permitDate": "06/16/2026",
-    "permitType": "LSR Plumbing Permit",
-    "description": "Active",
-    "status": ""
-  },
-  {
-    "permitNum": "LSR-MEP-APP26-39401518",
-    "permitDate": "06/16/2026",
-    "permitType": "LSR MEP Permit Application",
-    "description": "Closed",
-    "status": ""
-  },
-  {
-    "permitNum": "MEP-SEW-PMT26-34816510",
-    "permitDate": "06/16/2026",
-    "permitType": "Plumbing Sewer Permit",
-    "description": "plumbing",
+    "permitNum": "MEP-PLM-PMT26-34316748",
+    "permitDate": "06/18/2026",
+    "permitType": "Plumbing General Permit",
+    "description": "22' Liner, 1 Fixture",
     "status": "Active"
+  },
+  {
+    "permitNum": "MEP-PLM-PMT26-34316751",
+    "permitDate": "06/18/2026",
+    "permitType": "Plumbing General Permit",
+    "description": "8' Tunnel, 1 Fixture",
+    "status": "Active"
+  },
+  {
+    "permitNum": "MEP-MEC-PMT26-33916750",
+    "permitDate": "06/18/2026",
+    "permitType": "Mechanical Permit",
+    "description": "Christina Denton",
+    "status": "Active"
+  },
+  {
+    "permitNum": "MEP-TRD-APP26-33116750",
+    "permitDate": "06/18/2026",
+    "permitType": "MEP Trade Permits Application",
+    "description": "2 Star Split Vertical Gas (3 Ton)",
+    "status": "Christina Denton"
   }
 ]
