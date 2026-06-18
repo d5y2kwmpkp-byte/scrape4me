@@ -94,10 +94,22 @@ function normalizeEntity(raw) {
 // Catches the $109M-warehouse-on-12k-sqft type errors
 function costFlag(cost, sqft) {
   if (!cost) return null;
+
+  // Placeholder sqft on a real cost = missing-sqft infrastructure.
+  // Dollars are trustworthy; only the footprint is fake.
+  if (sqft != null && sqft < 100) {
+    return cost > 0 ? 'missing_sqft' : null;
+  }
+
+  // Genuinely large — needs eyeball, but keep (many are real public works)
   if (cost > 50_000_000) return 'review_high';
+
+  // Real footprint, absurd cost-per-sqft = true anomaly
   if (sqft && sqft > 0 && (cost / sqft) > 2000) return 'review_cps';
+
   return null;
 }
+
 
 // ── VELOCITY ────────────────────────────────────────────────────
 function velocityDays(regDate, startDate) {
