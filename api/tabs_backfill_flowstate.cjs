@@ -94,7 +94,9 @@ async function parseProject(html, tabsNum) {
   if (text.includes("No project found") || text.includes("not found")) return null;
 
   const tabsId = `TABS${YEAR}${String(tabsNum).padStart(6, "0")}`;
-  const regMatch = text.match(/Registration Date\s*:?\s*(\d{1,2}\/\d{1,2}\/\d{4})/i);
+  const regMatch = text.match(/Registration Date\s*:?\s*(\d{1,2}\/\d{1,2}\/\d{4})/i)
+              || text.match(/Registration Date[^\d]{0,40}(\d{1,2}\/\d{1,2}\/\d{4})/i);
+
   const registrationDate = regMatch ? regMatch[1] : null;
 
   const raw = {
