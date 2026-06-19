@@ -10,8 +10,8 @@ const YEAR       = 2026;
 // ── BACKFILL RANGE ────────────────────────────────────────────────
 // TEST SLICE FIRST: 100 projects in the middle where data exists.
 // Once verified, change to START_NUM=22212, END_NUM=1 for full backfill.
-const START_NUM  = 11100;
-const END_NUM    = 11000;
+const START_NUM  = 23308;
+const END_NUM    = 1;
 // ──────────────────────────────────────────────────────────────────
 
 const DELAY_MS   = 300;
@@ -96,8 +96,7 @@ async function parseProject(html, tabsNum) {
   const tabsId = `TABS${YEAR}${String(tabsNum).padStart(6, "0")}`;
   const regMatch = text.match(/Registration Date\s*:?\s*(\d{1,2}\/\d{1,2}\/\d{4})/i)
               || text.match(/Registration Date[^\d]{0,40}(\d{1,2}\/\d{1,2}\/\d{4})/i);
-  const regIdx = text.indexOf("Registration");
-  console.log(`  [debug ${tabsId}] found=${regIdx !== -1} ctx="${regIdx !== -1 ? text.slice(regIdx, regIdx + 50).replace(/"/g,"'") : "NONE"}"`);
+  
 
   const registrationDate = regMatch ? regMatch[1] : null;
 
