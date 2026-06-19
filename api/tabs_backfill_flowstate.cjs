@@ -96,6 +96,8 @@ async function parseProject(html, tabsNum) {
   const tabsId = `TABS${YEAR}${String(tabsNum).padStart(6, "0")}`;
   const regMatch = text.match(/Registration Date\s*:?\s*(\d{1,2}\/\d{1,2}\/\d{4})/i)
               || text.match(/Registration Date[^\d]{0,40}(\d{1,2}\/\d{1,2}\/\d{4})/i);
+  const regIdx = text.indexOf("Registration");
+  console.log(`  [debug ${tabsId}] found=${regIdx !== -1} ctx="${regIdx !== -1 ? text.slice(regIdx, regIdx + 50).replace(/"/g,"'") : "NONE"}"`);
 
   const registrationDate = regMatch ? regMatch[1] : null;
 
