@@ -1,4 +1,4 @@
-name: SA Permit Scraper
+name: FlowState TABS Daily
 
 on:
   schedule:
@@ -6,51 +6,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  scrape:
-    runs-on: ubuntu-latest
-
-    permissions:
-      contents: write
-
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Install Playwright Chromium
-        run: npx playwright install chromium --with-deps
-
-      - name: Run SA permit scraper
-        env:
-          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
-        run: node api/sa_scraper.js
-
-      - name: Run data extractor
-        env:
-          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
-        run: node --input-type=commonjs < api/extract.js
-
-      - name: Commit data back to repo
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/
-          git commit -m "Update permit data $(date -u '+%Y-%m-%d %H:%M UTC') [skip ci]" || echo "Nothing to commit"
-          git push
-
   tabs:
     runs-on: ubuntu-latest
-
-    permissions:
-      contents: write
-
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -63,15 +20,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run TABS scraper
+      - name: Run FlowState TABS scraper
         env:
           SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
-        run: node api/tabs_scraper_v2.js
-
-      - name: Commit data back to repo
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/
-          git commit -m "Update TABS data $(date -u '+%Y-%m-%d %H:%M UTC') [skip ci]" || echo "Nothing to commit"
-          git push
+          MAPBOX_TOKEN: ${{ secrets.MAPBOX_TOKEN }}
+        run: node api/tabs_scraper_flowstate.cjs
