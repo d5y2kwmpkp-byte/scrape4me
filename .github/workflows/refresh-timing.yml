@@ -1,0 +1,20 @@
+name: Refresh Timing (weekly)
+
+on:
+  schedule:
+    - cron: '0 8 * * 1'   # Mondays 8am UTC
+  workflow_dispatch:        # manual trigger button too
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Refresh timing
+        env:
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+        run: node api/refresh_timing.cjs
