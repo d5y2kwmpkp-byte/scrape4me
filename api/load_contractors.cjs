@@ -2,7 +2,7 @@ const SUPABASE_URL = "https://ewmtownoxnaghhlobeci.supabase.co";
 const SUPABASE_KEY = process.env.SUPABASE_SECRET_KEY || "";
 
 // true = dump first 3 rows' columns and write nothing; false = full load
-const TEST_MODE = True;
+const TEST_MODE = true;
 
 const SOURCES = [
   { trade: "hvac",       license_type: "Air Conditioning and Refrigeration", url: "https://www.tdlr.texas.gov/dbproduction2/ltairref.csv" },
