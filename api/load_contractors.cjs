@@ -81,7 +81,7 @@ const I = {
 
     // ── TEST MODE: dump first 3 rows, write nothing ──
     if (TEST_MODE) {
-      for (let r = 50; r < Math.min(3, lines.length); r++) {
+      for (let r = 50; r < Math.min(54, lines.length); r++) {
         const cols = parseCsvLine(lines[r]);
         console.log(`\n  --- row ${r} (${cols.length} cols) ---`);
         cols.forEach((c, i) => console.log(`    [${i}] ${c}`));
