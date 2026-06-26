@@ -3,7 +3,7 @@ const SUPABASE_KEY = process.env.SUPABASE_SECRET_KEY || "";
 const ANTHROPIC_KEY = process.env.ANTHROPIC_API_KEY || "";
 
 // Start small. Set to a big number (or 9999) for the full run after the test looks good.
-const LIMIT = 40;
+const LIMIT = 9999;
 const BATCH = 20;
 const MODEL = "claude-haiku-4-5";
 
