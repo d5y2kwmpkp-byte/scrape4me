@@ -2,7 +2,7 @@ const SUPABASE_URL = "https://ewmtownoxnaghhlobeci.supabase.co";
 const SUPABASE_KEY = process.env.SUPABASE_SECRET_KEY || "";
 
 // true = dump first 3 rows' columns and write nothing; false = full load
-const TEST_MODE = false;
+const TEST_MODE = True;
 
 const SOURCES = [
   { trade: "hvac",       license_type: "Air Conditioning and Refrigeration", url: "https://www.tdlr.texas.gov/dbproduction2/ltairref.csv" },
@@ -81,7 +81,7 @@ const I = {
 
     // ── TEST MODE: dump first 3 rows, write nothing ──
     if (TEST_MODE) {
-      for (let r = 0; r < Math.min(3, lines.length); r++) {
+      for (let r = 50; r < Math.min(3, lines.length); r++) {
         const cols = parseCsvLine(lines[r]);
         console.log(`\n  --- row ${r} (${cols.length} cols) ---`);
         cols.forEach((c, i) => console.log(`    [${i}] ${c}`));
