@@ -1,0 +1,42 @@
+# .github/workflows/fetch-roads.yml
+# Pulls TxDOT road GeoJSON for each city and commits the files to the repo.
+# Run it manually (Actions tab → "Fetch TxDOT Roads" → Run workflow),
+# or on a schedule. Same machinery as your scrape4me setup.
+
+name: Fetch TxDOT Roads
+
+on:
+  workflow_dispatch:        # lets you run it by hand from the Actions tab
+  # Optional: refresh monthly. Uncomment to enable.
+  # schedule:
+  #   - cron: "0 6 1 * *"   # 6am UTC on the 1st of each month
+
+permissions:
+  contents: write           # allows the action to commit files back
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Fetch roads from TxDOT
+        run: node scripts/fetch-roads.mjs
+
+      - name: Commit the GeoJSON
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/roads/
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Update TxDOT road GeoJSON [skip ci]"
+            git push
+          fi
