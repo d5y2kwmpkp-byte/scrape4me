@@ -2,13 +2,12 @@ const zlib = require("zlib");
 const { Readable } = require("stream");
 const readline = require("readline");
 
-
 const SUPABASE_URL = "https://ewmtownoxnaghhlobeci.supabase.co";
 const SUPABASE_KEY = process.env.SUPABASE_SECRET_KEY || "";
 const MANIFEST = "https://minedbuildings.z5.web.core.windows.net/global-buildings/dataset-links.csv";
 
-// Scope: how many permits to attach footprints to. Start small.
-const LIMIT = 5000;
+// How many unprocessed permits to chew through this run.
+const LIMIT = 2000;
 const MATCH_RADIUS_M = 20;   // fallback: nearest footprint within this distance
 const ZOOM = 9;              // MSFT partitions at level-9 quadkeys
 
@@ -44,8 +43,8 @@ function pointInRing(px, py, ring) {
 }
 function pointInPolygon(lng, lat, coords) {
   if (!coords || !coords[0]) return false;
-  if (!pointInRing(lng, lat, coords[0])) return false;       // outer ring
-  for (let h = 1; h < coords.length; h++) if (pointInRing(lng, lat, coords[h])) return false; // holes
+  if (!pointInRing(lng, lat, coords[0])) return false;
+  for (let h = 1; h < coords.length; h++) if (pointInRing(lng, lat, coords[h])) return false;
   return true;
 }
 function centroidOf(coords) {
@@ -58,7 +57,6 @@ function distM(aLng, aLat, bLng, bLat) {
   const dy = (aLat - bLat) * 111320;
   return Math.hypot(dx, dy);
 }
-// rough polygon area in m^2 (shoelace on a local planar approx)
 function areaM2(coords) {
   const ring = coords[0];
   const lat0 = ring[0][1];
@@ -94,18 +92,19 @@ async function sb(path, opts = {}) {
 }
 
 (async () => {
-  // 1. target permits
-  const res = await sb(`tabs_projects?select=id,latitude,longitude,square_footage_num,project_category&latitude=not.is.null&longitude=not.is.null&order=registration_date.desc&limit=${LIMIT}`);
+  // 1. only permits not yet processed (the view excludes matched AND no-match rows)
+  const res = await sb(`permits_needing_geometry?select=id,latitude,longitude,square_footage_num,project_category&limit=${LIMIT}`);
   const permits = (await res.json()).map(p => ({
     id: p.id, lng: +p.longitude, lat: +p.latitude,
     sqft: p.square_footage_num, cat: p.project_category || "general",
     qk: quadkeyOf(+p.longitude, +p.latitude),
   }));
-  console.log(`${permits.length} permits`);
+  console.log(`${permits.length} permits needing geometry`);
+  if (!permits.length) { console.log("Nothing left to process."); return; }
 
   // 2. needed quadkeys
   const needed = new Set(permits.map(p => p.qk));
-  console.log(`${needed.size} quadkeys:`, [...needed].join(", "));
+  console.log(`${needed.size} quadkeys`);
 
   // 3. manifest -> matching US urls
   const man = await (await fetch(MANIFEST)).text();
@@ -116,10 +115,7 @@ async function sb(path, opts = {}) {
   }
   console.log(`${urls.length} tile files to fetch`);
 
-    // 4-6. stream each tile, keep only footprints matching a permit
-  const { Readable } = require("stream");
-  const readline = require("readline");
-
+  // 4-6. stream each tile, keep only footprints matching a permit
   const matches = new Map();
   for (const { qk, url } of urls) {
     const local = permits.filter(p => p.qk === qk);
@@ -145,9 +141,10 @@ async function sb(path, opts = {}) {
         if (!inside && d > MATCH_RADIUS_M) continue;
         const prev = matches.get(p.id);
         if (prev && prev.match_dist_m <= d) continue;
-                const msftH = f.properties?.height;
+
+        const msftH = f.properties?.height;
         const area = areaM2(coords);
-        let height = (msftH && msftH >= 2.5) ? msftH : null;     // was: msftH > 0
+        let height = (msftH && msftH >= 2.5) ? msftH : null;
         let hsrc = height ? "msft" : null;
         if (!height && p.sqft && area > 20) {
           const floors = Math.max(1, Math.round(p.sqft / 10.7639 / area));
@@ -155,7 +152,7 @@ async function sb(path, opts = {}) {
           hsrc = "derived";
         }
         if (!height) { height = FLOOR_H[p.cat] || 5; hsrc = "default"; }
-        height = Math.min(height, 200);                          // NEW: sanity ceiling
+        height = Math.min(height, 200);
 
         matches.set(p.id, {
           permit_id: p.id,
@@ -172,10 +169,18 @@ async function sb(path, opts = {}) {
     console.log(`  scanned ${seen} footprints, ${matches.size} permits matched so far`);
   }
 
+  // 7. record misses so they drop out of the view on future runs
+  const missed = permits
+    .filter(p => !matches.has(p.id))
+    .map(p => ({
+      permit_id: p.id,
+      footprint: null, centroid_lat: null, centroid_lng: null,
+      height_m: null, height_source: null,
+      confidence: "none", match_dist_m: null, source: "msft",
+    }));
 
-  // upsert
-  const rows = [...matches.values()];
-  console.log(`\nupserting ${rows.length} footprints`);
+  const rows = [...matches.values(), ...missed];
+  console.log(`\nupserting ${matches.size} footprints + ${missed.length} misses`);
   for (let i = 0; i < rows.length; i += 200) {
     await sb("building_geometry", {
       method: "POST",
@@ -184,9 +189,10 @@ async function sb(path, opts = {}) {
     });
   }
 
-  const byConf = rows.reduce((a, r) => ((a[r.confidence] = (a[r.confidence] || 0) + 1), a), {});
-  const byH = rows.reduce((a, r) => ((a[r.height_source] = (a[r.height_source] || 0) + 1), a), {});
-  console.log(`\nmatched ${rows.length}/${permits.length} permits`);
+  const hits = [...matches.values()];
+  const byConf = hits.reduce((a, r) => ((a[r.confidence] = (a[r.confidence] || 0) + 1), a), {});
+  const byH = hits.reduce((a, r) => ((a[r.height_source] = (a[r.height_source] || 0) + 1), a), {});
+  console.log(`\nmatched ${hits.length}/${permits.length} permits (${missed.length} recorded as no-match)`);
   console.log("confidence:", byConf);
   console.log("height source:", byH);
 })();
