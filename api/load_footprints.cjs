@@ -113,15 +113,22 @@ async function sb(path, opts = {}) {
   }
   console.log(`${urls.length} tile files to fetch`);
 
-  // 4-6. stream each tile, keep only footprints matching a permit
-  const matches = new Map(); // permit_id -> record
+    // 4-6. stream each tile, keep only footprints matching a permit
+  const { Readable } = require("stream");
+  const readline = require("readline");
+
+  const matches = new Map();
   for (const { qk, url } of urls) {
     const local = permits.filter(p => p.qk === qk);
     console.log(`\ntile ${qk}: ${local.length} permits`);
-    const buf = Buffer.from(await (await fetch(url)).arrayBuffer());
-    const text = zlib.gunzipSync(buf).toString("utf8");
+
+    const resp = await fetch(url);
+    const gunzip = zlib.createGunzip();
+    const nodeStream = Readable.fromWeb(resp.body).pipe(gunzip);
+    const rl = readline.createInterface({ input: nodeStream, crlfDelay: Infinity });
+
     let seen = 0;
-    for (const line of text.split("\n")) {
+    for await (const line of rl) {
       if (!line.trim()) continue;
       seen++;
       let f; try { f = JSON.parse(line); } catch { continue; }
@@ -129,19 +136,18 @@ async function sb(path, opts = {}) {
       if (!coords) continue;
       const c = centroidOf(coords);
       for (const p of local) {
-        // cheap reject before expensive test
         if (Math.abs(c.lat - p.lat) > 0.002 || Math.abs(c.lng - p.lng) > 0.002) continue;
         const inside = pointInPolygon(p.lng, p.lat, coords);
         const d = inside ? 0 : distM(p.lng, p.lat, c.lng, c.lat);
         if (!inside && d > MATCH_RADIUS_M) continue;
         const prev = matches.get(p.id);
-        if (prev && prev.match_dist_m <= d) continue;   // keep the better match
+        if (prev && prev.match_dist_m <= d) continue;
         const msftH = f.properties?.height;
         const area = areaM2(coords);
         let height = (msftH && msftH > 0) ? msftH : null;
         let hsrc = height ? "msft" : null;
         if (!height && p.sqft && area > 20) {
-          const floors = Math.max(1, Math.round(p.sqft / 10.7639 / area)); // sqft->m2
+          const floors = Math.max(1, Math.round(p.sqft / 10.7639 / area));
           height = floors * (FLOOR_H[p.cat] || 5);
           hsrc = "derived";
         }
@@ -160,6 +166,7 @@ async function sb(path, opts = {}) {
     }
     console.log(`  scanned ${seen} footprints, ${matches.size} permits matched so far`);
   }
+
 
   // upsert
   const rows = [...matches.values()];
