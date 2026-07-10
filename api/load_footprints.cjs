@@ -9,7 +9,7 @@ const MANIFEST = "https://minedbuildings.z5.web.core.windows.net/global-building
 
 // Scope: how many permits to attach footprints to. Start small.
 const LIMIT = 500;
-const MATCH_RADIUS_M = 60;   // fallback: nearest footprint within this distance
+const MATCH_RADIUS_M = 20;   // fallback: nearest footprint within this distance
 const ZOOM = 9;              // MSFT partitions at level-9 quadkeys
 
 // ── quadkey math (Bing standard) ─────────────────────────────
