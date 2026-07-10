@@ -145,9 +145,9 @@ async function sb(path, opts = {}) {
         if (!inside && d > MATCH_RADIUS_M) continue;
         const prev = matches.get(p.id);
         if (prev && prev.match_dist_m <= d) continue;
-        const msftH = f.properties?.height;
+                const msftH = f.properties?.height;
         const area = areaM2(coords);
-        let height = (msftH && msftH > 0) ? msftH : null;
+        let height = (msftH && msftH >= 2.5) ? msftH : null;     // was: msftH > 0
         let hsrc = height ? "msft" : null;
         if (!height && p.sqft && area > 20) {
           const floors = Math.max(1, Math.round(p.sqft / 10.7639 / area));
@@ -155,6 +155,8 @@ async function sb(path, opts = {}) {
           hsrc = "derived";
         }
         if (!height) { height = FLOOR_H[p.cat] || 5; hsrc = "default"; }
+        height = Math.min(height, 200);                          // NEW: sanity ceiling
+
         matches.set(p.id, {
           permit_id: p.id,
           footprint: f.geometry,
