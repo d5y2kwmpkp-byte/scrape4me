@@ -1,4 +1,7 @@
 const zlib = require("zlib");
+const { Readable } = require("stream");
+const readline = require("readline");
+
 
 const SUPABASE_URL = "https://ewmtownoxnaghhlobeci.supabase.co";
 const SUPABASE_KEY = process.env.SUPABASE_SECRET_KEY || "";
