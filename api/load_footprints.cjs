@@ -8,7 +8,7 @@ const SUPABASE_KEY = process.env.SUPABASE_SECRET_KEY || "";
 const MANIFEST = "https://minedbuildings.z5.web.core.windows.net/global-buildings/dataset-links.csv";
 
 // Scope: how many permits to attach footprints to. Start small.
-const LIMIT = 500;
+const LIMIT = 5000;
 const MATCH_RADIUS_M = 20;   // fallback: nearest footprint within this distance
 const ZOOM = 9;              // MSFT partitions at level-9 quadkeys
 
