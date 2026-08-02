@@ -1,0 +1,19 @@
+name: Comptroller Probe (recon)
+
+on:
+  workflow_dispatch:
+    inputs:
+      n: { description: "how many newest owner names to pull", required: true, default: "5" }
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - name: Run Comptroller probe
+        env:
+          TEXBUILD_SUPABASE_KEY: ${{ secrets.TEXBUILD_SUPABASE_KEY }}
+          N: ${{ github.event.inputs.n }}
+        run: node api/comptroller_probe.cjs
