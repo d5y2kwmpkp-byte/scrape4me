@@ -1,87 +1,132 @@
-// api/comptroller_probe.cjs — REAL LOOKUP v3 (read-only, writes nothing)
+// api/comptroller_probe.cjs — OFFICIAL JSON API (read-only test, no writes)
 // ────────────────────────────────────────────────────────────────
-// Endpoint cracked: the franchise search is form[1] on /coa/search.do —
-//   GET search.do?name=<ENTITY>   (fields: taxpayerId, name, fileNumber)
-// coaSearchBtn was a decoy (returns the page shell, ignores params);
-// the header "open-search" box is a different, site-wide widget.
-//
-// This hits the real endpoint for a known control + your newest owner
-// names, parses status/agent/SOS inline, and dumps any result/detail
-// links so we can see the format for the officers follow-through.
-//
-// Zero npm deps (Node 20 fetch). Env: TEXBUILD_SUPABASE_KEY, N (default 5)
+// The account-status search is a client-side SPA — scraping search.do
+// only returns the empty JS shell. Real data is the CPA public JSON API:
+//   search: GET /public-data/v1/public/franchise-tax-list?name=<NAME>
+//   detail: GET /public-data/v1/public/franchise-tax/<taxpayerId>
+//           (account status + registered agent + officers/directors)
+// Docs show an x-api-key header; public scrapers report it works key-free,
+// so we try keyless and only add a key if COMPTROLLER_API_KEY is set.
+// Zero deps (Node 20 fetch). Env: TEXBUILD_SUPABASE_KEY, N (default 5),
+//   COMPTROLLER_API_KEY (optional)
 // ────────────────────────────────────────────────────────────────
 
 const SUPABASE_URL = "https://yoqcvjqojklemhxwvgby.supabase.co";
-const KEY     = process.env.TEXBUILD_SUPABASE_KEY || "";
+const SB_KEY  = process.env.TEXBUILD_SUPABASE_KEY || "";
+const API_KEY = process.env.COMPTROLLER_API_KEY || "";
 const N       = Math.max(1, Math.min(25, parseInt(process.env.N || "5", 10)));
-const SEARCH  = "https://mycpa.cpa.state.tx.us/coa/search.do";
-const UA      = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36";
-const CONTROL = "DOUBLE DIAMOND PROPERTIES CONSTRUCTION CO";  // known to exist
+const API     = "https://api.comptroller.texas.gov/public-data/v1/public";
+const CONTROL = "DOUBLE DIAMOND PROPERTIES CONSTRUCTION";
 
-if (!KEY) { console.error("Missing TEXBUILD_SUPABASE_KEY"); process.exit(1); }
+if (!SB_KEY) { console.error("Missing TEXBUILD_SUPABASE_KEY"); process.exit(1); }
 
-const strip = h => h
-  .replace(/<script[\s\S]*?<\/script>/gi, "").replace(/<style[\s\S]*?<\/style>/gi, "")
-  .replace(/<[^>]+>/g, " ").replace(/&nbsp;/g, " ").replace(/&amp;/g, "&")
-  .replace(/\s+/g, " ").trim();
+const HEAD = { Accept: "application/json", "User-Agent": "flowstate-enrich/1.0",
+  ...(API_KEY ? { "x-api-key": API_KEY } : {}) };
 
-function links(html) {
-  const out = [];
-  for (const a of html.matchAll(/<a\b[^>]*href\s*=\s*["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi)) {
-    const href = a[1], txt = strip(a[2]);
-    if (/tpid|coaget|detail|status|\.do\?/i.test(href) || /detail|status|view/i.test(txt))
-      out.push({ href, txt });
-  }
-  const seen = new Set();
-  return out.filter(l => (seen.has(l.href) ? false : seen.add(l.href))).slice(0, 15);
-}
-
-function parseStatus(flat) {
-  const g = re => (flat.match(re) || [])[1] || null;
-  return {
-    right_to_transact: g(/Right to Transact Business(?: in Texas)?\s*:?\s*([A-Za-z ]+?)(?:\s+State|\s+Texas|\s+Registered|\s+Effective|$)/i),
-    taxpayer_number:   g(/Taxpayer Number\s*:?\s*(\d{6,11})/i),
-    sos_file_number:   g(/SOS File Number\s*:?\s*(\d+)/i),
-    state_formation:   g(/State of Formation\s*:?\s*([A-Za-z]{2,})/i),
-    registered_agent:  g(/Registered Agent(?: Name)?\s*:?\s*([A-Za-z.,'\- ]+?)(?:\s+Registered Office|\s+\d|$)/i),
-  };
-}
-
-async function lookup(name) {
-  const url = `${SEARCH}?taxpayerId=&name=${encodeURIComponent(name)}&fileNumber=`;
-  let html = "", status = 0;
+async function getJSON(url) {
   try {
-    const r = await fetch(url, { headers: { "User-Agent": UA, Accept: "text/html" } });
-    status = r.status;
-    html = await r.text();
-  } catch (e) {
-    console.log(`\n■ "${name}" → ERR ${e.message}`);
+    const r = await fetch(url, { headers: HEAD });
+    const text = await r.text();
+    let data = null; try { data = JSON.parse(text); } catch {}
+    return { status: r.status, data, text };
+  } catch (e) { return { status: 0, data: null, text: "ERR " + e.message }; }
+}
+
+function pick(obj, ...cands) {
+  const norm = s => String(s).toLowerCase().replace(/[_\s-]/g, "");
+  const want = cands.map(norm);
+  let hit;
+  (function walk(o) {
+    if (hit !== undefined || !o || typeof o !== "object") return;
+    for (const k of Object.keys(o))
+      if (want.includes(norm(k)) && o[k] != null && typeof o[k] !== "object") { hit = o[k]; return; }
+    for (const k of Object.keys(o)) if (o[k] && typeof o[k] === "object") walk(o[k]);
+  })(obj);
+  return hit;
+}
+function officers(obj) {
+  let arr;
+  (function walk(o) {
+    if (arr || !o || typeof o !== "object") return;
+    if (Array.isArray(o) && o.length && typeof o[0] === "object" &&
+        Object.keys(o[0]).some(k => /name|title|officer|director/i.test(k))) { arr = o; return; }
+    for (const k of Object.keys(o)) if (o[k] && typeof o[k] === "object") walk(o[k]);
+  })(obj);
+  return arr || [];
+}
+function resultList(data) {
+  if (Array.isArray(data)) return data;
+  for (const k of Object.keys(data || {}))
+    if (Array.isArray(data[k]) && data[k].length && typeof data[k][0] === "object") return data[k];
+  return data && typeof data === "object" ? [data] : [];
+}
+
+async function searchByName(name) {
+  const variants = [
+    `${API}/franchise-tax-list?name=${encodeURIComponent(name)}`,
+    `${API}/franchise-tax-list?searchType=name&name=${encodeURIComponent(name)}`,
+    `${API}/franchise-tax?name=${encodeURIComponent(name)}`,
+  ];
+  for (const u of variants) {
+    const res = await getJSON(u);
+    console.log(`   [search] …${u.slice(API.length)} → ${res.status}`);
+    if (res.status === 401 || res.status === 403) return { needKey: true, ...res, url: u };
+    if (res.status === 200 && res.data) return { ...res, url: u };
+  }
+  return null;
+}
+
+async function enrich(name, dumpRaw) {
+  console.log(`\n■ "${name}"`);
+  const s = await searchByName(name);
+  if (!s) { console.log("   no search variant returned data"); return; }
+  if (s.needKey) {
+    console.log("   → 401/403: API wants an x-api-key. Register at api-doc.comptroller.texas.gov, set COMPTROLLER_API_KEY.");
     return;
   }
-  const flat = strip(html);
-  const bodyish = flat.replace(/^.*?(Franchise Tax Account Status Search)/i, "$1");
-  const st = parseStatus(flat);
-  const detailCount = (flat.match(/Details/gi) || []).length;
-
-  console.log(`\n■ "${name}"  → HTTP ${status} · ${html.length} bytes · ${detailCount} "Details"`);
-  console.log(`   status:${st.right_to_transact || "—"}  taxpayer:${st.taxpayer_number || "—"}  sos:${st.sos_file_number || "—"}  formed:${st.state_formation || "—"}  agent:${st.registered_agent || "—"}`);
-
-  const lk = links(html);
-  if (lk.length) {
-    console.log(`   result/detail links (${lk.length}):`);
-    lk.forEach(l => console.log(`     ${(l.txt || "").slice(0, 26).padEnd(26)}  ${l.href}`));
-  } else {
-    console.log("   no detail links found");
+  if (dumpRaw) {
+    console.log("   ── raw SEARCH json (first 1200 chars) ──");
+    console.log("   " + (s.text || "").slice(0, 1200));
   }
-  console.log("   ── result text (260 chars after title) ──");
-  console.log("   " + bodyish.slice(0, 260));
+  const list = resultList(s.data);
+  console.log(`   matches: ${list.length}`);
+  if (!list.length) { console.log("   (no entity matched this name)"); return; }
+
+  const top = list[0];
+  const id = pick(top, "taxpayerId", "taxpayerNumber", "taxpayer_number");
+  const summ = {
+    matched: pick(top, "taxpayerName", "name", "entityName", "legalName") || "?",
+    status:  pick(top, "rightToTransactBusiness", "rightToTransact", "status", "accountStatus"),
+    sos:     pick(top, "sosFileNumber", "fileNumber", "sosFile"),
+    agent:   pick(top, "registeredAgent", "agentName", "raName"),
+  };
+  console.log(`   match: ${summ.matched}  id:${id || "?"}  status:${summ.status || "—"}  sos:${summ.sos || "—"}  agent:${summ.agent || "—"}`);
+
+  if (id) {
+    const d = await getJSON(`${API}/franchise-tax/${encodeURIComponent(id)}`);
+    console.log(`   [detail] franchise-tax/${id} → ${d.status}`);
+    if (dumpRaw) {
+      console.log("   ── raw DETAIL json (first 1200 chars) ──");
+      console.log("   " + (d.text || "").slice(0, 1200));
+    }
+    if (d.data) {
+      const offs = officers(d.data);
+      const agent2 = pick(d.data, "registeredAgent", "agentName", "raName");
+      console.log(`   detail agent:${agent2 || summ.agent || "—"}  officers:${offs.length}`);
+      offs.slice(0, 8).forEach(o => {
+        const nm = pick(o, "name", "officerName") || "?";
+        const ti = pick(o, "title", "officerTitle", "role") || "";
+        const yr = pick(o, "reportYear", "year") || "";
+        console.log(`      • ${ti ? ti + " — " : ""}${nm}${yr ? "  (" + yr + ")" : ""}`);
+      });
+    }
+  }
 }
 
 async function getNames() {
-  const url = `${SUPABASE_URL}/rest/v1/tabs_projects?select=owner_name,owner_name_norm,county&owner_name=not.is.null&order=id.desc&limit=${N * 6}`;
-  const r = await fetch(url, { headers: { apikey: KEY, Authorization: "Bearer " + KEY } });
-  if (!r.ok) throw new Error(`tabs read ${r.status}: ${(await r.text()).slice(0, 160)}`);
+  const url = `${SUPABASE_URL}/rest/v1/tabs_projects?select=owner_name,owner_name_norm&owner_name=not.is.null&order=id.desc&limit=${N * 6}`;
+  const r = await fetch(url, { headers: { apikey: SB_KEY, Authorization: "Bearer " + SB_KEY } });
+  if (!r.ok) throw new Error(`tabs read ${r.status}`);
   const rows = await r.json();
   const seen = new Set(), out = [];
   for (const row of rows) {
@@ -95,18 +140,12 @@ async function getNames() {
 }
 
 (async () => {
-  console.log("Comptroller lookup v3 — REAL endpoint (search.do?name=) · read-only");
-  console.log("─".repeat(64));
-
-  console.log("Control first:");
-  await lookup(CONTROL);
-
+  console.log("Comptroller OFFICIAL API — read-only test" + (API_KEY ? " (with key)" : " (keyless)"));
+  console.log("─".repeat(60));
+  await enrich(CONTROL, true);   // raw dump for the control locks field names
   const names = await getNames();
   console.log(`\nNewest ${names.length} owner names from tabs_projects:`);
-  for (const nm of names) await lookup(nm.toUpperCase());
-
-  console.log("\n─".repeat(32));
-  console.log("READ THIS: if status/taxpayer/sos populated → direct single-result hit, we're basically done.");
-  console.log("If you only see \"Details\" links → it's a results LIST; paste one detail href back and I'll");
-  console.log("build the follow-through (detail page + separate officers/directors page) against it.");
+  for (const nm of names) await enrich(nm, false);
+  console.log("\nRead: control prints status + officers → API works, we build the writer next.");
+  console.log("401 → register a key. matches:0 on real names but control works → name-format cleanup.");
 })().catch(e => { console.error("FATAL", e.message); process.exit(1); });
