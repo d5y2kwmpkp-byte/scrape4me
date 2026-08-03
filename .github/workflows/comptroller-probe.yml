@@ -14,6 +14,7 @@ jobs:
         with: { node-version: 20 }
       - name: Run Comptroller probe
         env:
+          COMPTROLLER_API_KEY: ${{ secrets.COMPTROLLER_API_KEY }}
           TEXBUILD_SUPABASE_KEY: ${{ secrets.TEXBUILD_SUPABASE_KEY }}
           N: ${{ github.event.inputs.n }}
         run: node api/comptroller_probe.cjs
