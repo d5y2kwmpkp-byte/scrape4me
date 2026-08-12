@@ -74,6 +74,21 @@ function extractField(text, label) {
   return m ? m[1].trim() : "";
 }
 
+// The filing has TWO "Contact Name:" fields — the RAS filer (top) and the OWNER
+// contact (bottom). extractField grabs the first (RAS). This grabs the owner-section
+// one, anchored after "Owner Phone", and stops cleanly at the next section header.
+function extractOwnerContact(text) {
+  const re = /Owner Phone\s*:?\s*.+?\bContact Name\s*:?\s*(.+?)(?=\s*(?:TENANT|OWNER|RAS|Tenant Name|Tenant Phone|Design Firm|RAS Name|Type of Work|Scope of Work|Current Status)\b|$)/is;
+  const m = text.match(re);
+  if (!m) return "";
+  let v = m[1].trim()
+    .replace(/\s+(TENANT|OWNER|RAS)\s*$/i, "")   // strip trailing section header if it bled in
+    .trim();
+  // drop placeholder non-contacts
+  if (/not assigned/i.test(v) || /^tenant\b/i.test(v)) return "";
+  return (v && v.length < 120) ? v : "";
+}
+
 async function geocodeInline(address, county) {
   if (!MAPBOX_TOKEN || !address || address.trim().length < 5) return null;
   const hasState = /,?\s*TX\s+\d{5}/.test(address) || address.includes(", TX");
@@ -125,6 +140,7 @@ async function parseProject(html, tabsNum) {
     scope_of_work:       extractField(text, "Scope of Work"),
     status:              extractField(text, "Current Status"),
     contact_name:        extractField(text, "Contact Name"),
+    owner_contact:       extractOwnerContact(text),
     owner_name:          extractField(text, "Owner Name"),
     owner_address:       extractField(text, "Owner Address"),
     owner_phone:         extractField(text, "Owner Phone"),
