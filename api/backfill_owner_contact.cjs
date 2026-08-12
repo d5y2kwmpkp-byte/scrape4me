@@ -25,11 +25,15 @@ function normalize(html) {
 
 // identical to the live scraper's new extractor
 function extractOwnerContact(text) {
-  const re = /Owner Phone\s*:?\s*.+?\bContact Name\s*:?\s*(.+?)(?=\s*(?:Tenant Name|Tenant Phone|Design Firm|RAS Name|Type of Work|Scope of Work|Current Status)\s*:|$)/is;
+  const re = /Owner Phone\s*:?\s*.+?\bContact Name\s*:?\s*(.+?)(?=\s*(?:TENANT|OWNER|RAS|Tenant Name|Tenant Phone|Design Firm|RAS Name|Type of Work|Scope of Work|Current Status)\b|$)/is;
   const m = text.match(re);
-  const v = m ? m[1].trim() : null;
+  if (!m) return null;
+  let v = m[1].trim()
+    .replace(/\s+(TENANT|OWNER|RAS)\s*$/i, "")   // strip trailing section header if it bled in
+    .trim();
   return (v && v.length && v.length < 120) ? v : null;
 }
+
 
 async function sb(path, opts = {}) {
   const r = await fetch(`${SUPABASE_URL}/rest/v1/${path}`, { ...opts, headers: { ...SB, ...(opts.headers || {}) } });
