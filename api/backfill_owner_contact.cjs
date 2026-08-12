@@ -2,7 +2,7 @@ const SUPABASE_URL = "https://ewmtownoxnaghhlobeci.supabase.co";
 const SUPABASE_KEY = process.env.SUPABASE_SECRET_KEY || "";
 const BASE_URL = "https://www.tdlr.texas.gov/TABS/Search/Project";
 
-const LIMIT = parseInt(process.env.LIMIT || "500", 10);  // rows per run
+const LIMIT = parseInt(process.env.LIMIT || "4500", 10);  // rows per run
 
 const SB = {
   apikey: SUPABASE_KEY,
