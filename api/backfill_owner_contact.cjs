@@ -42,41 +42,40 @@ async function sb(path, opts = {}) {
 }
 
 (async () => {
-  // rows still missing owner_contact, with a tabs_number to re-fetch
-  const res = await sb(`tabs_projects?select=id,tabs_number&owner_contact=is.null&tabs_number=not.is.null&limit=${LIMIT}`);
-  const rows = await res.json();
-  console.log(`${rows.length} rows to backfill`);
-  if (!rows.length) { console.log("Nothing left."); return; }
+  let grandFilled = 0, grandEmpty = 0, grandErr = 0, round = 0;
 
-  let filled = 0, empty = 0, err = 0;
-  for (let i = 0; i < rows.length; i++) {
-    const { id, tabs_number } = rows[i];
-    try {
-      const r = await fetch(`${BASE_URL}/${tabs_number}`, {
-        headers: { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36", "Accept": "text/html" },
-      });
-      if (!r.ok) { err++; continue; }
-      const text = normalize(await r.text());
-      const oc = extractOwnerContact(text);
-      if (oc) {
+  while (true) {
+    round++;
+    // Supabase caps SELECT at 1000; loop until the queue is empty
+    const res = await sb(`tabs_projects?select=id,tabs_number&owner_contact=is.null&tabs_number=not.is.null&limit=1000`);
+    const rows = await res.json();
+    if (!rows.length) { console.log("\nNothing left — queue empty."); break; }
+    console.log(`\n=== Round ${round}: ${rows.length} rows ===`);
+
+    let filled = 0, empty = 0, err = 0;
+    for (let i = 0; i < rows.length; i++) {
+      const { id, tabs_number } = rows[i];
+      try {
+        const r = await fetch(`${BASE_URL}/${tabs_number}`, {
+          headers: { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36", "Accept": "text/html" },
+        });
+        if (!r.ok) { err++; continue; }
+        const text = normalize(await r.text());
+        const oc = extractOwnerContact(text);
         await sb(`tabs_projects?id=eq.${encodeURIComponent(id)}`, {
           method: "PATCH",
           headers: { Prefer: "return=minimal" },
-          body: JSON.stringify({ owner_contact: oc }),
+          body: JSON.stringify({ owner_contact: oc || "" }),  // "" marks checked-but-empty so it drops from the queue
         });
-        filled++;
-      } else {
-        // write empty string so it drops out of the null filter next run (checked, none found)
-        await sb(`tabs_projects?id=eq.${encodeURIComponent(id)}`, {
-          method: "PATCH",
-          headers: { Prefer: "return=minimal" },
-          body: JSON.stringify({ owner_contact: "" }),
-        });
-        empty++;
-      }
-    } catch (e) { err++; }
-    if ((i + 1) % 50 === 0) console.log(`  ${i + 1}/${rows.length} — filled:${filled} empty:${empty} err:${err}`);
-    await new Promise(s => setTimeout(s, 300));  // polite to TDLR
+        if (oc) filled++; else empty++;
+      } catch (e) { err++; }
+      if ((i + 1) % 100 === 0) console.log(`  ${i + 1}/${rows.length} — filled:${filled} empty:${empty} err:${err}`);
+      await new Promise(s => setTimeout(s, 300));
+    }
+    grandFilled += filled; grandEmpty += empty; grandErr += err;
+    console.log(`  Round ${round} done — filled:${filled} empty:${empty} err:${err}`);
   }
-  console.log(`\nDONE — filled:${filled} empty:${empty} err:${err}`);
+
+  console.log(`\n═══ ALL DONE — filled:${grandFilled} empty:${grandEmpty} err:${grandErr} ═══`);
 })();
+
