@@ -75,20 +75,70 @@ function extractField(text, label) {
   return m ? m[1].trim() : "";
 }
 
+// ── GEOCODE (hardened) ──────────────────────────────────────────────────
+// This is the FIRST geocode a project ever gets, and it is the one that
+// sticks: geocode_texbuild.cjs only revisits rows with no coordinates, so a
+// wrong-but-present point written here is never looked at again. It has to be
+// right or it has to be refused.
+//
+// Deliberately duplicated from api/geocode_texbuild.cjs rather than split into
+// a shared module — same reason OwnerCard is duplicated across the dossiers:
+// a new file is another hand-copy step in the phone/GitHub-web workflow. If
+// you change the bbox or the relevance floor, change it in BOTH files.
+const TX_BBOX = { west: -106.75, south: 25.78, east: -93.45, north: 36.55 };
+const MIN_RELEVANCE = parseFloat(process.env.MIN_RELEVANCE || "0.6");
+
+const inTexas = (lat, lng) =>
+  Number.isFinite(lat) && Number.isFinite(lng) &&
+  lat >= TX_BBOX.south && lat <= TX_BBOX.north &&
+  lng >= TX_BBOX.west  && lng <= TX_BBOX.east;
+
+const normCounty = s => String(s || "").replace(/\s+county\s*$/i, "").trim().toLowerCase();
+
 async function geocodeInline(address, county) {
-  if (!MAPBOX_TOKEN || !address || address.trim().length < 5) return null;
+  if (!MAPBOX_TOKEN || !address || address.trim().length < 5) {
+    return { ok: false, reason: "no token or address" };
+  }
   const hasState = /,?\s*TX\s+\d{5}/.test(address) || address.includes(", TX");
   const full = hasState ? address.trim() : `${address}, ${county || ""} County, TX`.replace(/\s+/g, " ").trim();
-  const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(full)}.json?country=US&limit=1&access_token=${MAPBOX_TOKEN}`;
+
+  const url = "https://api.mapbox.com/geocoding/v5/mapbox.places/"
+    + encodeURIComponent(full) + ".json"
+    + "?country=US"
+    // Without this a TDLR address ending in an out-of-state zip resolves out
+    // of state and is stored as a success — that is how a Houston Panera
+    // landed in Springfield, Missouri.
+    + `&bbox=${TX_BBOX.west},${TX_BBOX.south},${TX_BBOX.east},${TX_BBOX.north}`
+    + "&limit=1"
+    + `&access_token=${MAPBOX_TOKEN}`;
+
   try {
     const res = await fetch(url);
+    if (!res.ok) return { ok: false, reason: `mapbox HTTP ${res.status}` };
     const data = await res.json();
-    if (data.features && data.features.length > 0) {
-      const [lng, lat] = data.features[0].center;
-      return { lat, lng };
-    }
-  } catch (e) {}
-  return null;
+    const f = data && data.features && data.features[0];
+    if (!f) return { ok: false, reason: "no result inside Texas" };
+
+    const [lng, lat] = f.center || [];
+    if (!inTexas(lat, lng)) return { ok: false, reason: "result outside Texas" };
+
+    const relevance = typeof f.relevance === "number" ? f.relevance : 0;
+    if (relevance < MIN_RELEVANCE) return { ok: false, reason: "low relevance" };
+
+    const ctx = Array.isArray(f.context) ? f.context : [];
+    const pick = pfx => {
+      const hit = ctx.find(c => String(c.id || "").startsWith(pfx));
+      return hit ? hit.text : null;
+    };
+    const types = Array.isArray(f.place_type) ? f.place_type : [];
+    return {
+      ok: true, lat, lng, relevance,
+      county: pick("district"),
+      city: types.includes("place") ? f.text : pick("place"),
+    };
+  } catch (e) {
+    return { ok: false, reason: e.message };
+  }
 }
 
 async function parseProject(html, tabsNum) {
@@ -152,12 +202,24 @@ async function parseProject(html, tabsNum) {
     row.reg_month = regDateISO.slice(0, 7) + "-01";
   }
 
-  const coords = await geocodeInline(row.address, row.county);
-  if (coords) {
-    row.latitude    = coords.lat;
-    row.longitude   = coords.lng;
-    row.geocoded_at = new Date().toISOString();
+  const geo = await geocodeInline(row.address, row.county);
+  if (geo.ok) {
+    row.latitude       = geo.lat;
+    row.longitude      = geo.lng;
+    row.geocoded_at    = new Date().toISOString();
+    row.geocode_failed = false;
+    // TDLR's "Location County" is typed by the filer. The geocoded point is a
+    // spatial answer, so it wins — this is what keeps a Huntsville project
+    // from being filed as Waller and shipped to the wrong parcel extract.
+    if (geo.county && normCounty(geo.county) !== normCounty(row.county)) {
+      row.county = geo.county.replace(/\s+County\s*$/i, "").trim();
+    }
+    if (geo.city) row.city = geo.city;
   } else {
+    // No coordinate rather than a wrong one. geocode_texbuild.cjs picks these
+    // up on its next fill pass, and geocode_failed now means what it says.
+    row.latitude       = null;
+    row.longitude      = null;
     row.geocode_failed = true;
   }
 
