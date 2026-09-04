@@ -26,6 +26,24 @@ function cleanTypeOfWork(raw) {
   return String(raw).replace(/\s*Type\s*$/i, '').trim();
 }
 
+// ── WORK TYPE: the TDLR enum -> the app's three-way axis ────────
+// tabs_projects.work_type was NEVER written by this file. It exists only
+// because of a one-off UPDATE on 2026-08-09, so every row scraped since has
+// carried a null and the NEW CONSTRUCTION filter has been blind to all new
+// intake. type_of_work itself is clean and has no nulls, so the derivation
+// is free — it just has to actually happen on the way in.
+//
+// \bnew\b, not includes('new'): "Renewal" contains "new" and is not a
+// ground-up build. Order matters — check new before addition before renovation.
+function workType(typeOfWork) {
+  if (!typeOfWork) return null;
+  const t = String(typeOfWork).toLowerCase();
+  if (/\bnew\b/.test(t)) return 'new_construction';
+  if (/\baddition/.test(t)) return 'addition';
+  if (/renovat|alterat|remodel|repair/.test(t)) return 'renovation';
+  return null;   // unmapped rather than guessed — a null is auditable
+}
+
 // ── STATUS: 'Review Complete PERSON FILING FORM' → 'Review Complete'
 function cleanStatus(raw) {
   if (!raw) return null;
@@ -68,14 +86,52 @@ function cleanFundCategory(raw) {
 }
 
 // ── ADDRESS PARSER: split 'City, TX 78251' tail ─────────────────
+// The old version matched /([A-Za-z\s]+),\s*TX/, which grabs the longest run
+// of letters and spaces before ", TX" — so "Suite #P Houston, TX" yielded
+// "P Houston" and "48th Floor Houston, TX" yielded "Floor Houston". Those
+// went straight into tabs_projects.city.
+//
+// Walk the segment instead and drop everything up to the last token that
+// cannot be part of a city name: anything containing a digit, a unit marker,
+// or a street-type suffix. What survives is the city.
+//
+// This is still a heuristic on a free-text field. geocode_texbuild.cjs
+// overwrites city from the Mapbox `place` context when it geocodes, which is
+// a spatial answer rather than a regex, and that one wins.
+const UNIT_TOKEN   = /^(ste|suite|apt|apts|unit|bldg|building|fl|floor|rm|room|lot|blk|block|#)\.?$/i;
+const STREET_TOKEN = /^(st|street|rd|road|dr|drive|ave|avenue|blvd|boulevard|ln|lane|way|ct|court|cir|circle|pkwy|parkway|hwy|highway|fwy|freeway|expy|expressway|trl|trail|ter|terrace|pl|place|loop|bnd|bend|cv|cove|xing|crossing|pass|run|row|walk|plz|plaza|sq|square|frontage|service|bus|byp|bypass|spur|alt|fm|rr)\.?$/i;
+
 function parseAddress(raw) {
   if (!raw) return { city: null, zip: null };
-  const zipMatch = String(raw).match(/\b(\d{5})\b/);
+  const s = String(raw);
+  const zipMatch = s.match(/\b(\d{5})(?:-\d{4})?\b/);
   const zip = zipMatch ? zipMatch[1] : null;
-  // city = word(s) right before ', TX'
-  const cityMatch = String(raw).match(/([A-Za-z\s]+),\s*TX/);
-  const city = cityMatch ? cityMatch[1].trim() : null;
-  return { city, zip };
+
+  const seg = s.match(/([^,]+),\s*(?:TX|TEXAS)\b/i);
+  if (!seg) return { city: null, zip };
+
+  const tokens = seg[1].trim().split(/\s+/).filter(Boolean);
+  let start = 0;
+  tokens.forEach((t, i) => {
+    if (/\d/.test(t) || t.startsWith('#') || UNIT_TOKEN.test(t) || STREET_TOKEN.test(t)) {
+      start = i + 1;
+    }
+  });
+
+  let city = tokens.slice(start).join(' ').trim();
+  // Nothing survived (the whole segment was a street) — fall back to the tail,
+  // which is where the city sits in every well-formed TDLR address.
+  if (!city) city = tokens.slice(-1).join(' ').trim();
+  // A stray directional or initial left on the front is noise, not a city.
+  let parts = city.split(/\s+/);
+  if (parts.length > 1 && parts[0].length <= 2) parts.shift();
+  // No Texas city is more than three words. Anything longer means the address
+  // had no street suffix to cut on ("...across from Colt Elementary Marble
+  // Falls") and the tail is the best available guess.
+  if (parts.length > 3) parts = parts.slice(-2);
+  city = parts.join(' ');
+
+  return { city: city || null, zip };
 }
 
 // ── NORMALIZE ENTITY NAME for grouping ──────────────────────────
@@ -128,6 +184,7 @@ function buildCleanRow(raw, registrationDate) {
   const sqft = cleanSqft(raw.square_footage);
   const ras = cleanRas(raw.ras_name);
   const addr = parseAddress(raw.address);
+  const typeOfWork = cleanTypeOfWork(raw.type_of_work);
 
   return {
     id: raw.id,
@@ -135,11 +192,19 @@ function buildCleanRow(raw, registrationDate) {
     project_name: raw.project_name || null,
     facility_name: raw.facility_name || null,
 
+    // estimated_cost / square_footage are the TEXT columns and keep holding
+    // the cleaned number, exactly as before — nothing downstream changes.
+    // What was missing is the NUMERIC pair the app actually does arithmetic
+    // on. Neither was ever written here, which is why estimated_cost_num was
+    // null on 100% of recent intake and every cost signal was dark.
     estimated_cost: cost,
+    estimated_cost_num: cost,
     square_footage: sqft,
+    square_footage_num: sqft,
     cost_per_sqft: cost && sqft ? parseFloat((cost / sqft).toFixed(2)) : null,
 
-    type_of_work: cleanTypeOfWork(raw.type_of_work),
+    type_of_work: typeOfWork,
+    work_type: workType(typeOfWork),
     fund_category: cleanFundCategory(raw.type_of_funds),
     scope_of_work: raw.scope_of_work || null,
     project_category: raw.project_category || null,
@@ -188,4 +253,4 @@ function buildCleanRow(raw, registrationDate) {
   };
 }
 
-module.exports = { buildCleanRow, cleanCost, cleanSqft, cleanRas, normalizeEntity, costFlag };
+module.exports = { buildCleanRow, cleanCost, cleanSqft, cleanRas, normalizeEntity, costFlag, workType, parseAddress };
