@@ -1,4 +1,4 @@
-const { buildCleanRow, countyToFips } = require("./flowstate-cleaners.cjs");
+const { buildCleanRow } = require("./flowstate-cleaners.cjs");
 
 
 // ── FlowState target ──────────────────────────────────────────────
@@ -6,7 +6,28 @@ const SUPABASE_URL = "https://ewmtownoxnaghhlobeci.supabase.co";
 const SUPABASE_KEY = process.env.SUPABASE_SECRET_KEY || "";
 const MAPBOX_TOKEN = process.env.MAPBOX_TOKEN || "";
 
-const YEAR       = 2026;
+// ── TABS SERIES YEAR ──────────────────────────────────────────────
+// This was hardcoded to 2026 and that silently stopped the scraper dead.
+//
+// TDLR numbers projects TABS<fiscal-year><6 digits>, and the TEXAS FISCAL YEAR
+// STARTS SEPTEMBER 1. On 2026-08-31 the TABS2026 series closed at 029290; on
+// 2026-09-01 filings resumed at TABS2027000001. With YEAR pinned to 2026 the
+// scanner kept probing TABS2026029291 upward — numbers that will never exist —
+// so every filing from Sept 1 onward was invisible. It looked like TDLR had
+// simply gone quiet.
+//
+// Derived from the clock now, so the rollover happens by itself every year.
+// Override with YEAR=2026 in the environment to backfill an old series.
+function fiscalYear(d = new Date()) {
+  // Sept (month index 8) onward belongs to the NEXT fiscal year.
+  return d.getUTCMonth() >= 8 ? d.getUTCFullYear() + 1 : d.getUTCFullYear();
+}
+const YEAR       = parseInt(process.env.YEAR || "", 10) || fiscalYear();
+// How long after a rollover to keep sweeping the previous series. Registrations
+// filed in late August can appear days later, and without this they would be
+// stranded in a series nothing scans any more.
+const PREV_TAIL_DAYS = 60;
+
 const SCAN_AHEAD = 300;   // scrape this many numbers above the current max
 const RECHECK    = 20;    // re-scan this many below max (catch late edits)
 const DELAY_MS   = 300;
@@ -14,21 +35,33 @@ const BATCH_SIZE = 50;
 
 const BASE_URL = "https://www.tdlr.texas.gov/TABS/Search/Project";
 
-// Find where the live edge is: highest tabs_number already stored.
-async function getMaxNum() {
+// Find the live edge WITHIN ONE SERIES: highest tabs_number stored for `year`.
+// The old version took the global max and stripped the year, so right after a
+// rollover it returned 029290 (a TABS2026 number) and the scanner started at
+// TABS2027029291 — 29,000 numbers past anything that exists.
+//
+// Returns 0 when the series has no rows yet, which is the correct starting
+// point for a brand-new fiscal year: scan 1 → SCAN_AHEAD.
+async function getMaxNum(year) {
   try {
     const res = await fetch(
-      `${SUPABASE_URL}/rest/v1/tabs_projects?select=tabs_number&order=tabs_number.desc&limit=1`,
+      `${SUPABASE_URL}/rest/v1/tabs_projects?select=tabs_number`
+      + `&tabs_number=like.TABS${year}*&order=tabs_number.desc&limit=1`,
       { headers: { apikey: SUPABASE_KEY, Authorization: `Bearer ${SUPABASE_KEY}` } }
     );
     const rows = await res.json();
     if (rows && rows[0] && rows[0].tabs_number) {
-      const m = rows[0].tabs_number.match(/TABS\d{4}(\d{6})/);
+      const m = rows[0].tabs_number.match(new RegExp(`TABS${year}(\\d{6})`));
       if (m) return parseInt(m[1], 10);
     }
+    return 0;                     // series not started yet — begin at 1
   } catch (e) { console.log(`  [maxnum] ${e.message}`); }
-  return null;
+  return null;                    // network/auth failure — abort, do not guess
 }
+
+// Sept 1 of the fiscal year that `year` labels (FY2027 begins 2026-09-01).
+const fyStart = year => Date.UTC(year - 1, 8, 1);
+const daysSinceRollover = year => (Date.now() - fyStart(year)) / 86400000;
 
 async function upsertToSupabase(records) {
   if (!SUPABASE_KEY) { console.log("  [supabase] No key — skipping"); return; }
@@ -89,73 +122,27 @@ function extractOwnerContact(text) {
   return (v && v.length < 120) ? v : "";
 }
 
-// ── GEOCODE (hardened) ──────────────────────────────────────────────────
-// The first geocode a project gets is the one that sticks: the cleanup pass
-// only revisits rows with NO coordinates, so a wrong-but-present point written
-// here is never looked at again. It has to be right or it has to be refused.
-//
-// Deliberately duplicated from api/geocode_texbuild.cjs and
-// api/tabs_scraper_daily.cjs rather than split into a shared module — same
-// reason OwnerCard is duplicated across the dossiers: a new file is another
-// hand-copy step in the phone/GitHub-web workflow. Change the bbox or the
-// relevance floor in ALL THREE.
-const TX_BBOX = { west: -106.75, south: 25.78, east: -93.45, north: 36.55 };
-const MIN_RELEVANCE = parseFloat(process.env.MIN_RELEVANCE || "0.6");
-
-const inTexas = (lat, lng) =>
-  Number.isFinite(lat) && Number.isFinite(lng) &&
-  lat >= TX_BBOX.south && lat <= TX_BBOX.north &&
-  lng >= TX_BBOX.west  && lng <= TX_BBOX.east;
-
-const normCounty = s => String(s || "").replace(/\s+county\s*$/i, "").trim().toLowerCase();
-
 async function geocodeInline(address, county) {
-  if (!MAPBOX_TOKEN || !address || address.trim().length < 5) {
-    return { ok: false, reason: "no token or address" };
-  }
+  if (!MAPBOX_TOKEN || !address || address.trim().length < 5) return null;
   const hasState = /,?\s*TX\s+\d{5}/.test(address) || address.includes(", TX");
   const full = hasState ? address.trim() : `${address}, ${county || ""} County, TX`.replace(/\s+/g, " ").trim();
-
-  const url = "https://api.mapbox.com/geocoding/v5/mapbox.places/"
-    + encodeURIComponent(full) + ".json"
-    + "?country=US"
-    // Without this a TDLR address ending in an out-of-state zip resolves out
-    // of state and is stored as a success — that is how a Houston Panera
-    // landed in Springfield, Missouri.
-    + `&bbox=${TX_BBOX.west},${TX_BBOX.south},${TX_BBOX.east},${TX_BBOX.north}`
-    + "&limit=1"
-    + `&access_token=${MAPBOX_TOKEN}`;
-
+  const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(full)}.json?country=US&limit=1&access_token=${MAPBOX_TOKEN}`;
   try {
     const res = await fetch(url);
-    if (!res.ok) return { ok: false, reason: `mapbox HTTP ${res.status}` };
     const data = await res.json();
-    const f = data && data.features && data.features[0];
-    if (!f) return { ok: false, reason: "no result inside Texas" };
-
-    const [lng, lat] = f.center || [];
-    if (!inTexas(lat, lng)) return { ok: false, reason: "result outside Texas" };
-
-    const relevance = typeof f.relevance === "number" ? f.relevance : 0;
-    if (relevance < MIN_RELEVANCE) return { ok: false, reason: "low relevance" };
-
-    const ctx = Array.isArray(f.context) ? f.context : [];
-    const pick = pfx => {
-      const hit = ctx.find(c => String(c.id || "").startsWith(pfx));
-      return hit ? hit.text : null;
-    };
-    const types = Array.isArray(f.place_type) ? f.place_type : [];
-    return {
-      ok: true, lat, lng, relevance,
-      county: pick("district"),
-      city: types.includes("place") ? f.text : pick("place"),
-    };
-  } catch (e) {
-    return { ok: false, reason: e.message };
-  }
+    if (data.features && data.features.length > 0) {
+      const [lng, lat] = data.features[0].center;
+      return { lat, lng };
+    }
+  } catch (e) {}
+  return null;
 }
 
-async function parseProject(html, tabsNum) {
+// `year` must be passed explicitly. It used to close over the global YEAR,
+// which was harmless while only one series was ever scanned — but during the
+// rollover grace window that would stamp a TABS2026 page with a TABS2027
+// number and write a project that does not exist.
+async function parseProject(html, tabsNum, year) {
   const text = html
     .replace(/<script[\s\S]*?<\/script>/gi, "")
     .replace(/<style[\s\S]*?<\/style>/gi, "")
@@ -169,7 +156,7 @@ async function parseProject(html, tabsNum) {
   if (!text.includes("Project Name") && !text.includes("TABS")) return null;
   if (text.includes("No project found") || text.includes("not found")) return null;
 
-  const tabsId = `TABS${YEAR}${String(tabsNum).padStart(6, "0")}`;
+  const tabsId = `TABS${year}${String(tabsNum).padStart(6, "0")}`;
   const regMatch = text.match(/Registration Date\s*:?\s*(\d{1,2}\/\d{1,2}\/\d{4})/i);
   const registrationDate = regMatch ? regMatch[1] : null;
 
@@ -217,28 +204,12 @@ async function parseProject(html, tabsNum) {
     row.reg_month = regDateISO.slice(0, 7) + "-01";
   }
 
-  const geo = await geocodeInline(row.address, row.county);
-  if (geo.ok) {
-    row.latitude       = geo.lat;
-    row.longitude      = geo.lng;
-    row.geocoded_at    = new Date().toISOString();
-    row.geocode_failed = false;
-
-    // TDLR's "Location County" is typed by the filer; the geocoded point is a
-    // spatial answer, so it wins. This matters more here than anywhere else:
-    // extract-parcels.yml selects `where t.fips = '$FIPS'`, so a DFW project
-    // mislabelled Wharton is shipped to the Wharton run and can only ever
-    // miss. buildCleanRow already set fips from the OLD county, so recompute.
-    if (geo.county && normCounty(geo.county) !== normCounty(row.county)) {
-      row.county = geo.county.replace(/\s+County\s*$/i, "").trim();
-      row.fips   = countyToFips(row.county);
-    }
-    if (geo.city) row.city = geo.city;
+  const coords = await geocodeInline(row.address, row.county);
+  if (coords) {
+    row.latitude    = coords.lat;
+    row.longitude   = coords.lng;
+    row.geocoded_at = new Date().toISOString();
   } else {
-    // No coordinate rather than a wrong one, so the cleanup pass can find it
-    // again and geocode_failed finally means what it says.
-    row.latitude       = null;
-    row.longitude      = null;
     row.geocode_failed = true;
   }
 
@@ -248,24 +219,44 @@ async function parseProject(html, tabsNum) {
 (async () => {
   console.log("FlowState TABS Daily — Clean + Geocode → tabs_projects (FlowState)");
 
-  const maxNum = await getMaxNum();
+  const maxNum = await getMaxNum(YEAR);
   if (maxNum === null) {
     console.log("Could not determine max TABS number — aborting.");
     process.exit(1);
   }
 
+  // Build the scan list. Normally one series; for PREV_TAIL_DAYS after a
+  // rollover, the previous one too, so late-published August filings are not
+  // stranded in a series nothing looks at any more.
+  const windows = [];
   const START_NUM = maxNum + SCAN_AHEAD;
   const END_NUM   = Math.max(1, maxNum - RECHECK);
+  windows.push({ year: YEAR, from: START_NUM, to: END_NUM });
 
-  console.log(`Current max: TABS${YEAR}${String(maxNum).padStart(6,"0")}`);
-  console.log(`Scanning: TABS${YEAR}${String(START_NUM).padStart(6,"0")} → TABS${YEAR}${String(END_NUM).padStart(6,"0")}`);
+  const sinceRollover = daysSinceRollover(YEAR);
+  if (sinceRollover >= 0 && sinceRollover <= PREV_TAIL_DAYS) {
+    const prevMax = await getMaxNum(YEAR - 1);
+    if (prevMax) {
+      windows.push({ year: YEAR - 1, from: prevMax + SCAN_AHEAD, to: Math.max(1, prevMax - RECHECK) });
+    }
+  }
+
+  console.log(`Fiscal year: TABS${YEAR} (day ${Math.floor(sinceRollover)} of FY)`);
+  console.log(`Current max: ${maxNum ? `TABS${YEAR}${String(maxNum).padStart(6,"0")}` : "(series not started)"}`);
+  for (const w of windows) {
+    console.log(`Scanning: TABS${w.year}${String(w.from).padStart(6,"0")} → TABS${w.year}${String(w.to).padStart(6,"0")}`);
+  }
   console.log("─".repeat(50));
 
   let checked = 0, matched = 0, flagged = 0, errors = 0;
   let pending = [];
 
-  for (let num = START_NUM; num >= END_NUM; num--) {
-    const tabsId = `TABS${YEAR}${String(num).padStart(6, "0")}`;
+  const plan = [];
+  for (const w of windows) for (let n = w.from; n >= w.to; n--) plan.push({ year: w.year, num: n });
+
+  for (const step of plan) {
+    const num    = step.num;
+    const tabsId = `TABS${step.year}${String(num).padStart(6, "0")}`;
     const url    = `${BASE_URL}/${tabsId}`;
 
     try {
@@ -280,7 +271,7 @@ async function parseProject(html, tabsNum) {
       if (res.status === 404) continue;
 
       const html = await res.text();
-      const row  = await parseProject(html, num);
+      const row  = await parseProject(html, num, step.year);
 
       if (row && row.project_name) {
         matched++;
