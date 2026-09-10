@@ -1,5 +1,18 @@
 const { buildCleanRow } = require("./flowstate-cleaners.cjs");
 
+// ── IPv4 ONLY ─────────────────────────────────────────────────────
+// A run scanning 621 numbers returned 621 "fetch failed" and 0 checked, while
+// the same pages loaded fine from a phone. "fetch failed" is Node's generic
+// wrapper — the real reason sits in err.cause, which this script was throwing
+// away (fixed below).
+//
+// The likeliest cause is Happy Eyeballs: GitHub runners have IPv6, Node 20
+// tries AAAA first, and if the host's IPv6 path is unreachable every connection
+// dies instantly — which matches the first request failing 0.24s in. Pinning
+// resolution to IPv4 removes that whole class of failure and costs nothing if
+// IPv6 was never the problem.
+require("dns").setDefaultResultOrder("ipv4first");
+
 
 // ── FlowState target ──────────────────────────────────────────────
 const SUPABASE_URL = "https://ewmtownoxnaghhlobeci.supabase.co";
@@ -31,9 +44,21 @@ const PREV_TAIL_DAYS = 60;
 const SCAN_AHEAD = 300;   // scrape this many numbers above the current max
 const RECHECK    = 20;    // re-scan this many below max (catch late edits)
 const DELAY_MS   = 300;
+const COLD_ABORT = 25;    // consecutive failures that mean the path is dead
 const BATCH_SIZE = 50;
 
 const BASE_URL = "https://www.tdlr.texas.gov/TABS/Search/Project";
+
+// One header set, shared by the preflight and the scan loop. A bare UA is
+// enough for most sites, but government WAFs commonly reject requests whose
+// headers are inconsistent with a real browser, so send the full set.
+const BROWSER_HEADERS = {
+  "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36",
+  "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "Accept-Language": "en-US,en;q=0.9",
+  "Connection": "keep-alive",
+  "Upgrade-Insecure-Requests": "1",
+};
 
 // Find the live edge WITHIN ONE SERIES: highest tabs_number stored for `year`.
 // The old version took the global max and stripped the year, so right after a
@@ -216,8 +241,41 @@ async function parseProject(html, tabsNum, year) {
   return row;
 }
 
+// Prove we can reach TDLR at all before burning 19 minutes on 621 failures.
+// A 404 is a SUCCESS here — it means the connection completed and the server
+// answered. Only a thrown error means the network path is broken.
+async function preflight() {
+  const url = `${BASE_URL}/TABS${YEAR}000001`;
+  for (let a = 1; a <= 3; a++) {
+    try {
+      const res = await fetch(url, { headers: BROWSER_HEADERS });
+      // 200 = a real page, 404 = that number does not exist. Both prove the
+      // path works. 403/429/503 mean the server is answering but refusing us —
+      // a WAF block or throttle — and every page in the scan would fail the
+      // same way, so stop now rather than logging hundreds of empty checks.
+      if (res.status === 200 || res.status === 404) {
+        console.log(`  ✔ reachable — TDLR answered HTTP ${res.status}`);
+        return true;
+      }
+      console.log(`  ✗ attempt ${a}: HTTP ${res.status} — server is up but refusing this client`);
+      if (a < 3) await new Promise(r => setTimeout(r, 5000));
+      continue;
+    } catch (e) {
+      const why = e?.cause?.code || e?.cause?.message || e.message;
+      console.log(`  ✗ attempt ${a}: ${why}`);
+      if (a < 3) await new Promise(r => setTimeout(r, 5000));
+    }
+  }
+  return false;
+}
+
 (async () => {
   console.log("FlowState TABS Daily — Clean + Geocode → tabs_projects (FlowState)");
+
+  if (!(await preflight())) {
+    console.error("ABORT: cannot reach tdlr.texas.gov. Nothing scanned, nothing written.");
+    process.exit(1);
+  }
 
   const maxNum = await getMaxNum(YEAR);
   if (maxNum === null) {
@@ -248,7 +306,7 @@ async function parseProject(html, tabsNum, year) {
   }
   console.log("─".repeat(50));
 
-  let checked = 0, matched = 0, flagged = 0, errors = 0;
+  let checked = 0, matched = 0, flagged = 0, errors = 0, coldRun = 0;
   let pending = [];
 
   const plan = [];
@@ -260,14 +318,21 @@ async function parseProject(html, tabsNum, year) {
     const url    = `${BASE_URL}/${tabsId}`;
 
     try {
-      const res = await fetch(url, {
-        headers: {
-          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-          "Accept": "text/html",
+      // Retry transient connection failures instead of recording the number as
+      // checked-and-empty. Three attempts with a widening gap, then give up on
+      // this one and let the catch below decide whether the path is dead.
+      let res = null, lastWhy = "";
+      for (let a = 1; a <= 3; a++) {
+        try { res = await fetch(url, { headers: BROWSER_HEADERS }); break; }
+        catch (e) {
+          lastWhy = e?.cause?.code || e?.cause?.message || e.message;
+          if (a < 3) await new Promise(r => setTimeout(r, 2000 * a));
         }
-      });
+      }
+      if (!res) throw new Error(lastWhy);
 
       checked++;
+      coldRun = 0;
       if (res.status === 404) continue;
 
       const html = await res.text();
@@ -289,7 +354,18 @@ async function parseProject(html, tabsNum, year) {
       }
     } catch (e) {
       errors++;
-      if (errors < 20) console.log(`  [error] ${tabsId}: ${e.message.slice(0, 60)}`);
+      coldRun++;
+      // e.message is always the useless "fetch failed"; the real code lives in
+      // e.cause (ENOTFOUND, ECONNREFUSED, UND_ERR_CONNECT_TIMEOUT, ...). The
+      // old line logged the wrapper and threw the diagnosis away.
+      const why = e?.cause?.code || e?.cause?.message || e.message;
+      if (errors < 20) console.log(`  [error] ${tabsId}: ${String(why).slice(0, 60)}`);
+      // A long unbroken run of failures is a dead network path, not 25 bad
+      // pages. Stop rather than spending twenty minutes proving it.
+      if (coldRun >= COLD_ABORT) {
+        console.error(`ABORT: ${coldRun} consecutive failures (${why}) — TDLR unreachable.`);
+        break;
+      }
     }
 
     await new Promise(r => setTimeout(r, DELAY_MS));
